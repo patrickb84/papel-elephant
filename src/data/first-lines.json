@@ -180,6 +180,99 @@
     }
   },
   {
+    "id": "war-and-peace",
+    "gutenbergId": 2600,
+    "title": "War and Peace",
+    "author": "Leo Tolstoy",
+    "authorLife": "1828–1910",
+    "coAuthors": [],
+    "translators": [
+      "Aylmer Maude",
+      "Louise Maude"
+    ],
+    "year": 1869,
+    "line": "“Well, Prince, so Genoa and Lucca are now just family estates of the Buonapartes.",
+    "abridged": false,
+    "readUrl": "https://www.gutenberg.org/ebooks/2600",
+    "artwork": {
+      "src": "/first-lines/art/met-437051-1800.webp",
+      "srcSmall": "/first-lines/art/met-437051-900.webp",
+      "width": 1716,
+      "height": 1194,
+      "color": "#a49168",
+      "title": "A General and His Aide-de-camp",
+      "artist": "Ernest Meissonier",
+      "date": "1869",
+      "museum": "The Metropolitan Museum of Art",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/437051",
+      "creditLine": "Catharine Lorillard Wolfe Collection, Bequest of Catharine Lorillard Wolfe, 1887",
+      "license": "Public domain"
+    },
+    "portrait": {
+      "src": "/first-lines/portraits/l-n-tolstoy-prokudin-gorsky-480.webp",
+      "srcSmall": "/first-lines/portraits/l-n-tolstoy-prokudin-gorsky-160.webp",
+      "width": 347,
+      "height": 480,
+      "color": "#7b6e66",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:L.N.Tolstoy_Prokudin-Gorsky.jpg",
+      "artist": "Sergei Prokudin-Gorskii",
+      "license": "Public domain",
+      "attributionRequired": false
+    },
+    "provenance": {
+      "lineSource": "https://gutenberg.pglaf.org/cache/epub/2600/pg2600.txt",
+      "lineCheck": "reviewed against the full text by Claude (AI review against the Gutenberg text) on 2026-11-22",
+      "yearSource": "Wikidata Q161531 P577 publication date",
+      "artMatch": "reviewed by Claude (AI visual review) on 2026-11-22"
+    }
+  },
+  {
+    "id": "the-brothers-karamazov",
+    "gutenbergId": 28054,
+    "title": "The Brothers Karamazov",
+    "author": "Fyodor Dostoyevsky",
+    "authorLife": "1821–1881",
+    "coAuthors": [],
+    "translators": [
+      "Constance Garnett"
+    ],
+    "year": 1880,
+    "line": "Alexey Fyodorovitch Karamazov was the third son of Fyodor Pavlovitch Karamazov, a land owner well known in our district in his own day, and still remembered among us owing to his gloomy and tragic death, which happened thirteen years ago, and which I shall describe in its proper place.",
+    "abridged": false,
+    "readUrl": "https://www.gutenberg.org/ebooks/28054",
+    "artwork": {
+      "src": "/first-lines/art/aic-20530-1800.webp",
+      "srcSmall": "/first-lines/art/aic-20530-900.webp",
+      "width": 1686,
+      "height": 1372,
+      "color": "#949f9a",
+      "title": "Rabbit Warren at Pontoise, Snow",
+      "artist": "Camille Pissarro",
+      "date": "1879",
+      "museum": "Art Institute of Chicago",
+      "sourceUrl": "https://www.artic.edu/artworks/20530",
+      "creditLine": "Gift of Marshall Field",
+      "license": "Public domain"
+    },
+    "portrait": {
+      "src": "/first-lines/portraits/vasily-perov-google-art-project-480.webp",
+      "srcSmall": "/first-lines/portraits/vasily-perov-google-art-project-160.webp",
+      "width": 384,
+      "height": 480,
+      "color": "#2a1f14",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vasily_Perov_-_%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%A4.%D0%9C.%D0%94%D0%BE%D1%81%D1%82%D0%BE%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_-_Google_Art_Project.jpg",
+      "artist": "Vasily Perov",
+      "license": "Public domain",
+      "attributionRequired": false
+    },
+    "provenance": {
+      "lineSource": "https://gutenberg.pglaf.org/cache/epub/28054/pg28054.txt",
+      "lineCheck": "reviewed against the full text by Claude (AI review against the Gutenberg text) on 2026-11-22",
+      "yearSource": "Wikidata Q183157 P577 publication date",
+      "artMatch": "reviewed by Claude (AI visual review) on 2026-11-22"
+    }
+  },
+  {
     "id": "moby-dick",
     "gutenbergId": 2701,
     "title": "Moby-Dick",
@@ -402,6 +495,96 @@
     }
   },
   {
+    "id": "around-the-world-in-eighty-days",
+    "gutenbergId": 103,
+    "title": "Around the World in Eighty Days",
+    "author": "Jules Verne",
+    "authorLife": "1828–1905",
+    "coAuthors": [],
+    "translators": [
+      "George M. Towle"
+    ],
+    "year": 1872,
+    "line": "Mr. Phileas Fogg lived, in 1872, at No. 7, Saville Row, Burlington Gardens, the house in which Sheridan died in 1814.",
+    "abridged": false,
+    "readUrl": "https://www.gutenberg.org/ebooks/103",
+    "artwork": {
+      "src": "/first-lines/art/aic-889-1800.webp",
+      "srcSmall": "/first-lines/art/aic-889-900.webp",
+      "width": 1686,
+      "height": 1091,
+      "color": "#5a6650",
+      "title": "Barks Fleeing Before the Storm",
+      "artist": "Jules Dupré",
+      "date": "1870–75",
+      "museum": "Art Institute of Chicago",
+      "sourceUrl": "https://www.artic.edu/artworks/889",
+      "creditLine": "Henry Field Memorial Collection",
+      "license": "Public domain"
+    },
+    "portrait": {
+      "src": "/first-lines/portraits/felix-nadar-1820-1910-portraits-jules-verne-480.webp",
+      "srcSmall": "/first-lines/portraits/felix-nadar-1820-1910-portraits-jules-verne-160.webp",
+      "width": 343,
+      "height": 480,
+      "color": "#414141",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:F%C3%A9lix_Nadar_1820-1910_portraits_Jules_Verne.jpg",
+      "artist": "Nadar",
+      "license": "Public domain",
+      "attributionRequired": false
+    },
+    "provenance": {
+      "lineSource": "https://gutenberg.pglaf.org/cache/epub/103/pg103.txt",
+      "lineCheck": "reviewed against the full text by Claude (AI review against the Gutenberg text) on 2026-11-22",
+      "yearSource": "Wikidata Q1219561 P577 publication date",
+      "artMatch": "reviewed by Claude (AI visual review) on 2026-11-22"
+    }
+  },
+  {
+    "id": "the-adventures-of-tom-sawyer",
+    "gutenbergId": 74,
+    "title": "The Adventures of Tom Sawyer",
+    "author": "Mark Twain",
+    "authorLife": "1835–1910",
+    "coAuthors": [],
+    "translators": [],
+    "year": 1876,
+    "line": "“Tom!” No answer. “TOM!” No answer.",
+    "abridged": false,
+    "readUrl": "https://www.gutenberg.org/ebooks/74",
+    "artwork": {
+      "src": "/first-lines/art/met-13313-1800.webp",
+      "srcSmall": "/first-lines/art/met-13313-900.webp",
+      "width": 1541,
+      "height": 1800,
+      "color": "#555634",
+      "title": "Evening in the Woods",
+      "artist": "Worthington Whittredge",
+      "date": "1876",
+      "museum": "The Metropolitan Museum of Art",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/13313",
+      "creditLine": "Bequest of Henry H. Cook, 1905",
+      "license": "Public domain"
+    },
+    "portrait": {
+      "src": "/first-lines/portraits/marktwain-loc-480.webp",
+      "srcSmall": "/first-lines/portraits/marktwain-loc-160.webp",
+      "width": 387,
+      "height": 480,
+      "color": "#363636",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:MarkTwain.LOC.jpg",
+      "artist": "unknown artist",
+      "license": "Public domain",
+      "attributionRequired": false
+    },
+    "provenance": {
+      "lineSource": "https://gutenberg.pglaf.org/cache/epub/74/pg74.txt",
+      "lineCheck": "reviewed against the full text by Claude (AI review against the Gutenberg text) on 2026-11-22",
+      "yearSource": "Wikidata Q326914 P577 publication date",
+      "artMatch": "reviewed by Claude (AI visual review) on 2026-11-22"
+    }
+  },
+  {
     "id": "dracula",
     "gutenbergId": 345,
     "title": "Dracula",
@@ -522,7 +705,7 @@
       "height": 480,
       "color": "#363636",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:MarkTwain.LOC.jpg",
-      "artist": "Unknown author Unknown author",
+      "artist": "unknown artist",
       "license": "Public domain",
       "attributionRequired": false
     },
@@ -655,6 +838,182 @@
     }
   },
   {
+    "id": "a-journey-to-the-centre-of-the-earth",
+    "gutenbergId": 18857,
+    "title": "A Journey to the Centre of the Earth",
+    "author": "Jules Verne",
+    "authorLife": "1828–1905",
+    "coAuthors": [],
+    "translators": [],
+    "year": 1864,
+    "line": "Looking back to all that has occurred to me since that eventful day, I am scarcely able to believe in the reality of my adventures.",
+    "abridged": false,
+    "readUrl": "https://www.gutenberg.org/ebooks/18857",
+    "artwork": {
+      "src": "/first-lines/art/aic-146701-1800.webp",
+      "srcSmall": "/first-lines/art/aic-146701-900.webp",
+      "width": 1465,
+      "height": 1800,
+      "color": "#393221",
+      "title": "Mountain Brook",
+      "artist": "Albert Bierstadt",
+      "date": "1863",
+      "museum": "Art Institute of Chicago",
+      "sourceUrl": "https://www.artic.edu/artworks/146701",
+      "creditLine": "Purchased with funds provided by Mrs. Herbert A. Vance; fund of an anonymous donor; Wesley M. Dixon Jr. Fund and Endowment; Henry Horner Straus and Mr. and Mrs. Frederick G. Wacker Jr. endowment funds; through prior acquisitions of various donors, including Samuel P. Avery Endowment, Mrs. George A. Carpenter, Frederick S. Colburn, Mr. and Mrs. Stanley Feinberg, Field Museum of Natural History, Mr. and Mrs. Frank Harding, International Minerals and Chemicals Corp., Mr. and Mrs. Ralph Loeff, Mrs. Frank C. Miller, Mahlan D. Moulds, Mrs. Clive Runnells, Mr. and Mrs. Stanley Stone, and the Charles H. and Mary F.S. Worcester Collection",
+      "license": "Public domain"
+    },
+    "portrait": {
+      "src": "/first-lines/portraits/felix-nadar-1820-1910-portraits-jules-verne-480.webp",
+      "srcSmall": "/first-lines/portraits/felix-nadar-1820-1910-portraits-jules-verne-160.webp",
+      "width": 343,
+      "height": 480,
+      "color": "#414141",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:F%C3%A9lix_Nadar_1820-1910_portraits_Jules_Verne.jpg",
+      "artist": "Nadar",
+      "license": "Public domain",
+      "attributionRequired": false
+    },
+    "provenance": {
+      "lineSource": "https://gutenberg.pglaf.org/cache/epub/18857/pg18857.txt",
+      "lineCheck": "reviewed against the full text by Claude (AI review against the Gutenberg text) on 2026-11-22",
+      "yearSource": "Wikidata Q219457 P577 publication date",
+      "artMatch": "reviewed by Claude (AI visual review) on 2026-11-22"
+    }
+  },
+  {
+    "id": "heart-of-darkness",
+    "gutenbergId": 219,
+    "title": "Heart of Darkness",
+    "author": "Joseph Conrad",
+    "authorLife": "1857–1924",
+    "coAuthors": [],
+    "translators": [],
+    "year": 1899,
+    "line": "The Nellie, a cruising yawl, swung to her anchor without a flutter of the sails, and was at rest.",
+    "abridged": false,
+    "readUrl": "https://www.gutenberg.org/ebooks/219",
+    "artwork": {
+      "src": "/first-lines/art/aic-109926-1800.webp",
+      "srcSmall": "/first-lines/art/aic-109926-900.webp",
+      "width": 1686,
+      "height": 1081,
+      "color": "#776739",
+      "title": "Landscape: Window Overlooking the Woods",
+      "artist": "Édouard Jean Vuillard",
+      "date": "1899",
+      "museum": "Art Institute of Chicago",
+      "sourceUrl": "https://www.artic.edu/artworks/109926",
+      "creditLine": "L.L. and A.S. Coburn Fund, Martha E. Leverone, Charles Norton Owen funds, and purchased with funds provided by an anonymous donor",
+      "license": "Public domain"
+    },
+    "portrait": {
+      "src": "/first-lines/portraits/joseph-conrad-remastered-to-black-and-white-480.webp",
+      "srcSmall": "/first-lines/portraits/joseph-conrad-remastered-to-black-and-white-160.webp",
+      "width": 349,
+      "height": 480,
+      "color": "#535353",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Joseph_Conrad-remastered_to_black_and_white.png",
+      "artist": "George Charles Beresford",
+      "license": "Public domain",
+      "attributionRequired": false
+    },
+    "provenance": {
+      "lineSource": "https://gutenberg.pglaf.org/cache/epub/219/pg219.txt",
+      "lineCheck": "reviewed against the full text by Claude (AI review against the Gutenberg text) on 2026-11-22",
+      "yearSource": "Wikidata Q129778 P577 publication date",
+      "artMatch": "reviewed by Claude (AI visual review) on 2026-11-22"
+    }
+  },
+  {
+    "id": "sense-and-sensibility",
+    "gutenbergId": 161,
+    "title": "Sense and Sensibility",
+    "author": "Jane Austen",
+    "authorLife": "1775–1817",
+    "coAuthors": [],
+    "translators": [],
+    "year": 1811,
+    "line": "The family of Dashwood had long been settled in Sussex.",
+    "abridged": false,
+    "readUrl": "https://www.gutenberg.org/ebooks/161",
+    "artwork": {
+      "src": "/first-lines/art/aic-49651-1800.webp",
+      "srcSmall": "/first-lines/art/aic-49651-900.webp",
+      "width": 843,
+      "height": 417,
+      "color": "#473924",
+      "title": "Landscape with Cottages",
+      "artist": "John Constable",
+      "date": "1809–10",
+      "museum": "Art Institute of Chicago",
+      "sourceUrl": "https://www.artic.edu/artworks/49651",
+      "creditLine": "Bequest of Elsie K. White",
+      "license": "Public domain"
+    },
+    "portrait": {
+      "src": "/first-lines/portraits/cassandraausten-janeausten-c-1810-hires-480.webp",
+      "srcSmall": "/first-lines/portraits/cassandraausten-janeausten-c-1810-hires-160.webp",
+      "width": 372,
+      "height": 480,
+      "color": "#dcd3cc",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:CassandraAusten-JaneAusten(c.1810)_hires.jpg",
+      "artist": "Cassandra Austen",
+      "license": "Public domain",
+      "attributionRequired": false
+    },
+    "provenance": {
+      "lineSource": "https://gutenberg.pglaf.org/cache/epub/161/pg161.txt",
+      "lineCheck": "reviewed against the full text by Claude (AI review against the Gutenberg text) on 2026-11-22",
+      "yearSource": "Wikidata Q274744 P577 publication date",
+      "artMatch": "reviewed by Claude (AI visual review) on 2026-11-22"
+    }
+  },
+  {
+    "id": "little-women",
+    "gutenbergId": 514,
+    "title": "Little Women",
+    "author": "Louisa May Alcott",
+    "authorLife": "1832–1888",
+    "coAuthors": [],
+    "translators": [],
+    "year": 1868,
+    "line": "“Christmas won’t be Christmas without any presents,” grumbled Jo, lying on the rug.",
+    "abridged": false,
+    "readUrl": "https://www.gutenberg.org/ebooks/514",
+    "artwork": {
+      "src": "/first-lines/art/aic-263513-1800.webp",
+      "srcSmall": "/first-lines/art/aic-263513-900.webp",
+      "width": 1224,
+      "height": 1800,
+      "color": "#7f7659",
+      "title": "Mother and Children",
+      "artist": "Pál Szinyei Merse",
+      "date": "1869",
+      "museum": "Art Institute of Chicago",
+      "sourceUrl": "https://www.artic.edu/artworks/263513",
+      "creditLine": "Gift of The Salgo Trust for Education",
+      "license": "Public domain"
+    },
+    "portrait": {
+      "src": "/first-lines/portraits/louisa-may-alcott-c-1870-warren-s-portraits-boston-480.webp",
+      "srcSmall": "/first-lines/portraits/louisa-may-alcott-c-1870-warren-s-portraits-boston-160.webp",
+      "width": 295,
+      "height": 480,
+      "color": "#917260",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Louisa_May_Alcott,_c._1870_-_Warren%27s_Portraits,_Boston.jpg",
+      "artist": "Adam Cuerden",
+      "license": "Public domain",
+      "attributionRequired": false
+    },
+    "provenance": {
+      "lineSource": "https://gutenberg.pglaf.org/cache/epub/514/pg514.txt",
+      "lineCheck": "reviewed against the full text by Claude (AI review against the Gutenberg text) on 2026-11-22",
+      "yearSource": "Wikidata Q523076 P577 publication date",
+      "artMatch": "reviewed by Claude (AI visual review) on 2026-11-22"
+    }
+  },
+  {
     "id": "the-adventures-of-sherlock-holmes",
     "gutenbergId": 1661,
     "title": "The Adventures of Sherlock Holmes",
@@ -743,6 +1102,50 @@
     }
   },
   {
+    "id": "the-wind-in-the-willows",
+    "gutenbergId": 27805,
+    "title": "The Wind in the Willows",
+    "author": "Kenneth Grahame",
+    "authorLife": "1859–1932",
+    "coAuthors": [],
+    "translators": [],
+    "year": 1908,
+    "line": "The Mole had been working very hard all the morning, spring-cleaning his little home.",
+    "abridged": false,
+    "readUrl": "https://www.gutenberg.org/ebooks/27805",
+    "artwork": {
+      "src": "/first-lines/art/aic-234960-1800.webp",
+      "srcSmall": "/first-lines/art/aic-234960-900.webp",
+      "width": 843,
+      "height": 680,
+      "color": "#5e614c",
+      "title": "Under the Cypress Trees at Corfu",
+      "artist": "John Singer Sargent",
+      "date": "1909",
+      "museum": "Art Institute of Chicago",
+      "sourceUrl": "https://www.artic.edu/artworks/234960",
+      "creditLine": "Gift of Jamee J. and Marshall Field",
+      "license": "Public domain"
+    },
+    "portrait": {
+      "src": "/first-lines/portraits/kennethgrahame-480.webp",
+      "srcSmall": "/first-lines/portraits/kennethgrahame-160.webp",
+      "width": 224,
+      "height": 300,
+      "color": "#4a4a4a",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:KennethGrahame.jpg",
+      "artist": "unknown artist",
+      "license": "Public domain",
+      "attributionRequired": false
+    },
+    "provenance": {
+      "lineSource": "https://gutenberg.pglaf.org/cache/epub/27805/pg27805.txt",
+      "lineCheck": "reviewed against the full text by Claude (AI review against the Gutenberg text) on 2026-11-22",
+      "yearSource": "Wikidata Q936276 P577 publication date",
+      "artMatch": "reviewed by Claude (AI visual review) on 2026-11-22"
+    }
+  },
+  {
     "id": "peter-pan",
     "gutenbergId": 16,
     "title": "Peter Pan",
@@ -783,6 +1186,39 @@
       "lineSource": "https://gutenberg.pglaf.org/cache/epub/16/pg16.txt",
       "lineCheck": "reviewed against the full text by Claude (AI review against the Gutenberg text) on 2026-11-22",
       "yearSource": "Wikidata Q3435337 P577 publication date",
+      "artMatch": "reviewed by Claude (AI visual review) on 2026-11-22"
+    }
+  },
+  {
+    "id": "three-men-in-a-boat",
+    "gutenbergId": 308,
+    "title": "Three Men in a Boat",
+    "author": "Jerome K. Jerome",
+    "authorLife": "1859–1927",
+    "coAuthors": [],
+    "translators": [],
+    "year": 1889,
+    "line": "There were four of us—George, and William Samuel Harris, and myself, and Montmorency.",
+    "abridged": false,
+    "readUrl": "https://www.gutenberg.org/ebooks/308",
+    "artwork": {
+      "src": "/first-lines/art/aic-65845-1800.webp",
+      "srcSmall": "/first-lines/art/aic-65845-900.webp",
+      "width": 1686,
+      "height": 1009,
+      "color": "#7b713b",
+      "title": "Autumn River Scene, The Brook",
+      "artist": "David Bates",
+      "date": "1889",
+      "museum": "Art Institute of Chicago",
+      "sourceUrl": "https://www.artic.edu/artworks/65845",
+      "creditLine": "Gift of Mr. and Mrs. John T. Weise",
+      "license": "Public domain"
+    },
+    "provenance": {
+      "lineSource": "https://gutenberg.pglaf.org/cache/epub/308/pg308.txt",
+      "lineCheck": "reviewed against the full text by Claude (AI review against the Gutenberg text) on 2026-11-22",
+      "yearSource": "Wikidata Q955910 P577 publication date",
       "artMatch": "reviewed by Claude (AI visual review) on 2026-11-22"
     }
   },

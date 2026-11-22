@@ -14,7 +14,7 @@
 import { fetchJson, mapLimit } from './lib/http.ts';
 import { FILES } from './lib/paths.ts';
 import type { Candidate, ImageLicense, MetadataResult } from './lib/types.ts';
-import { fold, loadOverrides, log, readJson, writeJson } from './lib/util.ts';
+import { cleanArtist, fold, loadOverrides, log, readJson, writeJson } from './lib/util.ts';
 
 const WD_API = 'https://www.wikidata.org/w/api.php';
 const COMMONS_API = 'https://commons.wikimedia.org/w/api.php';
@@ -121,7 +121,7 @@ async function commonsImage(file: string) {
     thumbUrl: (info.thumburl ?? info.url) as string,
     width: info.thumbwidth ?? info.width,
     height: info.thumbheight ?? info.height,
-    artist: stripHtml(meta.Artist?.value),
+    artist: cleanArtist(stripHtml(meta.Artist?.value)),
     credit: stripHtml(meta.Credit?.value),
     date: stripHtml(meta.DateTimeOriginal?.value),
     license: classifyLicense(meta),

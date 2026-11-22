@@ -66,3 +66,17 @@ export function log(step: string, msg: string) {
 export function byId<T extends { gutenbergId: number }>(rows: T[]) {
   return new Map(rows.map((r) => [r.gutenbergId, r]));
 }
+
+/**
+ * Tidy a Commons "Artist" field. Its {{Unknown|author}} template renders as
+ * "Unknown author Unknown author" once the HTML is stripped; show that, and
+ * the other "Unknown" variants, as a plain "unknown artist".
+ */
+export function cleanArtist(s: string | undefined) {
+  if (!s) return s;
+  return s
+    .replace(/^(?:unknown(?:\s+author)?\s*)+/i, 'unknown artist ')
+    .replace(/\s+,/g, ',')
+    .replace(/\s+/g, ' ')
+    .trim();
+}

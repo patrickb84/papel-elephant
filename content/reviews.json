@@ -74,8 +74,7 @@
       "status": "approved",
       "ref": "e624883b4d4e",
       "by": "Claude (AI review against the Gutenberg text)",
-      "date": "2026-11-22",
-      "note": "read in context; overrides applied where the extraction landed on front matter"
+      "date": "2026-11-22"
     },
     "76": {
       "status": "approved",
@@ -116,8 +115,7 @@
       "status": "approved",
       "ref": "9af7dfd5e40b",
       "by": "Claude (AI review against the Gutenberg text)",
-      "date": "2026-11-22",
-      "note": "read in context; overrides applied where the extraction landed on front matter"
+      "date": "2026-11-22"
     },
     "105": {
       "status": "approved",
@@ -207,8 +205,7 @@
       "status": "approved",
       "ref": "3b97b55f1b05",
       "by": "Claude (AI review against the Gutenberg text)",
-      "date": "2026-11-22",
-      "note": "read in context; overrides applied where the extraction landed on front matter"
+      "date": "2026-11-22"
     },
     "175": {
       "status": "approved",
@@ -249,8 +246,7 @@
       "status": "approved",
       "ref": "760c644701d3",
       "by": "Claude (AI review against the Gutenberg text)",
-      "date": "2026-11-22",
-      "note": "read in context; overrides applied where the extraction landed on front matter"
+      "date": "2026-11-22"
     },
     "236": {
       "status": "approved",
@@ -277,8 +273,7 @@
       "status": "approved",
       "ref": "0fa23e38153c",
       "by": "Claude (AI review against the Gutenberg text)",
-      "date": "2026-11-22",
-      "note": "read in context; overrides applied where the extraction landed on front matter"
+      "date": "2026-11-22"
     },
     "345": {
       "status": "approved",
@@ -319,8 +314,7 @@
       "status": "approved",
       "ref": "8dc4bf9ccc51",
       "by": "Claude (AI review against the Gutenberg text)",
-      "date": "2026-11-22",
-      "note": "read in context; overrides applied where the extraction landed on front matter"
+      "date": "2026-11-22"
     },
     "521": {
       "status": "approved",
@@ -676,8 +670,7 @@
       "status": "approved",
       "ref": "4a24d20a56e7",
       "by": "Claude (AI review against the Gutenberg text)",
-      "date": "2026-11-22",
-      "note": "read in context; overrides applied where the extraction landed on front matter"
+      "date": "2026-11-22"
     },
     "2609": {
       "status": "approved",
@@ -886,8 +879,7 @@
       "status": "approved",
       "ref": "db438c369790",
       "by": "Claude (AI review against the Gutenberg text)",
-      "date": "2026-11-22",
-      "note": "read in context; overrides applied where the extraction landed on front matter"
+      "date": "2026-11-22"
     },
     "19942": {
       "status": "approved",
@@ -921,15 +913,13 @@
       "status": "approved",
       "ref": "7f71a2b7edb1",
       "by": "Claude (AI review against the Gutenberg text)",
-      "date": "2026-11-22",
-      "note": "read in context; overrides applied where the extraction landed on front matter"
+      "date": "2026-11-22"
     },
     "28054": {
       "status": "approved",
       "ref": "0272c88489c8",
       "by": "Claude (AI review against the Gutenberg text)",
-      "date": "2026-11-22",
-      "note": "read in context; overrides applied where the extraction landed on front matter"
+      "date": "2026-11-22"
     },
     "29413": {
       "status": "approved",
@@ -1031,6 +1021,12 @@
       "date": "2026-11-22",
       "note": "same-year pick from the candidate sheet"
     },
+    "74": {
+      "status": "approved",
+      "ref": "met:13313",
+      "by": "Claude (AI visual review)",
+      "date": "2026-11-22"
+    },
     "76": {
       "status": "approved",
       "ref": "aic:20199",
@@ -1052,6 +1048,12 @@
       "date": "2026-11-22",
       "note": "same-year pick from the candidate sheet"
     },
+    "103": {
+      "status": "approved",
+      "ref": "aic:889",
+      "by": "Claude (AI visual review)",
+      "date": "2026-11-22"
+    },
     "120": {
       "status": "approved",
       "ref": "aic:14620",
@@ -1066,12 +1068,36 @@
       "date": "2026-11-22",
       "note": "same-year pick from the candidate sheet"
     },
+    "161": {
+      "status": "approved",
+      "ref": "aic:49651",
+      "by": "Claude (AI visual review)",
+      "date": "2026-11-22"
+    },
+    "219": {
+      "status": "approved",
+      "ref": "aic:109926",
+      "by": "Claude (AI visual review)",
+      "date": "2026-11-22"
+    },
+    "308": {
+      "status": "approved",
+      "ref": "aic:65845",
+      "by": "Claude (AI visual review)",
+      "date": "2026-11-22"
+    },
     "345": {
       "status": "approved",
       "ref": "aic:16564",
       "by": "Claude (AI visual review)",
       "date": "2026-11-22",
       "note": "same-year pick from the candidate sheet"
+    },
+    "514": {
+      "status": "approved",
+      "ref": "aic:263513",
+      "by": "Claude (AI visual review)",
+      "date": "2026-11-22"
     },
     "768": {
       "status": "approved",
@@ -1122,6 +1148,12 @@
       "date": "2026-11-22",
       "note": "chosen from the candidate sheet"
     },
+    "2600": {
+      "status": "approved",
+      "ref": "met:437051",
+      "by": "Claude (AI visual review)",
+      "date": "2026-11-22"
+    },
     "2701": {
       "status": "approved",
       "ref": "aic:129639",
@@ -1142,6 +1174,24 @@
       "by": "Claude (AI visual review)",
       "date": "2026-11-22",
       "note": "same-year pick from the candidate sheet"
+    },
+    "18857": {
+      "status": "approved",
+      "ref": "aic:146701",
+      "by": "Claude (AI visual review)",
+      "date": "2026-11-22"
+    },
+    "27805": {
+      "status": "approved",
+      "ref": "aic:234960",
+      "by": "Claude (AI visual review)",
+      "date": "2026-11-22"
+    },
+    "28054": {
+      "status": "approved",
+      "ref": "aic:20530",
+      "by": "Claude (AI visual review)",
+      "date": "2026-11-22"
     },
     "64317": {
       "status": "approved",

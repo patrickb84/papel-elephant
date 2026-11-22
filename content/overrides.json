@@ -46,7 +46,11 @@
     },
     "74": {
       "openingLine": "“Tom!” No answer. “TOM!” No answer.",
-      "note": "the opening is four one-line paragraphs"
+      "note": "the opening is four one-line paragraphs",
+      "artwork": {
+        "museum": "met",
+        "id": "13313"
+      }
     },
     "76": {
       "artwork": {
@@ -73,6 +77,12 @@
       "artwork": {
         "museum": "aic",
         "id": "896"
+      }
+    },
+    "103": {
+      "artwork": {
+        "museum": "aic",
+        "id": "889"
       }
     },
     "120": {
@@ -103,14 +113,32 @@
         "id": "47582"
       }
     },
+    "161": {
+      "artwork": {
+        "museum": "aic",
+        "id": "49651"
+      }
+    },
     "201": {
       "startsWith": "I call our world Flatland"
     },
     "215": {
       "startsWith": "Buck did not read the newspapers"
     },
+    "219": {
+      "artwork": {
+        "museum": "aic",
+        "id": "109926"
+      }
+    },
     "236": {
       "startsWith": "It was seven o’clock of a very warm evening in the Seeonee hills"
+    },
+    "308": {
+      "artwork": {
+        "museum": "aic",
+        "id": "65845"
+      }
     },
     "345": {
       "openingLine": "3 May. Bistritz.—Left Munich at 8:35 P. M., on 1st May, arriving at Vienna early next morning; should have arrived at 6:46, but train was an hour late.",
@@ -122,6 +150,12 @@
     },
     "370": {
       "startsWith": "My true name is so well known"
+    },
+    "514": {
+      "artwork": {
+        "museum": "aic",
+        "id": "263513"
+      }
     },
     "521": {
       "wikidataSearch": "Robinson Crusoe"
@@ -229,6 +263,12 @@
         "id": "6005"
       }
     },
+    "2600": {
+      "artwork": {
+        "museum": "met",
+        "id": "437051"
+      }
+    },
     "2701": {
       "themes": [
         "sea",
@@ -280,11 +320,29 @@
       "startsWith": "My father had a small estate in Nottinghamshire",
       "note": "skip the chapter summary"
     },
+    "18857": {
+      "artwork": {
+        "museum": "aic",
+        "id": "146701"
+      }
+    },
     "23700": {
       "startsWith": "A kindly thing it is to have compassion of the afflicted",
       "note": "the Proem; skip the translator's notes",
       "year": 1353,
       "yearNote": "Wikidata Q16438 P577 publication date 1353 (read by hand; the automatic read missed it)"
+    },
+    "27805": {
+      "artwork": {
+        "museum": "aic",
+        "id": "234960"
+      }
+    },
+    "28054": {
+      "artwork": {
+        "museum": "aic",
+        "id": "20530"
+      }
     },
     "58866": {
       "openingLine": "I believe that a well-known anecdote exists to the effect that a young writer, determined to make the commencement of his story forcible and original enough to catch and rivet the attention of the most blasé of editors, penned the following sentence: “‘Hell!’ said the Duchess.”",

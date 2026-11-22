@@ -37,7 +37,7 @@ const payload = JSON.stringify(entries.map(({ provenance: _p, ...rest }) => rest
 
 <section class="fl" data-state="pending" aria-labelledby="fl-kicker" aria-busy="true">
   <figure class="fl-art">
-    <div class="fl-frame" data-f="frame" style={`--art-color: ${e.artwork.color}`}>
+    <div class="fl-frame" data-f="frame" style={`--art-color: ${e.artwork.color}; --ar: ${e.artwork.width} / ${e.artwork.height}`}>
       <img
         data-f="art"
         src={e.artwork.srcSmall}
@@ -168,6 +168,7 @@ const payload = JSON.stringify(entries.map(({ provenance: _p, ...rest }) => rest
       frame.dataset.loaded = 'false';
       frame.dataset.failed = 'false';
       frame.style.setProperty('--art-color', x.artwork.color);
+      frame.style.setProperty('--ar', `${x.artwork.width} / ${x.artwork.height}`);
       art.width = x.artwork.width;
       art.height = x.artwork.height;
       art.alt = `${x.artwork.title}, painted by ${x.artwork.artist}, ${x.artwork.date}`;
@@ -274,24 +275,28 @@ const payload = JSON.stringify(entries.map(({ provenance: _p, ...rest }) => rest
     gap: 0.75rem;
     min-width: 0;
   }
+  /* The painting is as big as the column allows: full width, unless that
+     would make it taller than --max-h, in which case full height. It is sized
+     from its aspect ratio (--ar), not its pixel size, so small source files
+     are scaled up to match the rest instead of sitting small in the space. */
   .fl-frame {
+    --max-h: 62svh;
     position: relative;
     display: flex;
     justify-content: center;
-    max-width: 100%;
+    width: 100%;
   }
   .fl-frame img {
     display: block;
-    width: auto;
+    width: min(100%, calc(var(--max-h) * (var(--ar, 4 / 3))));
     height: auto;
-    max-width: 100%;
-    max-height: 58svh;
+    aspect-ratio: var(--ar, 4 / 3);
     background: var(--art-color);
     box-shadow: 0 1px 2px rgb(0 0 0 / 0.12), 0 18px 40px -18px rgb(0 0 0 / 0.45);
     transition: opacity var(--fade) ease;
   }
   @media (min-width: 960px) {
-    .fl-frame img { max-height: calc(100svh - var(--header-h) - 2 * var(--gutter) - 5rem); }
+    .fl-frame { --max-h: calc(100svh - var(--header-h) - 2 * var(--gutter) - 5rem); }
   }
   /* The average colour holds the space; the image fades in over it. */
   .fl-frame[data-loaded='false'] img { opacity: 0.001; }

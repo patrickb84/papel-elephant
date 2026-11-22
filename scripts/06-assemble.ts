@@ -18,7 +18,7 @@ import { FILES, DATA_FILE } from './lib/paths.ts';
 import { writeFile } from 'node:fs/promises';
 import type { ArtResult, Candidate, ImagesResult, LineResult, MetadataResult } from './lib/types.ts';
 import type { FirstLine } from '../src/lib/first-lines.ts';
-import { fold, loadConfig, loadOverrides, loadReviews, log, readJson, slugify, writeJson } from './lib/util.ts';
+import { cleanArtist, fold, loadConfig, loadOverrides, loadReviews, log, readJson, slugify, writeJson } from './lib/util.ts';
 import { ruleFromConfig, yearCheck } from './lib/year-rule.ts';
 
 const MUSEUM = { met: 'The Metropolitan Museum of Art', aic: 'Art Institute of Chicago' };
@@ -117,7 +117,7 @@ async function main() {
         portrait = {
           ...I.portrait,
           sourceUrl: P.pageUrl,
-          artist: P.artist,
+          artist: cleanArtist(P.artist),
           license: P.license.publicDomain ? 'Public domain' : P.license.name,
           licenseUrl: P.license.url,
           attributionRequired: !P.license.publicDomain,

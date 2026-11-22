@@ -82,6 +82,46 @@
     }
   },
   {
+    "gutenbergId": 2600,
+    "flags": [],
+    "artwork": {
+      "key": "met-437051",
+      "src": "/first-lines/art/met-437051-1800.webp",
+      "srcSmall": "/first-lines/art/met-437051-900.webp",
+      "width": 1716,
+      "height": 1194,
+      "color": "#a49168"
+    },
+    "portrait": {
+      "key": "l-n-tolstoy-prokudin-gorsky",
+      "src": "/first-lines/portraits/l-n-tolstoy-prokudin-gorsky-480.webp",
+      "srcSmall": "/first-lines/portraits/l-n-tolstoy-prokudin-gorsky-160.webp",
+      "width": 347,
+      "height": 480,
+      "color": "#7b6e66"
+    }
+  },
+  {
+    "gutenbergId": 28054,
+    "flags": [],
+    "artwork": {
+      "key": "aic-20530",
+      "src": "/first-lines/art/aic-20530-1800.webp",
+      "srcSmall": "/first-lines/art/aic-20530-900.webp",
+      "width": 1686,
+      "height": 1372,
+      "color": "#949f9a"
+    },
+    "portrait": {
+      "key": "vasily-perov-google-art-project",
+      "src": "/first-lines/portraits/vasily-perov-google-art-project-480.webp",
+      "srcSmall": "/first-lines/portraits/vasily-perov-google-art-project-160.webp",
+      "width": 384,
+      "height": 480,
+      "color": "#2a1f14"
+    }
+  },
+  {
     "gutenbergId": 2701,
     "flags": [],
     "artwork": {
@@ -204,6 +244,46 @@
     }
   },
   {
+    "gutenbergId": 103,
+    "flags": [],
+    "artwork": {
+      "key": "aic-889",
+      "src": "/first-lines/art/aic-889-1800.webp",
+      "srcSmall": "/first-lines/art/aic-889-900.webp",
+      "width": 1686,
+      "height": 1091,
+      "color": "#5a6650"
+    },
+    "portrait": {
+      "key": "felix-nadar-1820-1910-portraits-jules-verne",
+      "src": "/first-lines/portraits/felix-nadar-1820-1910-portraits-jules-verne-480.webp",
+      "srcSmall": "/first-lines/portraits/felix-nadar-1820-1910-portraits-jules-verne-160.webp",
+      "width": 343,
+      "height": 480,
+      "color": "#414141"
+    }
+  },
+  {
+    "gutenbergId": 74,
+    "flags": [],
+    "artwork": {
+      "key": "met-13313",
+      "src": "/first-lines/art/met-13313-1800.webp",
+      "srcSmall": "/first-lines/art/met-13313-900.webp",
+      "width": 1541,
+      "height": 1800,
+      "color": "#555634"
+    },
+    "portrait": {
+      "key": "marktwain-loc",
+      "src": "/first-lines/portraits/marktwain-loc-480.webp",
+      "srcSmall": "/first-lines/portraits/marktwain-loc-160.webp",
+      "width": 387,
+      "height": 480,
+      "color": "#363636"
+    }
+  },
+  {
     "gutenbergId": 345,
     "flags": [],
     "artwork": {
@@ -318,6 +398,88 @@
     }
   },
   {
+    "gutenbergId": 18857,
+    "flags": [],
+    "artwork": {
+      "key": "aic-146701",
+      "src": "/first-lines/art/aic-146701-1800.webp",
+      "srcSmall": "/first-lines/art/aic-146701-900.webp",
+      "width": 1465,
+      "height": 1800,
+      "color": "#393221"
+    },
+    "portrait": {
+      "key": "felix-nadar-1820-1910-portraits-jules-verne",
+      "src": "/first-lines/portraits/felix-nadar-1820-1910-portraits-jules-verne-480.webp",
+      "srcSmall": "/first-lines/portraits/felix-nadar-1820-1910-portraits-jules-verne-160.webp",
+      "width": 343,
+      "height": 480,
+      "color": "#414141"
+    }
+  },
+  {
+    "gutenbergId": 219,
+    "flags": [],
+    "artwork": {
+      "key": "aic-109926",
+      "src": "/first-lines/art/aic-109926-1800.webp",
+      "srcSmall": "/first-lines/art/aic-109926-900.webp",
+      "width": 1686,
+      "height": 1081,
+      "color": "#776739"
+    },
+    "portrait": {
+      "key": "joseph-conrad-remastered-to-black-and-white",
+      "src": "/first-lines/portraits/joseph-conrad-remastered-to-black-and-white-480.webp",
+      "srcSmall": "/first-lines/portraits/joseph-conrad-remastered-to-black-and-white-160.webp",
+      "width": 349,
+      "height": 480,
+      "color": "#535353"
+    }
+  },
+  {
+    "gutenbergId": 161,
+    "flags": [
+      "art-low-resolution-843x417"
+    ],
+    "artwork": {
+      "key": "aic-49651",
+      "src": "/first-lines/art/aic-49651-1800.webp",
+      "srcSmall": "/first-lines/art/aic-49651-900.webp",
+      "width": 843,
+      "height": 417,
+      "color": "#473924"
+    },
+    "portrait": {
+      "key": "cassandraausten-janeausten-c-1810-hires",
+      "src": "/first-lines/portraits/cassandraausten-janeausten-c-1810-hires-480.webp",
+      "srcSmall": "/first-lines/portraits/cassandraausten-janeausten-c-1810-hires-160.webp",
+      "width": 372,
+      "height": 480,
+      "color": "#dcd3cc"
+    }
+  },
+  {
+    "gutenbergId": 514,
+    "flags": [],
+    "artwork": {
+      "key": "aic-263513",
+      "src": "/first-lines/art/aic-263513-1800.webp",
+      "srcSmall": "/first-lines/art/aic-263513-900.webp",
+      "width": 1224,
+      "height": 1800,
+      "color": "#7f7659"
+    },
+    "portrait": {
+      "key": "louisa-may-alcott-c-1870-warren-s-portraits-boston",
+      "src": "/first-lines/portraits/louisa-may-alcott-c-1870-warren-s-portraits-boston-480.webp",
+      "srcSmall": "/first-lines/portraits/louisa-may-alcott-c-1870-warren-s-portraits-boston-160.webp",
+      "width": 295,
+      "height": 480,
+      "color": "#917260"
+    }
+  },
+  {
     "gutenbergId": 1661,
     "flags": [],
     "artwork": {
@@ -358,6 +520,28 @@
     }
   },
   {
+    "gutenbergId": 27805,
+    "flags": [
+      "art-low-resolution-843x680"
+    ],
+    "artwork": {
+      "key": "aic-234960",
+      "src": "/first-lines/art/aic-234960-1800.webp",
+      "srcSmall": "/first-lines/art/aic-234960-900.webp",
+      "width": 843,
+      "height": 680,
+      "color": "#5e614c"
+    },
+    "portrait": {
+      "key": "kennethgrahame",
+      "src": "/first-lines/portraits/kennethgrahame-480.webp",
+      "srcSmall": "/first-lines/portraits/kennethgrahame-160.webp",
+      "width": 224,
+      "height": 300,
+      "color": "#4a4a4a"
+    }
+  },
+  {
     "gutenbergId": 16,
     "flags": [],
     "artwork": {
@@ -375,6 +559,20 @@
       "width": 348,
       "height": 480,
       "color": "#4d3f31"
+    }
+  },
+  {
+    "gutenbergId": 308,
+    "flags": [
+      "portrait-download-failed"
+    ],
+    "artwork": {
+      "key": "aic-65845",
+      "src": "/first-lines/art/aic-65845-1800.webp",
+      "srcSmall": "/first-lines/art/aic-65845-900.webp",
+      "width": 1686,
+      "height": 1009,
+      "color": "#7b713b"
     }
   },
   {
