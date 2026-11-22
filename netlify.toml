@@ -1,0 +1,42 @@
+# Netlify: builds the static site from GitHub on every push to main, and
+# gives every other branch and pull request its own preview URL.
+# The content pipeline (scripts/) is not run here; its output is committed.
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "24"
+
+# Astro's bundled CSS and JS have content hashes in their names, so they can
+# be cached forever.
+[[headers]]
+  for = "/_astro/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Paintings, portraits, covers and brand images keep their names when they're
+# regenerated, so cache them for a week rather than forever.
+[[headers]]
+  for = "/first-lines/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/books/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/brand/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+# Basic hardening for every page.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "SAMEORIGIN"
