@@ -90,7 +90,7 @@ Everything hand-made lives in `content/overrides.json`:
 ## Brand and pages
 
 - **All site text is in `content/site.yaml`:** the press name and email, the top-bar links, button labels, the About page copy, the contact form's labels, topics and messages. Edit it and rebuild; `npm run dev` picks up changes live.
-- `/` is First Lines, and `/about/` is the About page with the contact form.
+- `/` is First Lines, `/editing/` is the Editing & Ghostwriting page, and `/about/` is the About page with the contact form. The editing page's links open the form with a topic chosen (`/about/?topic=Ghostwriting#contact`); the topic must match one in `about.contact.topics`.
 - Source logos are in `assets/`. `node scripts/brand-assets.ts` builds the web versions in `public/brand/`: the elephant mask the header colours with a gold foil gradient, the gold nested mark on the About page, the favicons, and the link-preview image.
 - The header wordmark is live text in Playfair Display, laid out like the logo lock-up (elephant, thin rule, three lines).
 - Each opening line is set like the start of a printed chapter: a gold Playfair drop cap (sunk three lines, or raised for short one-line openings), the first words in small capitals, and the elephant as an ornament on the rule below.

@@ -17,6 +17,8 @@ site:
   nav:
     - label: First lines
       href: /
+    - label: Editing
+      href: /editing/
     - label: About
       href: /about/
   copyright: Paper Elephant Publishing
@@ -37,6 +39,65 @@ firstLines:
     selfPortrait: self-portrait
     textSource: Project Gutenberg
     portraitSource: Wikimedia Commons
+
+# The Editing & Ghostwriting page. Copy carried over from raileebradshaw.com
+# (November 2026). Don't add rates, packages, turnaround times or results
+# claims unless Railee confirms them.
+editing:
+  pageTitle: Editing & Ghostwriting · Paper Elephant Publishing
+  description: Book editing and ghostwriting from Railee Bradshaw, an Oregon author and editor.
+  intro:
+    kicker: Editing & ghostwriting
+    heading:
+      - Editing &
+      - ghostwriting.
+    lede: >-
+      Book editing and ghostwriting from Railee Bradshaw,
+      the owner of Paper Elephant Publishing.
+    paragraphs:
+      - >-
+        Railee is an editor and ghostwriter with a degree in English/Writing
+        and Communications from Eastern Oregon University. She has edited
+        books for other authors, ghostwritten a spiritual memoir, and written
+        and published her own novel. She is especially drawn to projects that
+        involve research.
+      - Every project is different. If you are not sure whether yours is a fit, ask.
+  # From AmyJae Springer's Amazon review of The Gingerbread House (Kindle),
+  # December 11, 2025. The review discloses the editing relationship; keep the
+  # attribution saying she is an editing client reviewing the novel.
+  testimonial:
+    quote: "…the brilliant editor behind my own books."
+    name: AmyJae Springer
+    role: author and editing client, reviewing
+    work: The Gingerbread House
+    source: on Amazon
+  services:
+    heading: Services
+    # Shown on each service, linking to the contact form with its topic chosen.
+    askLabel: Ask about this
+    items:
+      # TODO: Railee hasn't signed off on this service yet.
+      - name: Developmental Editing
+        text: Clear, honest notes on story, structure, character and pacing, and a plan for your next draft.
+        topic: Editing
+      # TODO: Railee hasn't signed off on this service yet.
+      - name: Ghostwriting
+        text: Your story in your voice, written with you from the first conversation to the finished manuscript.
+        topic: Ghostwriting
+      # TODO: Railee hasn't signed off on this service yet.
+      - name: Research / Story Support
+        text: Facts checked, history dug up and plot problems untangled, for the parts of a book that need digging.
+        topic: Research / story support
+      - name: Other / Not Sure
+        text: Not sure what you need yet? Describe the project and Railee will tell you plainly how she can help.
+        topic: General enquiry
+  cta:
+    kicker: Get in touch
+    heading: Start a conversation
+    text: Tell Railee about your project, even if it does not fit neatly into one of the services above.
+    button: Send Railee an inquiry
+    # Which contact-form topic the button chooses.
+    topic: General enquiry
 
 about:
   pageTitle: About · Paper Elephant Publishing
@@ -78,11 +139,15 @@ about:
     kicker: Contact
     heading: Get in touch
     text: >-
-      For general inquiries, rights and permissions,
-      or press-related matters, please use the form below.
+      For editing and ghostwriting, general inquiries, rights and
+      permissions, or press-related matters, please use the form below.
     emailPrefix: Or email
+    # The editing page links here with ?topic=<one of these> to pre-select it.
     topics:
       - General enquiry
+      - Editing
+      - Ghostwriting
+      - Research / story support
       - Books and publications
       - Rights and permissions
       - Press and events

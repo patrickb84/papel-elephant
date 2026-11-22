@@ -120,6 +120,11 @@ const formText = JSON.stringify({ errors: contact.errors, status: contact.status
       return ok;
     }
 
+    // ?topic=Editing (from the editing page) chooses that subject in the form.
+    const topic = new URLSearchParams(window.location.search).get('topic');
+    const select = form.querySelector<HTMLSelectElement>('#cf-topic');
+    if (topic && select && [...select.options].some((o) => o.value === topic)) select.value = topic;
+
     const fields = [...form.querySelectorAll<HTMLInputElement | HTMLTextAreaElement>('[required]')];
     fields.forEach((f) => f.addEventListener('blur', () => f.value && check(f)));
     fields.forEach((f) => f.addEventListener('input', () => f.getAttribute('aria-invalid') === 'true' && check(f)));

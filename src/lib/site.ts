@@ -25,6 +25,18 @@ export interface SiteContent {
       portraitSource: string;
     };
   };
+  editing: {
+    pageTitle: string;
+    description: string;
+    intro: { kicker: string; heading: string[]; lede: string; paragraphs: string[] };
+    testimonial: { quote: string; name: string; role: string; work: string; source: string };
+    services: {
+      heading: string;
+      askLabel: string;
+      items: { name: string; text: string; topic: string }[];
+    };
+    cta: { kicker: string; heading: string; text: string; button: string; topic: string };
+  };
   about: {
     pageTitle: string;
     description: string;

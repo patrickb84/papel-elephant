@@ -94,6 +94,15 @@ const path = Astro.url.pathname.replace(/\/?$/, '/');
     transition: transform 220ms ease;
   }
   nav a:hover::after, nav a[aria-current='page']::after { transform: scaleX(1); }
+  /* Phones: tighten the lock-up and links so three links fit beside it. */
+  @media (max-width: 480px) {
+    .brand { gap: 0.6rem; }
+    .brand-mark { width: 2.2rem; height: 2.6rem; }
+    .brand-rule { height: 2.5rem; }
+    .brand-word { font-size: 0.94rem; }
+    nav ul { gap: 0.9rem; }
+    nav a { font-size: 0.86rem; }
+  }
   @media (prefers-reduced-motion: reduce) {
     .brand-mark, nav a::after { transition: none; }
   }

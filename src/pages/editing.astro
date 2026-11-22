@@ -1,0 +1,214 @@
+---
+import Base from '../layouts/Base.astro';
+import { CONTENT, SITE } from '../lib/site';
+
+// All text on this page comes from content/site.yaml (editing: ...).
+const { editing } = CONTENT;
+const { intro, testimonial, services, cta } = editing;
+const numerals = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x'];
+// Links to the About page's contact form with a topic already chosen.
+const contactLink = (topic: string) => `/about/?topic=${encodeURIComponent(topic)}#contact`;
+---
+
+<Base title={editing.pageTitle} description={editing.description}>
+  <main id="main" class="editing">
+    <section class="intro">
+      <div class="intro-text">
+        <p class="kicker">{intro.kicker}</p>
+        <h1>{intro.heading.map((line, i) => <>{i > 0 && <br />}{line}</>)}</h1>
+        <p class="lede">{intro.lede}</p>
+        {intro.paragraphs.map((p) => <p>{p}</p>)}
+      </div>
+      <figure class="quote">
+        <blockquote><p>{testimonial.quote}</p></blockquote>
+        <figcaption>
+          <span class="quote-name">{testimonial.name}</span>{`, ${testimonial.role} `}<cite>{testimonial.work}</cite>{` ${testimonial.source}`}
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="services" aria-labelledby="services-title">
+      <h2 id="services-title" class="visually-hidden">{services.heading}</h2>
+      {services.items.map((item, i) => (
+        <article class="service">
+          <p class="service-n" aria-hidden="true">{numerals[i] ?? i + 1}.</p>
+          <h3>{item.name}</h3>
+          <p>{item.text}</p>
+          <a class="service-link" href={contactLink(item.topic)}>
+            {services.askLabel}<span class="visually-hidden">: {item.name}</span>
+          </a>
+        </article>
+      ))}
+    </section>
+
+    <section class="cta" aria-labelledby="cta-title">
+      <p class="kicker">{cta.kicker}</p>
+      <h2 id="cta-title">{cta.heading}</h2>
+      <p>{cta.text}</p>
+      <a class="button" href={contactLink(cta.topic)}>{cta.button}</a>
+    </section>
+
+    <footer class="site-foot">
+      <span>© {new Date().getFullYear()} {SITE.copyright}</span>
+    </footer>
+  </main>
+</Base>
+
+<style>
+  .editing {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 0 var(--gutter);
+  }
+
+  .kicker {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 0 0 1.25rem;
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--gold);
+  }
+  .kicker::before {
+    content: '';
+    width: 2.5rem;
+    height: 1px;
+    background: var(--foil);
+  }
+
+  h1, h2, h3 {
+    font-family: var(--display);
+    font-weight: 450;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+  }
+
+  /* Intro ------------------------------------------------------------------ */
+  .intro {
+    display: grid;
+    gap: 2.5rem;
+    align-items: center;
+    padding: clamp(2.5rem, 7vw, 6rem) 0 clamp(2.5rem, 6vw, 5rem);
+  }
+  @media (min-width: 860px) {
+    .intro { grid-template-columns: 1.15fr 1fr; gap: clamp(2.5rem, 6vw, 5rem); }
+  }
+  h1 {
+    margin: 0 0 1.5rem;
+    font-size: clamp(2.6rem, 6vw, 4.6rem);
+    line-height: 1.02;
+  }
+  .lede {
+    font-size: clamp(1.2rem, 1.8vw, 1.45rem);
+    line-height: 1.45;
+    color: var(--ink);
+    margin: 0 0 1rem;
+  }
+  .intro-text p:not(.kicker):not(.lede) {
+    font-size: 1.08rem;
+    color: var(--ink-soft);
+    max-width: 34rem;
+  }
+
+  /* The client quote, set like an epigraph. */
+  .quote {
+    margin: 0;
+    padding: 0 0 0 clamp(1.25rem, 3vw, 2rem);
+    border-left: 1px solid var(--gold-soft);
+    max-width: 26rem;
+    justify-self: center;
+  }
+  .quote blockquote { margin: 0 0 1rem; }
+  .quote blockquote p {
+    margin: 0;
+    font-family: var(--display);
+    font-style: italic;
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    line-height: 1.2;
+    color: var(--ink);
+    hanging-punctuation: first;
+  }
+  .quote figcaption {
+    font-size: 0.95rem;
+    line-height: 1.45;
+    color: var(--ink-soft);
+  }
+  .quote-name { color: var(--ink); }
+
+  /* Services --------------------------------------------------------------- */
+  .services {
+    display: grid;
+    gap: 2rem;
+    padding: clamp(2rem, 5vw, 3.5rem) 0;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+  @media (min-width: 640px) {
+    .services { grid-template-columns: repeat(2, 1fr); gap: 2.5rem clamp(1.5rem, 4vw, 3rem); }
+  }
+  @media (min-width: 1020px) {
+    .services { grid-template-columns: repeat(4, 1fr); }
+  }
+  .service { display: flex; flex-direction: column; }
+  .service-n {
+    margin: 0 0 0.4rem;
+    font-family: var(--display);
+    font-style: italic;
+    font-size: 1.4rem;
+    color: var(--gold);
+  }
+  .service h3 { margin: 0 0 0.6rem; font-size: 1.35rem; line-height: 1.15; }
+  .service p { margin: 0; color: var(--ink-soft); font-size: 1.02rem; }
+  .service-link {
+    align-self: flex-start;
+    margin-top: auto;
+    padding-top: 0.9rem;
+    font-family: var(--sans);
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  /* Call to action --------------------------------------------------------- */
+  .cta {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    padding: clamp(2.5rem, 7vw, 5.5rem) 0;
+  }
+  .cta .kicker::after {
+    content: '';
+    width: 2.5rem;
+    height: 1px;
+    background: var(--foil);
+  }
+  .cta h2 { margin: 0 0 1rem; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.05; }
+  .cta p:not(.kicker) { margin: 0 0 1.75rem; color: var(--ink-soft); font-size: 1.08rem; max-width: 30rem; }
+  .button {
+    display: inline-flex;
+    align-items: center;
+    min-height: 46px;
+    padding: 0.65rem 1.5rem;
+    font: 500 0.95rem/1 var(--sans);
+    color: var(--paper);
+    background: var(--ink);
+    border: 1px solid var(--ink);
+    border-radius: 999px;
+    text-decoration: none;
+    transition: background-color 160ms ease, color 160ms ease, border-color 160ms ease;
+  }
+  .button:hover { background: transparent; color: var(--ink); border-color: var(--gold); }
+  @media (prefers-reduced-motion: reduce) {
+    .button { transition: none; }
+  }
+
+  .site-foot {
+    padding: 1.5rem 0 2rem;
+    border-top: 1px solid var(--rule);
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    color: var(--ink-faint);
+    text-align: center;
+  }
+</style>

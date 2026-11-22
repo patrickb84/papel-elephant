@@ -10,6 +10,7 @@ web
 
 - **Readers who love books.** They arrive for First Lines: read an opening line beside a painting, shuffle to another, and sometimes follow the link to read the whole book free on Project Gutenberg. Success means they enjoy it, stay a while and come back.
 - **Writers thinking about submitting.** They want to know whether the press is real and right for their manuscript, then get in touch through the contact form's Submissions topic.
+- **Writers looking for an editor or ghostwriter.** The press's owner, Railee Bradshaw, takes on editing and ghostwriting. They want to know what she offers and whether their project fits, then send an inquiry through the contact form with the matching topic.
 - **Trade contacts.** Agents, journalists, booksellers and event organisers looking for a way to reach the press about rights, press or events.
 - **The owner's own circle.** For now, a lot of traffic will be friends and family. The site also works as the press's calling card.
 
@@ -28,14 +29,15 @@ The press doesn't open with a catalogue. It opens with a curated reading experie
 - A static Astro site with no backend, database, CMS or runtime API. The collection is `src/data/first-lines.json` plus WebP images in `public/first-lines/`, produced by the content pipeline in `scripts/` and checked by hand through `content/reviews.json` and `content/overrides.json`.
 - All site copy lives in `content/site.yaml`.
 - The contact form posts to a third-party form service (`PUBLIC_CONTACT_ENDPOINT`) when one is set. Until then it opens the visitor's email app.
-- Pages: `/` (First Lines) and `/about/` (about the press plus the contact form).
+- Pages: `/` (First Lines), `/editing/` (Railee's editing and ghostwriting services) and `/about/` (about the press plus the contact form). Links to `/about/?topic=<topic>#contact` pre-select a contact topic.
 
 ## Capabilities and Constraints
 
 - First Lines: a random book on load, **Another book** to shuffle (skipping about the last 20 shown), `#<id>` deep links, image preloading with a crossfade, an average-colour placeholder and fallbacks for failed images, full painting and portrait credits, and licence attribution where CC BY or BY-SA requires it.
 - The page works without JavaScript. The build renders one entry as plain HTML.
 - Nothing is invented to fill gaps. A first line, year, painting or portrait that doesn't pass the pipeline's checks isn't published.
-- Contact topics: General enquiry, Submissions, Rights and permissions, Press and events.
+- Contact topics: General enquiry, Editing, Ghostwriting, Research / story support, Books and publications, Rights and permissions, Press and events.
+- **Open:** three of the four services on `/editing/` (Developmental Editing, Ghostwriting, Research / Story Support) are unconfirmed descriptions carried over from raileebradshaw.com and marked `TODO` in `content/site.yaml`. They need Railee's sign-off before launch.
 - **Open:** the published book's title, details and where to buy it aren't on the site yet. Whether and how the site will show the press's own books is undecided.
 - **Open:** the About copy and the contact address `hello@paperelephantpublishing.com` are placeholders (marked `PLACEHOLDER` in `content/site.yaml`).
 - **Open:** whether the press is currently open to submissions, and on what terms.
@@ -51,7 +53,9 @@ The press doesn't open with a catalogue. It opens with a curated reading experie
 
 - The First Lines collection: real opening lines, paintings and portraits, all with recorded sources and licences (`src/data/first-lines.json`, `content/REPORT.md`).
 - The brand logos in `assets/`.
-- **Absent, so never fabricate:** About copy, the published book's details, cover art, reviews, testimonials, sales or reader numbers, author bios, a submissions policy, team members, and any other titles.
+- Railee Bradshaw owns the press (Paper Elephant Publishing LLC). She has a degree in English/Writing and Communications from Eastern Oregon University, has edited books for other authors, ghostwrote a spiritual memoir, and wrote and published her own novel, The Gingerbread House (as R.M. Whitaker).
+- One testimonial: AmyJae Springer, an author and editing client, in her Amazon review of The Gingerbread House (December 11, 2025): "…the brilliant editor behind my own books." The review is of the novel, so the attribution must say so.
+- **Absent, so never fabricate:** About copy, the published book's details, cover art, other reviews or testimonials, editing rates, packages, turnaround times, years of experience, client results, sales or reader numbers, author bios, a submissions policy, team members, and any other titles.
 
 ## Product Principles
 
