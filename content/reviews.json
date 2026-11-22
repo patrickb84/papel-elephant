@@ -1,0 +1,1155 @@
+{
+  "lines": {
+    "11": {
+      "status": "approved",
+      "ref": "aa2e6aaa666b",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "12": {
+      "status": "approved",
+      "ref": "e98f75cada9d",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "16": {
+      "status": "approved",
+      "ref": "61da785f211b",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "33": {
+      "status": "approved",
+      "ref": "257d36c883f1",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "35": {
+      "status": "approved",
+      "ref": "02526cfcf39b",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "36": {
+      "status": "approved",
+      "ref": "b13bba37a495",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "43": {
+      "status": "approved",
+      "ref": "4119aa4ce2ae",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "45": {
+      "status": "approved",
+      "ref": "6f62935a8d2b",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "46": {
+      "status": "approved",
+      "ref": "d536a06b16b9",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "60": {
+      "status": "approved",
+      "ref": "08825d4e48d4",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "74": {
+      "status": "approved",
+      "ref": "e624883b4d4e",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "76": {
+      "status": "approved",
+      "ref": "c675a8486a31",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "82": {
+      "status": "approved",
+      "ref": "c00631b4a5ed",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "84": {
+      "status": "approved",
+      "ref": "02533c065f1a",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "86": {
+      "status": "approved",
+      "ref": "2aea77bb88ee",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "98": {
+      "status": "approved",
+      "ref": "5ea83f6faae8",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "103": {
+      "status": "approved",
+      "ref": "9af7dfd5e40b",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "105": {
+      "status": "approved",
+      "ref": "7bedd4b12f21",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "108": {
+      "status": "approved",
+      "ref": "f8fdc4d87964",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "120": {
+      "status": "approved",
+      "ref": "0baa23703785",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "121": {
+      "status": "approved",
+      "ref": "cac7192175bb",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "131": {
+      "status": "approved",
+      "ref": "6a3049cc8e05",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "135": {
+      "status": "approved",
+      "ref": "c253f17b5a7c",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "139": {
+      "status": "approved",
+      "ref": "558bcf2a0bd2",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "141": {
+      "status": "approved",
+      "ref": "d029a078d4f8",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "145": {
+      "status": "approved",
+      "ref": "ca6c13a0551b",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "155": {
+      "status": "approved",
+      "ref": "a256a562d432",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "158": {
+      "status": "approved",
+      "ref": "3423430e8710",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "159": {
+      "status": "approved",
+      "ref": "c0bf1cf39532",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "161": {
+      "status": "approved",
+      "ref": "3b97b55f1b05",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "175": {
+      "status": "approved",
+      "ref": "e3efafd99213",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "201": {
+      "status": "approved",
+      "ref": "4a4c920d81e0",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "203": {
+      "status": "approved",
+      "ref": "035153d973ef",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "215": {
+      "status": "approved",
+      "ref": "c8fec9bb6f2c",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "217": {
+      "status": "approved",
+      "ref": "056611f43e9d",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "219": {
+      "status": "approved",
+      "ref": "760c644701d3",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "236": {
+      "status": "approved",
+      "ref": "8c73d4654779",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "244": {
+      "status": "approved",
+      "ref": "6d9fb277370a",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "271": {
+      "status": "approved",
+      "ref": "1e4de01728e3",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "308": {
+      "status": "approved",
+      "ref": "0fa23e38153c",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "345": {
+      "status": "approved",
+      "ref": "d69e4b0ce3bc",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "370": {
+      "status": "approved",
+      "ref": "5653ff9e8fba",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "378": {
+      "status": "approved",
+      "ref": "b8d378011c18",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "468": {
+      "status": "approved",
+      "ref": "ca7495618b3b",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "479": {
+      "status": "approved",
+      "ref": "f92392c10d96",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "514": {
+      "status": "approved",
+      "ref": "8dc4bf9ccc51",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "521": {
+      "status": "approved",
+      "ref": "d0b5735f09d4",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "580": {
+      "status": "approved",
+      "ref": "0a1d22c2488a",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "599": {
+      "status": "approved",
+      "ref": "777ccdf54122",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "600": {
+      "status": "approved",
+      "ref": "a33cdea2bdc9",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "689": {
+      "status": "approved",
+      "ref": "96137cc387f4",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "696": {
+      "status": "approved",
+      "ref": "ceae384be112",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "766": {
+      "status": "approved",
+      "ref": "4422cf85ec8e",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "767": {
+      "status": "approved",
+      "ref": "d4f493ea2da5",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "768": {
+      "status": "approved",
+      "ref": "790c890d0d05",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "863": {
+      "status": "approved",
+      "ref": "4e859e9fbf64",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "910": {
+      "status": "approved",
+      "ref": "1860c78034be",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "913": {
+      "status": "approved",
+      "ref": "6848eb70b044",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "940": {
+      "status": "approved",
+      "ref": "6e1765239ae3",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "967": {
+      "status": "approved",
+      "ref": "9b7c875c1704",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "969": {
+      "status": "approved",
+      "ref": "c24b71cdf97a",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "996": {
+      "status": "approved",
+      "ref": "7a361dd7317a",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "1013": {
+      "status": "approved",
+      "ref": "6ba0242f5b62",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "1023": {
+      "status": "approved",
+      "ref": "c02b50786499",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "1056": {
+      "status": "approved",
+      "ref": "9a499d03b395",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "1079": {
+      "status": "approved",
+      "ref": "aabba57cb268",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "1081": {
+      "status": "approved",
+      "ref": "79d44077d17b",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "1184": {
+      "status": "approved",
+      "ref": "128333bfca49",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "1237": {
+      "status": "approved",
+      "ref": "839702ee92ef",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "1257": {
+      "status": "approved",
+      "ref": "ea324a1dc35c",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "1259": {
+      "status": "approved",
+      "ref": "7b706b0a5741",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "1260": {
+      "status": "approved",
+      "ref": "ee155dda13e4",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "1290": {
+      "status": "approved",
+      "ref": "afd66abbf244",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "1307": {
+      "status": "approved",
+      "ref": "1698c1a02966",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "1342": {
+      "status": "approved",
+      "ref": "7010fc1a2916",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "1399": {
+      "status": "approved",
+      "ref": "e5a6bbcdc1c1",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "1400": {
+      "status": "approved",
+      "ref": "bba3c28a7674",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "1450": {
+      "status": "approved",
+      "ref": "b75c89402552",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "1661": {
+      "status": "approved",
+      "ref": "a50e14ef19eb",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "1837": {
+      "status": "approved",
+      "ref": "c856e24c8cc9",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "1938": {
+      "status": "approved",
+      "ref": "307e74b73886",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "1952": {
+      "status": "approved",
+      "ref": "9c065c443cc1",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "2083": {
+      "status": "approved",
+      "ref": "e79bdb4fa505",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "2097": {
+      "status": "approved",
+      "ref": "a9536cfd1285",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "2145": {
+      "status": "approved",
+      "ref": "1cab7f9bd79b",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "2166": {
+      "status": "approved",
+      "ref": "3bb2d84b184b",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "2197": {
+      "status": "approved",
+      "ref": "93cdd918b6b0",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "2226": {
+      "status": "approved",
+      "ref": "19f4e953a221",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "2302": {
+      "status": "approved",
+      "ref": "c9c08948b121",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "2350": {
+      "status": "approved",
+      "ref": "19d002370c2d",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "2413": {
+      "status": "approved",
+      "ref": "ac33f854991b",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "2434": {
+      "status": "approved",
+      "ref": "f8839bbe5ddf",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "2488": {
+      "status": "approved",
+      "ref": "1f4c7cfe8382",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "2500": {
+      "status": "approved",
+      "ref": "85c5db497c56",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "2527": {
+      "status": "approved",
+      "ref": "a514d55ed538",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "2554": {
+      "status": "approved",
+      "ref": "f22484d85b68",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "2600": {
+      "status": "approved",
+      "ref": "4a24d20a56e7",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "2609": {
+      "status": "approved",
+      "ref": "1dcd4e0d9a31",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "2610": {
+      "status": "approved",
+      "ref": "9558c9a93582",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "2638": {
+      "status": "approved",
+      "ref": "a5b5797f71ff",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "2701": {
+      "status": "approved",
+      "ref": "66dd9ca8f44e",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "2814": {
+      "status": "approved",
+      "ref": "1ba3f2a6a61c",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "2853": {
+      "status": "approved",
+      "ref": "4ea62860228c",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "3070": {
+      "status": "approved",
+      "ref": "bec8da8c9510",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "3289": {
+      "status": "approved",
+      "ref": "dc591dc66ac4",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "3526": {
+      "status": "approved",
+      "ref": "f801367c726f",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "3808": {
+      "status": "approved",
+      "ref": "6489b0775e57",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "4078": {
+      "status": "approved",
+      "ref": "d90fdf1fb7a5",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "4217": {
+      "status": "approved",
+      "ref": "306e695e11b8",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "4300": {
+      "status": "approved",
+      "ref": "aa603033fa9e",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "5200": {
+      "status": "approved",
+      "ref": "094106672ab9",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "5230": {
+      "status": "approved",
+      "ref": "305c8657acf5",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "5658": {
+      "status": "approved",
+      "ref": "6da72e2df79c",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "6593": {
+      "status": "approved",
+      "ref": "8bdd3707528a",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "7849": {
+      "status": "approved",
+      "ref": "95457ce5f3f1",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "8117": {
+      "status": "approved",
+      "ref": "03f6e7eee278",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "8993": {
+      "status": "approved",
+      "ref": "8126f0b2f7be",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "10007": {
+      "status": "approved",
+      "ref": "dd0057631aa2",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "10339": {
+      "status": "approved",
+      "ref": "5e7f782f7045",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "10935": {
+      "status": "approved",
+      "ref": "9df760ff76de",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "12051": {
+      "status": "approved",
+      "ref": "2ef015f69c9a",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "12901": {
+      "status": "approved",
+      "ref": "cd35181b11c9",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "14838": {
+      "status": "approved",
+      "ref": "6fd8e1ee49d4",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "16457": {
+      "status": "approved",
+      "ref": "507fbcb11362",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "17157": {
+      "status": "approved",
+      "ref": "af95c7f2be3e",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "17396": {
+      "status": "approved",
+      "ref": "dd2511ba9184",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "18857": {
+      "status": "approved",
+      "ref": "db438c369790",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "19942": {
+      "status": "approved",
+      "ref": "109cf9ff8275",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "20781": {
+      "status": "approved",
+      "ref": "67fcc7bc81ec",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "23700": {
+      "status": "approved",
+      "ref": "312c023ec32e",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "25305": {
+      "status": "approved",
+      "ref": "514a52ba4dba",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "27805": {
+      "status": "approved",
+      "ref": "7f71a2b7edb1",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "28054": {
+      "status": "approved",
+      "ref": "0272c88489c8",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "29413": {
+      "status": "approved",
+      "ref": "c11f84965e49",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "37536": {
+      "status": "approved",
+      "ref": "e9d3bc50eb62",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "43936": {
+      "status": "approved",
+      "ref": "969b6dc30d9b",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "56528": {
+      "status": "approved",
+      "ref": "c7d3996d3449",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "58866": {
+      "status": "approved",
+      "ref": "6ba4b369b4e5",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "60976": {
+      "status": "approved",
+      "ref": "3896af471544",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "64317": {
+      "status": "approved",
+      "ref": "2fafb231492d",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "67138": {
+      "status": "approved",
+      "ref": "6b46c96d64a0",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "68283": {
+      "status": "approved",
+      "ref": "e0aee132ef4d",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "69700": {
+      "status": "approved",
+      "ref": "6e43e58759e7",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    },
+    "70114": {
+      "status": "approved",
+      "ref": "2d0f5986c5af",
+      "by": "Claude (AI review against the Gutenberg text)",
+      "date": "2026-11-22",
+      "note": "read in context; overrides applied where the extraction landed on front matter"
+    }
+  },
+  "art": {
+    "11": {
+      "status": "approved",
+      "ref": "aic:44018",
+      "by": "Claude (AI visual review)",
+      "date": "2026-11-22",
+      "note": "same-year pick from the candidate sheet"
+    },
+    "16": {
+      "status": "approved",
+      "ref": "aic:8983",
+      "by": "Claude (AI visual review)",
+      "date": "2026-11-22",
+      "note": "same-year pick from the candidate sheet"
+    },
+    "46": {
+      "status": "approved",
+      "ref": "aic:5355",
+      "by": "Claude (AI visual review)",
+      "date": "2026-11-22",
+      "note": "same-year pick from the candidate sheet"
+    },
+    "76": {
+      "status": "approved",
+      "ref": "aic:20199",
+      "by": "Claude (AI visual review)",
+      "date": "2026-11-22",
+      "note": "same-year pick from the candidate sheet"
+    },
+    "84": {
+      "status": "approved",
+      "ref": "aic:183293",
+      "by": "Claude (AI visual review)",
+      "date": "2026-11-22",
+      "note": "same-year pick from the candidate sheet"
+    },
+    "98": {
+      "status": "approved",
+      "ref": "aic:896",
+      "by": "Claude (AI visual review)",
+      "date": "2026-11-22",
+      "note": "same-year pick from the candidate sheet"
+    },
+    "120": {
+      "status": "approved",
+      "ref": "aic:14620",
+      "by": "Claude (AI visual review)",
+      "date": "2026-11-22",
+      "note": "same-year pick from the candidate sheet"
+    },
+    "158": {
+      "status": "approved",
+      "ref": "aic:47582",
+      "by": "Claude (AI visual review)",
+      "date": "2026-11-22",
+      "note": "same-year pick from the candidate sheet"
+    },
+    "345": {
+      "status": "approved",
+      "ref": "aic:16564",
+      "by": "Claude (AI visual review)",
+      "date": "2026-11-22",
+      "note": "same-year pick from the candidate sheet"
+    },
+    "768": {
+      "status": "approved",
+      "ref": "aic:111646",
+      "by": "Claude (AI visual review)",
+      "date": "2026-11-22",
+      "note": "same-year pick from the candidate sheet"
+    },
+    "1260": {
+      "status": "approved",
+      "ref": "aic:94127",
+      "by": "Claude (AI visual review)",
+      "date": "2026-11-22",
+      "note": "same-year pick from the candidate sheet"
+    },
+    "1342": {
+      "status": "approved",
+      "ref": "aic:51541",
+      "by": "Claude (AI visual review)",
+      "date": "2026-11-22",
+      "note": "same-year pick from the candidate sheet"
+    },
+    "1399": {
+      "status": "approved",
+      "ref": "met:438010",
+      "by": "Claude (AI visual review)",
+      "date": "2026-11-22",
+      "note": "chosen from the candidate sheet"
+    },
+    "1400": {
+      "status": "approved",
+      "ref": "aic:72398",
+      "by": "Claude (AI visual review)",
+      "date": "2026-11-22",
+      "note": "same-year pick from the candidate sheet"
+    },
+    "1661": {
+      "status": "approved",
+      "ref": "aic:61128",
+      "by": "Claude (AI visual review)",
+      "date": "2026-11-22",
+      "note": "same-year pick from the candidate sheet"
+    },
+    "2554": {
+      "status": "approved",
+      "ref": "aic:6005",
+      "by": "Claude (AI visual review)",
+      "date": "2026-11-22",
+      "note": "chosen from the candidate sheet"
+    },
+    "2701": {
+      "status": "approved",
+      "ref": "aic:129639",
+      "by": "Claude (AI visual review)",
+      "date": "2026-11-22",
+      "note": "same-year pick from the candidate sheet"
+    },
+    "4078": {
+      "status": "approved",
+      "ref": "aic:64745",
+      "by": "Claude (AI visual review)",
+      "date": "2026-11-22",
+      "note": "same-year pick from the candidate sheet"
+    },
+    "5200": {
+      "status": "approved",
+      "ref": "aic:65920",
+      "by": "Claude (AI visual review)",
+      "date": "2026-11-22",
+      "note": "same-year pick from the candidate sheet"
+    },
+    "64317": {
+      "status": "approved",
+      "ref": "aic:27984",
+      "by": "Claude (AI visual review)",
+      "date": "2026-11-22",
+      "note": "chosen from the candidate sheet"
+    }
+  },
+  "portraits": {}
+}

@@ -1,0 +1,74 @@
+@import '@fontsource-variable/newsreader/opsz.css';
+@import '@fontsource-variable/newsreader/opsz-italic.css';
+@import '@fontsource-variable/instrument-sans/index.css';
+@import '@fontsource-variable/playfair-display/index.css';
+
+:root {
+  --paper: #f5f0e6;
+  --paper-deep: #ebe3d4;
+  --ink: #1c1a17;
+  --ink-soft: #57514a;
+  --ink-faint: #6f685f;
+  --rule: #d8cfbf;
+  --gold: #a07c2c;
+  --gold-soft: #c9a75a;
+
+  --serif: 'Newsreader Variable', 'Iowan Old Style', Georgia, serif;
+  --sans: 'Instrument Sans Variable', system-ui, sans-serif;
+  --display: 'Playfair Display Variable', 'Playfair Display', Georgia, serif;
+  /* Gold foil, after the brand's gold logo. */
+  --foil: linear-gradient(135deg, #a9792b 0%, #d9b768 38%, #f0d999 52%, #c49a4a 70%, #9c6f26 100%);
+  /* The small header mark needs a deeper foil to hold up on paper. */
+  --foil-mark: linear-gradient(135deg, #7d5a1c 0%, #a57a2e 45%, #c29b4e 55%, #87621f 100%);
+  --header-h: 5.5rem;
+
+  --gutter: clamp(1rem, 4vw, 3.5rem);
+  --fade: 380ms;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #171511;
+    --paper-deep: #211e18;
+    --ink: #eee7da;
+    --ink-soft: #b9b0a2;
+    --ink-faint: #8c8478;
+    --rule: #3a352c;
+    --gold: #d0ae63;
+    --gold-soft: #9c7f3e;
+    --foil-mark: var(--foil);
+    color-scheme: dark;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --fade: 0ms; }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-optical-sizing: auto;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a { color: inherit; text-decoration-color: var(--gold-soft); text-underline-offset: 0.18em; text-decoration-thickness: 1px; }
+a:hover { text-decoration-color: var(--gold); }
+
+:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 2px; }
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}

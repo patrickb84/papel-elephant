@@ -1,0 +1,362 @@
+---
+import Base from '../layouts/Base.astro';
+import { CONTENT, SITE } from '../lib/site';
+
+// All text on this page comes from content/site.yaml (about: ...).
+const { about } = CONTENT;
+const { intro, notes, contact } = about;
+const numerals = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x'];
+// Messages the form script needs, from the same YAML.
+const formText = JSON.stringify({ errors: contact.errors, status: contact.status });
+---
+
+<Base title={about.pageTitle} description={about.description}>
+  <main id="main" class="about">
+    <section class="intro">
+      <div class="intro-text">
+        <p class="kicker">{intro.kicker}</p>
+        <h1>{intro.heading.map((line, i) => <>{i > 0 && <br />}{line}</>)}</h1>
+        <p class="lede">{intro.lede}</p>
+        {intro.paragraphs.map((p) => <p>{p}</p>)}
+      </div>
+      <figure class="intro-mark">
+        <img src="/brand/nested-mark.webp" width="900" height="871" alt="" decoding="async" />
+      </figure>
+    </section>
+
+    <section class="notes" aria-label={intro.kicker}>
+      {notes.map((note, i) => (
+        <article class="note">
+          <p class="note-n" aria-hidden="true">{numerals[i] ?? i + 1}.</p>
+          <h2>{note.title}</h2>
+          <p>{note.text}</p>
+          {note.link && <a class="note-link" href={note.link.href}>{note.link.label}</a>}
+        </article>
+      ))}
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact-text">
+        <p class="kicker">{contact.kicker}</p>
+        <h2 id="contact-title">{contact.heading}</h2>
+        <p>{contact.text}</p>
+        <p class="contact-email">
+          {contact.emailPrefix} <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
+        </p>
+      </div>
+
+      <form
+        class="contact-form"
+        action={SITE.contactEndpoint || `mailto:${SITE.email}`}
+        method="post"
+        enctype={SITE.contactEndpoint ? undefined : 'text/plain'}
+        data-endpoint={SITE.contactEndpoint}
+        data-email={SITE.email}
+        data-text={formText}
+        novalidate
+      >
+        <div class="field">
+          <label for="cf-name">{contact.labels.name}</label>
+          <input id="cf-name" name="name" type="text" autocomplete="name" required aria-describedby="cf-name-error" />
+          <p class="error" id="cf-name-error" data-error-for="cf-name"></p>
+        </div>
+        <div class="field">
+          <label for="cf-email">{contact.labels.email}</label>
+          <input id="cf-email" name="email" type="email" autocomplete="email" required aria-describedby="cf-email-error" />
+          <p class="error" id="cf-email-error" data-error-for="cf-email"></p>
+        </div>
+        <div class="field">
+          <label for="cf-topic">{contact.labels.topic}</label>
+          <select id="cf-topic" name="topic">
+            {contact.topics.map((t) => <option>{t}</option>)}
+          </select>
+        </div>
+        <div class="field">
+          <label for="cf-message">{contact.labels.message}</label>
+          <textarea id="cf-message" name="message" rows="6" required aria-describedby="cf-message-error"></textarea>
+          <p class="error" id="cf-message-error" data-error-for="cf-message"></p>
+        </div>
+        <!-- Spam trap: people never see or fill this field. -->
+        <div class="trap" aria-hidden="true">
+          <label for="cf-website">Website</label>
+          <input id="cf-website" name="_gotcha" type="text" tabindex="-1" autocomplete="off" />
+        </div>
+        <div class="form-foot">
+          <button class="send" type="submit">{contact.labels.send}</button>
+          <p class="status" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+    </section>
+
+    <footer class="site-foot">
+      <span>© {new Date().getFullYear()} {SITE.copyright}</span>
+    </footer>
+  </main>
+</Base>
+
+<script>
+  const form = document.querySelector<HTMLFormElement>('.contact-form');
+  if (form) {
+    const status = form.querySelector<HTMLElement>('.status')!;
+    const button = form.querySelector<HTMLButtonElement>('.send')!;
+    const endpoint = form.dataset.endpoint ?? '';
+    const email = form.dataset.email ?? '';
+
+    const text = JSON.parse(form.dataset.text ?? '{}') as {
+      errors: Record<'name' | 'email' | 'emailInvalid' | 'message', string>;
+      status: Record<'sending' | 'sent' | 'failed' | 'openedEmailApp', string>;
+    };
+    const messages: Record<string, string> = {
+      'cf-name': text.errors.name,
+      'cf-email': text.errors.email,
+      'cf-message': text.errors.message,
+    };
+
+    function check(field: HTMLInputElement | HTMLTextAreaElement): boolean {
+      const error = form!.querySelector<HTMLElement>(`[data-error-for="${field.id}"]`);
+      const ok = field.checkValidity() && field.value.trim() !== '';
+      field.setAttribute('aria-invalid', ok ? 'false' : 'true');
+      if (error) error.textContent = ok ? '' : field.type === 'email' && field.value ? text.errors.emailInvalid : messages[field.id];
+      return ok;
+    }
+
+    const fields = [...form.querySelectorAll<HTMLInputElement | HTMLTextAreaElement>('[required]')];
+    fields.forEach((f) => f.addEventListener('blur', () => f.value && check(f)));
+    fields.forEach((f) => f.addEventListener('input', () => f.getAttribute('aria-invalid') === 'true' && check(f)));
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      const results = fields.map(check);
+      if (results.includes(false)) {
+        fields[results.indexOf(false)].focus();
+        return;
+      }
+      const data = new FormData(form);
+      if (data.get('_gotcha')) return; // a bot filled the trap
+
+      if (!endpoint) {
+        // No form service configured: hand the message to the visitor's email app.
+        const subject = `${data.get('topic')}, from ${data.get('name')}`;
+        const body = `${data.get('message')}\n\n${data.get('name')}\n${data.get('email')}`;
+        window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        status.textContent = text.status.openedEmailApp;
+        return;
+      }
+
+      button.disabled = true;
+      status.textContent = text.status.sending;
+      try {
+        const res = await fetch(endpoint, { method: 'POST', body: data, headers: { Accept: 'application/json' } });
+        if (!res.ok) throw new Error(String(res.status));
+        form.reset();
+        status.textContent = text.status.sent;
+      } catch {
+        status.textContent = text.status.failed.replace('{email}', email);
+      } finally {
+        button.disabled = false;
+      }
+    });
+  }
+</script>
+
+<style>
+  .about {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 0 var(--gutter);
+  }
+
+  .kicker {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 0 0 1.25rem;
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--gold);
+  }
+  .kicker::before {
+    content: '';
+    width: 2.5rem;
+    height: 1px;
+    background: var(--foil);
+  }
+
+  h1, h2 {
+    font-family: var(--display);
+    font-weight: 450;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+  }
+
+  /* Intro ------------------------------------------------------------------ */
+  .intro {
+    display: grid;
+    gap: 2.5rem;
+    align-items: center;
+    padding: clamp(2.5rem, 7vw, 6rem) 0 clamp(2.5rem, 6vw, 5rem);
+  }
+  @media (min-width: 860px) {
+    .intro { grid-template-columns: 1.15fr 1fr; }
+  }
+  h1 {
+    margin: 0 0 1.5rem;
+    font-size: clamp(2.6rem, 6vw, 4.6rem);
+    line-height: 1.02;
+  }
+  .lede {
+    font-size: clamp(1.2rem, 1.8vw, 1.45rem);
+    line-height: 1.45;
+    color: var(--ink);
+    margin: 0 0 1rem;
+  }
+  .intro-text p:not(.kicker):not(.lede) {
+    font-size: 1.08rem;
+    color: var(--ink-soft);
+    max-width: 34rem;
+  }
+  .intro-mark {
+    margin: 0;
+    display: grid;
+    place-items: center;
+    max-width: 30rem;
+    width: 100%;
+    justify-self: center;
+  }
+  .intro-mark img {
+    width: 100%;
+    height: auto;
+    display: block;
+    animation: settle 1.4s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+  @keyframes settle {
+    from { opacity: 0; transform: rotate(-6deg) scale(0.96); }
+    to { opacity: 1; transform: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .intro-mark img { animation: none; }
+  }
+
+  /* Notes ------------------------------------------------------------------ */
+  .notes {
+    display: grid;
+    gap: 2rem;
+    padding: clamp(2rem, 5vw, 3.5rem) 0;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+  @media (min-width: 760px) {
+    .notes { grid-template-columns: repeat(3, 1fr); gap: clamp(1.5rem, 4vw, 3.5rem); }
+  }
+  .note-n {
+    margin: 0 0 0.4rem;
+    font-family: var(--display);
+    font-style: italic;
+    font-size: 1.4rem;
+    color: var(--gold);
+  }
+  .note h2 { margin: 0 0 0.6rem; font-size: 1.45rem; }
+  .note p { margin: 0; color: var(--ink-soft); font-size: 1.02rem; }
+  .note-link {
+    display: inline-block;
+    margin-top: 0.9rem;
+    font-family: var(--sans);
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  /* Contact ---------------------------------------------------------------- */
+  .contact {
+    display: grid;
+    gap: 2.5rem;
+    padding: clamp(2.5rem, 7vw, 5.5rem) 0;
+  }
+  @media (min-width: 860px) {
+    .contact { grid-template-columns: 1fr 1.25fr; align-items: start; }
+  }
+  .contact h2 { margin: 0 0 1rem; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.05; }
+  .contact-text p:not(.kicker) { color: var(--ink-soft); font-size: 1.05rem; max-width: 26rem; }
+  .contact-email { font-family: var(--sans); font-size: 0.95rem !important; }
+
+  .contact-form {
+    display: grid;
+    gap: 1.25rem;
+    padding: clamp(1.25rem, 3vw, 2.25rem);
+    background: var(--paper-deep);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+  }
+  .field { display: grid; gap: 0.4rem; }
+  label {
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--ink);
+  }
+  input, select, textarea {
+    width: 100%;
+    font: 1.02rem/1.4 var(--serif);
+    color: var(--ink);
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: 0.7rem 0.8rem;
+    min-height: 44px;
+    transition: border-color 160ms ease, box-shadow 160ms ease;
+  }
+  textarea { resize: vertical; min-height: 9rem; }
+  select {
+    appearance: none;
+    background-image: linear-gradient(45deg, transparent 50%, var(--ink-soft) 50%), linear-gradient(135deg, var(--ink-soft) 50%, transparent 50%);
+    background-position: calc(100% - 1.2rem) 55%, calc(100% - 0.85rem) 55%;
+    background-size: 0.35rem 0.35rem;
+    background-repeat: no-repeat;
+    padding-right: 2.5rem;
+  }
+  input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--gold) 25%, transparent);
+  }
+  [aria-invalid='true'] { border-color: #b0452f; }
+  .error {
+    margin: 0;
+    min-height: 0;
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    color: #b0452f;
+  }
+  .error:empty { display: none; }
+  @media (prefers-color-scheme: dark) {
+    [aria-invalid='true'] { border-color: #e0846f; }
+    .error { color: #e0846f; }
+  }
+
+  .trap { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+
+  .form-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; }
+  .send {
+    min-height: 46px;
+    padding: 0.65rem 1.5rem;
+    font: 500 0.95rem/1 var(--sans);
+    color: var(--paper);
+    background: var(--ink);
+    border: 1px solid var(--ink);
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background-color 160ms ease, color 160ms ease, border-color 160ms ease;
+  }
+  .send:hover { background: transparent; color: var(--ink); border-color: var(--gold); }
+  .send:disabled { opacity: 0.6; cursor: progress; }
+  .status { margin: 0; font-family: var(--sans); font-size: 0.88rem; color: var(--ink-soft); }
+
+  .site-foot {
+    padding: 1.5rem 0 2rem;
+    border-top: 1px solid var(--rule);
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    color: var(--ink-faint);
+    text-align: center;
+  }
+</style>

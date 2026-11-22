@@ -1,0 +1,57 @@
+---
+import '../styles/global.css';
+import SiteHeader from '../components/SiteHeader.astro';
+import { SITE } from '../lib/site';
+
+interface Props {
+  title: string;
+  description: string;
+}
+const { title, description } = Astro.props;
+const canonical = new URL(Astro.url.pathname, SITE.url).href;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SITE.name} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={new URL('/brand/og-image.png', SITE.url).href} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#f5f0e6" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#171511" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="/brand/favicon-64.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/brand/apple-touch-icon.png" />
+    <!-- Lets pages hide build-time content until a script has prepared it. -->
+    <script is:inline>document.documentElement.classList.add('js');</script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <SiteHeader />
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  .skip-link {
+    position: absolute;
+    left: 1rem;
+    top: -3rem;
+    z-index: 10;
+    padding: 0.5rem 0.9rem;
+    font-family: var(--sans);
+    font-size: 0.9rem;
+    background: var(--ink);
+    color: var(--paper);
+    border-radius: 4px;
+  }
+  .skip-link:focus { top: 1rem; }
+</style>

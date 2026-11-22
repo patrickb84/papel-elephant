@@ -1,0 +1,5942 @@
+[
+  {
+    "gutenbergId": 11,
+    "title": "Alice's Adventures in Wonderland",
+    "authors": [
+      {
+        "name": "Carroll, Lewis",
+        "displayName": "Lewis Carroll",
+        "birthYear": 1832,
+        "deathYear": 1898
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Fantasy fiction",
+      "Children's stories",
+      "Imaginary places -- Juvenile fiction",
+      "Alice (Fictitious character from Carroll) -- Juvenile fiction"
+    ],
+    "bookshelves": [
+      "Children's Literature",
+      "Category: Children & Young Adult Reading",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/11/pg11.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/11/11-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/11/11-0.txt",
+      "https://www.gutenberg.org/cache/epub/11/pg11.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/11/11.txt",
+      "http://mirrors.xmission.com/gutenberg/1/11/11.txt"
+    ],
+    "links": 124,
+    "wikidataWork": "Q92640"
+  },
+  {
+    "gutenbergId": 1399,
+    "title": "Anna Karenina",
+    "authors": [
+      {
+        "name": "Tolstoy, Leo",
+        "displayName": "Leo Tolstoy",
+        "birthYear": 1828,
+        "deathYear": 1910
+      }
+    ],
+    "translators": [
+      {
+        "name": "Garnett, Constance",
+        "displayName": "Constance Garnett",
+        "birthYear": 1861,
+        "deathYear": 1946
+      }
+    ],
+    "subjects": [
+      "Adultery -- Fiction",
+      "Didactic fiction",
+      "Love stories",
+      "Married women -- Fiction",
+      "Russia -- Fiction"
+    ],
+    "bookshelves": [
+      "Best Books Ever Listings",
+      "Harvard Classics",
+      "Movie Books",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: Russian Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/1399/pg1399.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/3/9/1399/1399-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/3/9/1399/1399-0.txt",
+      "https://www.gutenberg.org/cache/epub/1399/pg1399.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/3/9/1399/1399.txt",
+      "http://mirrors.xmission.com/gutenberg/1/3/9/1399/1399.txt"
+    ],
+    "links": 109,
+    "wikidataWork": "Q147787"
+  },
+  {
+    "gutenbergId": 2554,
+    "title": "Crime and Punishment",
+    "authors": [
+      {
+        "name": "Dostoyevsky, Fyodor",
+        "displayName": "Fyodor Dostoyevsky",
+        "birthYear": 1821,
+        "deathYear": 1881
+      }
+    ],
+    "translators": [
+      {
+        "name": "Garnett, Constance",
+        "displayName": "Constance Garnett",
+        "birthYear": 1861,
+        "deathYear": 1946
+      }
+    ],
+    "subjects": [
+      "Detective and mystery stories",
+      "Psychological fiction",
+      "Saint Petersburg (Russia) -- Fiction",
+      "Murder -- Fiction",
+      "Crime -- Psychological aspects -- Fiction"
+    ],
+    "bookshelves": [
+      "Best Books Ever Listings",
+      "Crime Fiction",
+      "Harvard Classics",
+      "Category: Crime, Thrillers and Mystery",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: Russian Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/2554/pg2554.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/5/5/2554/2554-0.txt",
+      "http://mirrors.xmission.com/gutenberg/2/5/5/2554/2554-0.txt",
+      "https://www.gutenberg.org/cache/epub/2554/pg2554.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/5/5/2554/2554.txt",
+      "http://mirrors.xmission.com/gutenberg/2/5/5/2554/2554.txt"
+    ],
+    "links": 109,
+    "wikidataWork": "Q165318"
+  },
+  {
+    "gutenbergId": 1342,
+    "title": "Pride and Prejudice",
+    "authors": [
+      {
+        "name": "Austen, Jane",
+        "displayName": "Jane Austen",
+        "birthYear": 1775,
+        "deathYear": 1817
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "England -- Fiction",
+      "Young women -- Fiction",
+      "Love stories",
+      "Sisters -- Fiction",
+      "Domestic fiction",
+      "Courtship -- Fiction",
+      "Social classes -- Fiction"
+    ],
+    "bookshelves": [
+      "Best Books Ever Listings",
+      "Harvard Classics",
+      "Category: Romance",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/1342/pg1342.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/3/4/1342/1342-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/3/4/1342/1342-0.txt",
+      "https://www.gutenberg.org/cache/epub/1342/pg1342.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/3/4/1342/1342.txt",
+      "http://mirrors.xmission.com/gutenberg/1/3/4/1342/1342.txt"
+    ],
+    "links": 100,
+    "wikidataWork": "Q170583"
+  },
+  {
+    "gutenbergId": 135,
+    "title": "Les Misérables",
+    "authors": [
+      {
+        "name": "Hugo, Victor",
+        "displayName": "Victor Hugo",
+        "birthYear": 1802,
+        "deathYear": 1885
+      }
+    ],
+    "translators": [
+      {
+        "name": "Hapgood, Isabel Florence",
+        "displayName": "Isabel Florence Hapgood",
+        "birthYear": 1850,
+        "deathYear": 1928
+      }
+    ],
+    "subjects": [
+      "Historical fiction",
+      "Orphans -- Fiction",
+      "Paris (France) -- Fiction",
+      "Epic literature",
+      "Ex-convicts -- Fiction"
+    ],
+    "bookshelves": [
+      "Historical Fiction",
+      "Banned Books from Anne Haight's list",
+      "Category: Historical Novels",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: French Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/135/pg135.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/3/135/135-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/3/135/135-0.txt",
+      "https://www.gutenberg.org/cache/epub/135/pg135.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/3/135/135.txt",
+      "http://mirrors.xmission.com/gutenberg/1/3/135/135.txt"
+    ],
+    "links": 98,
+    "wikidataWork": "Q180736"
+  },
+  {
+    "gutenbergId": 2600,
+    "title": "War and Peace",
+    "authors": [
+      {
+        "name": "Tolstoy, Leo",
+        "displayName": "Leo Tolstoy",
+        "birthYear": 1828,
+        "deathYear": 1910
+      }
+    ],
+    "translators": [
+      {
+        "name": "Maude, Aylmer",
+        "displayName": "Aylmer Maude",
+        "birthYear": 1858,
+        "deathYear": 1938
+      },
+      {
+        "name": "Maude, Louise",
+        "displayName": "Louise Maude",
+        "birthYear": 1855,
+        "deathYear": 1939
+      }
+    ],
+    "subjects": [
+      "Historical fiction",
+      "War stories",
+      "Napoleonic Wars, 1800-1815 -- Campaigns -- Russia -- Fiction",
+      "Russia -- History -- Alexander I, 1801-1825 -- Fiction",
+      "Aristocracy (Social class) -- Russia -- Fiction"
+    ],
+    "bookshelves": [
+      "Napoleonic(Bookshelf)",
+      "Opera",
+      "Historical Fiction",
+      "Best Books Ever Listings",
+      "Movie Books",
+      "Category: Historical Novels",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: Russian Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/2600/pg2600.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/6/0/2600/2600-0.txt",
+      "http://mirrors.xmission.com/gutenberg/2/6/0/2600/2600-0.txt",
+      "https://www.gutenberg.org/cache/epub/2600/pg2600.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/6/0/2600/2600.txt",
+      "http://mirrors.xmission.com/gutenberg/2/6/0/2600/2600.txt"
+    ],
+    "links": 97,
+    "wikidataWork": "Q161531"
+  },
+  {
+    "gutenbergId": 28054,
+    "title": "The Brothers Karamazov",
+    "authors": [
+      {
+        "name": "Dostoyevsky, Fyodor",
+        "displayName": "Fyodor Dostoyevsky",
+        "birthYear": 1821,
+        "deathYear": 1881
+      }
+    ],
+    "translators": [
+      {
+        "name": "Garnett, Constance",
+        "displayName": "Constance Garnett",
+        "birthYear": 1861,
+        "deathYear": 1946
+      }
+    ],
+    "subjects": [
+      "Didactic fiction",
+      "Fathers and sons -- Fiction",
+      "Russia -- Social life and customs -- 1533-1917 -- Fiction",
+      "Brothers -- Fiction"
+    ],
+    "bookshelves": [
+      "Best Books Ever Listings",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: Russian Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/28054/pg28054.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/8/0/5/28054/28054-0.txt",
+      "http://mirrors.xmission.com/gutenberg/2/8/0/5/28054/28054-0.txt",
+      "https://www.gutenberg.org/cache/epub/28054/pg28054.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/8/0/5/28054/28054.txt",
+      "http://mirrors.xmission.com/gutenberg/2/8/0/5/28054/28054.txt"
+    ],
+    "links": 91,
+    "wikidataWork": "Q183157"
+  },
+  {
+    "gutenbergId": 2701,
+    "title": "Moby Dick",
+    "authors": [
+      {
+        "name": "Melville, Herman",
+        "displayName": "Herman Melville",
+        "birthYear": 1819,
+        "deathYear": 1891
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Whaling -- Fiction",
+      "Sea stories",
+      "Psychological fiction",
+      "Ship captains -- Fiction",
+      "Adventure stories",
+      "Mentally ill -- Fiction",
+      "Ahab, Captain (Fictitious character) -- Fiction",
+      "Whales -- Fiction",
+      "Whaling ships -- Fiction"
+    ],
+    "bookshelves": [
+      "Best Books Ever Listings",
+      "Category: Adventure",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: American Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/2701/pg2701.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/7/0/2701/2701-0.txt",
+      "http://mirrors.xmission.com/gutenberg/2/7/0/2701/2701-0.txt",
+      "https://www.gutenberg.org/cache/epub/2701/pg2701.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/7/0/2701/2701.txt",
+      "http://mirrors.xmission.com/gutenberg/2/7/0/2701/2701.txt"
+    ],
+    "links": 90,
+    "wikidataWork": "Q174596"
+  },
+  {
+    "gutenbergId": 84,
+    "title": "Frankenstein",
+    "authors": [
+      {
+        "name": "Shelley, Mary Wollstonecraft",
+        "displayName": "Mary Wollstonecraft Shelley",
+        "birthYear": 1797,
+        "deathYear": 1851
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Science fiction",
+      "Horror tales",
+      "Gothic fiction",
+      "Scientists -- Fiction",
+      "Monsters -- Fiction",
+      "Frankenstein, Victor (Fictitious character) -- Fiction",
+      "Frankenstein's monster (Fictitious character) -- Fiction"
+    ],
+    "bookshelves": [
+      "Precursors of Science Fiction",
+      "Gothic Fiction",
+      "Movie Books",
+      "Science Fiction by Women",
+      "Category: Science-Fiction & Fantasy",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/84/pg84.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/8/84/84-0.txt",
+      "http://mirrors.xmission.com/gutenberg/8/84/84-0.txt",
+      "https://www.gutenberg.org/cache/epub/84/pg84.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/8/84/84.txt",
+      "http://mirrors.xmission.com/gutenberg/8/84/84.txt"
+    ],
+    "links": 88,
+    "wikidataWork": "Q150827"
+  },
+  {
+    "gutenbergId": 120,
+    "title": "Treasure Island",
+    "authors": [
+      {
+        "name": "Stevenson, Robert Louis",
+        "displayName": "Robert Louis Stevenson",
+        "birthYear": 1850,
+        "deathYear": 1894
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Sea stories",
+      "Pirates -- Fiction",
+      "Treasure troves -- Fiction",
+      "Treasure Island (Imaginary place) -- Fiction"
+    ],
+    "bookshelves": [
+      "Children's Literature",
+      "Historical Fiction",
+      "Best Books Ever Listings",
+      "Pirates, Buccaneers, Corsairs, etc.",
+      "Category: Adventure",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/120/pg120.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/2/120/120-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/2/120/120-0.txt",
+      "https://www.gutenberg.org/cache/epub/120/pg120.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/2/120/120.txt",
+      "http://mirrors.xmission.com/gutenberg/1/2/120/120.txt"
+    ],
+    "links": 85,
+    "wikidataWork": "Q185118"
+  },
+  {
+    "gutenbergId": 5200,
+    "title": "Metamorphosis",
+    "authors": [
+      {
+        "name": "Kafka, Franz",
+        "displayName": "Franz Kafka",
+        "birthYear": 1883,
+        "deathYear": 1924
+      }
+    ],
+    "translators": [
+      {
+        "name": "Wyllie, David (Translator)",
+        "displayName": "David Wyllie",
+        "birthYear": null,
+        "deathYear": null
+      }
+    ],
+    "subjects": [
+      "Psychological fiction",
+      "Metamorphosis -- Fiction"
+    ],
+    "bookshelves": [
+      "Horror",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: German Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/5200/pg5200.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/5/2/0/5200/5200-0.txt",
+      "http://mirrors.xmission.com/gutenberg/5/2/0/5200/5200-0.txt",
+      "https://www.gutenberg.org/cache/epub/5200/pg5200.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/5/2/0/5200/5200.txt",
+      "http://mirrors.xmission.com/gutenberg/5/2/0/5200/5200.txt"
+    ],
+    "links": 85,
+    "wikidataWork": "Q184222"
+  },
+  {
+    "gutenbergId": 17157,
+    "title": "Gulliver's Travels into Several Remote Regions of the World",
+    "authors": [
+      {
+        "name": "Swift, Jonathan",
+        "displayName": "Jonathan Swift",
+        "birthYear": 1667,
+        "deathYear": 1745
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Fantasy fiction",
+      "Satire",
+      "Travelers -- Fiction",
+      "Gulliver, Lemuel (Fictitious character) -- Fiction",
+      "Voyages, Imaginary -- Early works to 1800"
+    ],
+    "bookshelves": [
+      "Category: Science-Fiction & Fantasy",
+      "Category: Humour",
+      "Category: Adventure",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/17157/pg17157.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/7/1/5/17157/17157-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/7/1/5/17157/17157-0.txt",
+      "https://www.gutenberg.org/cache/epub/17157/pg17157.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/7/1/5/17157/17157.txt",
+      "http://mirrors.xmission.com/gutenberg/1/7/1/5/17157/17157.txt"
+    ],
+    "links": 85,
+    "wikidataWork": "Q181488"
+  },
+  {
+    "gutenbergId": 4300,
+    "title": "Ulysses",
+    "authors": [
+      {
+        "name": "Joyce, James",
+        "displayName": "James Joyce",
+        "birthYear": 1882,
+        "deathYear": 1941
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "City and town life -- Fiction",
+      "Psychological fiction",
+      "Domestic fiction",
+      "Married people -- Fiction",
+      "Male friendship -- Fiction",
+      "Dublin (Ireland) -- Fiction",
+      "Epic literature",
+      "Artists -- Fiction",
+      "Jewish men -- Fiction",
+      "Alienation (Social psychology) -- Fiction"
+    ],
+    "bookshelves": [
+      "Best Books Ever Listings",
+      "Erotic Fiction",
+      "Banned Books from Anne Haight's list",
+      "Banned Books List from the American Library Association",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/4300/pg4300.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/4/3/0/4300/4300-0.txt",
+      "http://mirrors.xmission.com/gutenberg/4/3/0/4300/4300-0.txt",
+      "https://www.gutenberg.org/cache/epub/4300/pg4300.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/4/3/0/4300/4300.txt",
+      "http://mirrors.xmission.com/gutenberg/4/3/0/4300/4300.txt"
+    ],
+    "links": 84,
+    "wikidataWork": "Q6511"
+  },
+  {
+    "gutenbergId": 64317,
+    "title": "The Great Gatsby",
+    "authors": [
+      {
+        "name": "Fitzgerald, F. Scott (Francis Scott)",
+        "displayName": "F. Scott Fitzgerald",
+        "birthYear": 1896,
+        "deathYear": 1940
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Psychological fiction",
+      "First loves -- Fiction",
+      "Married women -- Fiction",
+      "Rich people -- Fiction",
+      "Long Island (N.Y.) -- Fiction"
+    ],
+    "bookshelves": [
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: American Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/64317/pg64317.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/6/4/3/1/64317/64317-0.txt",
+      "http://mirrors.xmission.com/gutenberg/6/4/3/1/64317/64317-0.txt",
+      "https://www.gutenberg.org/cache/epub/64317/pg64317.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/6/4/3/1/64317/64317.txt",
+      "http://mirrors.xmission.com/gutenberg/6/4/3/1/64317/64317.txt"
+    ],
+    "links": 84,
+    "wikidataWork": "Q214371"
+  },
+  {
+    "gutenbergId": 4078,
+    "title": "The Picture of Dorian Gray",
+    "authors": [
+      {
+        "name": "Wilde, Oscar",
+        "displayName": "Oscar Wilde",
+        "birthYear": 1854,
+        "deathYear": 1900
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Didactic fiction",
+      "Supernatural -- Fiction",
+      "Conduct of life -- Fiction",
+      "Portraits -- Fiction",
+      "Great Britain -- History -- Victoria, 1837-1901 -- Fiction",
+      "London (England) -- History -- 1800-1950 -- Fiction",
+      "Appearance (Philosophy) -- Fiction",
+      "Paranormal fiction"
+    ],
+    "bookshelves": [
+      "Movie Books",
+      "Contemporary Reviews",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/4078/pg4078.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/4/0/7/4078/4078-0.txt",
+      "http://mirrors.xmission.com/gutenberg/4/0/7/4078/4078-0.txt",
+      "https://www.gutenberg.org/cache/epub/4078/pg4078.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/4/0/7/4078/4078.txt",
+      "http://mirrors.xmission.com/gutenberg/4/0/7/4078/4078.txt"
+    ],
+    "links": 82,
+    "wikidataWork": "Q82464"
+  },
+  {
+    "gutenbergId": 103,
+    "title": "Around the World in Eighty Days",
+    "authors": [
+      {
+        "name": "Verne, Jules",
+        "displayName": "Jules Verne",
+        "birthYear": 1828,
+        "deathYear": 1905
+      }
+    ],
+    "translators": [
+      {
+        "name": "Towle, George M. (George Makepeace)",
+        "displayName": "George M. Towle",
+        "birthYear": 1841,
+        "deathYear": 1893
+      }
+    ],
+    "subjects": [
+      "Adventure stories",
+      "Voyages around the world -- Fiction"
+    ],
+    "bookshelves": [
+      "Adventure",
+      "Best Books Ever Listings",
+      "Movie Books",
+      "Category: Adventure",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: French Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/103/pg103.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/0/103/103-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/0/103/103-0.txt",
+      "https://www.gutenberg.org/cache/epub/103/pg103.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/0/103/103.txt",
+      "http://mirrors.xmission.com/gutenberg/1/0/103/103.txt"
+    ],
+    "links": 79,
+    "wikidataWork": "Q1219561"
+  },
+  {
+    "gutenbergId": 74,
+    "title": "The Adventures of Tom Sawyer, Complete",
+    "authors": [
+      {
+        "name": "Twain, Mark",
+        "displayName": "Mark Twain",
+        "birthYear": 1835,
+        "deathYear": 1910
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Humorous stories",
+      "Bildungsromans",
+      "Boys -- Fiction",
+      "Male friendship -- Fiction",
+      "Adventure stories",
+      "Missouri -- Fiction",
+      "Sawyer, Tom (Fictitious character) -- Fiction",
+      "Child witnesses -- Fiction",
+      "Runaway children -- Fiction",
+      "Mississippi River Valley -- Fiction"
+    ],
+    "bookshelves": [
+      "Banned Books from Anne Haight's list",
+      "Banned Books List from the American Library Association",
+      "Category: Adventure",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: American Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/74/pg74.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/7/74/74-0.txt",
+      "http://mirrors.xmission.com/gutenberg/7/74/74-0.txt",
+      "https://www.gutenberg.org/cache/epub/74/pg74.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/7/74/74.txt",
+      "http://mirrors.xmission.com/gutenberg/7/74/74.txt"
+    ],
+    "links": 77,
+    "wikidataWork": "Q326914"
+  },
+  {
+    "gutenbergId": 2488,
+    "title": "Twenty Thousand Leagues Under the Seas: An Underwater Tour of the World",
+    "authors": [
+      {
+        "name": "Verne, Jules",
+        "displayName": "Jules Verne",
+        "birthYear": 1828,
+        "deathYear": 1905
+      }
+    ],
+    "translators": [
+      {
+        "name": "Walter, Frederick Paul",
+        "displayName": "Frederick Paul Walter",
+        "birthYear": 1943,
+        "deathYear": 2024
+      }
+    ],
+    "subjects": [
+      "Science fiction",
+      "Submarines (Ships) -- Fiction",
+      "Sea stories",
+      "Adventure stories",
+      "Underwater exploration -- Fiction"
+    ],
+    "bookshelves": [
+      "Science Fiction",
+      "Movie Books",
+      "Category: Science-Fiction & Fantasy",
+      "Category: Adventure",
+      "Category: Classics of Literature",
+      "Category: French Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/2488/pg2488.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/4/8/2488/2488-0.txt",
+      "http://mirrors.xmission.com/gutenberg/2/4/8/2488/2488-0.txt",
+      "https://www.gutenberg.org/cache/epub/2488/pg2488.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/4/8/2488/2488.txt",
+      "http://mirrors.xmission.com/gutenberg/2/4/8/2488/2488.txt"
+    ],
+    "links": 77,
+    "wikidataWork": "Q183565"
+  },
+  {
+    "gutenbergId": 2610,
+    "title": "Notre-Dame de Paris",
+    "authors": [
+      {
+        "name": "Hugo, Victor",
+        "displayName": "Victor Hugo",
+        "birthYear": 1802,
+        "deathYear": 1885
+      }
+    ],
+    "translators": [
+      {
+        "name": "Hapgood, Isabel Florence",
+        "displayName": "Isabel Florence Hapgood",
+        "birthYear": 1850,
+        "deathYear": 1928
+      }
+    ],
+    "subjects": [
+      "Historical fiction",
+      "People with disabilities -- Fiction",
+      "France -- History -- Louis XI, 1461-1483 -- Fiction",
+      "Clergy -- Fiction",
+      "Man-woman relationships -- Fiction",
+      "Paris (France) -- History -- To 1515 -- Fiction",
+      "Notre-Dame de Paris (Cathedral) -- Fiction",
+      "Romances"
+    ],
+    "bookshelves": [
+      "Harvard Classics",
+      "Movie Books",
+      "Banned Books from Anne Haight's list",
+      "Category: Historical Novels",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: French Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/2610/pg2610.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/6/1/2610/2610-0.txt",
+      "http://mirrors.xmission.com/gutenberg/2/6/1/2610/2610-0.txt",
+      "https://www.gutenberg.org/cache/epub/2610/pg2610.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/6/1/2610/2610.txt",
+      "http://mirrors.xmission.com/gutenberg/2/6/1/2610/2610.txt"
+    ],
+    "links": 77,
+    "wikidataWork": "Q191380"
+  },
+  {
+    "gutenbergId": 345,
+    "title": "Dracula",
+    "authors": [
+      {
+        "name": "Stoker, Bram",
+        "displayName": "Bram Stoker",
+        "birthYear": 1847,
+        "deathYear": 1912
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Horror tales",
+      "Epistolary fiction",
+      "Gothic fiction",
+      "Vampires -- Fiction",
+      "Dracula, Count (Fictitious character) -- Fiction",
+      "Transylvania (Romania) -- Fiction",
+      "Whitby (England) -- Fiction"
+    ],
+    "bookshelves": [
+      "Horror",
+      "Gothic Fiction",
+      "Mystery Fiction",
+      "Movie Books",
+      "Category: Science-Fiction & Fantasy",
+      "Category: Crime, Thrillers and Mystery",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/345/pg345.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/3/4/345/345-0.txt",
+      "http://mirrors.xmission.com/gutenberg/3/4/345/345-0.txt",
+      "https://www.gutenberg.org/cache/epub/345/pg345.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/3/4/345/345.txt",
+      "http://mirrors.xmission.com/gutenberg/3/4/345/345.txt"
+    ],
+    "links": 76,
+    "wikidataWork": "Q41542"
+  },
+  {
+    "gutenbergId": 23700,
+    "title": "The Decameron of Giovanni Boccaccio",
+    "authors": [
+      {
+        "name": "Boccaccio, Giovanni",
+        "displayName": "Giovanni Boccaccio",
+        "birthYear": 1313,
+        "deathYear": 1375
+      }
+    ],
+    "translators": [
+      {
+        "name": "Payne, John",
+        "displayName": "John Payne",
+        "birthYear": 1842,
+        "deathYear": 1916
+      }
+    ],
+    "subjects": [
+      "Plague -- Europe -- History -- Fiction",
+      "Storytelling -- Fiction",
+      "Allegories",
+      "Frame stories"
+    ],
+    "bookshelves": [
+      "Best Books Ever Listings",
+      "Category: Short Stories",
+      "Category: Classics of Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/23700/pg23700.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/3/7/0/23700/23700-0.txt",
+      "http://mirrors.xmission.com/gutenberg/2/3/7/0/23700/23700-0.txt",
+      "https://www.gutenberg.org/cache/epub/23700/pg23700.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/3/7/0/23700/23700.txt",
+      "http://mirrors.xmission.com/gutenberg/2/3/7/0/23700/23700.txt"
+    ],
+    "links": 76,
+    "wikidataWork": "Q16438"
+  },
+  {
+    "gutenbergId": 46,
+    "title": "A Christmas Carol in Prose",
+    "authors": [
+      {
+        "name": "Dickens, Charles",
+        "displayName": "Charles Dickens",
+        "birthYear": 1812,
+        "deathYear": 1870
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Christmas stories",
+      "London (England) -- Fiction",
+      "Poor families -- Fiction",
+      "Ghost stories",
+      "Misers -- Fiction",
+      "Sick children -- Fiction",
+      "Scrooge, Ebenezer (Fictitious character) -- Fiction"
+    ],
+    "bookshelves": [
+      "Children's Literature",
+      "Christmas",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/46/pg46.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/4/46/46-0.txt",
+      "http://mirrors.xmission.com/gutenberg/4/46/46-0.txt",
+      "https://www.gutenberg.org/cache/epub/46/pg46.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/4/46/46.txt",
+      "http://mirrors.xmission.com/gutenberg/4/46/46.txt"
+    ],
+    "links": 75,
+    "wikidataWork": "Q62879"
+  },
+  {
+    "gutenbergId": 76,
+    "title": "Adventures of Huckleberry Finn",
+    "authors": [
+      {
+        "name": "Twain, Mark",
+        "displayName": "Mark Twain",
+        "birthYear": 1835,
+        "deathYear": 1910
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Humorous stories",
+      "Bildungsromans",
+      "Boys -- Fiction",
+      "Male friendship -- Fiction",
+      "Adventure stories",
+      "Missouri -- Fiction",
+      "Race relations -- Fiction",
+      "Runaway children -- Fiction",
+      "Finn, Huckleberry (Fictitious character) -- Fiction",
+      "Fugitive slaves -- Fiction",
+      "Mississippi River -- Fiction"
+    ],
+    "bookshelves": [
+      "Best Books Ever Listings",
+      "Banned Books from Anne Haight's list",
+      "Banned Books List from the American Library Association",
+      "Category: Adventure",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: American Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/76/pg76.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/7/76/76-0.txt",
+      "http://mirrors.xmission.com/gutenberg/7/76/76-0.txt",
+      "https://www.gutenberg.org/cache/epub/76/pg76.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/7/76/76.txt",
+      "http://mirrors.xmission.com/gutenberg/7/76/76.txt"
+    ],
+    "links": 73,
+    "wikidataWork": "Q215410"
+  },
+  {
+    "gutenbergId": 7849,
+    "title": "The Trial",
+    "authors": [
+      {
+        "name": "Kafka, Franz",
+        "displayName": "Franz Kafka",
+        "birthYear": 1883,
+        "deathYear": 1924
+      }
+    ],
+    "translators": [
+      {
+        "name": "Wyllie, David (Translator)",
+        "displayName": "David Wyllie",
+        "birthYear": null,
+        "deathYear": null
+      }
+    ],
+    "subjects": [
+      "Allegories",
+      "Trials -- Fiction"
+    ],
+    "bookshelves": [
+      "Best Books Ever Listings",
+      "Horror",
+      "Category: Novels",
+      "Category: German Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/7849/pg7849.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/7/8/4/7849/7849-0.txt",
+      "http://mirrors.xmission.com/gutenberg/7/8/4/7849/7849-0.txt",
+      "https://www.gutenberg.org/cache/epub/7849/pg7849.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/7/8/4/7849/7849.txt",
+      "http://mirrors.xmission.com/gutenberg/7/8/4/7849/7849.txt"
+    ],
+    "links": 73,
+    "wikidataWork": "Q36097"
+  },
+  {
+    "gutenbergId": 203,
+    "title": "Uncle Tom's Cabin",
+    "authors": [
+      {
+        "name": "Stowe, Harriet Beecher",
+        "displayName": "Harriet Beecher Stowe",
+        "birthYear": 1811,
+        "deathYear": 1896
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Slavery -- Fiction",
+      "Didactic fiction",
+      "Political fiction",
+      "Master and servant -- Fiction",
+      "African Americans -- Fiction",
+      "Southern States -- Fiction",
+      "Fugitive slaves -- Fiction",
+      "Plantation life -- Fiction",
+      "Uncle Tom (Fictitious character) -- Fiction",
+      "Enslaved persons -- Fiction"
+    ],
+    "bookshelves": [
+      "US Civil War",
+      "Slavery",
+      "Banned Books from Anne Haight's list",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: American Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/203/pg203.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/0/203/203-0.txt",
+      "http://mirrors.xmission.com/gutenberg/2/0/203/203-0.txt",
+      "https://www.gutenberg.org/cache/epub/203/pg203.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/0/203/203.txt",
+      "http://mirrors.xmission.com/gutenberg/2/0/203/203.txt"
+    ],
+    "links": 71,
+    "wikidataWork": "Q2222"
+  },
+  {
+    "gutenbergId": 1260,
+    "title": "Jane Eyre: An Autobiography",
+    "authors": [
+      {
+        "name": "Brontë, Charlotte",
+        "displayName": "Charlotte Brontë",
+        "birthYear": 1816,
+        "deathYear": 1855
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Orphans -- Fiction",
+      "England -- Fiction",
+      "Young women -- Fiction",
+      "Love stories",
+      "Governesses -- Fiction",
+      "Fathers and daughters -- Fiction",
+      "Mentally ill women -- Fiction",
+      "Charity-schools -- Fiction",
+      "Married people -- Fiction",
+      "Country homes -- Fiction",
+      "Bildungsromans"
+    ],
+    "bookshelves": [
+      "Category: Romance",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/1260/pg1260.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/2/6/1260/1260-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/2/6/1260/1260-0.txt",
+      "https://www.gutenberg.org/cache/epub/1260/pg1260.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/2/6/1260/1260.txt",
+      "http://mirrors.xmission.com/gutenberg/1/2/6/1260/1260.txt"
+    ],
+    "links": 70,
+    "wikidataWork": "Q182961"
+  },
+  {
+    "gutenbergId": 2638,
+    "title": "The Idiot",
+    "authors": [
+      {
+        "name": "Dostoyevsky, Fyodor",
+        "displayName": "Fyodor Dostoyevsky",
+        "birthYear": 1821,
+        "deathYear": 1881
+      }
+    ],
+    "translators": [
+      {
+        "name": "Martin, Eva (Translator)",
+        "displayName": "Eva Martin",
+        "birthYear": null,
+        "deathYear": null
+      }
+    ],
+    "subjects": [
+      "Historical fiction",
+      "Russia -- Social conditions -- 1801-1917 -- Fiction"
+    ],
+    "bookshelves": [
+      "Best Books Ever Listings",
+      "Category: Novels",
+      "Category: Russian Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/2638/pg2638.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/6/3/2638/2638-0.txt",
+      "http://mirrors.xmission.com/gutenberg/2/6/3/2638/2638-0.txt",
+      "https://www.gutenberg.org/cache/epub/2638/pg2638.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/6/3/2638/2638.txt",
+      "http://mirrors.xmission.com/gutenberg/2/6/3/2638/2638.txt"
+    ],
+    "links": 70,
+    "wikidataWork": "Q210784"
+  },
+  {
+    "gutenbergId": 236,
+    "title": "The Jungle Book",
+    "authors": [
+      {
+        "name": "Kipling, Rudyard",
+        "displayName": "Rudyard Kipling",
+        "birthYear": 1865,
+        "deathYear": 1936
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Short stories",
+      "Animals -- Fiction",
+      "Jungles -- Fiction",
+      "India -- Fiction",
+      "Jungle animals -- Fiction",
+      "Mowgli (Fictitious character) -- Fiction",
+      "Adventure stories, English",
+      "Feral children -- Fiction",
+      "India -- History -- 19th century -- Fiction"
+    ],
+    "bookshelves": [
+      "Scouts",
+      "Children's Literature",
+      "Movie Books",
+      "Contemporary Reviews",
+      "Category: Short Stories",
+      "Category: Children & Young Adult Reading",
+      "Category: Adventure",
+      "Category: British Literature",
+      "Nobel Prizes in Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/236/pg236.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/3/236/236-0.txt",
+      "http://mirrors.xmission.com/gutenberg/2/3/236/236-0.txt",
+      "https://www.gutenberg.org/cache/epub/236/pg236.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/3/236/236.txt",
+      "http://mirrors.xmission.com/gutenberg/2/3/236/236.txt"
+    ],
+    "links": 69,
+    "wikidataWork": "Q189509"
+  },
+  {
+    "gutenbergId": 1400,
+    "title": "Great Expectations",
+    "authors": [
+      {
+        "name": "Dickens, Charles",
+        "displayName": "Charles Dickens",
+        "birthYear": 1812,
+        "deathYear": 1870
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Orphans -- Fiction",
+      "England -- Fiction",
+      "Revenge -- Fiction",
+      "Bildungsromans",
+      "Young men -- Fiction",
+      "Man-woman relationships -- Fiction",
+      "Ex-convicts -- Fiction",
+      "Benefactors -- Fiction"
+    ],
+    "bookshelves": [
+      "Best Books Ever Listings",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/1400/pg1400.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/4/0/1400/1400-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/4/0/1400/1400-0.txt",
+      "https://www.gutenberg.org/cache/epub/1400/pg1400.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/4/0/1400/1400.txt",
+      "http://mirrors.xmission.com/gutenberg/1/4/0/1400/1400.txt"
+    ],
+    "links": 69,
+    "wikidataWork": "Q219552"
+  },
+  {
+    "gutenbergId": 766,
+    "title": "David Copperfield",
+    "authors": [
+      {
+        "name": "Dickens, Charles",
+        "displayName": "Charles Dickens",
+        "birthYear": 1812,
+        "deathYear": 1870
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Orphans -- Fiction",
+      "Autobiographical fiction",
+      "England -- Fiction",
+      "Bildungsromans",
+      "Young men -- Fiction",
+      "Boys -- Fiction",
+      "Stepfathers -- Fiction",
+      "Child labor -- Fiction"
+    ],
+    "bookshelves": [
+      "Harvard Classics",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/766/pg766.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/7/6/766/766-0.txt",
+      "http://mirrors.xmission.com/gutenberg/7/6/766/766-0.txt",
+      "https://www.gutenberg.org/cache/epub/766/pg766.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/7/6/766/766.txt",
+      "http://mirrors.xmission.com/gutenberg/7/6/766/766.txt"
+    ],
+    "links": 68,
+    "wikidataWork": "Q189811"
+  },
+  {
+    "gutenbergId": 43936,
+    "title": "The Wonderful Wizard of Oz",
+    "authors": [
+      {
+        "name": "Baum, L. Frank (Lyman Frank)",
+        "displayName": "L. Frank Baum",
+        "birthYear": 1856,
+        "deathYear": 1919
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Oz (Imaginary place) -- Juvenile fiction",
+      "Fantasy literature",
+      "Courage -- Juvenile fiction",
+      "Home -- Juvenile fiction",
+      "Good and evil -- Juvenile fiction",
+      "Dreams -- Juvenile fiction",
+      "Gale, Dorothy (Fictitious character) -- Juvenile fiction",
+      "Cowardly Lion (Fictitious character) -- Juvenile fiction",
+      "Cyclones -- Juvenile fiction",
+      "Scarecrow (Fictitious character from Baum) -- Juvenile fiction",
+      "Toto (Fictitious character) -- Juvenile fiction",
+      "Witches -- Juvenile fiction",
+      "Wizard of Oz (Fictitious character) -- Juvenile fiction",
+      "Tin Woodman (Fictitious character) -- Juvenile fiction"
+    ],
+    "bookshelves": [
+      "Category: Children & Young Adult Reading",
+      "Category: Adventure",
+      "Category: Novels"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/43936/pg43936.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/4/3/9/3/43936/43936-0.txt",
+      "http://mirrors.xmission.com/gutenberg/4/3/9/3/43936/43936-0.txt",
+      "https://www.gutenberg.org/cache/epub/43936/pg43936.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/4/3/9/3/43936/43936.txt",
+      "http://mirrors.xmission.com/gutenberg/4/3/9/3/43936/43936.txt"
+    ],
+    "links": 67,
+    "wikidataWork": "Q130295"
+  },
+  {
+    "gutenbergId": 36,
+    "title": "The war of the worlds",
+    "authors": [
+      {
+        "name": "Wells, H. G. (Herbert George)",
+        "displayName": "H. G. Wells",
+        "birthYear": 1866,
+        "deathYear": 1946
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Science fiction",
+      "War stories",
+      "Martians -- Fiction",
+      "Mars (Planet) -- Fiction",
+      "Space warfare -- Fiction",
+      "Imaginary wars and battles -- Fiction",
+      "Life on other planets -- Fiction"
+    ],
+    "bookshelves": [
+      "Science Fiction",
+      "Movie Books",
+      "Category: Science-Fiction & Fantasy",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/36/pg36.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/3/36/36-0.txt",
+      "http://mirrors.xmission.com/gutenberg/3/36/36-0.txt",
+      "https://www.gutenberg.org/cache/epub/36/pg36.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/3/36/36.txt",
+      "http://mirrors.xmission.com/gutenberg/3/36/36.txt"
+    ],
+    "links": 65,
+    "wikidataWork": "Q213019"
+  },
+  {
+    "gutenbergId": 98,
+    "title": "A Tale of Two Cities",
+    "authors": [
+      {
+        "name": "Dickens, Charles",
+        "displayName": "Charles Dickens",
+        "birthYear": 1812,
+        "deathYear": 1870
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Historical fiction",
+      "France -- History -- Revolution, 1789-1799 -- Fiction",
+      "London (England) -- History -- 18th century -- Fiction",
+      "War stories",
+      "Executions and executioners -- Fiction",
+      "French -- England -- London -- Fiction",
+      "Lookalikes -- Fiction",
+      "British -- France -- Paris -- Fiction",
+      "Paris (France) -- History -- 1789-1799 -- Fiction"
+    ],
+    "bookshelves": [
+      "Historical Fiction",
+      "Category: Historical Novels",
+      "Category: Classics of Literature",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/98/pg98.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/9/98/98-0.txt",
+      "http://mirrors.xmission.com/gutenberg/9/98/98-0.txt",
+      "https://www.gutenberg.org/cache/epub/98/pg98.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/9/98/98.txt",
+      "http://mirrors.xmission.com/gutenberg/9/98/98.txt"
+    ],
+    "links": 65,
+    "wikidataWork": "Q308918"
+  },
+  {
+    "gutenbergId": 19942,
+    "title": "Candide",
+    "authors": [
+      {
+        "name": "Voltaire",
+        "displayName": "Voltaire",
+        "birthYear": 1694,
+        "deathYear": 1778
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Satire",
+      "Optimism -- Fiction"
+    ],
+    "bookshelves": [
+      "Best Books Ever Listings",
+      "Banned Books from Anne Haight's list",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: French Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/19942/pg19942.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/9/9/4/19942/19942-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/9/9/4/19942/19942-0.txt",
+      "https://www.gutenberg.org/cache/epub/19942/pg19942.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/9/9/4/19942/19942.txt",
+      "http://mirrors.xmission.com/gutenberg/1/9/9/4/19942/19942.txt"
+    ],
+    "links": 65,
+    "wikidataWork": "Q215894"
+  },
+  {
+    "gutenbergId": 2527,
+    "title": "The Sorrows of Young Werther",
+    "authors": [
+      {
+        "name": "Goethe, Johann Wolfgang von",
+        "displayName": "Johann Wolfgang von Goethe",
+        "birthYear": 1749,
+        "deathYear": 1832
+      }
+    ],
+    "translators": [
+      {
+        "name": "Boylan, R. Dillon (Richard Dillon)",
+        "displayName": "R. Dillon Boylan",
+        "birthYear": 1805,
+        "deathYear": 1888
+      }
+    ],
+    "subjects": [
+      "Germany -- Social life and customs -- Fiction",
+      "Unrequited love -- Fiction",
+      "Young men -- Germany -- Fiction"
+    ],
+    "bookshelves": [
+      "Opera",
+      "Harvard Classics",
+      "Banned Books from Anne Haight's list",
+      "Category: Romance",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: German Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/2527/pg2527.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/5/2/2527/2527-0.txt",
+      "http://mirrors.xmission.com/gutenberg/2/5/2/2527/2527-0.txt",
+      "https://www.gutenberg.org/cache/epub/2527/pg2527.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/5/2/2527/2527.txt",
+      "http://mirrors.xmission.com/gutenberg/2/5/2/2527/2527.txt"
+    ],
+    "links": 64,
+    "wikidataWork": "Q151883"
+  },
+  {
+    "gutenbergId": 18857,
+    "title": "A Journey to the Centre of the Earth",
+    "authors": [
+      {
+        "name": "Verne, Jules",
+        "displayName": "Jules Verne",
+        "birthYear": 1828,
+        "deathYear": 1905
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Science fiction",
+      "Adventure stories",
+      "Earth (Planet) -- Core -- Fiction",
+      "Voyages, Imaginary -- Fiction"
+    ],
+    "bookshelves": [
+      "Science Fiction",
+      "Movie Books",
+      "Category: Science-Fiction & Fantasy",
+      "Category: Adventure",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: French Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/18857/pg18857.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/8/8/5/18857/18857-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/8/8/5/18857/18857-0.txt",
+      "https://www.gutenberg.org/cache/epub/18857/pg18857.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/8/8/5/18857/18857.txt",
+      "http://mirrors.xmission.com/gutenberg/1/8/8/5/18857/18857.txt"
+    ],
+    "links": 64,
+    "wikidataWork": "Q219457"
+  },
+  {
+    "gutenbergId": 3070,
+    "title": "The Hound of the Baskervilles",
+    "authors": [
+      {
+        "name": "Doyle, Arthur Conan",
+        "displayName": "Arthur Conan Doyle",
+        "birthYear": 1859,
+        "deathYear": 1930
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Holmes, Sherlock (Fictitious character) -- Fiction",
+      "Private investigators -- England -- Fiction",
+      "Dogs -- Fiction",
+      "Detective and mystery stories",
+      "Blessing and cursing -- Fiction",
+      "Dartmoor (England) -- Fiction"
+    ],
+    "bookshelves": [
+      "Bestsellers, American, 1895-1923",
+      "Category: Crime, Thrillers and Mystery",
+      "Category: Novels",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/3070/pg3070.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/3/0/7/3070/3070-0.txt",
+      "http://mirrors.xmission.com/gutenberg/3/0/7/3070/3070-0.txt",
+      "https://www.gutenberg.org/cache/epub/3070/pg3070.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/3/0/7/3070/3070.txt",
+      "http://mirrors.xmission.com/gutenberg/3/0/7/3070/3070.txt"
+    ],
+    "links": 63,
+    "wikidataWork": "Q45192"
+  },
+  {
+    "gutenbergId": 12,
+    "title": "Through the Looking-Glass",
+    "authors": [
+      {
+        "name": "Carroll, Lewis",
+        "displayName": "Lewis Carroll",
+        "birthYear": 1832,
+        "deathYear": 1898
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Fantasy fiction",
+      "Children's stories",
+      "Imaginary places -- Juvenile fiction",
+      "Alice (Fictitious character from Carroll) -- Juvenile fiction"
+    ],
+    "bookshelves": [
+      "Children's Literature",
+      "Best Books Ever Listings",
+      "Category: Children & Young Adult Reading",
+      "Category: Novels",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/12/pg12.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/12/12-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/12/12-0.txt",
+      "https://www.gutenberg.org/cache/epub/12/pg12.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/12/12.txt",
+      "http://mirrors.xmission.com/gutenberg/1/12/12.txt"
+    ],
+    "links": 61,
+    "wikidataWork": "Q220331"
+  },
+  {
+    "gutenbergId": 244,
+    "title": "A Study in Scarlet",
+    "authors": [
+      {
+        "name": "Doyle, Arthur Conan",
+        "displayName": "Arthur Conan Doyle",
+        "birthYear": 1859,
+        "deathYear": 1930
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Holmes, Sherlock (Fictitious character) -- Fiction",
+      "Private investigators -- England -- Fiction",
+      "Detective and mystery stories",
+      "England -- Fiction"
+    ],
+    "bookshelves": [
+      "Detective Fiction",
+      "Category: Crime, Thrillers and Mystery",
+      "Category: Novels",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/244/pg244.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/4/244/244-0.txt",
+      "http://mirrors.xmission.com/gutenberg/2/4/244/244-0.txt",
+      "https://www.gutenberg.org/cache/epub/244/pg244.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/4/244/244.txt",
+      "http://mirrors.xmission.com/gutenberg/2/4/244/244.txt"
+    ],
+    "links": 61,
+    "wikidataWork": "Q223131"
+  },
+  {
+    "gutenbergId": 1081,
+    "title": "Dead Souls",
+    "authors": [
+      {
+        "name": "Gogol, Nikolai Vasilevich",
+        "displayName": "Nikolai Vasilevich Gogol",
+        "birthYear": 1809,
+        "deathYear": 1852
+      }
+    ],
+    "translators": [
+      {
+        "name": "Hogarth, D. J.",
+        "displayName": "D. J. Hogarth",
+        "birthYear": null,
+        "deathYear": null
+      }
+    ],
+    "subjects": [
+      "Satire",
+      "Humorous stories",
+      "Russia -- Social life and customs -- 1533-1917 -- Fiction",
+      "Swindlers and swindling -- Russia -- Fiction"
+    ],
+    "bookshelves": [
+      "Best Books Ever Listings",
+      "Category: Novels",
+      "Category: Russian Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/1081/pg1081.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/0/8/1081/1081-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/0/8/1081/1081-0.txt",
+      "https://www.gutenberg.org/cache/epub/1081/pg1081.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/0/8/1081/1081.txt",
+      "http://mirrors.xmission.com/gutenberg/1/0/8/1081/1081.txt"
+    ],
+    "links": 61,
+    "wikidataWork": "Q647379"
+  },
+  {
+    "gutenbergId": 1237,
+    "title": "Father Goriot",
+    "authors": [
+      {
+        "name": "Balzac, Honoré de",
+        "displayName": "Honoré de Balzac",
+        "birthYear": 1799,
+        "deathYear": 1850
+      }
+    ],
+    "translators": [
+      {
+        "name": "Marriage, Ellen",
+        "displayName": "Ellen Marriage",
+        "birthYear": 1865,
+        "deathYear": 1946
+      }
+    ],
+    "subjects": [
+      "Fathers and daughters -- Fiction",
+      "Paris (France) -- Fiction",
+      "French fiction -- Translations into English",
+      "Older men -- Fiction",
+      "France -- History -- Louis XVIII, 1814-1824 -- Fiction"
+    ],
+    "bookshelves": [
+      "Best Books Ever Listings",
+      "Harvard Classics",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: French Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/1237/pg1237.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/2/3/1237/1237-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/2/3/1237/1237-0.txt",
+      "https://www.gutenberg.org/cache/epub/1237/pg1237.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/2/3/1237/1237.txt",
+      "http://mirrors.xmission.com/gutenberg/1/2/3/1237/1237.txt"
+    ],
+    "links": 61,
+    "wikidataWork": "Q240617"
+  },
+  {
+    "gutenbergId": 43,
+    "title": "The strange case of Dr. Jekyll and Mr. Hyde",
+    "authors": [
+      {
+        "name": "Stevenson, Robert Louis",
+        "displayName": "Robert Louis Stevenson",
+        "birthYear": 1850,
+        "deathYear": 1894
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Science fiction",
+      "Horror tales",
+      "London (England) -- Fiction",
+      "Physicians -- Fiction",
+      "Psychological fiction",
+      "Self-experimentation in medicine -- Fiction",
+      "Multiple personality -- Fiction"
+    ],
+    "bookshelves": [
+      "Precursors of Science Fiction",
+      "Horror",
+      "Movie Books",
+      "Category: Crime, Thrillers and Mystery",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/43/pg43.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/4/43/43-0.txt",
+      "http://mirrors.xmission.com/gutenberg/4/43/43-0.txt",
+      "https://www.gutenberg.org/cache/epub/43/pg43.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/4/43/43.txt",
+      "http://mirrors.xmission.com/gutenberg/4/43/43.txt"
+    ],
+    "links": 60,
+    "wikidataWork": "Q217352"
+  },
+  {
+    "gutenbergId": 2500,
+    "title": "Siddhartha",
+    "authors": [
+      {
+        "name": "Hesse, Hermann",
+        "displayName": "Hermann Hesse",
+        "birthYear": 1877,
+        "deathYear": 1962
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Gautama Buddha -- Fiction",
+      "India -- Social life and customs -- Fiction",
+      "Spiritual life -- Fiction",
+      "Self-realization -- Fiction",
+      "Buddhism -- Fiction",
+      "Buddhist philosophy -- Fiction",
+      "Brahmans -- Fiction",
+      "India -- Religion -- Fiction"
+    ],
+    "bookshelves": [
+      "Category: Novels",
+      "Category: German Literature",
+      "Category: Philosophy & Ethics",
+      "Nobel Prizes in Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/2500/pg2500.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/5/0/2500/2500-0.txt",
+      "http://mirrors.xmission.com/gutenberg/2/5/0/2500/2500-0.txt",
+      "https://www.gutenberg.org/cache/epub/2500/pg2500.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/5/0/2500/2500.txt",
+      "http://mirrors.xmission.com/gutenberg/2/5/0/2500/2500.txt"
+    ],
+    "links": 60,
+    "wikidataWork": "Q457289"
+  },
+  {
+    "gutenbergId": 219,
+    "title": "Heart of Darkness",
+    "authors": [
+      {
+        "name": "Conrad, Joseph",
+        "displayName": "Joseph Conrad",
+        "birthYear": 1857,
+        "deathYear": 1924
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Africa -- Fiction",
+      "Europeans -- Africa -- Fiction",
+      "Trading posts -- Fiction",
+      "Degeneration -- Fiction",
+      "Imperialism -- Fiction",
+      "Psychological fiction"
+    ],
+    "bookshelves": [
+      "Best Books Ever Listings",
+      "Movie Books",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/219/pg219.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/1/219/219-0.txt",
+      "http://mirrors.xmission.com/gutenberg/2/1/219/219-0.txt",
+      "https://www.gutenberg.org/cache/epub/219/pg219.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/1/219/219.txt",
+      "http://mirrors.xmission.com/gutenberg/2/1/219/219.txt"
+    ],
+    "links": 58,
+    "wikidataWork": "Q129778"
+  },
+  {
+    "gutenbergId": 35,
+    "title": "The Time Machine",
+    "authors": [
+      {
+        "name": "Wells, H. G. (Herbert George)",
+        "displayName": "H. G. Wells",
+        "birthYear": 1866,
+        "deathYear": 1946
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Science fiction",
+      "Time travel -- Fiction",
+      "Dystopias -- Fiction"
+    ],
+    "bookshelves": [
+      "Science Fiction",
+      "Movie Books",
+      "Category: Science-Fiction & Fantasy",
+      "Category: Novels",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/35/pg35.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/3/35/35-0.txt",
+      "http://mirrors.xmission.com/gutenberg/3/35/35-0.txt",
+      "https://www.gutenberg.org/cache/epub/35/pg35.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/3/35/35.txt",
+      "http://mirrors.xmission.com/gutenberg/3/35/35.txt"
+    ],
+    "links": 57,
+    "wikidataWork": "Q627333"
+  },
+  {
+    "gutenbergId": 161,
+    "title": "Sense and Sensibility",
+    "authors": [
+      {
+        "name": "Austen, Jane",
+        "displayName": "Jane Austen",
+        "birthYear": 1775,
+        "deathYear": 1817
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "England -- Social life and customs -- 19th century -- Fiction",
+      "Inheritance and succession -- Fiction",
+      "England -- Fiction",
+      "Young women -- Fiction",
+      "Love stories",
+      "Sisters -- Fiction",
+      "Domestic fiction",
+      "Mate selection -- Fiction",
+      "Social classes -- Fiction",
+      "Gentry -- England -- Fiction",
+      "Regency fiction"
+    ],
+    "bookshelves": [
+      "Category: Romance",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/161/pg161.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/6/161/161-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/6/161/161-0.txt",
+      "https://www.gutenberg.org/cache/epub/161/pg161.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/6/161/161.txt",
+      "http://mirrors.xmission.com/gutenberg/1/6/161/161.txt"
+    ],
+    "links": 56,
+    "wikidataWork": "Q274744"
+  },
+  {
+    "gutenbergId": 215,
+    "title": "The call of the wild",
+    "authors": [
+      {
+        "name": "London, Jack",
+        "displayName": "Jack London",
+        "birthYear": 1876,
+        "deathYear": 1916
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Dogs -- Fiction",
+      "Adventure stories",
+      "Nature stories",
+      "Klondike River Valley (Yukon) -- Fiction",
+      "Sled dogs -- Fiction",
+      "Pet theft -- Fiction",
+      "Feral dogs -- Fiction",
+      "Animal welfare -- Fiction"
+    ],
+    "bookshelves": [
+      "Animals-Domestic",
+      "Adventure",
+      "Best Books Ever Listings",
+      "Movie Books",
+      "Banned Books from Anne Haight's list",
+      "Banned Books List from the American Library Association",
+      "Category: Adventure",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: American Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/215/pg215.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/1/215/215-0.txt",
+      "http://mirrors.xmission.com/gutenberg/2/1/215/215-0.txt",
+      "https://www.gutenberg.org/cache/epub/215/pg215.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/1/215/215.txt",
+      "http://mirrors.xmission.com/gutenberg/2/1/215/215.txt"
+    ],
+    "links": 54,
+    "wikidataWork": "Q476871"
+  },
+  {
+    "gutenbergId": 8117,
+    "title": "The possessed",
+    "authors": [
+      {
+        "name": "Dostoyevsky, Fyodor",
+        "displayName": "Fyodor Dostoyevsky",
+        "birthYear": 1821,
+        "deathYear": 1881
+      }
+    ],
+    "translators": [
+      {
+        "name": "Garnett, Constance",
+        "displayName": "Constance Garnett",
+        "birthYear": 1861,
+        "deathYear": 1946
+      }
+    ],
+    "subjects": [
+      "Political fiction",
+      "Russia -- Social life and customs -- 1533-1917 -- Fiction",
+      "Nihilism -- Fiction",
+      "Terrorists -- Russia -- Fiction"
+    ],
+    "bookshelves": [
+      "Best Books Ever Listings",
+      "Category: Novels",
+      "Category: Russian Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/8117/pg8117.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/8/1/1/8117/8117-0.txt",
+      "http://mirrors.xmission.com/gutenberg/8/1/1/8117/8117-0.txt",
+      "https://www.gutenberg.org/cache/epub/8117/pg8117.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/8/1/1/8117/8117.txt",
+      "http://mirrors.xmission.com/gutenberg/8/1/1/8117/8117.txt"
+    ],
+    "links": 54,
+    "wikidataWork": "Q329989"
+  },
+  {
+    "gutenbergId": 8993,
+    "title": "The Mysterious Island",
+    "authors": [
+      {
+        "name": "Verne, Jules",
+        "displayName": "Jules Verne",
+        "birthYear": 1828,
+        "deathYear": 1905
+      }
+    ],
+    "translators": [
+      {
+        "name": "White, Stephen W. (Stephen William)",
+        "displayName": "Stephen W. White",
+        "birthYear": 1840,
+        "deathYear": 1914
+      }
+    ],
+    "subjects": [
+      "Science fiction",
+      "Adventure stories",
+      "Castaways -- Fiction",
+      "Islands of the Pacific -- Fiction"
+    ],
+    "bookshelves": [
+      "Science Fiction",
+      "Movie Books",
+      "Category: Science-Fiction & Fantasy",
+      "Category: Adventure",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: French Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/8993/pg8993.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/8/9/9/8993/8993-0.txt",
+      "http://mirrors.xmission.com/gutenberg/8/9/9/8993/8993-0.txt",
+      "https://www.gutenberg.org/cache/epub/8993/pg8993.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/8/9/9/8993/8993.txt",
+      "http://mirrors.xmission.com/gutenberg/8/9/9/8993/8993.txt"
+    ],
+    "links": 53,
+    "wikidataWork": "Q471005"
+  },
+  {
+    "gutenbergId": 514,
+    "title": "Little Women",
+    "authors": [
+      {
+        "name": "Alcott, Louisa May",
+        "displayName": "Louisa May Alcott",
+        "birthYear": 1832,
+        "deathYear": 1888
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Autobiographical fiction",
+      "Young women -- Fiction",
+      "Sisters -- Fiction",
+      "Domestic fiction",
+      "Family life -- New England -- Fiction",
+      "New England -- Fiction",
+      "Bildungsromans",
+      "Mothers and daughters -- Fiction",
+      "March family (Fictitious characters) -- Fiction"
+    ],
+    "bookshelves": [
+      "Children's Literature",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: American Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/514/pg514.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/5/1/514/514-0.txt",
+      "http://mirrors.xmission.com/gutenberg/5/1/514/514-0.txt",
+      "https://www.gutenberg.org/cache/epub/514/pg514.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/5/1/514/514.txt",
+      "http://mirrors.xmission.com/gutenberg/5/1/514/514.txt"
+    ],
+    "links": 52,
+    "wikidataWork": "Q523076"
+  },
+  {
+    "gutenbergId": 940,
+    "title": "The Last of the Mohicans",
+    "authors": [
+      {
+        "name": "Cooper, James Fenimore",
+        "displayName": "James Fenimore Cooper",
+        "birthYear": 1789,
+        "deathYear": 1851
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Historical fiction",
+      "War stories",
+      "United States -- History -- French and Indian War, 1754-1763 -- Fiction",
+      "Adventure stories",
+      "Frontier and pioneer life -- Fiction",
+      "Bumppo, Natty (Fictitious character) -- Fiction",
+      "Mohegan Indians -- Fiction"
+    ],
+    "bookshelves": [
+      "Historical Fiction",
+      "Category: Historical Novels",
+      "Category: Adventure",
+      "Category: American Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/940/pg940.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/9/4/940/940-0.txt",
+      "http://mirrors.xmission.com/gutenberg/9/4/940/940-0.txt",
+      "https://www.gutenberg.org/cache/epub/940/pg940.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/9/4/940/940.txt",
+      "http://mirrors.xmission.com/gutenberg/9/4/940/940.txt"
+    ],
+    "links": 52,
+    "wikidataWork": "Q493574"
+  },
+  {
+    "gutenbergId": 1661,
+    "title": "The Adventures of Sherlock Holmes",
+    "authors": [
+      {
+        "name": "Doyle, Arthur Conan",
+        "displayName": "Arthur Conan Doyle",
+        "birthYear": 1859,
+        "deathYear": 1930
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Holmes, Sherlock (Fictitious character) -- Fiction",
+      "Private investigators -- England -- Fiction",
+      "Detective and mystery stories, English"
+    ],
+    "bookshelves": [
+      "Detective Fiction",
+      "Contemporary Reviews",
+      "Banned Books from Anne Haight's list",
+      "Category: Short Stories",
+      "Category: Crime, Thrillers and Mystery",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/1661/pg1661.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/6/6/1661/1661-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/6/6/1661/1661-0.txt",
+      "https://www.gutenberg.org/cache/epub/1661/pg1661.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/6/6/1661/1661.txt",
+      "http://mirrors.xmission.com/gutenberg/1/6/6/1661/1661.txt"
+    ],
+    "links": 52,
+    "wikidataWork": "Q392147"
+  },
+  {
+    "gutenbergId": 20781,
+    "title": "Heidi",
+    "authors": [
+      {
+        "name": "Spyri, Johanna",
+        "displayName": "Johanna Spyri",
+        "birthYear": 1827,
+        "deathYear": 1901
+      }
+    ],
+    "translators": [
+      {
+        "name": "Stork, Elisabeth P. (Elisabeth Pausinger)",
+        "displayName": "Elisabeth P. Stork",
+        "birthYear": null,
+        "deathYear": null
+      }
+    ],
+    "subjects": [
+      "Orphans -- Fiction",
+      "Grandfathers -- Fiction",
+      "Mountain life -- Switzerland -- Fiction",
+      "Switzerland -- History -- 19th century -- Fiction"
+    ],
+    "bookshelves": [
+      "Children's Literature",
+      "Category: Children & Young Adult Reading",
+      "Category: Novels"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/20781/pg20781.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/0/7/8/20781/20781-0.txt",
+      "http://mirrors.xmission.com/gutenberg/2/0/7/8/20781/20781-0.txt",
+      "https://www.gutenberg.org/cache/epub/20781/pg20781.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/0/7/8/20781/20781.txt",
+      "http://mirrors.xmission.com/gutenberg/2/0/7/8/20781/20781.txt"
+    ],
+    "links": 52,
+    "wikidataWork": "Q271697"
+  },
+  {
+    "gutenbergId": 45,
+    "title": "Anne of Green Gables",
+    "authors": [
+      {
+        "name": "Montgomery, L. M. (Lucy Maud)",
+        "displayName": "L. M. Montgomery",
+        "birthYear": 1874,
+        "deathYear": 1942
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Orphans -- Fiction",
+      "Islands -- Fiction",
+      "Friendship -- Fiction",
+      "Bildungsromans",
+      "Girls -- Fiction",
+      "Country life -- Prince Edward Island -- Fiction",
+      "Prince Edward Island -- History -- 20th century -- Fiction",
+      "Canada -- History -- 1867-1914 -- Fiction",
+      "Shirley, Anne (Fictitious character) -- Fiction"
+    ],
+    "bookshelves": [
+      "Canada",
+      "Children's Literature",
+      "Category: Children & Young Adult Reading",
+      "Category: Novels",
+      "Category: Classics of Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/45/pg45.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/4/45/45-0.txt",
+      "http://mirrors.xmission.com/gutenberg/4/45/45-0.txt",
+      "https://www.gutenberg.org/cache/epub/45/pg45.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/4/45/45.txt",
+      "http://mirrors.xmission.com/gutenberg/4/45/45.txt"
+    ],
+    "links": 51,
+    "wikidataWork": "Q565911"
+  },
+  {
+    "gutenbergId": 82,
+    "title": "Ivanhoe",
+    "authors": [
+      {
+        "name": "Scott, Walter",
+        "displayName": "Walter Scott",
+        "birthYear": 1771,
+        "deathYear": 1832
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Historical fiction",
+      "Knights and knighthood -- Fiction",
+      "Love stories",
+      "Triangles (Interpersonal relations) -- Fiction",
+      "Great Britain -- History -- Richard I, 1189-1199 -- Fiction",
+      "Jews -- England -- Fiction",
+      "Ivanhoe, Wilfred of, Sir (Fictitious character) -- Fiction",
+      "Anglo-Saxons -- Fiction",
+      "Normans -- Great Britain -- Fiction"
+    ],
+    "bookshelves": [
+      "Historical Fiction",
+      "Best Books Ever Listings",
+      "Category: Historical Novels",
+      "Category: Novels",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/82/pg82.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/8/82/82-0.txt",
+      "http://mirrors.xmission.com/gutenberg/8/82/82-0.txt",
+      "https://www.gutenberg.org/cache/epub/82/pg82.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/8/82/82.txt",
+      "http://mirrors.xmission.com/gutenberg/8/82/82.txt"
+    ],
+    "links": 51,
+    "wikidataWork": "Q840974"
+  },
+  {
+    "gutenbergId": 67138,
+    "title": "The Sun Also Rises",
+    "authors": [
+      {
+        "name": "Hemingway, Ernest",
+        "displayName": "Ernest Hemingway",
+        "birthYear": 1899,
+        "deathYear": 1961
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Americans -- France -- Fiction",
+      "Americans -- Spain -- Fiction",
+      "Ashley, Brett (Fictitious character) -- Fiction",
+      "Expatriation -- Fiction",
+      "Spain -- History -- Alfonso XIII, 1886-1931 -- Fiction"
+    ],
+    "bookshelves": [
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: American Literature",
+      "Nobel Prizes in Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/67138/pg67138.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/6/7/1/3/67138/67138-0.txt",
+      "http://mirrors.xmission.com/gutenberg/6/7/1/3/67138/67138-0.txt",
+      "https://www.gutenberg.org/cache/epub/67138/pg67138.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/6/7/1/3/67138/67138.txt",
+      "http://mirrors.xmission.com/gutenberg/6/7/1/3/67138/67138.txt"
+    ],
+    "links": 51,
+    "wikidataWork": "Q501351"
+  },
+  {
+    "gutenbergId": 600,
+    "title": "Notes from the Underground",
+    "authors": [
+      {
+        "name": "Dostoyevsky, Fyodor",
+        "displayName": "Fyodor Dostoyevsky",
+        "birthYear": 1821,
+        "deathYear": 1881
+      }
+    ],
+    "translators": [
+      {
+        "name": "Garnett, Constance",
+        "displayName": "Constance Garnett",
+        "birthYear": 1861,
+        "deathYear": 1946
+      }
+    ],
+    "subjects": [
+      "Political fiction",
+      "Russia -- History -- 1801-1917 -- Fiction",
+      "Russia -- Officials and employees -- Fiction"
+    ],
+    "bookshelves": [
+      "Category: Novels",
+      "Category: Russian Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/600/pg600.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/6/0/600/600-0.txt",
+      "http://mirrors.xmission.com/gutenberg/6/0/600/600-0.txt",
+      "https://www.gutenberg.org/cache/epub/600/pg600.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/6/0/600/600.txt",
+      "http://mirrors.xmission.com/gutenberg/6/0/600/600.txt"
+    ],
+    "links": 50,
+    "wikidataWork": "Q695116"
+  },
+  {
+    "gutenbergId": 158,
+    "title": "Emma",
+    "authors": [
+      {
+        "name": "Austen, Jane",
+        "displayName": "Jane Austen",
+        "birthYear": 1775,
+        "deathYear": 1817
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Humorous stories",
+      "England -- Fiction",
+      "Young women -- Fiction",
+      "Love stories",
+      "Fathers and daughters -- Fiction",
+      "Bildungsromans",
+      "Mate selection -- Fiction",
+      "Female friendship -- Fiction"
+    ],
+    "bookshelves": [
+      "Category: Novels",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/158/pg158.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/5/158/158-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/5/158/158-0.txt",
+      "https://www.gutenberg.org/cache/epub/158/pg158.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/5/158/158.txt",
+      "http://mirrors.xmission.com/gutenberg/1/5/158/158.txt"
+    ],
+    "links": 49,
+    "wikidataWork": "Q223880"
+  },
+  {
+    "gutenbergId": 1056,
+    "title": "Martin Eden",
+    "authors": [
+      {
+        "name": "London, Jack",
+        "displayName": "Jack London",
+        "birthYear": 1876,
+        "deathYear": 1916
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Working class -- Fiction",
+      "Authors -- Fiction",
+      "Autobiographical fiction",
+      "Bildungsromans",
+      "Young men -- Fiction",
+      "San Francisco (Calif.) -- Fiction"
+    ],
+    "bookshelves": [
+      "Category: Novels",
+      "Category: American Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/1056/pg1056.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/0/5/1056/1056-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/0/5/1056/1056-0.txt",
+      "https://www.gutenberg.org/cache/epub/1056/pg1056.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/0/5/1056/1056.txt",
+      "http://mirrors.xmission.com/gutenberg/1/0/5/1056/1056.txt"
+    ],
+    "links": 49,
+    "wikidataWork": "Q1317839"
+  },
+  {
+    "gutenbergId": 2197,
+    "title": "The Gambler",
+    "authors": [
+      {
+        "name": "Dostoyevsky, Fyodor",
+        "displayName": "Fyodor Dostoyevsky",
+        "birthYear": 1821,
+        "deathYear": 1881
+      }
+    ],
+    "translators": [
+      {
+        "name": "Hogarth, C. J. (Charles James)",
+        "displayName": "C. J. Hogarth",
+        "birthYear": 1869,
+        "deathYear": 1942
+      }
+    ],
+    "subjects": [
+      "Psychological fiction",
+      "Gamblers -- Fiction",
+      "Gambling -- Fiction",
+      "Families -- Fiction",
+      "Russians -- Germany -- Fiction",
+      "Chance -- Fiction"
+    ],
+    "bookshelves": [
+      "Category: Novels",
+      "Category: Russian Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/2197/pg2197.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/1/9/2197/2197-0.txt",
+      "http://mirrors.xmission.com/gutenberg/2/1/9/2197/2197-0.txt",
+      "https://www.gutenberg.org/cache/epub/2197/pg2197.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/1/9/2197/2197.txt",
+      "http://mirrors.xmission.com/gutenberg/2/1/9/2197/2197.txt"
+    ],
+    "links": 49,
+    "wikidataWork": "Q223688"
+  },
+  {
+    "gutenbergId": 910,
+    "title": "White Fang",
+    "authors": [
+      {
+        "name": "London, Jack",
+        "displayName": "Jack London",
+        "birthYear": 1876,
+        "deathYear": 1916
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Wolfdogs -- Fiction",
+      "Adventure stories",
+      "Canada, Northern -- Fiction"
+    ],
+    "bookshelves": [
+      "Adventure",
+      "Movie Books",
+      "Category: Adventure",
+      "Category: Novels",
+      "Category: American Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/910/pg910.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/9/1/910/910-0.txt",
+      "http://mirrors.xmission.com/gutenberg/9/1/910/910-0.txt",
+      "https://www.gutenberg.org/cache/epub/910/pg910.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/9/1/910/910.txt",
+      "http://mirrors.xmission.com/gutenberg/9/1/910/910.txt"
+    ],
+    "links": 48,
+    "wikidataWork": "Q152267"
+  },
+  {
+    "gutenbergId": 969,
+    "title": "The Tenant of Wildfell Hall",
+    "authors": [
+      {
+        "name": "Brontë, Anne",
+        "displayName": "Anne Brontë",
+        "birthYear": 1820,
+        "deathYear": 1849
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "England -- Social life and customs -- 19th century -- Fiction",
+      "England -- Fiction",
+      "Domestic fiction",
+      "Landlord and tenant -- Fiction",
+      "Married women -- Fiction",
+      "Alcoholics -- Fiction"
+    ],
+    "bookshelves": [
+      "Category: Novels",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/969/pg969.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/9/6/969/969-0.txt",
+      "http://mirrors.xmission.com/gutenberg/9/6/969/969-0.txt",
+      "https://www.gutenberg.org/cache/epub/969/pg969.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/9/6/969/969.txt",
+      "http://mirrors.xmission.com/gutenberg/9/6/969/969.txt"
+    ],
+    "links": 47,
+    "wikidataWork": "Q44701"
+  },
+  {
+    "gutenbergId": 2083,
+    "title": "In Search of the Castaways",
+    "authors": [
+      {
+        "name": "Verne, Jules",
+        "displayName": "Jules Verne",
+        "birthYear": 1828,
+        "deathYear": 1905
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Australia -- Fiction",
+      "Ship captains -- Fiction",
+      "South America -- Fiction",
+      "Voyages and travels -- Fiction",
+      "Seafaring life -- Fiction",
+      "Castaways -- Fiction",
+      "Ocean travel -- Fiction",
+      "New Zealand -- Fiction"
+    ],
+    "bookshelves": [
+      "Category: Adventure",
+      "Category: Novels"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/2083/pg2083.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/0/8/2083/2083-0.txt",
+      "http://mirrors.xmission.com/gutenberg/2/0/8/2083/2083-0.txt",
+      "https://www.gutenberg.org/cache/epub/2083/pg2083.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/0/8/2083/2083.txt",
+      "http://mirrors.xmission.com/gutenberg/2/0/8/2083/2083.txt"
+    ],
+    "links": 47,
+    "wikidataWork": "Q1213902"
+  },
+  {
+    "gutenbergId": 2097,
+    "title": "The Sign of the Four",
+    "authors": [
+      {
+        "name": "Doyle, Arthur Conan",
+        "displayName": "Arthur Conan Doyle",
+        "birthYear": 1859,
+        "deathYear": 1930
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Holmes, Sherlock (Fictitious character) -- Fiction",
+      "Private investigators -- England -- Fiction",
+      "Detective and mystery stories"
+    ],
+    "bookshelves": [
+      "Detective Fiction",
+      "Category: Crime, Thrillers and Mystery",
+      "Category: Novels",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/2097/pg2097.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/0/9/2097/2097-0.txt",
+      "http://mirrors.xmission.com/gutenberg/2/0/9/2097/2097-0.txt",
+      "https://www.gutenberg.org/cache/epub/2097/pg2097.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/0/9/2097/2097.txt",
+      "http://mirrors.xmission.com/gutenberg/2/0/9/2097/2097.txt"
+    ],
+    "links": 47,
+    "wikidataWork": "Q500688"
+  },
+  {
+    "gutenbergId": 2302,
+    "title": "Poor Folk",
+    "authors": [
+      {
+        "name": "Dostoyevsky, Fyodor",
+        "displayName": "Fyodor Dostoyevsky",
+        "birthYear": 1821,
+        "deathYear": 1881
+      }
+    ],
+    "translators": [
+      {
+        "name": "Hogarth, C. J. (Charles James)",
+        "displayName": "C. J. Hogarth",
+        "birthYear": 1869,
+        "deathYear": 1942
+      }
+    ],
+    "subjects": [
+      "Friendship -- Fiction",
+      "Russia -- Social life and customs -- 1533-1917 -- Fiction",
+      "Poor -- Fiction"
+    ],
+    "bookshelves": [
+      "Category: Novels",
+      "Category: Russian Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/2302/pg2302.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/3/0/2302/2302-0.txt",
+      "http://mirrors.xmission.com/gutenberg/2/3/0/2302/2302-0.txt",
+      "https://www.gutenberg.org/cache/epub/2302/pg2302.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/3/0/2302/2302.txt",
+      "http://mirrors.xmission.com/gutenberg/2/3/0/2302/2302.txt"
+    ],
+    "links": 47,
+    "wikidataWork": "Q117293"
+  },
+  {
+    "gutenbergId": 105,
+    "title": "Persuasion",
+    "authors": [
+      {
+        "name": "Austen, Jane",
+        "displayName": "Jane Austen",
+        "birthYear": 1775,
+        "deathYear": 1817
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "England -- Social life and customs -- 19th century -- Fiction",
+      "Psychological fiction",
+      "Young women -- Fiction",
+      "Motherless families -- Fiction",
+      "Rejection (Psychology) -- Fiction",
+      "First loves -- Fiction",
+      "Dysfunctional families -- Fiction",
+      "Ship captains -- Fiction",
+      "Love stories",
+      "Regency fiction"
+    ],
+    "bookshelves": [
+      "Category: Novels",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/105/pg105.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/0/105/105-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/0/105/105-0.txt",
+      "https://www.gutenberg.org/cache/epub/105/pg105.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/0/105/105.txt",
+      "http://mirrors.xmission.com/gutenberg/1/0/105/105.txt"
+    ],
+    "links": 46,
+    "wikidataWork": "Q333179"
+  },
+  {
+    "gutenbergId": 131,
+    "title": "The Pilgrim's Progress from this world to that which is to come",
+    "authors": [
+      {
+        "name": "Bunyan, John",
+        "displayName": "John Bunyan",
+        "birthYear": 1628,
+        "deathYear": 1688
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Christian fiction",
+      "Christian pilgrims and pilgrimages -- Fiction"
+    ],
+    "bookshelves": [
+      "Christianity",
+      "Harvard Classics",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: British Literature",
+      "Category: Religion/Spirituality"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/131/pg131.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/3/131/131-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/3/131/131-0.txt",
+      "https://www.gutenberg.org/cache/epub/131/pg131.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/3/131/131.txt",
+      "http://mirrors.xmission.com/gutenberg/1/3/131/131.txt"
+    ],
+    "links": 46,
+    "wikidataWork": "Q268211"
+  },
+  {
+    "gutenbergId": 175,
+    "title": "The Phantom of the Opera",
+    "authors": [
+      {
+        "name": "Leroux, Gaston",
+        "displayName": "Gaston Leroux",
+        "birthYear": 1868,
+        "deathYear": 1927
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Horror tales",
+      "Musical fiction",
+      "Opera -- Fiction",
+      "Paris (France) -- Fiction",
+      "Composers -- Fiction",
+      "Phantom of the Opera (Fictitious character) -- Fiction",
+      "French fiction -- Translations into English"
+    ],
+    "bookshelves": [
+      "Opera",
+      "Gothic Fiction",
+      "Movie Books",
+      "Category: Crime, Thrillers and Mystery",
+      "Category: Novels",
+      "Category: French Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/175/pg175.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/7/175/175-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/7/175/175-0.txt",
+      "https://www.gutenberg.org/cache/epub/175/pg175.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/7/175/175.txt",
+      "http://mirrors.xmission.com/gutenberg/1/7/175/175.txt"
+    ],
+    "links": 46,
+    "wikidataWork": "Q272506"
+  },
+  {
+    "gutenbergId": 4217,
+    "title": "A Portrait of the Artist as a Young Man",
+    "authors": [
+      {
+        "name": "Joyce, James",
+        "displayName": "James Joyce",
+        "birthYear": 1882,
+        "deathYear": 1941
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Autobiographical fiction",
+      "Bildungsromans",
+      "Young men -- Fiction",
+      "Dublin (Ireland) -- Fiction",
+      "Artists -- Fiction"
+    ],
+    "bookshelves": [
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/4217/pg4217.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/4/2/1/4217/4217-0.txt",
+      "http://mirrors.xmission.com/gutenberg/4/2/1/4217/4217-0.txt",
+      "https://www.gutenberg.org/cache/epub/4217/pg4217.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/4/2/1/4217/4217.txt",
+      "http://mirrors.xmission.com/gutenberg/4/2/1/4217/4217.txt"
+    ],
+    "links": 46,
+    "wikidataWork": "Q465360"
+  },
+  {
+    "gutenbergId": 33,
+    "title": "The Scarlet Letter",
+    "authors": [
+      {
+        "name": "Hawthorne, Nathaniel",
+        "displayName": "Nathaniel Hawthorne",
+        "birthYear": 1804,
+        "deathYear": 1864
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Adultery -- Fiction",
+      "Historical fiction",
+      "Revenge -- Fiction",
+      "Psychological fiction",
+      "Married women -- Fiction",
+      "Clergy -- Fiction",
+      "Triangles (Interpersonal relations) -- Fiction",
+      "Illegitimate children -- Fiction",
+      "Women immigrants -- Fiction",
+      "Puritans -- Fiction",
+      "Boston (Mass.) -- History -- Colonial period, ca. 1600-1775 -- Fiction"
+    ],
+    "bookshelves": [
+      "Harvard Classics",
+      "Movie Books",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: American Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/33/pg33.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/3/33/33-0.txt",
+      "http://mirrors.xmission.com/gutenberg/3/33/33-0.txt",
+      "https://www.gutenberg.org/cache/epub/33/pg33.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/3/33/33.txt",
+      "http://mirrors.xmission.com/gutenberg/3/33/33.txt"
+    ],
+    "links": 45,
+    "wikidataWork": "Q907568"
+  },
+  {
+    "gutenbergId": 1200,
+    "title": "Gargantua and Pantagruel",
+    "authors": [
+      {
+        "name": "Rabelais, François",
+        "displayName": "François Rabelais",
+        "birthYear": 1490,
+        "deathYear": 1553
+      }
+    ],
+    "translators": [
+      {
+        "name": "Motteux, Peter Anthony",
+        "displayName": "Peter Anthony Motteux",
+        "birthYear": 1660,
+        "deathYear": 1718
+      },
+      {
+        "name": "Urquhart, Thomas",
+        "displayName": "Thomas Urquhart",
+        "birthYear": 1611,
+        "deathYear": 1660
+      }
+    ],
+    "subjects": [
+      "Giants -- Fiction",
+      "Fantasy fiction, French -- Translations into English",
+      "Gargantua (Legendary character) -- Fiction"
+    ],
+    "bookshelves": [
+      "Best Books Ever Listings",
+      "Banned Books from Anne Haight's list",
+      "Category: Humour",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: French Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/1200/pg1200.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/2/0/1200/1200-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/2/0/1200/1200-0.txt",
+      "https://www.gutenberg.org/cache/epub/1200/pg1200.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/2/0/1200/1200.txt",
+      "http://mirrors.xmission.com/gutenberg/1/2/0/1200/1200.txt"
+    ],
+    "links": 45,
+    "wikidataWork": "Q822290"
+  },
+  {
+    "gutenbergId": 2814,
+    "title": "Dubliners",
+    "authors": [
+      {
+        "name": "Joyce, James",
+        "displayName": "James Joyce",
+        "birthYear": 1882,
+        "deathYear": 1941
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Short stories",
+      "Dublin (Ireland) -- Fiction"
+    ],
+    "bookshelves": [
+      "Banned Books from Anne Haight's list",
+      "Category: Short Stories",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/2814/pg2814.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/8/1/2814/2814-0.txt",
+      "http://mirrors.xmission.com/gutenberg/2/8/1/2814/2814-0.txt",
+      "https://www.gutenberg.org/cache/epub/2814/pg2814.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/8/1/2814/2814.txt",
+      "http://mirrors.xmission.com/gutenberg/2/8/1/2814/2814.txt"
+    ],
+    "links": 45,
+    "wikidataWork": "Q459592"
+  },
+  {
+    "gutenbergId": 2853,
+    "title": "Quo Vadis: A Narrative of the Time of Nero",
+    "authors": [
+      {
+        "name": "Sienkiewicz, Henryk",
+        "displayName": "Henryk Sienkiewicz",
+        "birthYear": 1846,
+        "deathYear": 1916
+      }
+    ],
+    "translators": [
+      {
+        "name": "Curtin, Jeremiah",
+        "displayName": "Jeremiah Curtin",
+        "birthYear": 1835,
+        "deathYear": 1906
+      }
+    ],
+    "subjects": [
+      "Historical fiction",
+      "Church history -- Primitive and early church, ca. 30-600 -- Fiction",
+      "Rome -- History -- Nero, 54-68 -- Fiction",
+      "Christian fiction"
+    ],
+    "bookshelves": [
+      "Historical Fiction",
+      "Movie Books",
+      "Bestsellers, American, 1895-1923",
+      "Category: Historical Novels",
+      "Category: Novels",
+      "Nobel Prizes in Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/2853/pg2853.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/8/5/2853/2853-0.txt",
+      "http://mirrors.xmission.com/gutenberg/2/8/5/2853/2853-0.txt",
+      "https://www.gutenberg.org/cache/epub/2853/pg2853.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/8/5/2853/2853.txt",
+      "http://mirrors.xmission.com/gutenberg/2/8/5/2853/2853.txt"
+    ],
+    "links": 45,
+    "wikidataWork": "Q335315"
+  },
+  {
+    "gutenbergId": 10935,
+    "title": "The Wonderful Adventures of Nils",
+    "authors": [
+      {
+        "name": "Lagerlöf, Selma",
+        "displayName": "Selma Lagerlöf",
+        "birthYear": 1858,
+        "deathYear": 1940
+      }
+    ],
+    "translators": [
+      {
+        "name": "Howard, Velma Swanston",
+        "displayName": "Velma Swanston Howard",
+        "birthYear": 1868,
+        "deathYear": 1937
+      }
+    ],
+    "subjects": [
+      "Fantasy literature",
+      "Conduct of life -- Juvenile fiction",
+      "Boys -- Juvenile fiction",
+      "Kindness -- Juvenile fiction",
+      "Sweden -- Juvenile fiction",
+      "Geese -- Juvenile fiction"
+    ],
+    "bookshelves": [
+      "Category: Children & Young Adult Reading",
+      "Category: Adventure",
+      "Category: Novels",
+      "Nobel Prizes in Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/10935/pg10935.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/0/9/3/10935/10935-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/0/9/3/10935/10935-0.txt",
+      "https://www.gutenberg.org/cache/epub/10935/pg10935.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/0/9/3/10935/10935.txt",
+      "http://mirrors.xmission.com/gutenberg/1/0/9/3/10935/10935.txt"
+    ],
+    "links": 45,
+    "wikidataWork": "Q726254"
+  },
+  {
+    "gutenbergId": 12901,
+    "title": "The Moon-Voyage",
+    "authors": [
+      {
+        "name": "Verne, Jules",
+        "displayName": "Jules Verne",
+        "birthYear": 1828,
+        "deathYear": 1905
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Science fiction",
+      "Space flight to the moon -- Fiction",
+      "Moon -- Fiction",
+      "Space ships -- Fiction",
+      "Manned space flight -- Fiction"
+    ],
+    "bookshelves": [
+      "Science Fiction",
+      "Category: Science-Fiction & Fantasy",
+      "Category: Adventure",
+      "Category: Novels",
+      "Category: American Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/12901/pg12901.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/2/9/0/12901/12901-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/2/9/0/12901/12901-0.txt",
+      "https://www.gutenberg.org/cache/epub/12901/pg12901.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/2/9/0/12901/12901.txt",
+      "http://mirrors.xmission.com/gutenberg/1/2/9/0/12901/12901.txt"
+    ],
+    "links": 45,
+    "wikidataWork": "Q53592"
+  },
+  {
+    "gutenbergId": 27805,
+    "title": "The Wind in the Willows",
+    "authors": [
+      {
+        "name": "Grahame, Kenneth",
+        "displayName": "Kenneth Grahame",
+        "birthYear": 1859,
+        "deathYear": 1932
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Fantasy fiction",
+      "Animals -- Fiction",
+      "Humorous stories",
+      "England -- Fiction",
+      "Friendship -- Fiction",
+      "Pastoral fiction",
+      "Country life -- Fiction",
+      "River life -- Fiction"
+    ],
+    "bookshelves": [
+      "Category: Children & Young Adult Reading",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/27805/pg27805.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/7/8/0/27805/27805-0.txt",
+      "http://mirrors.xmission.com/gutenberg/2/7/8/0/27805/27805-0.txt",
+      "https://www.gutenberg.org/cache/epub/27805/pg27805.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/7/8/0/27805/27805.txt",
+      "http://mirrors.xmission.com/gutenberg/2/7/8/0/27805/27805.txt"
+    ],
+    "links": 45,
+    "wikidataWork": "Q936276"
+  },
+  {
+    "gutenbergId": 141,
+    "title": "Mansfield Park",
+    "authors": [
+      {
+        "name": "Austen, Jane",
+        "displayName": "Jane Austen",
+        "birthYear": 1775,
+        "deathYear": 1817
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "England -- Fiction",
+      "Young women -- Fiction",
+      "Love stories",
+      "Domestic fiction",
+      "Country homes -- Fiction",
+      "Adoptees -- Fiction",
+      "Children of the rich -- Fiction",
+      "Cousins -- Fiction",
+      "Uncles -- Fiction"
+    ],
+    "bookshelves": [
+      "Category: Novels",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/141/pg141.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/4/141/141-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/4/141/141-0.txt",
+      "https://www.gutenberg.org/cache/epub/141/pg141.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/4/141/141.txt",
+      "http://mirrors.xmission.com/gutenberg/1/4/141/141.txt"
+    ],
+    "links": 44,
+    "wikidataWork": "Q469690"
+  },
+  {
+    "gutenbergId": 863,
+    "title": "The Mysterious Affair at Styles",
+    "authors": [
+      {
+        "name": "Christie, Agatha",
+        "displayName": "Agatha Christie",
+        "birthYear": 1890,
+        "deathYear": 1976
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Private investigators -- England -- Fiction",
+      "Detective and mystery stories",
+      "Belgians -- England -- Fiction",
+      "Poirot, Hercule (Fictitious character) -- Fiction"
+    ],
+    "bookshelves": [
+      "Detective Fiction",
+      "Category: Crime, Thrillers and Mystery",
+      "Category: Novels",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/863/pg863.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/8/6/863/863-0.txt",
+      "http://mirrors.xmission.com/gutenberg/8/6/863/863-0.txt",
+      "https://www.gutenberg.org/cache/epub/863/pg863.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/8/6/863/863.txt",
+      "http://mirrors.xmission.com/gutenberg/8/6/863/863.txt"
+    ],
+    "links": 44,
+    "wikidataWork": "Q472228"
+  },
+  {
+    "gutenbergId": 1938,
+    "title": "Resurrection",
+    "authors": [
+      {
+        "name": "Tolstoy, Leo",
+        "displayName": "Leo Tolstoy",
+        "birthYear": 1828,
+        "deathYear": 1910
+      }
+    ],
+    "translators": [
+      {
+        "name": "Maude, Louise",
+        "displayName": "Louise Maude",
+        "birthYear": 1855,
+        "deathYear": 1939
+      }
+    ],
+    "subjects": [
+      "Atonement -- Fiction",
+      "Russia -- Social conditions -- 1801-1917 -- Fiction",
+      "Aristocracy (Social class) -- Russia -- Fiction",
+      "Prostitutes -- Russia -- Fiction",
+      "Trials (Murder) -- Russia -- Fiction",
+      "Change -- Religious aspects -- Fiction",
+      "Social justice -- Russia -- Fiction"
+    ],
+    "bookshelves": [
+      "Category: Novels",
+      "Category: Russian Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/1938/pg1938.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/9/3/1938/1938-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/9/3/1938/1938-0.txt",
+      "https://www.gutenberg.org/cache/epub/1938/pg1938.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/9/3/1938/1938.txt",
+      "http://mirrors.xmission.com/gutenberg/1/9/3/1938/1938.txt"
+    ],
+    "links": 44,
+    "wikidataWork": "Q146866"
+  },
+  {
+    "gutenbergId": 5230,
+    "title": "The Invisible Man: A Grotesque Romance",
+    "authors": [
+      {
+        "name": "Wells, H. G. (Herbert George)",
+        "displayName": "H. G. Wells",
+        "birthYear": 1866,
+        "deathYear": 1946
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Science fiction",
+      "Psychological fiction",
+      "Scientists -- Fiction",
+      "Mentally ill -- Fiction"
+    ],
+    "bookshelves": [
+      "Movie Books",
+      "Category: Science-Fiction & Fantasy",
+      "Category: Novels",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/5230/pg5230.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/5/2/3/5230/5230-0.txt",
+      "http://mirrors.xmission.com/gutenberg/5/2/3/5230/5230-0.txt",
+      "https://www.gutenberg.org/cache/epub/5230/pg5230.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/5/2/3/5230/5230.txt",
+      "http://mirrors.xmission.com/gutenberg/5/2/3/5230/5230.txt"
+    ],
+    "links": 44,
+    "wikidataWork": "Q1539509"
+  },
+  {
+    "gutenbergId": 61963,
+    "title": "We",
+    "authors": [
+      {
+        "name": "Zamiatin, Evgenii Ivanovich",
+        "displayName": "Evgenii Ivanovich Zamiatin",
+        "birthYear": 1884,
+        "deathYear": 1937
+      }
+    ],
+    "translators": [
+      {
+        "name": "Zilboorg, Gregory",
+        "displayName": "Gregory Zilboorg",
+        "birthYear": 1890,
+        "deathYear": 1959
+      }
+    ],
+    "subjects": [
+      "Science fiction",
+      "Dystopias -- Fiction",
+      "Russian fiction -- Translations into English",
+      "Totalitarianism -- Fiction"
+    ],
+    "bookshelves": [
+      "Category: Science-Fiction & Fantasy",
+      "Category: Novels",
+      "Category: Russian Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/61963/pg61963.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/6/1/9/6/61963/61963-0.txt",
+      "http://mirrors.xmission.com/gutenberg/6/1/9/6/61963/61963-0.txt",
+      "https://www.gutenberg.org/cache/epub/61963/pg61963.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/6/1/9/6/61963/61963.txt",
+      "http://mirrors.xmission.com/gutenberg/6/1/9/6/61963/61963.txt"
+    ],
+    "links": 44,
+    "wikidataWork": "Q83799"
+  },
+  {
+    "gutenbergId": 599,
+    "title": "Vanity Fair",
+    "authors": [
+      {
+        "name": "Thackeray, William Makepeace",
+        "displayName": "William Makepeace Thackeray",
+        "birthYear": 1811,
+        "deathYear": 1863
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Satire",
+      "England -- Fiction",
+      "Married women -- Fiction",
+      "Female friendship -- Fiction",
+      "Social classes -- Fiction",
+      "British -- Europe -- Fiction",
+      "Waterloo, Battle of, Waterloo, Belgium, 1815 -- Fiction"
+    ],
+    "bookshelves": [
+      "Historical Fiction",
+      "Harvard Classics",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/599/pg599.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/5/9/599/599-0.txt",
+      "http://mirrors.xmission.com/gutenberg/5/9/599/599-0.txt",
+      "https://www.gutenberg.org/cache/epub/599/pg599.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/5/9/599/599.txt",
+      "http://mirrors.xmission.com/gutenberg/5/9/599/599.txt"
+    ],
+    "links": 43,
+    "wikidataWork": "Q612836"
+  },
+  {
+    "gutenbergId": 1837,
+    "title": "The Prince and the Pauper",
+    "authors": [
+      {
+        "name": "Twain, Mark",
+        "displayName": "Mark Twain",
+        "birthYear": 1835,
+        "deathYear": 1910
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Historical fiction",
+      "London (England) -- Fiction",
+      "Impostors and imposture -- Fiction",
+      "Boys -- Fiction",
+      "Social classes -- Fiction",
+      "Princes -- Fiction",
+      "Edward VI, King of England, 1537-1553 -- Fiction",
+      "Poor children -- Fiction",
+      "Lookalikes -- Fiction"
+    ],
+    "bookshelves": [
+      "Historical Fiction",
+      "Category: Historical Novels",
+      "Category: Children & Young Adult Reading",
+      "Category: Classics of Literature",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/1837/pg1837.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/8/3/1837/1837-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/8/3/1837/1837-0.txt",
+      "https://www.gutenberg.org/cache/epub/1837/pg1837.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/8/3/1837/1837.txt",
+      "http://mirrors.xmission.com/gutenberg/1/8/3/1837/1837.txt"
+    ],
+    "links": 43,
+    "wikidataWork": "Q869725"
+  },
+  {
+    "gutenbergId": 3526,
+    "title": "Five Weeks in a Balloon",
+    "authors": [
+      {
+        "name": "Verne, Jules",
+        "displayName": "Jules Verne",
+        "birthYear": 1828,
+        "deathYear": 1905
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Science fiction",
+      "Africa -- Fiction",
+      "Adventure stories",
+      "Travel -- Fiction",
+      "Balloons -- Fiction"
+    ],
+    "bookshelves": [
+      "Adventure",
+      "Movie Books",
+      "Category: Science-Fiction & Fantasy",
+      "Category: Adventure",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: French Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/3526/pg3526.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/3/5/2/3526/3526-0.txt",
+      "http://mirrors.xmission.com/gutenberg/3/5/2/3526/3526-0.txt",
+      "https://www.gutenberg.org/cache/epub/3526/pg3526.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/3/5/2/3526/3526.txt",
+      "http://mirrors.xmission.com/gutenberg/3/5/2/3526/3526.txt"
+    ],
+    "links": 43,
+    "wikidataWork": "Q622634"
+  },
+  {
+    "gutenbergId": 56528,
+    "title": "Germinal",
+    "authors": [
+      {
+        "name": "Zola, Émile",
+        "displayName": "Émile Zola",
+        "birthYear": 1840,
+        "deathYear": 1902
+      }
+    ],
+    "translators": [
+      {
+        "name": "Ellis, Havelock",
+        "displayName": "Havelock Ellis",
+        "birthYear": 1859,
+        "deathYear": 1939
+      }
+    ],
+    "subjects": [
+      "Coal miners -- Fiction",
+      "Coal mines and mining -- Fiction",
+      "Political fiction",
+      "Strikes and lockouts -- Fiction",
+      "Labor disputes -- Fiction",
+      "France, Northern -- Fiction"
+    ],
+    "bookshelves": [
+      "Category: Novels",
+      "Category: French Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/56528/pg56528.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/5/6/5/2/56528/56528-0.txt",
+      "http://mirrors.xmission.com/gutenberg/5/6/5/2/56528/56528-0.txt",
+      "https://www.gutenberg.org/cache/epub/56528/pg56528.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/5/6/5/2/56528/56528.txt",
+      "http://mirrors.xmission.com/gutenberg/5/6/5/2/56528/56528.txt"
+    ],
+    "links": 43,
+    "wikidataWork": "Q137869"
+  },
+  {
+    "gutenbergId": 37536,
+    "title": "The house of the dead",
+    "authors": [
+      {
+        "name": "Dostoyevsky, Fyodor",
+        "displayName": "Fyodor Dostoyevsky",
+        "birthYear": 1821,
+        "deathYear": 1881
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Siberia (Russia) -- Fiction",
+      "Exiles -- Fiction"
+    ],
+    "bookshelves": [
+      "Category: Novels",
+      "Category: Russian Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/37536/pg37536.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/3/7/5/3/37536/37536-0.txt",
+      "http://mirrors.xmission.com/gutenberg/3/7/5/3/37536/37536-0.txt",
+      "https://www.gutenberg.org/cache/epub/37536/pg37536.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/3/7/5/3/37536/37536.txt",
+      "http://mirrors.xmission.com/gutenberg/3/7/5/3/37536/37536.txt"
+    ],
+    "links": 42,
+    "wikidataWork": "Q1161171"
+  },
+  {
+    "gutenbergId": 580,
+    "title": "The Pickwick Papers",
+    "authors": [
+      {
+        "name": "Dickens, Charles",
+        "displayName": "Charles Dickens",
+        "birthYear": 1812,
+        "deathYear": 1870
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Humorous stories",
+      "England -- Fiction",
+      "Men -- Societies and clubs -- Fiction",
+      "Male friendship -- Fiction"
+    ],
+    "bookshelves": [
+      "Best Books Ever Listings",
+      "Category: Humour",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/580/pg580.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/5/8/580/580-0.txt",
+      "http://mirrors.xmission.com/gutenberg/5/8/580/580-0.txt",
+      "https://www.gutenberg.org/cache/epub/580/pg580.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/5/8/580/580.txt",
+      "http://mirrors.xmission.com/gutenberg/5/8/580/580.txt"
+    ],
+    "links": 40,
+    "wikidataWork": "Q460583"
+  },
+  {
+    "gutenbergId": 2166,
+    "title": "King Solomon's Mines",
+    "authors": [
+      {
+        "name": "Haggard, H. Rider (Henry Rider)",
+        "displayName": "H. Rider Haggard",
+        "birthYear": 1856,
+        "deathYear": 1925
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Africa -- Fiction",
+      "Missing persons -- Fiction",
+      "Adventure stories",
+      "Treasure troves -- Fiction",
+      "Hunting guides -- Fiction",
+      "Diamond mines and mining -- Fiction",
+      "Quatermain, Allan (Fictitious character) -- Fiction"
+    ],
+    "bookshelves": [
+      "Adventure",
+      "Best Books Ever Listings",
+      "Movie Books",
+      "Category: Adventure",
+      "Category: Novels",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/2166/pg2166.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/1/6/2166/2166-0.txt",
+      "http://mirrors.xmission.com/gutenberg/2/1/6/2166/2166-0.txt",
+      "https://www.gutenberg.org/cache/epub/2166/pg2166.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/1/6/2166/2166.txt",
+      "http://mirrors.xmission.com/gutenberg/2/1/6/2166/2166.txt"
+    ],
+    "links": 40,
+    "wikidataWork": "Q1137494"
+  },
+  {
+    "gutenbergId": 3289,
+    "title": "The Valley of Fear",
+    "authors": [
+      {
+        "name": "Doyle, Arthur Conan",
+        "displayName": "Arthur Conan Doyle",
+        "birthYear": 1859,
+        "deathYear": 1930
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Holmes, Sherlock (Fictitious character) -- Fiction",
+      "Private investigators -- England -- Fiction",
+      "Detective and mystery stories"
+    ],
+    "bookshelves": [
+      "Detective Fiction",
+      "Category: Crime, Thrillers and Mystery",
+      "Category: Novels",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/3289/pg3289.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/3/2/8/3289/3289-0.txt",
+      "http://mirrors.xmission.com/gutenberg/3/2/8/3289/3289-0.txt",
+      "https://www.gutenberg.org/cache/epub/3289/pg3289.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/3/2/8/3289/3289.txt",
+      "http://mirrors.xmission.com/gutenberg/3/2/8/3289/3289.txt"
+    ],
+    "links": 39,
+    "wikidataWork": "Q863438"
+  },
+  {
+    "gutenbergId": 5658,
+    "title": "Lord Jim",
+    "authors": [
+      {
+        "name": "Conrad, Joseph",
+        "displayName": "Joseph Conrad",
+        "birthYear": 1857,
+        "deathYear": 1924
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Psychological fiction",
+      "Atonement -- Fiction",
+      "Merchant marine -- Officers -- Fiction",
+      "British -- Indonesia -- Fiction",
+      "Cowardice -- Fiction",
+      "Indonesia -- Fiction"
+    ],
+    "bookshelves": [
+      "Best Books Ever Listings",
+      "Category: Adventure",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/5658/pg5658.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/5/6/5/5658/5658-0.txt",
+      "http://mirrors.xmission.com/gutenberg/5/6/5/5658/5658-0.txt",
+      "https://www.gutenberg.org/cache/epub/5658/pg5658.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/5/6/5/5658/5658.txt",
+      "http://mirrors.xmission.com/gutenberg/5/6/5/5658/5658.txt"
+    ],
+    "links": 39,
+    "wikidataWork": "Q727408"
+  },
+  {
+    "gutenbergId": 12051,
+    "title": "Dick Sand: A Captain at Fifteen",
+    "authors": [
+      {
+        "name": "Verne, Jules",
+        "displayName": "Jules Verne",
+        "birthYear": 1828,
+        "deathYear": 1905
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Ship captains -- Fiction",
+      "Adventure stories",
+      "Sailors -- Fiction",
+      "Voyages and travels -- Fiction",
+      "Enslaved persons -- Fiction",
+      "Whales -- Fiction",
+      "Cooks -- Fiction"
+    ],
+    "bookshelves": [
+      "Category: Adventure",
+      "Category: Novels"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/12051/pg12051.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/2/0/5/12051/12051-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/2/0/5/12051/12051-0.txt",
+      "https://www.gutenberg.org/cache/epub/12051/pg12051.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/2/0/5/12051/12051.txt",
+      "http://mirrors.xmission.com/gutenberg/1/2/0/5/12051/12051.txt"
+    ],
+    "links": 39,
+    "wikidataWork": "Q472291"
+  },
+  {
+    "gutenbergId": 17396,
+    "title": "The Secret Garden",
+    "authors": [
+      {
+        "name": "Burnett, Frances Hodgson",
+        "displayName": "Frances Hodgson Burnett",
+        "birthYear": 1849,
+        "deathYear": 1924
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Orphans -- Juvenile fiction",
+      "People with disabilities -- Juvenile fiction",
+      "Gardens -- Juvenile fiction",
+      "Yorkshire (England) -- Juvenile fiction"
+    ],
+    "bookshelves": [
+      "Children's Literature",
+      "Category: Children & Young Adult Reading",
+      "Category: Novels",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/17396/pg17396.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/7/3/9/17396/17396-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/7/3/9/17396/17396-0.txt",
+      "https://www.gutenberg.org/cache/epub/17396/pg17396.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/7/3/9/17396/17396.txt",
+      "http://mirrors.xmission.com/gutenberg/1/7/3/9/17396/17396.txt"
+    ],
+    "links": 39,
+    "wikidataWork": "Q472194"
+  },
+  {
+    "gutenbergId": 834,
+    "title": "The Memoirs of Sherlock Holmes",
+    "authors": [
+      {
+        "name": "Doyle, Arthur Conan",
+        "displayName": "Arthur Conan Doyle",
+        "birthYear": 1859,
+        "deathYear": 1930
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Holmes, Sherlock (Fictitious character) -- Fiction",
+      "Private investigators -- England -- Fiction",
+      "Detective and mystery stories, English"
+    ],
+    "bookshelves": [
+      "Detective Fiction",
+      "Category: Short Stories",
+      "Category: Crime, Thrillers and Mystery",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/834/pg834.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/8/3/834/834-0.txt",
+      "http://mirrors.xmission.com/gutenberg/8/3/834/834-0.txt",
+      "https://www.gutenberg.org/cache/epub/834/pg834.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/8/3/834/834.txt",
+      "http://mirrors.xmission.com/gutenberg/8/3/834/834.txt"
+    ],
+    "links": 38,
+    "wikidataWork": "Q860831"
+  },
+  {
+    "gutenbergId": 1023,
+    "title": "Bleak House",
+    "authors": [
+      {
+        "name": "Dickens, Charles",
+        "displayName": "Charles Dickens",
+        "birthYear": 1812,
+        "deathYear": 1870
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "London (England) -- Fiction",
+      "Inheritance and succession -- Fiction",
+      "Young women -- Fiction",
+      "Domestic fiction",
+      "Bildungsromans",
+      "Guardian and ward -- Fiction",
+      "Illegitimate children -- Fiction",
+      "Legal stories"
+    ],
+    "bookshelves": [
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/1023/pg1023.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/0/2/1023/1023-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/0/2/1023/1023-0.txt",
+      "https://www.gutenberg.org/cache/epub/1023/pg1023.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/0/2/1023/1023.txt",
+      "http://mirrors.xmission.com/gutenberg/1/0/2/1023/1023.txt"
+    ],
+    "links": 38,
+    "wikidataWork": "Q883305"
+  },
+  {
+    "gutenbergId": 159,
+    "title": "The island of Doctor Moreau",
+    "authors": [
+      {
+        "name": "Wells, H. G. (Herbert George)",
+        "displayName": "H. G. Wells",
+        "birthYear": 1866,
+        "deathYear": 1946
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Science fiction",
+      "Shipwreck survival -- Fiction",
+      "Animal experimentation -- Fiction",
+      "Islands -- Fiction",
+      "Science -- Ethics -- Fiction"
+    ],
+    "bookshelves": [
+      "Science Fiction",
+      "Best Books Ever Listings",
+      "Movie Books",
+      "Category: Science-Fiction & Fantasy",
+      "Category: Novels",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/159/pg159.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/5/159/159-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/5/159/159-0.txt",
+      "https://www.gutenberg.org/cache/epub/159/pg159.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/5/159/159.txt",
+      "http://mirrors.xmission.com/gutenberg/1/5/159/159.txt"
+    ],
+    "links": 37,
+    "wikidataWork": "Q718268"
+  },
+  {
+    "gutenbergId": 2145,
+    "title": "Ben-Hur",
+    "authors": [
+      {
+        "name": "Wallace, Lew",
+        "displayName": "Lew Wallace",
+        "birthYear": 1827,
+        "deathYear": 1905
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Historical fiction",
+      "Jesus Christ -- Fiction",
+      "Christian fiction",
+      "Rome -- History -- Tiberius, 14-37 -- Fiction",
+      "Tiberius, Emperor of Rome 42 B.C.-37 A.D. -- Fiction",
+      "Bible. New Testament -- History of Biblical events -- Fiction"
+    ],
+    "bookshelves": [
+      "Historical Fiction",
+      "Movie Books",
+      "Category: Historical Novels",
+      "Category: Classics of Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/2145/pg2145.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/1/4/2145/2145-0.txt",
+      "http://mirrors.xmission.com/gutenberg/2/1/4/2145/2145-0.txt",
+      "https://www.gutenberg.org/cache/epub/2145/pg2145.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/1/4/2145/2145.txt",
+      "http://mirrors.xmission.com/gutenberg/2/1/4/2145/2145.txt"
+    ],
+    "links": 37,
+    "wikidataWork": "Q816528"
+  },
+  {
+    "gutenbergId": 16457,
+    "title": "All Around the Moon",
+    "authors": [
+      {
+        "name": "Verne, Jules",
+        "displayName": "Jules Verne",
+        "birthYear": 1828,
+        "deathYear": 1905
+      }
+    ],
+    "translators": [
+      {
+        "name": "Roth, Edward",
+        "displayName": "Edward Roth",
+        "birthYear": 1826,
+        "deathYear": 1911
+      }
+    ],
+    "subjects": [
+      "Science fiction",
+      "Space flight to the moon -- Fiction",
+      "Moon -- Fiction",
+      "Space ships -- Fiction",
+      "Manned space flight -- Fiction"
+    ],
+    "bookshelves": [
+      "Science Fiction",
+      "Category: Science-Fiction & Fantasy",
+      "Category: Adventure"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/16457/pg16457.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/6/4/5/16457/16457-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/6/4/5/16457/16457-0.txt",
+      "https://www.gutenberg.org/cache/epub/16457/pg16457.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/6/4/5/16457/16457.txt",
+      "http://mirrors.xmission.com/gutenberg/1/6/4/5/16457/16457.txt"
+    ],
+    "links": 37,
+    "wikidataWork": "Q1327411"
+  },
+  {
+    "gutenbergId": 108,
+    "title": "The Return of Sherlock Holmes",
+    "authors": [
+      {
+        "name": "Doyle, Arthur Conan",
+        "displayName": "Arthur Conan Doyle",
+        "birthYear": 1859,
+        "deathYear": 1930
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Holmes, Sherlock (Fictitious character) -- Fiction",
+      "Private investigators -- England -- Fiction",
+      "Detective and mystery stories, English"
+    ],
+    "bookshelves": [
+      "Detective Fiction",
+      "Category: Short Stories",
+      "Category: Crime, Thrillers and Mystery",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/108/pg108.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/0/108/108-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/0/108/108-0.txt",
+      "https://www.gutenberg.org/cache/epub/108/pg108.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/0/108/108.txt",
+      "http://mirrors.xmission.com/gutenberg/1/0/108/108.txt"
+    ],
+    "links": 36,
+    "wikidataWork": "Q725752"
+  },
+  {
+    "gutenbergId": 121,
+    "title": "Northanger Abbey",
+    "authors": [
+      {
+        "name": "Austen, Jane",
+        "displayName": "Jane Austen",
+        "birthYear": 1775,
+        "deathYear": 1817
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "England -- Social life and customs -- 19th century -- Fiction",
+      "Satire",
+      "England -- Fiction",
+      "Young women -- Fiction",
+      "Love stories",
+      "Gothic fiction",
+      "Horror tales -- Appreciation -- Fiction",
+      "Books and reading -- Fiction",
+      "Gentry -- England -- Fiction",
+      "Marriage -- Economic aspects -- Fiction"
+    ],
+    "bookshelves": [
+      "Gothic Fiction",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/121/pg121.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/2/121/121-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/2/121/121-0.txt",
+      "https://www.gutenberg.org/cache/epub/121/pg121.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/2/121/121.txt",
+      "http://mirrors.xmission.com/gutenberg/1/2/121/121.txt"
+    ],
+    "links": 36,
+    "wikidataWork": "Q477508"
+  },
+  {
+    "gutenbergId": 271,
+    "title": "Black Beauty",
+    "authors": [
+      {
+        "name": "Sewell, Anna",
+        "displayName": "Anna Sewell",
+        "birthYear": 1820,
+        "deathYear": 1878
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Historical fiction",
+      "Horses -- Juvenile fiction",
+      "Human-animal relationships -- Juvenile fiction",
+      "Great Britain -- History -- 19th century -- Juvenile fiction"
+    ],
+    "bookshelves": [
+      "Children's Literature",
+      "Best Books Ever Listings",
+      "Category: Children & Young Adult Reading",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/271/pg271.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/7/271/271-0.txt",
+      "http://mirrors.xmission.com/gutenberg/2/7/271/271-0.txt",
+      "https://www.gutenberg.org/cache/epub/271/pg271.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/7/271/271.txt",
+      "http://mirrors.xmission.com/gutenberg/2/7/271/271.txt"
+    ],
+    "links": 36,
+    "wikidataWork": "Q880092"
+  },
+  {
+    "gutenbergId": 913,
+    "title": "A Hero of Our Time",
+    "authors": [
+      {
+        "name": "Lermontov, Mikhail Iurevich",
+        "displayName": "Mikhail Iurevich Lermontov",
+        "birthYear": 1814,
+        "deathYear": 1841
+      }
+    ],
+    "translators": [
+      {
+        "name": "Murray, Marr",
+        "displayName": "Marr Murray",
+        "birthYear": null,
+        "deathYear": null
+      },
+      {
+        "name": "Wisdom, J. H.",
+        "displayName": "J. H. Wisdom",
+        "birthYear": null,
+        "deathYear": null
+      }
+    ],
+    "subjects": [
+      "Psychological fiction",
+      "Caucasus -- Fiction",
+      "Russia -- Social life and customs -- 1533-1917 -- Fiction",
+      "Russia -- History, Military -- 1801-1917 -- Fiction"
+    ],
+    "bookshelves": [
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: Russian Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/913/pg913.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/9/1/913/913-0.txt",
+      "http://mirrors.xmission.com/gutenberg/9/1/913/913-0.txt",
+      "https://www.gutenberg.org/cache/epub/913/pg913.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/9/1/913/913.txt",
+      "http://mirrors.xmission.com/gutenberg/9/1/913/913.txt"
+    ],
+    "links": 36,
+    "wikidataWork": "Q1304649"
+  },
+  {
+    "gutenbergId": 2226,
+    "title": "Kim",
+    "authors": [
+      {
+        "name": "Kipling, Rudyard",
+        "displayName": "Rudyard Kipling",
+        "birthYear": 1865,
+        "deathYear": 1936
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Orphans -- Fiction",
+      "India -- Fiction",
+      "Boys -- Fiction",
+      "Adventure stories",
+      "Spy stories",
+      "Lamas -- Fiction",
+      "Irish -- India -- Fiction"
+    ],
+    "bookshelves": [
+      "Scouts",
+      "Children's Literature",
+      "Adventure",
+      "Movie Books",
+      "Category: Historical Novels",
+      "Category: Adventure",
+      "Category: Classics of Literature",
+      "Category: British Literature",
+      "Nobel Prizes in Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/2226/pg2226.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/2/2/2226/2226-0.txt",
+      "http://mirrors.xmission.com/gutenberg/2/2/2/2226/2226-0.txt",
+      "https://www.gutenberg.org/cache/epub/2226/pg2226.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/2/2/2226/2226.txt",
+      "http://mirrors.xmission.com/gutenberg/2/2/2/2226/2226.txt"
+    ],
+    "links": 36,
+    "wikidataWork": "Q589868"
+  },
+  {
+    "gutenbergId": 2350,
+    "title": "His last bow",
+    "authors": [
+      {
+        "name": "Doyle, Arthur Conan",
+        "displayName": "Arthur Conan Doyle",
+        "birthYear": 1859,
+        "deathYear": 1930
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Holmes, Sherlock (Fictitious character) -- Fiction",
+      "Private investigators -- England -- Fiction",
+      "Detective and mystery stories, English"
+    ],
+    "bookshelves": [
+      "Detective Fiction",
+      "Category: Short Stories",
+      "Category: Crime, Thrillers and Mystery",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/2350/pg2350.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/3/5/2350/2350-0.txt",
+      "http://mirrors.xmission.com/gutenberg/2/3/5/2350/2350-0.txt",
+      "https://www.gutenberg.org/cache/epub/2350/pg2350.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/3/5/2350/2350.txt",
+      "http://mirrors.xmission.com/gutenberg/2/3/5/2350/2350.txt"
+    ],
+    "links": 36,
+    "wikidataWork": "Q733582"
+  },
+  {
+    "gutenbergId": 29413,
+    "title": "The Voyages and Adventures of Captain Hatteras",
+    "authors": [
+      {
+        "name": "Verne, Jules",
+        "displayName": "Jules Verne",
+        "birthYear": 1828,
+        "deathYear": 1905
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Sea stories",
+      "Adventure stories"
+    ],
+    "bookshelves": [
+      "Category: Adventure",
+      "Category: Novels"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/29413/pg29413.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/9/4/1/29413/29413-0.txt",
+      "http://mirrors.xmission.com/gutenberg/2/9/4/1/29413/29413-0.txt",
+      "https://www.gutenberg.org/cache/epub/29413/pg29413.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/9/4/1/29413/29413.txt",
+      "http://mirrors.xmission.com/gutenberg/2/9/4/1/29413/29413.txt"
+    ],
+    "links": 36,
+    "wikidataWork": "Q319149"
+  },
+  {
+    "gutenbergId": 16,
+    "title": "Peter Pan",
+    "authors": [
+      {
+        "name": "Barrie, J. M. (James Matthew)",
+        "displayName": "J. M. Barrie",
+        "birthYear": 1860,
+        "deathYear": 1937
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Fantasy literature",
+      "Peter Pan (Fictitious character) -- Fiction",
+      "Never-Never Land (Imaginary place) -- Fiction",
+      "Pirates -- Fiction",
+      "Fairies -- Fiction"
+    ],
+    "bookshelves": [
+      "Children's Literature",
+      "Movie Books",
+      "Category: Children & Young Adult Reading",
+      "Category: Adventure",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/16/pg16.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/16/16-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/16/16-0.txt",
+      "https://www.gutenberg.org/cache/epub/16/pg16.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/16/16.txt",
+      "http://mirrors.xmission.com/gutenberg/1/16/16.txt"
+    ],
+    "links": 35,
+    "wikidataWork": "Q3435337"
+  },
+  {
+    "gutenbergId": 201,
+    "title": "Flatland",
+    "authors": [
+      {
+        "name": "Abbott, Edwin Abbott",
+        "displayName": "Edwin Abbott Abbott",
+        "birthYear": 1838,
+        "deathYear": 1926
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Fourth dimension"
+    ],
+    "bookshelves": [
+      "Mathematics",
+      "Science Fiction",
+      "Category: Science-Fiction & Fantasy",
+      "Category: Novels",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/201/pg201.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/0/201/201-0.txt",
+      "http://mirrors.xmission.com/gutenberg/2/0/201/201-0.txt",
+      "https://www.gutenberg.org/cache/epub/201/pg201.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/0/201/201.txt",
+      "http://mirrors.xmission.com/gutenberg/2/0/201/201.txt"
+    ],
+    "links": 35,
+    "wikidataWork": "Q728312"
+  },
+  {
+    "gutenbergId": 1259,
+    "title": "Twenty years after",
+    "authors": [
+      {
+        "name": "Dumas, Alexandre",
+        "displayName": "Alexandre Dumas",
+        "birthYear": 1802,
+        "deathYear": 1870
+      },
+      {
+        "name": "Maquet, Auguste",
+        "displayName": "Auguste Maquet",
+        "birthYear": 1813,
+        "deathYear": 1888
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "France -- History -- Louis XIV, 1643-1715 -- Fiction"
+    ],
+    "bookshelves": [
+      "Adventure",
+      "Historical Fiction",
+      "Movie Books",
+      "Category: Historical Novels",
+      "Category: Adventure",
+      "Category: Novels",
+      "Category: French Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/1259/pg1259.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/2/5/1259/1259-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/2/5/1259/1259-0.txt",
+      "https://www.gutenberg.org/cache/epub/1259/pg1259.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/2/5/1259/1259.txt",
+      "http://mirrors.xmission.com/gutenberg/1/2/5/1259/1259.txt"
+    ],
+    "links": 35,
+    "wikidataWork": "Q1639633"
+  },
+  {
+    "gutenbergId": 60976,
+    "title": "Rip Van Winkle",
+    "authors": [
+      {
+        "name": "Irving, Washington",
+        "displayName": "Washington Irving",
+        "birthYear": 1783,
+        "deathYear": 1859
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Fantasy fiction",
+      "New York (State) -- History -- 1775-1865 -- Fiction",
+      "Catskill Mountains Region (N.Y.) -- History -- 18th century -- Fiction",
+      "Van Winkle, Rip (Fictitious character) -- Fiction",
+      "Hudson River (N.Y. and N.J.) -- Fiction"
+    ],
+    "bookshelves": [
+      "Category: Short Stories",
+      "Category: Science-Fiction & Fantasy",
+      "Category: Mythology, Legends & Folklore",
+      "Category: American Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/60976/pg60976.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/6/0/9/7/60976/60976-0.txt",
+      "http://mirrors.xmission.com/gutenberg/6/0/9/7/60976/60976-0.txt",
+      "https://www.gutenberg.org/cache/epub/60976/pg60976.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/6/0/9/7/60976/60976.txt",
+      "http://mirrors.xmission.com/gutenberg/6/0/9/7/60976/60976.txt"
+    ],
+    "links": 35,
+    "wikidataWork": "Q1129589"
+  },
+  {
+    "gutenbergId": 1079,
+    "title": "The life and opinions of Tristram Shandy, gentleman",
+    "authors": [
+      {
+        "name": "Sterne, Laurence",
+        "displayName": "Laurence Sterne",
+        "birthYear": 1713,
+        "deathYear": 1768
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Stream of consciousness fiction",
+      "Experimental fiction",
+      "Fiction -- Authorship -- Fiction",
+      "Infants -- Fiction",
+      "Fetus -- Fiction"
+    ],
+    "bookshelves": [
+      "Best Books Ever Listings",
+      "Category: Humour",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/1079/pg1079.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/0/7/1079/1079-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/0/7/1079/1079-0.txt",
+      "https://www.gutenberg.org/cache/epub/1079/pg1079.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/0/7/1079/1079.txt",
+      "http://mirrors.xmission.com/gutenberg/1/0/7/1079/1079.txt"
+    ],
+    "links": 34,
+    "wikidataWork": "Q1164083"
+  },
+  {
+    "gutenbergId": 1290,
+    "title": "Salammbo",
+    "authors": [
+      {
+        "name": "Flaubert, Gustave",
+        "displayName": "Gustave Flaubert",
+        "birthYear": 1821,
+        "deathYear": 1880
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Historical fiction",
+      "Carthage (Extinct city) -- History -- Fiction"
+    ],
+    "bookshelves": [
+      "Historical Fiction",
+      "Banned Books from Anne Haight's list",
+      "Category: Historical Novels",
+      "Category: Novels",
+      "Category: French Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/1290/pg1290.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/2/9/1290/1290-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/2/9/1290/1290-0.txt",
+      "https://www.gutenberg.org/cache/epub/1290/pg1290.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/2/9/1290/1290.txt",
+      "http://mirrors.xmission.com/gutenberg/1/2/9/1290/1290.txt"
+    ],
+    "links": 34,
+    "wikidataWork": "Q117182"
+  },
+  {
+    "gutenbergId": 68283,
+    "title": "The call of Cthulhu",
+    "authors": [
+      {
+        "name": "Lovecraft, H. P. (Howard Phillips)",
+        "displayName": "H. P. Lovecraft",
+        "birthYear": 1890,
+        "deathYear": 1937
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Horror tales",
+      "Cthulhu (Fictitious character) -- Fiction"
+    ],
+    "bookshelves": [
+      "Category: Short Stories",
+      "Category: Science-Fiction & Fantasy",
+      "Category: Crime, Thrillers and Mystery",
+      "Category: American Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/68283/pg68283.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/6/8/2/8/68283/68283-0.txt",
+      "http://mirrors.xmission.com/gutenberg/6/8/2/8/68283/68283-0.txt",
+      "https://www.gutenberg.org/cache/epub/68283/pg68283.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/6/8/2/8/68283/68283.txt",
+      "http://mirrors.xmission.com/gutenberg/6/8/2/8/68283/68283.txt"
+    ],
+    "links": 34,
+    "wikidataWork": "Q1141815"
+  },
+  {
+    "gutenbergId": 139,
+    "title": "The Lost World",
+    "authors": [
+      {
+        "name": "Doyle, Arthur Conan",
+        "displayName": "Arthur Conan Doyle",
+        "birthYear": 1859,
+        "deathYear": 1930
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Challenger, Professor (Fictitious character) -- Fiction",
+      "Fantasy fiction",
+      "South America -- Fiction",
+      "Prehistoric peoples -- Fiction",
+      "Dinosaurs -- Fiction"
+    ],
+    "bookshelves": [
+      "Science Fiction",
+      "Category: Science-Fiction & Fantasy",
+      "Category: Adventure",
+      "Category: Novels",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/139/pg139.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/3/139/139-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/3/139/139-0.txt",
+      "https://www.gutenberg.org/cache/epub/139/pg139.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/3/139/139.txt",
+      "http://mirrors.xmission.com/gutenberg/1/3/139/139.txt"
+    ],
+    "links": 33,
+    "wikidataWork": "Q785255"
+  },
+  {
+    "gutenbergId": 378,
+    "title": "The White Knight: Tirant Lo Blanc",
+    "authors": [
+      {
+        "name": "Martorell, Joanot",
+        "displayName": "Joanot Martorell",
+        "birthYear": null,
+        "deathYear": 1468
+      },
+      {
+        "name": "Galba, Martí Joan de",
+        "displayName": "Martí Joan de Galba",
+        "birthYear": null,
+        "deathYear": 1490
+      }
+    ],
+    "translators": [
+      {
+        "name": "Rudder, Robert S.",
+        "displayName": "Robert S. Rudder",
+        "birthYear": null,
+        "deathYear": null
+      }
+    ],
+    "subjects": [
+      "Knights and knighthood -- Fiction",
+      "Adventure and adventurers -- Fiction",
+      "Adventure stories"
+    ],
+    "bookshelves": [
+      "Category: Historical Novels",
+      "Category: Adventure",
+      "Category: Classics of Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/378/pg378.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/3/7/378/378-0.txt",
+      "http://mirrors.xmission.com/gutenberg/3/7/378/378-0.txt",
+      "https://www.gutenberg.org/cache/epub/378/pg378.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/3/7/378/378.txt",
+      "http://mirrors.xmission.com/gutenberg/3/7/378/378.txt"
+    ],
+    "links": 33,
+    "wikidataWork": "Q559667"
+  },
+  {
+    "gutenbergId": 468,
+    "title": "Manon Lescaut",
+    "authors": [
+      {
+        "name": "Prévost, abbé",
+        "displayName": "abbé Prévost",
+        "birthYear": 1697,
+        "deathYear": 1763
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Adventure stories",
+      "Man-woman relationships -- Fiction",
+      "Lescaut, Manon, 1689-1721 -- Fiction"
+    ],
+    "bookshelves": [
+      "Category: Romance",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: French Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/468/pg468.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/4/6/468/468-0.txt",
+      "http://mirrors.xmission.com/gutenberg/4/6/468/468-0.txt",
+      "https://www.gutenberg.org/cache/epub/468/pg468.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/4/6/468/468.txt",
+      "http://mirrors.xmission.com/gutenberg/4/6/468/468.txt"
+    ],
+    "links": 33,
+    "wikidataWork": "Q1141032"
+  },
+  {
+    "gutenbergId": 696,
+    "title": "The Castle of Otranto",
+    "authors": [
+      {
+        "name": "Walpole, Horace",
+        "displayName": "Horace Walpole",
+        "birthYear": 1717,
+        "deathYear": 1797
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Horror tales",
+      "Inheritance and succession -- Fiction",
+      "Gothic fiction"
+    ],
+    "bookshelves": [
+      "Gothic Fiction",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/696/pg696.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/6/9/696/696-0.txt",
+      "http://mirrors.xmission.com/gutenberg/6/9/696/696-0.txt",
+      "https://www.gutenberg.org/cache/epub/696/pg696.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/6/9/696/696.txt",
+      "http://mirrors.xmission.com/gutenberg/6/9/696/696.txt"
+    ],
+    "links": 33,
+    "wikidataWork": "Q548576"
+  },
+  {
+    "gutenbergId": 1450,
+    "title": "Pollyanna",
+    "authors": [
+      {
+        "name": "Porter, Eleanor H. (Eleanor Hodgman)",
+        "displayName": "Eleanor H. Porter",
+        "birthYear": 1868,
+        "deathYear": 1920
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Orphans -- Juvenile fiction",
+      "Conduct of life -- Juvenile fiction",
+      "Aunts -- Juvenile fiction",
+      "Cheerfulness -- Juvenile fiction",
+      "Interpersonal relations -- Juvenile fiction",
+      "Vermont -- History -- 20th century -- Juvenile fiction"
+    ],
+    "bookshelves": [
+      "Bestsellers, American, 1895-1923",
+      "Category: Children & Young Adult Reading",
+      "Category: Novels",
+      "Category: American Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/1450/pg1450.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/4/5/1450/1450-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/4/5/1450/1450-0.txt",
+      "https://www.gutenberg.org/cache/epub/1450/pg1450.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/4/5/1450/1450.txt",
+      "http://mirrors.xmission.com/gutenberg/1/4/5/1450/1450.txt"
+    ],
+    "links": 33,
+    "wikidataWork": "Q2348190"
+  },
+  {
+    "gutenbergId": 2434,
+    "title": "New Atlantis",
+    "authors": [
+      {
+        "name": "Bacon, Francis",
+        "displayName": "Francis Bacon",
+        "birthYear": 1561,
+        "deathYear": 1626
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Utopias -- Early works to 1800"
+    ],
+    "bookshelves": [
+      "Harvard Classics",
+      "Category: Science-Fiction & Fantasy",
+      "Category: Novels",
+      "Category: Classics of Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/2434/pg2434.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/4/3/2434/2434-0.txt",
+      "http://mirrors.xmission.com/gutenberg/2/4/3/2434/2434-0.txt",
+      "https://www.gutenberg.org/cache/epub/2434/pg2434.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/4/3/2434/2434.txt",
+      "http://mirrors.xmission.com/gutenberg/2/4/3/2434/2434.txt"
+    ],
+    "links": 33,
+    "wikidataWork": "Q1233830"
+  },
+  {
+    "gutenbergId": 689,
+    "title": "The Kreutzer Sonata and Other Stories",
+    "authors": [
+      {
+        "name": "Tolstoy, Leo",
+        "displayName": "Leo Tolstoy",
+        "birthYear": 1828,
+        "deathYear": 1910
+      }
+    ],
+    "translators": [
+      {
+        "name": "Tucker, Benjamin Ricketson",
+        "displayName": "Benjamin Ricketson Tucker",
+        "birthYear": 1854,
+        "deathYear": 1939
+      }
+    ],
+    "subjects": [
+      "Short stories",
+      "Russia -- Social life and customs -- Fiction",
+      "Murder -- Fiction",
+      "Jealousy -- Fiction",
+      "Tolstoy, Leo, graf, 1828-1910 -- Translations into English"
+    ],
+    "bookshelves": [
+      "Anarchism",
+      "Harvard Classics",
+      "Banned Books from Anne Haight's list",
+      "Category: Short Stories",
+      "Category: Russian Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/689/pg689.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/6/8/689/689-0.txt",
+      "http://mirrors.xmission.com/gutenberg/6/8/689/689-0.txt",
+      "https://www.gutenberg.org/cache/epub/689/pg689.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/6/8/689/689.txt",
+      "http://mirrors.xmission.com/gutenberg/6/8/689/689.txt"
+    ],
+    "links": 32,
+    "wikidataWork": "Q1214091"
+  },
+  {
+    "gutenbergId": 1307,
+    "title": "The Magic Skin",
+    "authors": [
+      {
+        "name": "Balzac, Honoré de",
+        "displayName": "Honoré de Balzac",
+        "birthYear": 1799,
+        "deathYear": 1850
+      }
+    ],
+    "translators": [
+      {
+        "name": "Marriage, Ellen",
+        "displayName": "Ellen Marriage",
+        "birthYear": 1865,
+        "deathYear": 1946
+      }
+    ],
+    "subjects": [
+      "Fantasy fiction",
+      "Authors -- Fiction",
+      "Wishes -- Fiction",
+      "Hides and skins -- Fiction",
+      "French fiction -- Translations into English",
+      "Magic -- Fiction"
+    ],
+    "bookshelves": [
+      "Category: Novels",
+      "Category: French Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/1307/pg1307.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/3/0/1307/1307-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/3/0/1307/1307-0.txt",
+      "https://www.gutenberg.org/cache/epub/1307/pg1307.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/3/0/1307/1307.txt",
+      "http://mirrors.xmission.com/gutenberg/1/3/0/1307/1307.txt"
+    ],
+    "links": 32,
+    "wikidataWork": "Q1142149"
+  },
+  {
+    "gutenbergId": 2609,
+    "title": "The Vicomte de Bragelonne",
+    "authors": [
+      {
+        "name": "Dumas, Alexandre",
+        "displayName": "Alexandre Dumas",
+        "birthYear": 1802,
+        "deathYear": 1870
+      },
+      {
+        "name": "Maquet, Auguste",
+        "displayName": "Auguste Maquet",
+        "birthYear": 1813,
+        "deathYear": 1888
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Historical fiction",
+      "France -- History -- Louis XIV, 1643-1715 -- Fiction",
+      "Adventure stories"
+    ],
+    "bookshelves": [
+      "Adventure",
+      "Historical Fiction",
+      "Movie Books",
+      "Category: Historical Novels",
+      "Category: Adventure",
+      "Category: Novels",
+      "Category: French Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/2609/pg2609.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/6/0/2609/2609-0.txt",
+      "http://mirrors.xmission.com/gutenberg/2/6/0/2609/2609-0.txt",
+      "https://www.gutenberg.org/cache/epub/2609/pg2609.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/6/0/2609/2609.txt",
+      "http://mirrors.xmission.com/gutenberg/2/6/0/2609/2609.txt"
+    ],
+    "links": 32,
+    "wikidataWork": "Q769001"
+  },
+  {
+    "gutenbergId": 25305,
+    "title": "Memoirs of Fanny Hill",
+    "authors": [
+      {
+        "name": "Cleland, John",
+        "displayName": "John Cleland",
+        "birthYear": 1709,
+        "deathYear": 1789
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "England -- Fiction",
+      "Prostitutes -- Fiction",
+      "Erotic fiction"
+    ],
+    "bookshelves": [
+      "Banned Books from Anne Haight's list",
+      "Category: Novels",
+      "Category: British Literature",
+      "Category: Sexuality & Erotica"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/25305/pg25305.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/5/3/0/25305/25305-0.txt",
+      "http://mirrors.xmission.com/gutenberg/2/5/3/0/25305/25305-0.txt",
+      "https://www.gutenberg.org/cache/epub/25305/pg25305.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/5/3/0/25305/25305.txt",
+      "http://mirrors.xmission.com/gutenberg/2/5/3/0/25305/25305.txt"
+    ],
+    "links": 32,
+    "wikidataWork": "Q1395765"
+  },
+  {
+    "gutenbergId": 28961,
+    "title": "Cuore (Heart): An Italian Schoolboy's Journal",
+    "authors": [
+      {
+        "name": "De Amicis, Edmondo",
+        "displayName": "Edmondo De Amicis",
+        "birthYear": 1846,
+        "deathYear": 1908
+      }
+    ],
+    "translators": [
+      {
+        "name": "Hapgood, Isabel Florence",
+        "displayName": "Isabel Florence Hapgood",
+        "birthYear": 1850,
+        "deathYear": 1928
+      }
+    ],
+    "subjects": [
+      "Italy -- Juvenile fiction",
+      "Diaries -- Juvenile fiction",
+      "Family life -- Italy -- Juvenile fiction"
+    ],
+    "bookshelves": [
+      "Category: Children & Young Adult Reading",
+      "Category: Novels",
+      "Category: Parenthood & Family Relations"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/28961/pg28961.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/8/9/6/28961/28961-0.txt",
+      "http://mirrors.xmission.com/gutenberg/2/8/9/6/28961/28961-0.txt",
+      "https://www.gutenberg.org/cache/epub/28961/pg28961.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/8/9/6/28961/28961.txt",
+      "http://mirrors.xmission.com/gutenberg/2/8/9/6/28961/28961.txt"
+    ],
+    "links": 32,
+    "wikidataWork": "Q11336"
+  },
+  {
+    "gutenbergId": 69700,
+    "title": "The case-book of Sherlock Holmes",
+    "authors": [
+      {
+        "name": "Doyle, Arthur Conan",
+        "displayName": "Arthur Conan Doyle",
+        "birthYear": 1859,
+        "deathYear": 1930
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Holmes, Sherlock (Fictitious character) -- Fiction",
+      "Private investigators -- England -- Fiction",
+      "Detective and mystery stories, English"
+    ],
+    "bookshelves": [
+      "Category: Short Stories",
+      "Category: Crime, Thrillers and Mystery",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/69700/pg69700.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/6/9/7/0/69700/69700-0.txt",
+      "http://mirrors.xmission.com/gutenberg/6/9/7/0/69700/69700-0.txt",
+      "https://www.gutenberg.org/cache/epub/69700/pg69700.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/6/9/7/0/69700/69700.txt",
+      "http://mirrors.xmission.com/gutenberg/6/9/7/0/69700/69700.txt"
+    ],
+    "links": 32,
+    "wikidataWork": "Q1129378"
+  },
+  {
+    "gutenbergId": 60,
+    "title": "The Scarlet Pimpernel",
+    "authors": [
+      {
+        "name": "Orczy, Emmuska Orczy, Baroness",
+        "displayName": "Emmuska Orczy Baroness Orczy",
+        "birthYear": 1865,
+        "deathYear": 1947
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Historical fiction",
+      "France -- History -- Revolution, 1789-1799 -- Fiction",
+      "Adventure stories",
+      "British -- France -- Fiction",
+      "Nobility -- Fiction",
+      "Blakeney, Percy, Sir (Fictitious character) -- Fiction"
+    ],
+    "bookshelves": [
+      "Adventure",
+      "Best Books Ever Listings",
+      "Movie Books",
+      "Category: Historical Novels",
+      "Category: Adventure",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/60/pg60.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/6/60/60-0.txt",
+      "http://mirrors.xmission.com/gutenberg/6/60/60-0.txt",
+      "https://www.gutenberg.org/cache/epub/60/pg60.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/6/60/60.txt",
+      "http://mirrors.xmission.com/gutenberg/6/60/60.txt"
+    ],
+    "links": 31,
+    "wikidataWork": "Q1249536"
+  },
+  {
+    "gutenbergId": 86,
+    "title": "A Connecticut Yankee in King Arthur's Court",
+    "authors": [
+      {
+        "name": "Twain, Mark",
+        "displayName": "Mark Twain",
+        "birthYear": 1835,
+        "deathYear": 1910
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Fantasy fiction",
+      "Satire",
+      "Knights and knighthood -- Fiction",
+      "Arthurian romances -- Adaptations",
+      "Time travel -- Fiction",
+      "Americans -- Great Britain -- Fiction",
+      "Kings and rulers -- Fiction",
+      "Britons -- Fiction"
+    ],
+    "bookshelves": [
+      "Precursors of Science Fiction",
+      "Arthurian Legends",
+      "Category: Science-Fiction & Fantasy",
+      "Category: Humour",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: American Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/86/pg86.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/8/86/86-0.txt",
+      "http://mirrors.xmission.com/gutenberg/8/86/86-0.txt",
+      "https://www.gutenberg.org/cache/epub/86/pg86.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/8/86/86.txt",
+      "http://mirrors.xmission.com/gutenberg/8/86/86.txt"
+    ],
+    "links": 31,
+    "wikidataWork": "Q848612"
+  },
+  {
+    "gutenbergId": 145,
+    "title": "Middlemarch",
+    "authors": [
+      {
+        "name": "Eliot, George",
+        "displayName": "George Eliot",
+        "birthYear": 1819,
+        "deathYear": 1880
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Didactic fiction",
+      "City and town life -- Fiction",
+      "England -- Fiction",
+      "Young women -- Fiction",
+      "Love stories",
+      "Domestic fiction",
+      "Married people -- Fiction",
+      "Bildungsromans"
+    ],
+    "bookshelves": [
+      "Historical Fiction",
+      "Best Books Ever Listings",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/145/pg145.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/4/145/145-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/4/145/145-0.txt",
+      "https://www.gutenberg.org/cache/epub/145/pg145.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/4/145/145.txt",
+      "http://mirrors.xmission.com/gutenberg/1/4/145/145.txt"
+    ],
+    "links": 31,
+    "wikidataWork": "Q313129"
+  },
+  {
+    "gutenbergId": 967,
+    "title": "Nicholas Nickleby",
+    "authors": [
+      {
+        "name": "Dickens, Charles",
+        "displayName": "Charles Dickens",
+        "birthYear": 1812,
+        "deathYear": 1870
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Boarding schools -- Fiction",
+      "England -- Social life and customs -- 19th century -- Fiction",
+      "England -- Fiction",
+      "Bildungsromans",
+      "Young men -- Fiction",
+      "Theatrical companies -- Fiction",
+      "Poor families -- Fiction",
+      "Picaresque literature"
+    ],
+    "bookshelves": [
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/967/pg967.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/9/6/967/967-0.txt",
+      "http://mirrors.xmission.com/gutenberg/9/6/967/967-0.txt",
+      "https://www.gutenberg.org/cache/epub/967/pg967.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/9/6/967/967.txt",
+      "http://mirrors.xmission.com/gutenberg/9/6/967/967.txt"
+    ],
+    "links": 31,
+    "wikidataWork": "Q847642"
+  },
+  {
+    "gutenbergId": 10007,
+    "title": "Carmilla",
+    "authors": [
+      {
+        "name": "Le Fanu, Joseph Sheridan",
+        "displayName": "Joseph Sheridan Le Fanu",
+        "birthYear": 1814,
+        "deathYear": 1873
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Young women -- Fiction",
+      "Vampires -- Fiction"
+    ],
+    "bookshelves": [
+      "Horror",
+      "Gothic Fiction",
+      "Category: Science-Fiction & Fantasy",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/10007/pg10007.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/0/0/0/10007/10007-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/0/0/0/10007/10007-0.txt",
+      "https://www.gutenberg.org/cache/epub/10007/pg10007.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/0/0/0/10007/10007.txt",
+      "http://mirrors.xmission.com/gutenberg/1/0/0/0/10007/10007.txt"
+    ],
+    "links": 31,
+    "wikidataWork": "Q1043792"
+  },
+  {
+    "gutenbergId": 10339,
+    "title": "An Antarctic Mystery",
+    "authors": [
+      {
+        "name": "Verne, Jules",
+        "displayName": "Jules Verne",
+        "birthYear": 1828,
+        "deathYear": 1905
+      }
+    ],
+    "translators": [
+      {
+        "name": "Hoey, Frances Cashel",
+        "displayName": "Frances Cashel Hoey",
+        "birthYear": 1830,
+        "deathYear": 1908
+      }
+    ],
+    "subjects": [
+      "Antarctica -- Discovery and exploration -- Fiction"
+    ],
+    "bookshelves": [
+      "Category: Adventure",
+      "Category: Novels",
+      "Category: Classics of Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/10339/pg10339.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/0/3/3/10339/10339-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/0/3/3/10339/10339-0.txt",
+      "https://www.gutenberg.org/cache/epub/10339/pg10339.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/0/3/3/10339/10339.txt",
+      "http://mirrors.xmission.com/gutenberg/1/0/3/3/10339/10339.txt"
+    ],
+    "links": 31,
+    "wikidataWork": "Q1212137"
+  },
+  {
+    "gutenbergId": 14838,
+    "title": "The Tale of Peter Rabbit",
+    "authors": [
+      {
+        "name": "Potter, Beatrix",
+        "displayName": "Beatrix Potter",
+        "birthYear": 1866,
+        "deathYear": 1943
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Rabbits -- Juvenile fiction"
+    ],
+    "bookshelves": [
+      "Children's Picture Books",
+      "Category: Children & Young Adult Reading",
+      "Category: Classics of Literature",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/14838/pg14838.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/4/8/3/14838/14838-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/4/8/3/14838/14838-0.txt",
+      "https://www.gutenberg.org/cache/epub/14838/pg14838.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/4/8/3/14838/14838.txt",
+      "http://mirrors.xmission.com/gutenberg/1/4/8/3/14838/14838.txt"
+    ],
+    "links": 31,
+    "wikidataWork": "Q580463"
+  },
+  {
+    "gutenbergId": 70114,
+    "title": "The Big Four",
+    "authors": [
+      {
+        "name": "Christie, Agatha",
+        "displayName": "Agatha Christie",
+        "birthYear": 1890,
+        "deathYear": 1976
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Private investigators -- England -- Fiction",
+      "Detective and mystery stories, English",
+      "Murder -- Investigation -- Fiction",
+      "Poirot, Hercule (Fictitious character) -- Fiction",
+      "Mystery fiction",
+      "Secret societies -- Fiction"
+    ],
+    "bookshelves": [
+      "Category: Crime, Thrillers and Mystery",
+      "Category: Novels",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/70114/pg70114.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/7/0/1/1/70114/70114-0.txt",
+      "http://mirrors.xmission.com/gutenberg/7/0/1/1/70114/70114-0.txt",
+      "https://www.gutenberg.org/cache/epub/70114/pg70114.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/7/0/1/1/70114/70114.txt",
+      "http://mirrors.xmission.com/gutenberg/7/0/1/1/70114/70114.txt"
+    ],
+    "links": 31,
+    "wikidataWork": "Q734675"
+  },
+  {
+    "gutenbergId": 155,
+    "title": "The Moonstone",
+    "authors": [
+      {
+        "name": "Collins, Wilkie",
+        "displayName": "Wilkie Collins",
+        "birthYear": 1824,
+        "deathYear": 1889
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "England -- Fiction",
+      "Country homes -- Fiction",
+      "Police -- England -- Fiction",
+      "Jewelry theft -- Fiction",
+      "East Indians -- England -- Fiction",
+      "Mystery fiction"
+    ],
+    "bookshelves": [
+      "Detective Fiction",
+      "Mystery Fiction",
+      "Category: Crime, Thrillers and Mystery",
+      "Category: Novels",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/155/pg155.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/5/155/155-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/5/155/155-0.txt",
+      "https://www.gutenberg.org/cache/epub/155/pg155.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/5/155/155.txt",
+      "http://mirrors.xmission.com/gutenberg/1/5/155/155.txt"
+    ],
+    "links": 30,
+    "wikidataWork": "Q2362563"
+  },
+  {
+    "gutenbergId": 479,
+    "title": "Little Lord Fauntleroy",
+    "authors": [
+      {
+        "name": "Burnett, Frances Hodgson",
+        "displayName": "Frances Hodgson Burnett",
+        "birthYear": 1849,
+        "deathYear": 1924
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Conduct of life -- Juvenile fiction",
+      "Children -- Conduct of life -- Juvenile fiction",
+      "Family -- Juvenile fiction",
+      "England -- Juvenile fiction",
+      "Grandparent and child -- Juvenile fiction",
+      "Inheritance and succession -- Juvenile fiction",
+      "Grandfathers -- Juvenile fiction",
+      "Wealth -- Juvenile fiction",
+      "Altruism -- Juvenile fiction",
+      "Mother and child -- Juvenile fiction"
+    ],
+    "bookshelves": [
+      "Children's Literature",
+      "Category: Children & Young Adult Reading",
+      "Category: Novels",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/479/pg479.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/4/7/479/479-0.txt",
+      "http://mirrors.xmission.com/gutenberg/4/7/479/479-0.txt",
+      "https://www.gutenberg.org/cache/epub/479/pg479.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/4/7/479/479.txt",
+      "http://mirrors.xmission.com/gutenberg/4/7/479/479.txt"
+    ],
+    "links": 30,
+    "wikidataWork": "Q387480"
+  },
+  {
+    "gutenbergId": 3808,
+    "title": "Robur the Conqueror",
+    "authors": [
+      {
+        "name": "Verne, Jules",
+        "displayName": "Jules Verne",
+        "birthYear": 1828,
+        "deathYear": 1905
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Science fiction",
+      "Aeronautics -- Fiction"
+    ],
+    "bookshelves": [
+      "Category: Science-Fiction & Fantasy",
+      "Category: Adventure",
+      "Category: Novels",
+      "Category: French Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/3808/pg3808.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/3/8/0/3808/3808-0.txt",
+      "http://mirrors.xmission.com/gutenberg/3/8/0/3808/3808-0.txt",
+      "https://www.gutenberg.org/cache/epub/3808/pg3808.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/3/8/0/3808/3808.txt",
+      "http://mirrors.xmission.com/gutenberg/3/8/0/3808/3808.txt"
+    ],
+    "links": 30,
+    "wikidataWork": "Q978723"
+  },
+  {
+    "gutenbergId": 58866,
+    "title": "The Murder on the Links",
+    "authors": [
+      {
+        "name": "Christie, Agatha",
+        "displayName": "Agatha Christie",
+        "birthYear": 1890,
+        "deathYear": 1976
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Private investigators -- England -- Fiction",
+      "Detective and mystery stories",
+      "Poirot, Hercule (Fictitious character) -- Fiction"
+    ],
+    "bookshelves": [
+      "Detective Fiction",
+      "Category: Crime, Thrillers and Mystery",
+      "Category: Novels",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/58866/pg58866.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/5/8/8/6/58866/58866-0.txt",
+      "http://mirrors.xmission.com/gutenberg/5/8/8/6/58866/58866-0.txt",
+      "https://www.gutenberg.org/cache/epub/58866/pg58866.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/5/8/8/6/58866/58866.txt",
+      "http://mirrors.xmission.com/gutenberg/5/8/8/6/58866/58866.txt"
+    ],
+    "links": 30,
+    "wikidataWork": "Q542293"
+  },
+  {
+    "gutenbergId": 217,
+    "title": "Sons and Lovers",
+    "authors": [
+      {
+        "name": "Lawrence, D. H. (David Herbert)",
+        "displayName": "D. H. Lawrence",
+        "birthYear": 1885,
+        "deathYear": 1930
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Autobiographical fiction",
+      "England -- Fiction",
+      "Domestic fiction",
+      "Bildungsromans",
+      "Young men -- Fiction",
+      "Working class families -- Fiction"
+    ],
+    "bookshelves": [
+      "Best Books Ever Listings",
+      "Banned Books from Anne Haight's list",
+      "Banned Books List from the American Library Association",
+      "Category: Novels",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/217/pg217.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/1/217/217-0.txt",
+      "http://mirrors.xmission.com/gutenberg/2/1/217/217-0.txt",
+      "https://www.gutenberg.org/cache/epub/217/pg217.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/1/217/217.txt",
+      "http://mirrors.xmission.com/gutenberg/2/1/217/217.txt"
+    ],
+    "links": 29,
+    "wikidataWork": "Q80771"
+  },
+  {
+    "gutenbergId": 308,
+    "title": "Three men in a boat (to say nothing of the dog)",
+    "authors": [
+      {
+        "name": "Jerome, Jerome K. (Jerome Klapka)",
+        "displayName": "Jerome K. Jerome",
+        "birthYear": 1859,
+        "deathYear": 1927
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Young men -- Travel -- England -- Thames River -- Fiction",
+      "Boats and boating -- England -- Thames River -- Fiction",
+      "Dogs -- Fiction",
+      "Humorous stories, English",
+      "Thames River (England) -- Fiction",
+      "Male friendship -- Fiction"
+    ],
+    "bookshelves": [
+      "Best Books Ever Listings",
+      "Humor",
+      "Category: Humour",
+      "Category: Novels",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/308/pg308.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/3/0/308/308-0.txt",
+      "http://mirrors.xmission.com/gutenberg/3/0/308/308-0.txt",
+      "https://www.gutenberg.org/cache/epub/308/pg308.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/3/0/308/308.txt",
+      "http://mirrors.xmission.com/gutenberg/3/0/308/308.txt"
+    ],
+    "links": 29,
+    "wikidataWork": "Q955910"
+  },
+  {
+    "gutenbergId": 370,
+    "title": "The Fortunes and Misfortunes of the Famous Moll Flanders",
+    "authors": [
+      {
+        "name": "Defoe, Daniel",
+        "displayName": "Daniel Defoe",
+        "birthYear": 1661,
+        "deathYear": 1731
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "London (England) -- Fiction",
+      "Picaresque literature",
+      "Adventure stories",
+      "Criminals -- Fiction",
+      "Prostitutes -- Fiction",
+      "Children of prisoners -- Fiction",
+      "British -- Virginia -- Fiction",
+      "Women -- England -- Fiction",
+      "Repentance -- Fiction",
+      "Virginia -- Fiction"
+    ],
+    "bookshelves": [
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/370/pg370.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/3/7/370/370-0.txt",
+      "http://mirrors.xmission.com/gutenberg/3/7/370/370-0.txt",
+      "https://www.gutenberg.org/cache/epub/370/pg370.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/3/7/370/370.txt",
+      "http://mirrors.xmission.com/gutenberg/3/7/370/370.txt"
+    ],
+    "links": 29,
+    "wikidataWork": "Q612523"
+  },
+  {
+    "gutenbergId": 767,
+    "title": "Agnes Grey",
+    "authors": [
+      {
+        "name": "Brontë, Anne",
+        "displayName": "Anne Brontë",
+        "birthYear": 1820,
+        "deathYear": 1849
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Autobiographical fiction",
+      "England -- Fiction",
+      "Single women -- Fiction",
+      "Governesses -- Fiction",
+      "Feminist fiction"
+    ],
+    "bookshelves": [
+      "Category: Novels",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/767/pg767.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/7/6/767/767-0.txt",
+      "http://mirrors.xmission.com/gutenberg/7/6/767/767-0.txt",
+      "https://www.gutenberg.org/cache/epub/767/pg767.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/7/6/767/767.txt",
+      "http://mirrors.xmission.com/gutenberg/7/6/767/767.txt"
+    ],
+    "links": 29,
+    "wikidataWork": "Q517172"
+  },
+  {
+    "gutenbergId": 1013,
+    "title": "The First Men in the Moon",
+    "authors": [
+      {
+        "name": "Wells, H. G. (Herbert George)",
+        "displayName": "H. G. Wells",
+        "birthYear": 1866,
+        "deathYear": 1946
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Science fiction",
+      "Satire",
+      "Utopias -- Fiction",
+      "Imperialism -- Fiction",
+      "Utopian fiction",
+      "Space flight to the moon -- Fiction",
+      "Moon -- Fiction"
+    ],
+    "bookshelves": [
+      "Science Fiction",
+      "Movie Books",
+      "Category: Science-Fiction & Fantasy",
+      "Category: Novels",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/1013/pg1013.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/0/1/1013/1013-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/0/1/1013/1013-0.txt",
+      "https://www.gutenberg.org/cache/epub/1013/pg1013.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/0/1/1013/1013.txt",
+      "http://mirrors.xmission.com/gutenberg/1/0/1/1013/1013.txt"
+    ],
+    "links": 29,
+    "wikidataWork": "Q1218232"
+  },
+  {
+    "gutenbergId": 521,
+    "title": "The Life and Adventures of Robinson Crusoe",
+    "authors": [
+      {
+        "name": "Defoe, Daniel",
+        "displayName": "Daniel Defoe",
+        "birthYear": 1661,
+        "deathYear": 1731
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Shipwreck survival -- Fiction",
+      "Islands -- Fiction",
+      "Crusoe, Robinson (Fictitious character) -- Fiction",
+      "Atlantic Ocean -- Fiction",
+      "Adventure stories",
+      "Castaways -- Fiction"
+    ],
+    "bookshelves": [
+      "Category: Adventure",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/521/pg521.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/5/2/521/521-0.txt",
+      "http://mirrors.xmission.com/gutenberg/5/2/521/521-0.txt",
+      "https://www.gutenberg.org/cache/epub/521/pg521.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/5/2/521/521.txt",
+      "http://mirrors.xmission.com/gutenberg/5/2/521/521.txt"
+    ],
+    "links": 0
+  },
+  {
+    "gutenbergId": 768,
+    "title": "Wuthering Heights",
+    "authors": [
+      {
+        "name": "Brontë, Emily",
+        "displayName": "Emily Brontë",
+        "birthYear": 1818,
+        "deathYear": 1848
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Revenge -- Fiction",
+      "Psychological fiction",
+      "Rejection (Psychology) -- Fiction",
+      "Love stories",
+      "Domestic fiction",
+      "Yorkshire (England) -- Fiction",
+      "Foundlings -- Fiction",
+      "Rural families -- Fiction",
+      "Heathcliff (Fictitious character : Brontë) -- Fiction",
+      "Triangles (Interpersonal relations) -- Fiction"
+    ],
+    "bookshelves": [
+      "Best Books Ever Listings",
+      "Gothic Fiction",
+      "Movie Books",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/768/pg768.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/7/6/768/768-0.txt",
+      "http://mirrors.xmission.com/gutenberg/7/6/768/768-0.txt",
+      "https://www.gutenberg.org/cache/epub/768/pg768.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/7/6/768/768.txt",
+      "http://mirrors.xmission.com/gutenberg/7/6/768/768.txt"
+    ],
+    "links": 0
+  },
+  {
+    "gutenbergId": 996,
+    "title": "Don Quixote",
+    "authors": [
+      {
+        "name": "Cervantes Saavedra, Miguel de",
+        "displayName": "Miguel de Cervantes Saavedra",
+        "birthYear": 1547,
+        "deathYear": 1616
+      }
+    ],
+    "translators": [
+      {
+        "name": "Ormsby, John",
+        "displayName": "John Ormsby",
+        "birthYear": 1829,
+        "deathYear": 1895
+      }
+    ],
+    "subjects": [
+      "Spain -- Social life and customs -- 16th century -- Fiction",
+      "Knights and knighthood -- Spain -- Fiction",
+      "Picaresque literature",
+      "Romances"
+    ],
+    "bookshelves": [
+      "Best Books Ever Listings",
+      "Harvard Classics",
+      "Category: Novels",
+      "Category: Classics of Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/996/pg996.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/9/9/996/996-0.txt",
+      "http://mirrors.xmission.com/gutenberg/9/9/996/996-0.txt",
+      "https://www.gutenberg.org/cache/epub/996/pg996.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/9/9/996/996.txt",
+      "http://mirrors.xmission.com/gutenberg/9/9/996/996.txt"
+    ],
+    "links": 0
+  },
+  {
+    "gutenbergId": 1184,
+    "title": "The Count of Monte Cristo",
+    "authors": [
+      {
+        "name": "Dumas, Alexandre",
+        "displayName": "Alexandre Dumas",
+        "birthYear": 1802,
+        "deathYear": 1870
+      },
+      {
+        "name": "Maquet, Auguste",
+        "displayName": "Auguste Maquet",
+        "birthYear": 1813,
+        "deathYear": 1888
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Historical fiction",
+      "Revenge -- Fiction",
+      "Adventure stories",
+      "Prisoners -- Fiction",
+      "France -- History -- 19th century -- Fiction",
+      "Pirates -- Fiction",
+      "Dantès, Edmond (Fictitious character) -- Fiction"
+    ],
+    "bookshelves": [
+      "Adventure",
+      "Movie Books",
+      "Category: Adventure",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: French Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/1184/pg1184.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/1/8/1184/1184-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/1/8/1184/1184-0.txt",
+      "https://www.gutenberg.org/cache/epub/1184/pg1184.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/1/8/1184/1184.txt",
+      "http://mirrors.xmission.com/gutenberg/1/1/8/1184/1184.txt"
+    ],
+    "links": 0
+  },
+  {
+    "gutenbergId": 1257,
+    "title": "The three musketeers",
+    "authors": [
+      {
+        "name": "Dumas, Alexandre",
+        "displayName": "Alexandre Dumas",
+        "birthYear": 1802,
+        "deathYear": 1870
+      },
+      {
+        "name": "Maquet, Auguste",
+        "displayName": "Auguste Maquet",
+        "birthYear": 1813,
+        "deathYear": 1888
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Historical fiction",
+      "France -- History -- Louis XIII, 1610-1643 -- Fiction",
+      "Adventure and adventurers -- Fiction",
+      "Swordsmen -- Fiction"
+    ],
+    "bookshelves": [
+      "Adventure",
+      "Historical Fiction",
+      "Best Books Ever Listings",
+      "Movie Books",
+      "Category: Adventure",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: French Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/1257/pg1257.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/2/5/1257/1257-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/2/5/1257/1257-0.txt",
+      "https://www.gutenberg.org/cache/epub/1257/pg1257.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/2/5/1257/1257.txt",
+      "http://mirrors.xmission.com/gutenberg/1/2/5/1257/1257.txt"
+    ],
+    "links": 0
+  },
+  {
+    "gutenbergId": 1952,
+    "title": "The Yellow Wallpaper",
+    "authors": [
+      {
+        "name": "Gilman, Charlotte Perkins",
+        "displayName": "Charlotte Perkins Gilman",
+        "birthYear": 1860,
+        "deathYear": 1935
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Psychological fiction",
+      "Mentally ill women -- Fiction",
+      "Feminist fiction",
+      "Married women -- Psychology -- Fiction",
+      "Sex role -- Fiction"
+    ],
+    "bookshelves": [
+      "Gothic Fiction",
+      "Category: Short Stories",
+      "Category: American Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/1952/pg1952.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/9/5/1952/1952-0.txt",
+      "http://mirrors.xmission.com/gutenberg/1/9/5/1952/1952-0.txt",
+      "https://www.gutenberg.org/cache/epub/1952/pg1952.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/1/9/5/1952/1952.txt",
+      "http://mirrors.xmission.com/gutenberg/1/9/5/1952/1952.txt"
+    ],
+    "links": 0
+  },
+  {
+    "gutenbergId": 2413,
+    "title": "Madame Bovary",
+    "authors": [
+      {
+        "name": "Flaubert, Gustave",
+        "displayName": "Gustave Flaubert",
+        "birthYear": 1821,
+        "deathYear": 1880
+      }
+    ],
+    "translators": [
+      {
+        "name": "Aveling, Eleanor Marx",
+        "displayName": "Eleanor Marx Aveling",
+        "birthYear": 1855,
+        "deathYear": 1898
+      }
+    ],
+    "subjects": [
+      "Adultery -- Fiction",
+      "Domestic fiction",
+      "Married women -- Fiction",
+      "France -- Fiction",
+      "Middle class -- Fiction",
+      "Physicians' spouses -- Fiction",
+      "Suicide victims -- Fiction"
+    ],
+    "bookshelves": [
+      "Best Books Ever Listings",
+      "Banned Books from Anne Haight's list",
+      "Category: Novels",
+      "Category: French Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/2413/pg2413.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/4/1/2413/2413-0.txt",
+      "http://mirrors.xmission.com/gutenberg/2/4/1/2413/2413-0.txt",
+      "https://www.gutenberg.org/cache/epub/2413/pg2413.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/2/4/1/2413/2413.txt",
+      "http://mirrors.xmission.com/gutenberg/2/4/1/2413/2413.txt"
+    ],
+    "links": 0
+  },
+  {
+    "gutenbergId": 6593,
+    "title": "History of Tom Jones, a Foundling",
+    "authors": [
+      {
+        "name": "Fielding, Henry",
+        "displayName": "Henry Fielding",
+        "birthYear": 1707,
+        "deathYear": 1754
+      }
+    ],
+    "translators": [],
+    "subjects": [
+      "Humorous stories",
+      "England -- Fiction",
+      "Bildungsromans",
+      "Young men -- Fiction",
+      "Foundlings -- Fiction",
+      "Identity (Psychology) -- Fiction"
+    ],
+    "bookshelves": [
+      "Best Books Ever Listings",
+      "Harvard Classics",
+      "Movie Books",
+      "Banned Books from Anne Haight's list",
+      "Category: Novels",
+      "Category: Classics of Literature",
+      "Category: British Literature"
+    ],
+    "downloads": 0,
+    "textUrls": [
+      "https://gutenberg.pglaf.org/cache/epub/6593/pg6593.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/6/5/9/6593/6593-0.txt",
+      "http://mirrors.xmission.com/gutenberg/6/5/9/6593/6593-0.txt",
+      "https://www.gutenberg.org/cache/epub/6593/pg6593.txt",
+      "https://mirror.csclub.uwaterloo.ca/gutenberg/6/5/9/6593/6593.txt",
+      "http://mirrors.xmission.com/gutenberg/6/5/9/6593/6593.txt"
+    ],
+    "links": 0
+  }
+]

@@ -1,0 +1,16 @@
+---
+import Base from '../layouts/Base.astro';
+import FirstLines from '../components/FirstLines.astro';
+import data from '../data/first-lines.json';
+import type { FirstLine } from '../lib/first-lines';
+import { CONTENT } from '../lib/site';
+
+const entries = data as FirstLine[];
+---
+
+<Base title={CONTENT.firstLines.pageTitle} description={CONTENT.firstLines.description}>
+  <main id="main">
+    <h1 class="visually-hidden">First lines of literature</h1>
+    {entries.length ? <FirstLines entries={entries} /> : <p style="padding: 2rem">The collection is empty. Run <code>npm run content</code>.</p>}
+  </main>
+</Base>

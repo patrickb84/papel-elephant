@@ -1,0 +1,395 @@
+[
+  {
+    "gutenbergId": 11,
+    "flags": [],
+    "artwork": {
+      "key": "aic-44018",
+      "src": "/first-lines/art/aic-44018-1800.webp",
+      "srcSmall": "/first-lines/art/aic-44018-900.webp",
+      "width": 1686,
+      "height": 1028,
+      "color": "#4e432e"
+    },
+    "portrait": {
+      "key": "lewiscarrollselfphoto",
+      "src": "/first-lines/portraits/lewiscarrollselfphoto-480.webp",
+      "srcSmall": "/first-lines/portraits/lewiscarrollselfphoto-160.webp",
+      "width": 340,
+      "height": 480,
+      "color": "#584a3e"
+    }
+  },
+  {
+    "gutenbergId": 1399,
+    "flags": [],
+    "artwork": {
+      "key": "met-438010",
+      "src": "/first-lines/art/met-438010-1800.webp",
+      "srcSmall": "/first-lines/art/met-438010-900.webp",
+      "width": 1484,
+      "height": 1800,
+      "color": "#82735f"
+    },
+    "portrait": {
+      "key": "l-n-tolstoy-prokudin-gorsky",
+      "src": "/first-lines/portraits/l-n-tolstoy-prokudin-gorsky-480.webp",
+      "srcSmall": "/first-lines/portraits/l-n-tolstoy-prokudin-gorsky-160.webp",
+      "width": 347,
+      "height": 480,
+      "color": "#7b6e66"
+    }
+  },
+  {
+    "gutenbergId": 2554,
+    "flags": [],
+    "artwork": {
+      "key": "aic-6005",
+      "src": "/first-lines/art/aic-6005-1800.webp",
+      "srcSmall": "/first-lines/art/aic-6005-900.webp",
+      "width": 1686,
+      "height": 1021,
+      "color": "#5f6157"
+    },
+    "portrait": {
+      "key": "vasily-perov-google-art-project",
+      "src": "/first-lines/portraits/vasily-perov-google-art-project-480.webp",
+      "srcSmall": "/first-lines/portraits/vasily-perov-google-art-project-160.webp",
+      "width": 384,
+      "height": 480,
+      "color": "#2a1f14"
+    }
+  },
+  {
+    "gutenbergId": 1342,
+    "flags": [
+      "art-low-resolution-843x550"
+    ],
+    "artwork": {
+      "key": "aic-51541",
+      "src": "/first-lines/art/aic-51541-1800.webp",
+      "srcSmall": "/first-lines/art/aic-51541-900.webp",
+      "width": 843,
+      "height": 550,
+      "color": "#424133"
+    },
+    "portrait": {
+      "key": "cassandraausten-janeausten-c-1810-hires",
+      "src": "/first-lines/portraits/cassandraausten-janeausten-c-1810-hires-480.webp",
+      "srcSmall": "/first-lines/portraits/cassandraausten-janeausten-c-1810-hires-160.webp",
+      "width": 372,
+      "height": 480,
+      "color": "#dcd3cc"
+    }
+  },
+  {
+    "gutenbergId": 2701,
+    "flags": [],
+    "artwork": {
+      "key": "aic-129639",
+      "src": "/first-lines/art/aic-129639-1800.webp",
+      "srcSmall": "/first-lines/art/aic-129639-900.webp",
+      "width": 1401,
+      "height": 1800,
+      "color": "#342a20"
+    },
+    "portrait": {
+      "key": "herman-melville-by-joseph-o-eaton",
+      "src": "/first-lines/portraits/herman-melville-by-joseph-o-eaton-480.webp",
+      "srcSmall": "/first-lines/portraits/herman-melville-by-joseph-o-eaton-160.webp",
+      "width": 390,
+      "height": 480,
+      "color": "#362e2b"
+    }
+  },
+  {
+    "gutenbergId": 84,
+    "flags": [],
+    "artwork": {
+      "key": "aic-183293",
+      "src": "/first-lines/art/aic-183293-1800.webp",
+      "srcSmall": "/first-lines/art/aic-183293-900.webp",
+      "width": 1686,
+      "height": 1168,
+      "color": "#4f492c"
+    },
+    "portrait": {
+      "key": "richard-rothwell-1800-1868-mary-wollstonecraft-shelley-npg-1",
+      "src": "/first-lines/portraits/richard-rothwell-1800-1868-mary-wollstonecraft-shelley-npg-1-480.webp",
+      "srcSmall": "/first-lines/portraits/richard-rothwell-1800-1868-mary-wollstonecraft-shelley-npg-1-160.webp",
+      "width": 393,
+      "height": 480,
+      "color": "#392918"
+    }
+  },
+  {
+    "gutenbergId": 120,
+    "flags": [],
+    "artwork": {
+      "key": "aic-14620",
+      "src": "/first-lines/art/aic-14620-1800.webp",
+      "srcSmall": "/first-lines/art/aic-14620-900.webp",
+      "width": 1686,
+      "height": 1350,
+      "color": "#87908f"
+    },
+    "portrait": {
+      "key": "robert-louis-stevenson-by-henry-walter-barnett-bw",
+      "src": "/first-lines/portraits/robert-louis-stevenson-by-henry-walter-barnett-bw-480.webp",
+      "srcSmall": "/first-lines/portraits/robert-louis-stevenson-by-henry-walter-barnett-bw-160.webp",
+      "width": 360,
+      "height": 480,
+      "color": "#707070"
+    }
+  },
+  {
+    "gutenbergId": 5200,
+    "flags": [
+      "art-low-resolution-843x1014"
+    ],
+    "artwork": {
+      "key": "aic-65920",
+      "src": "/first-lines/art/aic-65920-1800.webp",
+      "srcSmall": "/first-lines/art/aic-65920-900.webp",
+      "width": 843,
+      "height": 1014,
+      "color": "#8e7b71"
+    },
+    "portrait": {
+      "key": "kafka1906-cropped",
+      "src": "/first-lines/portraits/kafka1906-cropped-480.webp",
+      "srcSmall": "/first-lines/portraits/kafka1906-cropped-160.webp",
+      "width": 330,
+      "height": 440,
+      "color": "#5d5d5d"
+    }
+  },
+  {
+    "gutenbergId": 64317,
+    "flags": [],
+    "artwork": {
+      "key": "aic-27984",
+      "src": "/first-lines/art/aic-27984-1800.webp",
+      "srcSmall": "/first-lines/art/aic-27984-900.webp",
+      "width": 1686,
+      "height": 1347,
+      "color": "#686158"
+    },
+    "portrait": {
+      "key": "f-scott-fitzgerald-1929-photo-portrait-by-nickolas-muray-cro",
+      "src": "/first-lines/portraits/f-scott-fitzgerald-1929-photo-portrait-by-nickolas-muray-cro-480.webp",
+      "srcSmall": "/first-lines/portraits/f-scott-fitzgerald-1929-photo-portrait-by-nickolas-muray-cro-160.webp",
+      "width": 388,
+      "height": 480,
+      "color": "#878786"
+    }
+  },
+  {
+    "gutenbergId": 4078,
+    "flags": [],
+    "artwork": {
+      "key": "aic-64745",
+      "src": "/first-lines/art/aic-64745-1800.webp",
+      "srcSmall": "/first-lines/art/aic-64745-900.webp",
+      "width": 1686,
+      "height": 1378,
+      "color": "#2e2408"
+    },
+    "portrait": {
+      "key": "oscar-wilde-by-napoleon-sarony-three-quarter-length-photogra",
+      "src": "/first-lines/portraits/oscar-wilde-by-napoleon-sarony-three-quarter-length-photogra-480.webp",
+      "srcSmall": "/first-lines/portraits/oscar-wilde-by-napoleon-sarony-three-quarter-length-photogra-160.webp",
+      "width": 290,
+      "height": 480,
+      "color": "#6c594b"
+    }
+  },
+  {
+    "gutenbergId": 345,
+    "flags": [],
+    "artwork": {
+      "key": "aic-16564",
+      "src": "/first-lines/art/aic-16564-1800.webp",
+      "srcSmall": "/first-lines/art/aic-16564-900.webp",
+      "width": 1686,
+      "height": 1636,
+      "color": "#9d9cb0"
+    },
+    "portrait": {
+      "key": "bram-stoker-1906",
+      "src": "/first-lines/portraits/bram-stoker-1906-480.webp",
+      "srcSmall": "/first-lines/portraits/bram-stoker-1906-160.webp",
+      "width": 372,
+      "height": 480,
+      "color": "#323232"
+    }
+  },
+  {
+    "gutenbergId": 46,
+    "flags": [],
+    "artwork": {
+      "key": "aic-5355",
+      "src": "/first-lines/art/aic-5355-1800.webp",
+      "srcSmall": "/first-lines/art/aic-5355-900.webp",
+      "width": 1686,
+      "height": 1168,
+      "color": "#7e7e7e"
+    },
+    "portrait": {
+      "key": "dickens-gurney-head",
+      "src": "/first-lines/portraits/dickens-gurney-head-480.webp",
+      "srcSmall": "/first-lines/portraits/dickens-gurney-head-160.webp",
+      "width": 328,
+      "height": 480,
+      "color": "#8f7b6a"
+    }
+  },
+  {
+    "gutenbergId": 76,
+    "flags": [],
+    "artwork": {
+      "key": "aic-20199",
+      "src": "/first-lines/art/aic-20199-1800.webp",
+      "srcSmall": "/first-lines/art/aic-20199-900.webp",
+      "width": 1686,
+      "height": 1052,
+      "color": "#8e8982"
+    },
+    "portrait": {
+      "key": "marktwain-loc",
+      "src": "/first-lines/portraits/marktwain-loc-480.webp",
+      "srcSmall": "/first-lines/portraits/marktwain-loc-160.webp",
+      "width": 387,
+      "height": 480,
+      "color": "#363636"
+    }
+  },
+  {
+    "gutenbergId": 1260,
+    "flags": [
+      "portrait-download-failed"
+    ],
+    "artwork": {
+      "key": "aic-94127",
+      "src": "/first-lines/art/aic-94127-1800.webp",
+      "srcSmall": "/first-lines/art/aic-94127-900.webp",
+      "width": 1686,
+      "height": 1496,
+      "color": "#746247"
+    }
+  },
+  {
+    "gutenbergId": 1400,
+    "flags": [],
+    "artwork": {
+      "key": "aic-72398",
+      "src": "/first-lines/art/aic-72398-1800.webp",
+      "srcSmall": "/first-lines/art/aic-72398-900.webp",
+      "width": 1686,
+      "height": 890,
+      "color": "#605126"
+    },
+    "portrait": {
+      "key": "dickens-gurney-head",
+      "src": "/first-lines/portraits/dickens-gurney-head-480.webp",
+      "srcSmall": "/first-lines/portraits/dickens-gurney-head-160.webp",
+      "width": 328,
+      "height": 480,
+      "color": "#8f7b6a"
+    }
+  },
+  {
+    "gutenbergId": 98,
+    "flags": [],
+    "artwork": {
+      "key": "aic-896",
+      "src": "/first-lines/art/aic-896-1800.webp",
+      "srcSmall": "/first-lines/art/aic-896-900.webp",
+      "width": 1424,
+      "height": 1800,
+      "color": "#685739"
+    },
+    "portrait": {
+      "key": "dickens-gurney-head",
+      "src": "/first-lines/portraits/dickens-gurney-head-480.webp",
+      "srcSmall": "/first-lines/portraits/dickens-gurney-head-160.webp",
+      "width": 328,
+      "height": 480,
+      "color": "#8f7b6a"
+    }
+  },
+  {
+    "gutenbergId": 1661,
+    "flags": [],
+    "artwork": {
+      "key": "aic-61128",
+      "src": "/first-lines/art/aic-61128-1800.webp",
+      "srcSmall": "/first-lines/art/aic-61128-900.webp",
+      "width": 1686,
+      "height": 1473,
+      "color": "#49381d"
+    },
+    "portrait": {
+      "key": "arthur-conan-doyle-by-walter-benington-1914",
+      "src": "/first-lines/portraits/arthur-conan-doyle-by-walter-benington-1914-480.webp",
+      "srcSmall": "/first-lines/portraits/arthur-conan-doyle-by-walter-benington-1914-160.webp",
+      "width": 364,
+      "height": 480,
+      "color": "#676660"
+    }
+  },
+  {
+    "gutenbergId": 158,
+    "flags": [],
+    "artwork": {
+      "key": "aic-47582",
+      "src": "/first-lines/art/aic-47582-1800.webp",
+      "srcSmall": "/first-lines/art/aic-47582-900.webp",
+      "width": 1686,
+      "height": 1257,
+      "color": "#5e452c"
+    },
+    "portrait": {
+      "key": "cassandraausten-janeausten-c-1810-hires",
+      "src": "/first-lines/portraits/cassandraausten-janeausten-c-1810-hires-480.webp",
+      "srcSmall": "/first-lines/portraits/cassandraausten-janeausten-c-1810-hires-160.webp",
+      "width": 372,
+      "height": 480,
+      "color": "#dcd3cc"
+    }
+  },
+  {
+    "gutenbergId": 16,
+    "flags": [],
+    "artwork": {
+      "key": "aic-8983",
+      "src": "/first-lines/art/aic-8983-1800.webp",
+      "srcSmall": "/first-lines/art/aic-8983-900.webp",
+      "width": 1686,
+      "height": 1238,
+      "color": "#7e6e62"
+    },
+    "portrait": {
+      "key": "james-matthew-barrie00",
+      "src": "/first-lines/portraits/james-matthew-barrie00-480.webp",
+      "srcSmall": "/first-lines/portraits/james-matthew-barrie00-160.webp",
+      "width": 348,
+      "height": 480,
+      "color": "#4d3f31"
+    }
+  },
+  {
+    "gutenbergId": 768,
+    "flags": [
+      "art-low-resolution-843x1009",
+      "portrait-download-failed"
+    ],
+    "artwork": {
+      "key": "aic-111646",
+      "src": "/first-lines/art/aic-111646-1800.webp",
+      "srcSmall": "/first-lines/art/aic-111646-900.webp",
+      "width": 843,
+      "height": 1009,
+      "color": "#5b4931"
+    }
+  }
+]

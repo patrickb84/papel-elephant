@@ -1,0 +1,99 @@
+# All the words on the website, in one place.
+#
+# Edit the text after a colon. Keep the indentation (two spaces per level)
+# and the dashes in lists. Text containing a colon or starting with a quote
+# mark needs "double quotes" around it; longer text can use ">-" and wrap
+# onto indented lines below it. Rebuild (or keep `npm run dev` running) to
+# see changes.
+#
+# Anything marked PLACEHOLDER is stand-in copy to replace before launch.
+
+site:
+  name: Paper Elephant Publishing
+  url: https://paperelephantpublishing.com
+  # PLACEHOLDER: the press's real contact address.
+  email: hello@paperelephantpublishing.com
+  # Top bar links, in order.
+  nav:
+    - label: First lines
+      href: /
+    - label: About
+      href: /about/
+  copyright: Paper Elephant Publishing
+
+# The home page: an opening line beside a painting.
+firstLines:
+  pageTitle: First Lines · Paper Elephant Publishing
+  description: The opening lines of classic novels, each set beside a painting from the years it was written. Read any of them free on Project Gutenberg.
+  kicker: First lines
+  readButton: Read the book
+  shuffleButton: Another book
+  imageMissing: The painting could not be loaded.
+  # {count} is replaced by the number of books in the collection.
+  credits: "{count} openings. Texts from Project Gutenberg; paintings from the open-access collections of The Metropolitan Museum of Art and the Art Institute of Chicago; portraits from Wikimedia Commons."
+
+about:
+  pageTitle: About · Paper Elephant Publishing
+  description: Paper Elephant Publishing is an independent literary press.
+
+  intro:
+    kicker: About the press
+    heading:
+      - Independent
+      - publishing.
+    lede: >-
+      Paper Elephant Publishing is an independent press
+      publishing works of fiction.
+    paragraphs:
+      - >-
+        Our first publication is a Christmas romance.
+        Additional titles will be announced as they become available.
+
+  notes:
+    - title: Publications
+      text: >-
+        Our catalog currently includes one title, with
+        further projects in development.
+
+    - title: Submissions
+      text: >-
+        We are not currently accepting manuscript submissions
+        or publishing proposals.
+
+    - title: First Lines
+      text: >-
+        A collection of opening lines from classic literature,
+        paired with artwork from the same period.
+      link:
+        label: Explore First Lines
+        href: /
+
+  contact:
+    kicker: Contact
+    heading: Get in touch
+    text: >-
+      For general inquiries, rights and permissions,
+      or press-related matters, please use the form below.
+    emailPrefix: Or email
+    topics:
+      - General enquiry
+      - Books and publications
+      - Rights and permissions
+      - Press and events
+    labels:
+      name: Name
+      email: Email
+      topic: Subject
+      message: Message
+      send: Send message
+    errors:
+      name: Please enter your name.
+      email: Please enter your email address.
+      emailInvalid: Please enter a valid email address.
+      message: Please enter a message.
+    status:
+      sending: Sending…
+      sent: Your message has been sent.
+      # {email} is replaced by the address above.
+      failed: Sorry, that didn't send. Please try again, or email {email}.
+      openedEmailApp: Your email app should open with the message ready to send.

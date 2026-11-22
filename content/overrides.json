@@ -1,0 +1,301 @@
+{
+  "exclude": {
+    "834": "Memoirs of Sherlock Holmes: the source text drops the opening quotation mark of the first sentence",
+    "1200": "Gargantua and Pantagruel: several prologues and books; no single reliable opening line",
+    "12623": "1808 reprint; prefer the standard edition #521",
+    "27827": "The Kama Sutra is a treatise, not fiction",
+    "28961": "Cuore: dedication and diary structure; no single reliable opening line"
+  },
+  "include": [
+    521,
+    768,
+    996,
+    1184,
+    1257,
+    1952,
+    2413,
+    6593
+  ],
+  "books": {
+    "11": {
+      "artwork": {
+        "museum": "aic",
+        "id": "44018"
+      }
+    },
+    "16": {
+      "themes": [
+        "childhood",
+        "sea",
+        "skies"
+      ],
+      "artwork": {
+        "museum": "aic",
+        "id": "8983"
+      }
+    },
+    "46": {
+      "themes": [
+        "gothic",
+        "winter"
+      ],
+      "artwork": {
+        "museum": "aic",
+        "id": "5355"
+      }
+    },
+    "74": {
+      "openingLine": "“Tom!” No answer. “TOM!” No answer.",
+      "note": "the opening is four one-line paragraphs"
+    },
+    "76": {
+      "artwork": {
+        "museum": "aic",
+        "id": "20199"
+      }
+    },
+    "82": {
+      "startsWith": "In that pleasant district of merry England"
+    },
+    "84": {
+      "title": "Frankenstein",
+      "artwork": {
+        "museum": "aic",
+        "id": "183293"
+      }
+    },
+    "98": {
+      "themes": [
+        "city",
+        "labour",
+        "war"
+      ],
+      "artwork": {
+        "museum": "aic",
+        "id": "896"
+      }
+    },
+    "120": {
+      "artwork": {
+        "museum": "aic",
+        "id": "14620"
+      }
+    },
+    "131": {
+      "startsWith": "As I walked through the wilderness of this world"
+    },
+    "135": {
+      "openingLine": "In 1815, M. Charles-François-Bienvenu Myriel was Bishop of D——",
+      "note": "the text has no full stop after the dash"
+    },
+    "155": {
+      "startsWith": "I address these lines—written in India—to my relatives in England",
+      "note": "the Prologue opens the novel"
+    },
+    "158": {
+      "themes": [
+        "country",
+        "horses",
+        "domestic"
+      ],
+      "artwork": {
+        "museum": "aic",
+        "id": "47582"
+      }
+    },
+    "201": {
+      "startsWith": "I call our world Flatland"
+    },
+    "215": {
+      "startsWith": "Buck did not read the newspapers"
+    },
+    "236": {
+      "startsWith": "It was seven o’clock of a very warm evening in the Seeonee hills"
+    },
+    "345": {
+      "openingLine": "3 May. Bistritz.—Left Munich at 8:35 P. M., on 1st May, arriving at Vienna early next morning; should have arrived at 6:46, but train was an hour late.",
+      "note": "Jonathan Harker's journal, chapter I; the dateline belongs to the sentence",
+      "artwork": {
+        "museum": "aic",
+        "id": "16564"
+      }
+    },
+    "370": {
+      "startsWith": "My true name is so well known"
+    },
+    "521": {
+      "wikidataSearch": "Robinson Crusoe"
+    },
+    "600": {
+      "openingLine": "I am a sick man.... I am a spiteful man. I am an unattractive man."
+    },
+    "768": {
+      "themes": [
+        "wilderness",
+        "winter",
+        "gothic"
+      ],
+      "artwork": {
+        "museum": "aic",
+        "id": "111646"
+      }
+    },
+    "940": {
+      "startsWith": "It was a feature peculiar to the colonial wars of North America"
+    },
+    "996": {
+      "wikidataSearch": "Don Quixote"
+    },
+    "1023": {
+      "openingLine": "London. Michaelmas term lately over, and the Lord Chancellor sitting in Lincoln’s Inn Hall.",
+      "note": "the one-word first sentence reads better with the next"
+    },
+    "1079": {
+      "startsWith": "I WISH either my father or my mother",
+      "openingLine": "I wish either my father or my mother, or indeed both of them, as they were in duty both equally bound to it, had minded what they were about when they begot me; …",
+      "note": "abridged: the full first sentence is about 1,500 characters"
+    },
+    "1237": {
+      "startsWith": "Mme. Vauquer (_nee_ de Conflans)"
+    },
+    "1260": {
+      "themes": [
+        "gothic",
+        "solitude",
+        "winter"
+      ],
+      "artwork": {
+        "museum": "aic",
+        "id": "94127"
+      }
+    },
+    "1342": {
+      "themes": [
+        "society",
+        "horses",
+        "country"
+      ],
+      "artwork": {
+        "museum": "aic",
+        "id": "51541"
+      }
+    },
+    "1399": {
+      "artwork": {
+        "museum": "met",
+        "id": "438010"
+      }
+    },
+    "1400": {
+      "themes": [
+        "river",
+        "country"
+      ],
+      "artwork": {
+        "museum": "aic",
+        "id": "72398"
+      }
+    },
+    "1661": {
+      "themes": [
+        "detective",
+        "city",
+        "gothic"
+      ],
+      "artwork": {
+        "museum": "aic",
+        "id": "61128"
+      }
+    },
+    "2166": {
+      "startsWith": "It is a curious thing that at my age"
+    },
+    "2226": {
+      "startsWith": "He sat, in defiance of municipal orders"
+    },
+    "2302": {
+      "openingLine": "My dearest Barbara Alexievna,—How happy I was last night—how immeasurably, how impossibly happy!",
+      "note": "the salutation is set in capitals in the text"
+    },
+    "2350": {
+      "startsWith": "I find it recorded in my notebook that it was a bleak and windy day"
+    },
+    "2434": {
+      "startsWith": "We sailed from Peru"
+    },
+    "2554": {
+      "artwork": {
+        "museum": "aic",
+        "id": "6005"
+      }
+    },
+    "2701": {
+      "themes": [
+        "sea",
+        "skies"
+      ],
+      "artwork": {
+        "museum": "aic",
+        "id": "129639"
+      }
+    },
+    "3289": {
+      "openingLine": "“I am inclined to think—” said I. “I should do so,” Sherlock Holmes remarked impatiently.",
+      "note": "the opening exchange is two one-line paragraphs"
+    },
+    "4078": {
+      "artwork": {
+        "museum": "aic",
+        "id": "64745"
+      }
+    },
+    "4300": {
+      "startsWith": "Stately, plump Buck Mulligan"
+    },
+    "5200": {
+      "themes": [
+        "city",
+        "solitude",
+        "winter"
+      ],
+      "artwork": {
+        "museum": "aic",
+        "id": "65920"
+      }
+    },
+    "6593": {
+      "startsWith": "An author ought to consider himself, not as a gentleman",
+      "note": "Book I, chapter i",
+      "wikidataSearch": "The History of Tom Jones, a Foundling"
+    },
+    "8993": {
+      "openingLine": "“Are we going up again?” “No. On the contrary; we are going down!” “Worse than that, Mr. Smith, we are falling!”",
+      "note": "the opening is a run of one-line exchanges"
+    },
+    "14838": {
+      "openingLine": "Once upon a time there were four little Rabbits, and their names were—Flopsy, Mopsy, Cotton-tail, and Peter.",
+      "note": "the names are set as an indented list"
+    },
+    "17157": {
+      "startsWith": "My father had a small estate in Nottinghamshire",
+      "note": "skip the chapter summary"
+    },
+    "23700": {
+      "startsWith": "A kindly thing it is to have compassion of the afflicted",
+      "note": "the Proem; skip the translator's notes",
+      "year": 1353,
+      "yearNote": "Wikidata Q16438 P577 publication date 1353 (read by hand; the automatic read missed it)"
+    },
+    "58866": {
+      "openingLine": "I believe that a well-known anecdote exists to the effect that a young writer, determined to make the commencement of his story forcible and original enough to catch and rivet the attention of the most blasé of editors, penned the following sentence: “‘Hell!’ said the Duchess.”",
+      "note": "the first sentence ends in a colon; the quoted sentence completes it",
+      "startsWith": "I believe that a well-known anecdote exists"
+    },
+    "60976": {
+      "startsWith": "Whoever has made a voyage up the Hudson"
+    },
+    "68283": {
+      "startsWith": "The most merciful thing in the world"
+    }
+  }
+}

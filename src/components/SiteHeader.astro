@@ -1,0 +1,100 @@
+---
+import { NAV, SITE } from '../lib/site';
+
+const path = Astro.url.pathname.replace(/\/?$/, '/');
+---
+
+<header class="site-header">
+  <a class="brand" href="/" aria-label={`${SITE.name}, home`}>
+    <span class="brand-mark" aria-hidden="true"></span>
+    <span class="brand-rule" aria-hidden="true"></span>
+    <span class="brand-word" aria-hidden="true"><span>Paper</span><span>Elephant</span><span>Publishing</span></span>
+  </a>
+  <nav aria-label="Main">
+    <ul>
+      {NAV.map((item) => (
+        <li><a href={item.href} aria-current={path === item.href ? 'page' : undefined}>{item.label}</a></li>
+      ))}
+    </ul>
+  </nav>
+</header>
+
+<style>
+  .site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    height: var(--header-h);
+    padding: 0 var(--gutter);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  /* Lock-up after the brand logo: elephant, a thin rule, the name in three lines. */
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .brand-mark {
+    width: 2.75rem;
+    height: 3.25rem;
+    background: var(--foil-mark);
+    -webkit-mask: url('/brand/elephant-mask.png') center / contain no-repeat;
+    mask: url('/brand/elephant-mask.png') center / contain no-repeat;
+    transition: transform 300ms ease;
+  }
+  .brand:hover .brand-mark { transform: rotate(-4deg); }
+  .brand-rule {
+    width: 1.5px;
+    height: 3.1rem;
+    background: var(--foil-mark);
+  }
+  .brand-word {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--display);
+    font-size: 1.04rem;
+    font-weight: 460;
+    line-height: 0.96;
+    letter-spacing: 0.005em;
+  }
+
+  nav ul {
+    display: flex;
+    gap: clamp(1rem, 3vw, 2rem);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  nav a {
+    position: relative;
+    display: inline-block;
+    padding: 0.5rem 0;
+    font-family: var(--sans);
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: var(--ink-soft);
+    text-decoration: none;
+    transition: color 160ms ease;
+  }
+  nav a:hover, nav a[aria-current='page'] { color: var(--ink); }
+  nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0.2rem;
+    height: 1px;
+    background: var(--foil);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 220ms ease;
+  }
+  nav a:hover::after, nav a[aria-current='page']::after { transform: scaleX(1); }
+  @media (prefers-reduced-motion: reduce) {
+    .brand-mark, nav a::after { transition: none; }
+  }
+</style>

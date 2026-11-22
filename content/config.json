@@ -1,0 +1,42 @@
+{
+  "candidateTarget": 140,
+  "maxPages": 14,
+  "excludeSubjects": [
+    "drama",
+    "poetry",
+    "poems",
+    "tragedies",
+    "comedies",
+    "plays",
+    "essays",
+    "sermons",
+    "cookery",
+    "periodicals",
+    "speeches",
+    "correspondence",
+    "letters",
+    "dictionaries",
+    "encyclopedias",
+    "humor -- collections",
+    "anthologies"
+  ],
+  "excludeTitles": [
+    "complete works",
+    "the works of",
+    "collected works",
+    "volume",
+    "vol.",
+    "vol ",
+    "index of",
+    "anthology",
+    "poems",
+    "plays",
+    "selected",
+    "omnibus",
+    "letters of",
+    "the complete",
+    "collection of"
+  ],
+  "artYearTolerance": 1,
+  "artMaxDateRange": 5
+}

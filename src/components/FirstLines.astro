@@ -1,0 +1,467 @@
+---
+// "First Lines of Literature": a classic novel's opening line, set beside a
+// painting from the same years. The build renders one entry as plain HTML
+// (so the page works without JavaScript); the script below then shows a
+// random entry and drives the shuffle button. All data and images are local.
+import type { FirstLine } from '../lib/first-lines';
+import { CONTENT, fill } from '../lib/site';
+
+interface Props {
+  entries: FirstLine[];
+}
+const { entries } = Astro.props;
+const e = entries[0];
+const t = CONTENT.firstLines; // text from content/site.yaml
+
+/** Book-style opening: the first word or two are set in small capitals after the drop cap. */
+const splitLead = (line: string) => {
+  const words = line.split(' ');
+  const n = words.length <= 4 ? 1 : 2;
+  return { lead: words.slice(0, n).join(' '), rest: words.slice(n).join(' ') };
+};
+const first = splitLead(e.line);
+
+const sizeOf = (line: string) => (line.length < 90 ? 'short' : line.length < 220 ? 'medium' : line.length < 450 ? 'long' : 'xlong');
+const credits = (x: FirstLine) =>
+  [x.coAuthors.length ? `with ${x.coAuthors.join(' and ')}` : '', x.translators.length ? `Translated by ${x.translators.join(' and ')}` : '']
+    .filter(Boolean)
+    .join(' · ');
+const portraitCredit = (x: FirstLine) =>
+  x.portrait ? `Portrait of ${x.author}${x.portrait.artist ? ` by ${x.portrait.artist}` : ''} · ${x.portrait.license}` : '';
+const SIZES = '(min-width: 960px) 56vw, 100vw';
+
+// The client needs everything except provenance (that lives in content/REPORT.md).
+const payload = JSON.stringify(entries.map(({ provenance: _p, ...rest }) => rest)).replace(/</g, '\\u003c');
+---
+
+<section class="fl" data-state="pending" aria-labelledby="fl-kicker" aria-busy="true">
+  <figure class="fl-art">
+    <div class="fl-frame" data-f="frame" style={`--art-color: ${e.artwork.color}`}>
+      <img
+        data-f="art"
+        src={e.artwork.srcSmall}
+        srcset={`${e.artwork.srcSmall} 900w, ${e.artwork.src} 1800w`}
+        sizes={SIZES}
+        width={e.artwork.width}
+        height={e.artwork.height}
+        alt={`${e.artwork.title}, painted by ${e.artwork.artist}, ${e.artwork.date}`}
+        decoding="async"
+        fetchpriority="high"
+      />
+      <p class="fl-fallback" data-f="fallback">{t.imageMissing}</p>
+    </div>
+    <figcaption class="fl-caption fl-swap">
+      <a data-f="art-link" href={e.artwork.sourceUrl} rel="noopener"><cite data-f="art-title">{e.artwork.title}</cite></a><span data-f="art-by">, {e.artwork.artist}, {e.artwork.date}.</span>{" "}
+      <span data-f="art-museum">{e.artwork.museum}</span>, public domain.
+    </figcaption>
+  </figure>
+
+  <div class="fl-text">
+    <!-- Names the section for screen readers; the nav link already says it on screen. -->
+    <p class="visually-hidden" id="fl-kicker">{t.kicker}</p>
+
+    <blockquote class="fl-line fl-swap" data-f="line-wrap" data-size={sizeOf(e.line)} cite={e.readUrl}>
+      <p data-f="line"><span class="fl-lead" data-f="lead">{first.lead}</span> <span data-f="rest">{first.rest}</span></p>
+    </blockquote>
+
+    <div class="fl-orn fl-swap" aria-hidden="true"><span class="fl-orn-mark"></span></div>
+
+    <div class="fl-book fl-swap">
+      <div class="fl-portrait" data-f="portrait-wrap" hidden={!e.portrait} style={e.portrait ? `--art-color: ${e.portrait.color}` : undefined}>
+        <img data-f="portrait" src={e.portrait?.src ?? ''} width="64" height="64" alt="" decoding="async" />
+      </div>
+      <div class="fl-meta">
+        <p class="fl-title"><cite data-f="title">{e.title}</cite></p>
+        <p class="fl-author"><span data-f="author">{e.author}</span>, <span data-f="year">{e.year}</span></p>
+        <p class="fl-credits" data-f="credits" hidden={!credits(e)}>{credits(e)}</p>
+      </div>
+    </div>
+
+    <div class="fl-actions">
+      <button class="fl-btn fl-btn-primary" type="button" data-f="shuffle">{t.shuffleButton}</button>
+      <a class="fl-btn" data-f="read" href={e.readUrl} target="_blank" rel="noopener">
+        {t.readButton}<span class="visually-hidden"> (opens Project Gutenberg in a new tab)</span>
+      </a>
+    </div>
+
+    <p class="fl-portrait-credit fl-swap" data-f="portrait-credit" hidden={!e.portrait}>
+      <a data-f="portrait-link" href={e.portrait?.sourceUrl ?? '#'} rel="noopener">{portraitCredit(e)}</a>
+    </p>
+  </div>
+
+  <p class="visually-hidden" aria-live="polite" data-f="announce"></p>
+
+  <footer class="fl-footer">
+    <span>{fill(t.credits, { count: entries.length })}</span>
+  </footer>
+</section>
+
+<script type="application/json" id="fl-data" set:html={payload} />
+
+<script>
+  import type { FirstLine } from '../lib/first-lines';
+  type Entry = Omit<FirstLine, 'provenance'>;
+
+  const root = document.querySelector<HTMLElement>('.fl');
+  const dataEl = document.getElementById('fl-data');
+  if (root && dataEl) {
+    const entries: Entry[] = JSON.parse(dataEl.textContent ?? '[]');
+    const $ = <T extends HTMLElement = HTMLElement>(name: string) => root.querySelector<T>(`[data-f="${name}"]`)!;
+    const SIZES = '(min-width: 960px) 56vw, 100vw';
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const fadeMs = () => (reduceMotion.matches ? 0 : 380);
+    const wait = (ms: number) => new Promise<void>((r) => setTimeout(r, ms));
+
+    const sizeOf = (line: string) => (line.length < 90 ? 'short' : line.length < 220 ? 'medium' : line.length < 450 ? 'long' : 'xlong');
+    const credits = (x: Entry) =>
+      [x.coAuthors.length ? `with ${x.coAuthors.join(' and ')}` : '', x.translators.length ? `Translated by ${x.translators.join(' and ')}` : '']
+        .filter(Boolean)
+        .join(' · ');
+
+    let current = -1;
+    let busy = false;
+    // Avoid showing anything seen in the last few shuffles, not just the last one.
+    const recent: number[] = [];
+    const memory = Math.min(20, Math.floor(entries.length / 3));
+
+    function pick(): number {
+      if (entries.length < 2) return 0;
+      const pool = entries.map((_, i) => i).filter((i) => i !== current && !recent.includes(i));
+      const from = pool.length ? pool : entries.map((_, i) => i).filter((i) => i !== current);
+      return from[Math.floor(Math.random() * from.length)];
+    }
+
+    /** Fetch and decode the painting before swapping, so the fade never shows a half-loaded image. */
+    function preload(x: Entry): Promise<void> {
+      const img = new Image();
+      img.sizes = SIZES;
+      img.srcset = `${x.artwork.srcSmall} 900w, ${x.artwork.src} 1800w`;
+      img.src = x.artwork.srcSmall;
+      const portrait = x.portrait ? Object.assign(new Image(), { src: x.portrait.src }) : null;
+      const done = Promise.all([img.decode(), portrait?.decode()]).then(() => undefined);
+      return Promise.race([done.catch(() => undefined), wait(4000)]);
+    }
+
+    function render(x: Entry) {
+      const art = $<HTMLImageElement>('art');
+      const frame = $('frame');
+      frame.dataset.loaded = 'false';
+      frame.dataset.failed = 'false';
+      frame.style.setProperty('--art-color', x.artwork.color);
+      art.width = x.artwork.width;
+      art.height = x.artwork.height;
+      art.alt = `${x.artwork.title}, painted by ${x.artwork.artist}, ${x.artwork.date}`;
+      art.srcset = `${x.artwork.srcSmall} 900w, ${x.artwork.src} 1800w`;
+      art.src = x.artwork.srcSmall;
+      if (art.complete && art.naturalWidth) frame.dataset.loaded = 'true';
+
+      $<HTMLAnchorElement>('art-link').href = x.artwork.sourceUrl;
+      $('art-title').textContent = x.artwork.title;
+      $('art-by').textContent = `, ${x.artwork.artist}, ${x.artwork.date}.`;
+      $('art-museum').textContent = x.artwork.museum;
+
+      $('line-wrap').dataset.size = sizeOf(x.line);
+      $('line-wrap').setAttribute('cite', x.readUrl);
+      const words = x.line.split(' ');
+      const n = words.length <= 4 ? 1 : 2;
+      $('lead').textContent = words.slice(0, n).join(' ');
+      $('rest').textContent = words.slice(n).join(' ');
+      $('title').textContent = x.title;
+      $('author').textContent = x.author;
+      $('year').textContent = String(x.year);
+      const c = credits(x);
+      $('credits').textContent = c;
+      $('credits').hidden = !c;
+      $<HTMLAnchorElement>('read').href = x.readUrl;
+
+      const pw = $('portrait-wrap');
+      const pc = $('portrait-credit');
+      if (x.portrait) {
+        pw.hidden = false;
+        pw.style.setProperty('--art-color', x.portrait.color);
+        $<HTMLImageElement>('portrait').src = x.portrait.src;
+        const link = $<HTMLAnchorElement>('portrait-link');
+        link.href = x.portrait.sourceUrl;
+        link.textContent = `Portrait of ${x.author}${x.portrait.artist ? ` by ${x.portrait.artist}` : ''} · ${x.portrait.license}`;
+        pc.hidden = false;
+      } else {
+        pw.hidden = true;
+        pc.hidden = true;
+      }
+    }
+
+    async function show(i: number, opts: { announce: boolean; first?: boolean }) {
+      if (busy) return;
+      busy = true;
+      root!.setAttribute('aria-busy', 'true');
+      const x = entries[i];
+      await preload(x);
+      if (!opts.first) {
+        root!.dataset.state = 'leaving';
+        await wait(fadeMs());
+      }
+      render(x);
+      if (current >= 0) {
+        recent.push(current);
+        if (recent.length > memory) recent.shift();
+      }
+      current = i;
+      history.replaceState(null, '', `#${x.id}`);
+      // Next frame, so the browser paints the hidden state before fading in.
+      requestAnimationFrame(() => {
+        root!.dataset.state = 'ready';
+        root!.removeAttribute('aria-busy');
+      });
+      if (opts.announce) $('announce').textContent = `${x.title} by ${x.author}, ${x.year}.`;
+      await wait(fadeMs());
+      busy = false;
+    }
+
+    // Image load / error handling (fallback panel instead of a broken image).
+    const art = $<HTMLImageElement>('art');
+    art.addEventListener('load', () => ($('frame').dataset.loaded = 'true'));
+    art.addEventListener('error', () => ($('frame').dataset.failed = 'true'));
+    if (art.complete && art.naturalWidth) $('frame').dataset.loaded = 'true';
+    $<HTMLImageElement>('portrait').addEventListener('error', () => ($('portrait-wrap').hidden = true));
+
+    $('shuffle').addEventListener('click', () => show(pick(), { announce: true }));
+
+    // First entry: the one named in the URL (#pride-and-prejudice), else random.
+    const fromHash = entries.findIndex((x) => `#${x.id}` === location.hash);
+    show(fromHash >= 0 ? fromHash : pick(), { announce: false, first: true });
+  }
+</script>
+
+<style>
+  .fl {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2rem var(--gutter);
+    align-content: start;
+    min-height: calc(100svh - var(--header-h));
+    padding: var(--gutter);
+    padding-bottom: 1.5rem;
+  }
+  @media (min-width: 960px) {
+    .fl {
+      grid-template-columns: minmax(0, 1.3fr) minmax(20rem, 1fr);
+      grid-template-rows: 1fr auto;
+      align-content: stretch;
+      align-items: center;
+    }
+  }
+
+  /* Painting -------------------------------------------------------------- */
+  .fl-art {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    min-width: 0;
+  }
+  .fl-frame {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+  }
+  .fl-frame img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 58svh;
+    background: var(--art-color);
+    box-shadow: 0 1px 2px rgb(0 0 0 / 0.12), 0 18px 40px -18px rgb(0 0 0 / 0.45);
+    transition: opacity var(--fade) ease;
+  }
+  @media (min-width: 960px) {
+    .fl-frame img { max-height: calc(100svh - var(--header-h) - 2 * var(--gutter) - 5rem); }
+  }
+  /* The average colour holds the space; the image fades in over it. */
+  .fl-frame[data-loaded='false'] img { opacity: 0.001; }
+  .fl-frame[data-failed='true'] img { visibility: hidden; }
+  .fl-fallback {
+    display: none;
+    position: absolute;
+    inset: 0;
+    margin: 0;
+    place-items: center;
+    padding: 1rem;
+    text-align: center;
+    font-family: var(--sans);
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+    background: var(--paper-deep);
+  }
+  .fl-frame[data-failed='true'] .fl-fallback { display: grid; }
+
+  .fl-caption {
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    line-height: 1.45;
+    color: var(--ink-faint);
+    text-align: center;
+    max-width: 44rem;
+  }
+  .fl-caption cite { font-style: italic; }
+
+  /* Text ------------------------------------------------------------------ */
+  .fl-text {
+    max-width: 36rem;
+    width: 100%;
+    justify-self: center;
+  }
+  .fl-line { margin: 0 0 2rem; }
+  .fl-line p {
+    margin: 0;
+    font-weight: 380;
+    line-height: 1.22;
+    letter-spacing: -0.01em;
+    text-wrap: pretty;
+    hanging-punctuation: first;
+  }
+  .fl-line[data-size='short'] p { font-size: clamp(2rem, 4.2vw, 3.5rem); line-height: 1.12; }
+  .fl-line[data-size='medium'] p { font-size: clamp(1.55rem, 2.7vw, 2.4rem); }
+  .fl-line[data-size='long'] p { font-size: clamp(1.3rem, 2vw, 1.8rem); line-height: 1.3; }
+  .fl-line[data-size='xlong'] p { font-size: clamp(1.08rem, 1.45vw, 1.35rem); line-height: 1.42; }
+
+  /* Drop cap: sinks into the first lines like a printed initial. Browsers
+     without initial-letter (Firefox) get a floated capital instead. */
+  .fl-line p::first-letter {
+    font-family: var(--display);
+    font-weight: 500;
+    color: var(--gold);
+    /* Short lines often fit on one line, so their capital is raised
+       (two lines tall, standing on the first line) rather than sunk. */
+    initial-letter: 2 1;
+    margin-right: 0.06em;
+  }
+  .fl-line:is([data-size='medium'], [data-size='long'], [data-size='xlong']) p::first-letter { initial-letter: 3; }
+  /* A raised capital stands on the same baseline as the rest of its word,
+     so any gap after it reads as a space ("A LL"). Close it up. */
+  .fl-line[data-size='short'] p::first-letter { margin-right: -0.15em; }
+  @supports not (initial-letter: 2) {
+    .fl-line p::first-letter {
+      float: left;
+      font-size: 2.6em;
+      line-height: 0.82;
+      padding: 0.06em 0.08em 0 0;
+    }
+    .fl-line:is([data-size='long'], [data-size='xlong']) p::first-letter { font-size: 3.4em; }
+    .fl-line[data-size='short'] p::first-letter { float: none; font-size: 1.9em; line-height: 1; padding: 0; }
+  }
+  .fl-lead {
+    font-variant-caps: small-caps;
+    letter-spacing: 0.045em;
+  }
+
+  /* A fleuron on a hairline, between the line and the book. */
+  .fl-orn {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    margin: 0 0 1.25rem;
+    color: var(--gold);
+  }
+  /* The press's elephant as the ornament. */
+  .fl-orn-mark {
+    width: 1.05rem;
+    height: 1.25rem;
+    background: var(--foil-mark);
+    -webkit-mask: url('/brand/elephant-mask.png') center / contain no-repeat;
+    mask: url('/brand/elephant-mask.png') center / contain no-repeat;
+  }
+  .fl-orn::before, .fl-orn::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--rule);
+  }
+
+  .fl-book {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .fl-portrait {
+    flex: none;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: var(--art-color, var(--paper-deep));
+  }
+  .fl-portrait[hidden] { display: none; }
+  .fl-portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 20%;
+    display: block;
+  }
+  .fl-meta p { margin: 0; }
+  .fl-title { font-size: 1.3rem; line-height: 1.25; }
+  .fl-title cite { font-style: italic; }
+  .fl-author { font-family: var(--sans); font-size: 0.92rem; color: var(--ink-soft); margin-top: 0.2rem !important; }
+  .fl-credits { font-family: var(--sans); font-size: 0.8rem; color: var(--ink-faint); margin-top: 0.15rem !important; }
+  .fl-credits[hidden] { display: none; }
+
+  .fl-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 2rem;
+  }
+  .fl-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0.6rem 1.25rem;
+    font: 500 0.95rem/1 var(--sans);
+    color: var(--ink);
+    background: transparent;
+    border: 1px solid var(--ink);
+    border-radius: 999px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
+  }
+  .fl-btn:hover { border-color: var(--gold); }
+  .fl-btn-primary { background: var(--ink); color: var(--paper); }
+  .fl-btn-primary:hover { background: transparent; color: var(--ink); }
+  .fl[aria-busy='true'] [data-f='shuffle'] { cursor: progress; }
+
+  .fl-portrait-credit {
+    margin: 1.5rem 0 0;
+    font-family: var(--sans);
+    font-size: 0.72rem;
+    color: var(--ink-faint);
+  }
+  .fl-portrait-credit[hidden] { display: none; }
+
+  .fl-footer {
+    grid-column: 1 / -1;
+    font-family: var(--sans);
+    font-size: 0.72rem;
+    color: var(--ink-faint);
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  /* Transitions -------------------------------------------------------------
+     Without JavaScript the build-time entry simply shows. With it, content is
+     hidden until a random entry is in place, and fades between entries. */
+  .fl-swap, .fl-frame { transition: opacity var(--fade) ease, transform var(--fade) ease; }
+  :global(html.js) .fl[data-state='pending'] :is(.fl-swap, .fl-frame),
+  .fl[data-state='leaving'] :is(.fl-swap, .fl-frame) {
+    opacity: 0;
+  }
+  .fl[data-state='leaving'] .fl-swap { transform: translateY(4px); }
+  @media (prefers-reduced-motion: reduce) {
+    .fl[data-state='leaving'] .fl-swap { transform: none; }
+  }
+</style>
