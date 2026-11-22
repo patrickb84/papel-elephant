@@ -1,0 +1,33 @@
+---
+import { SITE } from '../lib/site';
+import FloralRule from './FloralRule.astro';
+---
+
+<footer class="site-foot">
+  <FloralRule name="seedling" width="1.9rem" />
+  <span>© {new Date().getFullYear()} {SITE.copyright}</span>
+  <a href={SITE.instagram.href} rel="noopener">{SITE.instagram.label}</a>
+</footer>
+
+<style>
+  .site-foot {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem 1.5rem;
+    padding: 2rem 0 2rem;
+    border-top: 1px solid var(--rule);
+    position: relative;
+    margin-top: 1rem;
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    color: var(--ink-faint);
+  }
+  a {
+    display: inline-block;
+    padding: 0.6rem 0;
+    color: var(--ink-soft);
+  }
+  a:hover { color: var(--ink); }
+</style>

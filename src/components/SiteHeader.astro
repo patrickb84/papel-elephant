@@ -3,6 +3,7 @@ import { NAV, SITE } from '../lib/site';
 
 const path = Astro.url.pathname.replace(/\/?$/, '/');
 const current = (href: string) => (path === href ? 'page' : undefined);
+const numerals = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii'];
 ---
 
 <header class="site-header">
@@ -32,7 +33,6 @@ const current = (href: string) => (path === href ? 'page' : undefined);
   <dialog class="drawer" id="menu-drawer" aria-label="Menu">
     <div class="drawer-inner">
       <div class="drawer-top">
-        <span class="drawer-mark" aria-hidden="true"></span>
         <button class="drawer-close" type="button">
           <svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true">
             <path d="M4.5 4.5l11 11M15.5 4.5l-11 11" />
@@ -40,13 +40,27 @@ const current = (href: string) => (path === href ? 'page' : undefined);
           <span>Close</span>
         </button>
       </div>
+      <!-- Set like a book's contents page: roman numerals and display type. -->
       <nav aria-label="Menu">
         <ul>
-          {NAV.map((item) => (
-            <li><a href={item.href} aria-current={current(item.href)}>{item.label}</a></li>
+          {NAV.map((item, i) => (
+            <li style={`--i: ${i}`}>
+              <a href={item.href} aria-current={current(item.href)}>
+                <span class="toc-n" aria-hidden="true">{numerals[i] ?? i + 1}.</span>
+                <span class="toc-label">{item.label}</span>
+              </a>
+            </li>
           ))}
         </ul>
       </nav>
+      <!-- Ways to get in touch, and the elephant, at the foot of the drawer. -->
+      <div class="drawer-bottom">
+        <ul class="drawer-foot">
+          <li><a href={SITE.contactLink.href}>{SITE.contactLink.label}</a></li>
+          <li><a href={SITE.instagram.href} rel="noopener">{SITE.instagram.label}</a></li>
+        </ul>
+        <span class="drawer-mark" aria-hidden="true"></span>
+      </div>
     </div>
   </dialog>
 </header>
@@ -62,9 +76,11 @@ const current = (href: string) => (path === href ? 'page' : undefined);
     });
     drawer.addEventListener('close', () => {
       button.setAttribute('aria-expanded', 'false');
-      button.focus();
+      button.focus({ preventScroll: true });
     });
     drawer.querySelector('.drawer-close')?.addEventListener('click', close);
+    // Links close the drawer, so one to this page (About's #contact) lands visibly.
+    drawer.querySelectorAll('a').forEach((link) => link.addEventListener('click', close));
     // A click on the dimmed page outside the drawer lands on the dialog itself.
     drawer.addEventListener('click', (event) => event.target === drawer && close());
     // Widening the window past the breakpoint puts the links back in the bar.
@@ -222,39 +238,82 @@ const current = (href: string) => (path === href ? 'page' : undefined);
   .drawer-top {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 1.5rem;
+  }
+  .drawer nav li { border-bottom: 1px solid var(--rule); }
+  .drawer nav a {
+    display: flex;
+    align-items: baseline;
+    gap: 0.9rem;
+    padding: 0.85rem 0 0.95rem;
+    font-family: var(--display);
+    font-size: clamp(1.9rem, 9vw, 2.4rem);
+    font-weight: 450;
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    color: var(--ink-soft);
+    text-decoration: none;
+    transition: color 160ms ease;
+  }
+  .toc-n {
+    min-width: 2.2rem;
+    font-style: italic;
+    font-size: 0.55em;
+    color: var(--gold);
+  }
+  .toc-label {
+    background: var(--foil) left bottom / 0 1px no-repeat;
+    padding-bottom: 0.1em;
+    transition: background-size 260ms cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+  .drawer nav a:hover, .drawer nav a[aria-current='page'] { color: var(--ink); }
+  /* The current page is underlined in gilt, like the bar's links. */
+  .drawer nav a[aria-current='page'] .toc-label, .drawer nav a:hover .toc-label { background-size: 100% 1px; }
+
+  /* The entries settle in one after another as the drawer opens. */
+  .drawer nav li {
+    transition: opacity 420ms ease calc(80ms + var(--i) * 60ms), transform 520ms cubic-bezier(0.2, 0.7, 0.2, 1) calc(80ms + var(--i) * 60ms);
+  }
+  @starting-style {
+    .drawer[open] nav li { opacity: 0; transform: translateX(1.5rem); }
+  }
+
+  /* Contact and Instagram bottom left, the elephant bottom right. */
+  .drawer-bottom {
+    display: flex;
+    align-items: flex-end;
     justify-content: space-between;
-    margin-bottom: 2rem;
+    gap: 1rem;
+    margin-top: auto;
+    padding-top: 1.5rem;
+  }
+  .drawer-foot {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 1.75rem;
   }
   .drawer-mark {
-    width: 2.2rem;
-    height: 2.6rem;
+    flex: none;
+    width: 4.25rem;
+    height: 5rem;
     background: var(--foil-mark);
     -webkit-mask: url('/brand/elephant-mask.png') center / contain no-repeat;
     mask: url('/brand/elephant-mask.png') center / contain no-repeat;
   }
-  .drawer li { border-top: 1px solid var(--rule); }
-  .drawer li:last-child { border-bottom: 1px solid var(--rule); }
-  .drawer nav a {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 1.05rem 0;
+  .drawer-foot a {
+    display: inline-block;
+    padding: 0.6rem 0;
     font-family: var(--sans);
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     font-weight: 500;
     color: var(--ink-soft);
-    text-decoration: none;
+    text-decoration-color: var(--gold-soft);
   }
-  .drawer nav a:hover, .drawer nav a[aria-current='page'] { color: var(--ink); }
-  /* The current page carries the gilt rule used before kickers. */
-  .drawer nav a[aria-current='page']::before {
-    content: '';
-    width: 1.5rem;
-    height: 1px;
-    background: var(--foil);
-  }
+  .drawer-foot a:hover { color: var(--ink); text-decoration-color: var(--gold); }
 
   @media (prefers-reduced-motion: reduce) {
-    .brand-mark, .nav-bar a::after, .drawer, .drawer::backdrop, .menu-button, .drawer-close { transition: none; }
+    .brand-mark, .nav-bar a::after, .drawer, .drawer::backdrop, .menu-button, .drawer-close,
+    .drawer nav a, .toc-label, .drawer nav li { transition: none; }
   }
 </style>

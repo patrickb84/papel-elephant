@@ -96,8 +96,8 @@ Everything hand-made lives in `content/overrides.json`:
 - Below 720px the top-bar links collapse into a Menu button that opens a drawer (`src/components/SiteHeader.astro`, a modal `<dialog>`, so Escape, focus and the backdrop work natively). Without JavaScript the links stay in the bar.
 - The header wordmark is live text in Playfair Display, laid out like the logo lock-up (elephant, thin rule, three lines).
 - Each opening line is set like the start of a printed chapter: a gold Playfair drop cap (sunk three lines, or raised for short one-line openings), the first words in small capitals, and the elephant as an ornament on the rule below.
-- **Placeholder copy:** entries marked `PLACEHOLDER` in `content/site.yaml` (the About text and the address `hello@paperelephantpublishing.com`) are stand-ins to replace before launch.
-- **Contact form:** the site has no backend, so the form needs a form service such as Formspree or Basin. Put the service's endpoint in `.env` as `PUBLIC_CONTACT_ENDPOINT=...` and rebuild. Until then, submitting opens the visitor's email app with the message filled in. The form validates fields with inline messages and includes a hidden spam-trap field.
+- **Placeholder copy:** entries marked `PLACEHOLDER` in `content/site.yaml` are stand-ins to replace before launch. The press has no contact email; Instagram is the fallback contact.
+- **Contact form:** the site has no backend, so the form needs a form service such as Formspree or Basin. Put the service's endpoint in `.env` as `PUBLIC_CONTACT_ENDPOINT=...` and rebuild. Until then, the About page shows a short note and the Instagram link in place of the form (`about.contact.formMissing`). Topics listed under `about.contact.topicNotes` show who the message goes to and suggest what to write; the Editing page's links pick those topics. The form validates fields with inline messages and includes a hidden spam-trap field.
 
 ## Sources and licences
 

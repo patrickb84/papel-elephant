@@ -1,0 +1,35 @@
+---
+// A sprig laid on a section's hairline, centred, with the rule broken around it,
+// like a printer's ornament between sections. The parent needs
+// `position: relative` and a border on the matching edge.
+import Floral from './Floral.astro';
+
+interface Props {
+  name: 'vine-rule' | 'sprig-rule' | 'stem-rule' | 'seedling';
+  /** Which of the parent's edges carries the rule. */
+  edge?: 'top' | 'bottom';
+  width?: string;
+}
+const { name, edge = 'top', width = '6.5rem' } = Astro.props;
+---
+
+<span class:list={['floral-rule', `floral-rule-${edge}`]} aria-hidden="true">
+  <Floral name={name} width={width} />
+</span>
+
+<style>
+  .floral-rule {
+    position: absolute;
+    left: 50%;
+    display: flex;
+    padding: 0 0.9rem;
+    background: var(--paper);
+    translate: -50% -50%;
+    /* Small and fine-lined, so full gilt rather than the softer tint. */
+    --floral-ink: var(--gold);
+    --floral-opacity: 0.85;
+    pointer-events: none;
+  }
+  .floral-rule-top { top: 0; }
+  .floral-rule-bottom { top: 100%; }
+</style>

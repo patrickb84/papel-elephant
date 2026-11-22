@@ -11,8 +11,6 @@
 site:
   name: Paper Elephant Publishing
   url: https://paperelephantpublishing.com
-  # PLACEHOLDER: the press's real contact address.
-  email: hello@paperelephantpublishing.com
   # Top bar links, in order.
   nav:
     - label: First lines
@@ -24,6 +22,15 @@ site:
     - label: About
       href: /about/
   copyright: Paper Elephant Publishing
+  # At the foot of the phone menu, with the Instagram link.
+  contactLink:
+    label: Contact
+    href: /about/#contact
+  # Shown in the footer, the phone menu and the About contact section.
+  instagram:
+    label: Instagram
+    handle: "@paper_elephant_publishing"
+    href: https://www.instagram.com/paper_elephant_publishing/
 
 # The home page: an opening line beside a painting.
 firstLines:
@@ -49,21 +56,20 @@ editing:
   pageTitle: Editing & Ghostwriting · Paper Elephant Publishing
   description: Book editing and ghostwriting from Railee Bradshaw, an Oregon author and editor.
   intro:
-    kicker: Editing & ghostwriting
+    kicker: For writers
     heading:
       - Editing &
       - ghostwriting.
     lede: >-
-      Book editing and ghostwriting from Railee Bradshaw,
-      the owner of Paper Elephant Publishing.
+      Railee Bradshaw, the owner of Paper Elephant Publishing,
+      edits and ghostwrites books for other writers.
     paragraphs:
       - >-
-        Railee is an editor and ghostwriter with a degree in English/Writing
-        and Communications from Eastern Oregon University. She has edited
-        books for other authors, ghostwritten a spiritual memoir, and written
-        and published her own novel, _The Gingerbread House_. She is especially
-        drawn to projects that involve research.
-      - Every project is different. If you are not sure whether yours is a fit, ask.
+        She holds a degree in English/Writing and Communications from Eastern
+        Oregon University, has edited books for other authors, ghostwritten a
+        spiritual memoir, and written and published her own novel,
+        _The Gingerbread House_. She is especially drawn to projects that
+        involve research.
   # From AmyJae Springer's Amazon review of The Gingerbread House (Kindle),
   # December 11, 2025. The review discloses the editing relationship; keep the
   # attribution saying she is an editing client reviewing the novel.
@@ -76,31 +82,35 @@ editing:
     source: on Amazon
   services:
     heading: Services
-    # Shown on each service, linking to the contact form with its topic chosen.
-    askLabel: Ask about this
+    # Each service links to the contact form with its topic chosen; `ask` is
+    # that link's text, so it should say what the visitor is asking about.
     items:
       # TODO: Railee hasn't signed off on this service yet.
-      - name: Developmental Editing
+      - name: Developmental editing
         text: Clear, honest notes on story, structure, character and pacing, and a plan for your next draft.
+        ask: Ask about editing
         topic: Editing
       # TODO: Railee hasn't signed off on this service yet.
       - name: Ghostwriting
         text: Your story in your voice, written with you from the first conversation to the finished manuscript.
+        ask: Ask about ghostwriting
         topic: Ghostwriting
       # TODO: Railee hasn't signed off on this service yet.
-      - name: Research / Story Support
+      - name: Research / story support
         text: Facts checked, history dug up and plot problems untangled, for the parts of a book that need digging.
+        ask: Ask about research
         topic: Research / story support
-      - name: Other / Not Sure
+      - name: Something else
         text: Not sure what you need yet? Describe the project and Railee will tell you plainly how she can help.
-        topic: General enquiry
+        ask: Describe your project
+        topic: Editing or ghostwriting (not sure)
   cta:
     kicker: Get in touch
     heading: Start a conversation
-    text: Tell Railee about your project, even if it does not fit neatly into one of the services above.
+    text: Tell Railee about your project, even if it doesn't fit one of the services above.
     button: Send Railee an inquiry
     # Which contact-form topic the button chooses.
-    topic: General enquiry
+    topic: Editing or ghostwriting (not sure)
 
 # The Books page. Each book's details are in content/books/<name>.yaml.
 books:
@@ -158,14 +168,35 @@ about:
     text: >-
       For submissions, editing and ghostwriting, general inquiries, rights
       and permissions, or press-related matters, please use the form below.
-    emailPrefix: Or email
+    instagramPrefix: Follow us on Instagram
+    # Shown in place of the form until a form service is connected
+    # (PUBLIC_CONTACT_ENDPOINT, see README). Followed by the Instagram link.
+    formMissing: The contact form isn't open yet. Until it is, send us a message on Instagram.
+    # For these topics the form says who the message goes to and suggests
+    # what to write. The Editing page's links choose the topic for the visitor.
+    topicNotes:
+      Editing:
+        note: This goes straight to Railee Bradshaw, who takes on editing.
+        hint: "Tell Railee about your book: what it is, roughly how long, where the draft stands, and the help you're after."
+      Ghostwriting:
+        note: This goes straight to Railee Bradshaw, who takes on ghostwriting.
+        hint: "Tell Railee about the book you want written: the story, who it's for, and any notes or drafts you already have."
+      Research / story support:
+        note: This goes straight to Railee Bradshaw, who takes on research and story support.
+        hint: "Tell Railee about your book and the part that needs digging: the history, the facts or the plot problem."
+      Editing or ghostwriting (not sure):
+        note: This goes straight to Railee Bradshaw.
+        hint: Describe your project and where it stands. Railee will tell you plainly how she can help.
+      Submissions:
+        hint: "Tell us about your manuscript: title, genre, length and a short summary."
     # The editing page links here with ?topic=<one of these> to pre-select it.
     topics:
-      - General enquiry
+      - General inquiry
       - Submissions
       - Editing
       - Ghostwriting
       - Research / story support
+      - Editing or ghostwriting (not sure)
       - Books and publications
       - Rights and permissions
       - Press and events
@@ -183,6 +214,4 @@ about:
     status:
       sending: Sending…
       sent: Your message has been sent.
-      # {email} is replaced by the address above.
-      failed: Sorry, that didn't send. Please try again, or email {email}.
-      openedEmailApp: Your email app should open with the message ready to send.
+      failed: Sorry, that didn't send. Please try again, or message us on Instagram.

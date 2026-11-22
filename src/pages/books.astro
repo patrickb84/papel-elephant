@@ -1,7 +1,10 @@
 ---
+import Floral from '../components/Floral.astro';
+import FloralRule from '../components/FloralRule.astro';
 import Base from '../layouts/Base.astro';
+import SiteFooter from '../components/SiteFooter.astro';
 import { BOOKS } from '../lib/books';
-import { CONTENT, SITE, withCites } from '../lib/site';
+import { CONTENT, withCites } from '../lib/site';
 
 // Page text comes from content/site.yaml (books: ...); each book from content/books/.
 const { books: page } = CONTENT;
@@ -26,6 +29,7 @@ const external = (href: string) => /^https?:/.test(href);
       const open = opening(first);
       return (
         <article class="book" id={book.slug} aria-labelledby={`${book.slug}-title`}>
+          <FloralRule name="stem-rule" width="7.5rem" />
           <div class="hero">
             <figure class="cover" style={`--cover-bg: ${book.cover.colour}`}>
               <img
@@ -67,6 +71,7 @@ const external = (href: string) => /^https?:/.test(href);
               <p class="opening"><span class="lead">{open.lead}</span> <Fragment set:html={open.rest} /></p>
               {rest.map((p) => <p set:html={withCites(p)} />)}
             </div>
+            <div class="side">
             <dl class="details">
               {book.details.map((row) => (
                 <div>
@@ -79,14 +84,14 @@ const external = (href: string) => /^https?:/.test(href);
                 </div>
               ))}
             </dl>
+            <Floral name="branch" class="side-floral" />
+            </div>
           </div>
         </article>
       );
     })}
 
-    <footer class="site-foot">
-      <span>© {new Date().getFullYear()} {SITE.copyright}</span>
-    </footer>
+    <SiteFooter />
   </main>
 </Base>
 
@@ -123,6 +128,7 @@ const external = (href: string) => /^https?:/.test(href);
   .book {
     padding: clamp(2.5rem, 6vw, 4.5rem) 0;
     border-top: 1px solid var(--rule);
+    position: relative;
     scroll-margin-top: 1rem;
   }
   .hero {
@@ -247,7 +253,11 @@ const external = (href: string) => /^https?:/.test(href);
   }
   .lead { font-variant-caps: small-caps; letter-spacing: 0.02em; }
 
-  .details { margin: 0; align-self: start; }
+  .side { align-self: start; }
+  .details { margin: 0; }
+  /* A branch under the details, beside the longer blurb. */
+  :global(.side-floral) { width: 9rem; margin: 3rem auto 0; --floral-opacity: 0.6; }
+  @media (max-width: 859px) { :global(.side-floral) { display: none; } }
   .details div {
     display: grid;
     grid-template-columns: 6.5rem 1fr;
@@ -272,12 +282,4 @@ const external = (href: string) => /^https?:/.test(href);
   }
   .details .part { white-space: nowrap; }
 
-  .site-foot {
-    padding: 1.5rem 0 2rem;
-    border-top: 1px solid var(--rule);
-    font-family: var(--sans);
-    font-size: 0.78rem;
-    color: var(--ink-faint);
-    text-align: center;
-  }
 </style>

@@ -8,7 +8,14 @@ interface Link {
 }
 
 export interface SiteContent {
-  site: { name: string; url: string; email: string; nav: Link[]; copyright: string };
+  site: {
+    name: string;
+    url: string;
+    nav: Link[];
+    copyright: string;
+    contactLink: Link;
+    instagram: { label: string; handle: string; href: string };
+  };
   firstLines: {
     pageTitle: string;
     description: string;
@@ -32,8 +39,7 @@ export interface SiteContent {
     testimonial: { quote: string; name: string; role: string; work: string; workHref?: string; source: string };
     services: {
       heading: string;
-      askLabel: string;
-      items: { name: string; text: string; topic: string }[];
+      items: { name: string; text: string; ask: string; topic: string }[];
     };
     cta: { kicker: string; heading: string; text: string; button: string; topic: string };
   };
@@ -47,11 +53,13 @@ export interface SiteContent {
       kicker: string;
       heading: string;
       text: string;
-      emailPrefix: string;
+      instagramPrefix: string;
+      formMissing: string;
+      topicNotes: Record<string, { note?: string; hint?: string }>;
       topics: string[];
       labels: { name: string; email: string; topic: string; message: string; send: string };
       errors: { name: string; email: string; emailInvalid: string; message: string };
-      status: { sending: string; sent: string; failed: string; openedEmailApp: string };
+      status: { sending: string; sent: string; failed: string };
     };
   };
 }
@@ -62,7 +70,8 @@ export const SITE = {
   ...CONTENT.site,
   // Where the contact form posts. Any form service that accepts a normal form
   // POST works (Formspree, Basin, Netlify Forms...). Set PUBLIC_CONTACT_ENDPOINT
-  // in .env; without it the form opens the visitor's email app instead.
+  // in .env; without it the About page shows contact.formMissing and the
+  // Instagram link in place of the form.
   contactEndpoint: (import.meta.env.PUBLIC_CONTACT_ENDPOINT as string | undefined) ?? '',
 };
 

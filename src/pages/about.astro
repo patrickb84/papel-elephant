@@ -1,5 +1,7 @@
 ---
+import Floral from '../components/Floral.astro';
 import Base from '../layouts/Base.astro';
+import SiteFooter from '../components/SiteFooter.astro';
 import { CONTENT, SITE } from '../lib/site';
 
 // All text on this page comes from content/site.yaml (about: ...).
@@ -7,7 +9,7 @@ const { about } = CONTENT;
 const { intro, notes, contact } = about;
 const numerals = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x'];
 // Messages the form script needs, from the same YAML.
-const formText = JSON.stringify({ errors: contact.errors, status: contact.status });
+const formText = JSON.stringify({ errors: contact.errors, status: contact.status, topicNotes: contact.topicNotes });
 ---
 
 <Base title={about.pageTitle} description={about.description}>
@@ -41,20 +43,24 @@ const formText = JSON.stringify({ errors: contact.errors, status: contact.status
         <h2 id="contact-title">{contact.heading}</h2>
         <p>{contact.text}</p>
         <p class="contact-email">
-          {contact.emailPrefix} <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
+          {contact.instagramPrefix} <a href={SITE.instagram.href} rel="noopener">{SITE.instagram.handle}</a>
         </p>
+        <Floral name="sprig" class="contact-floral" />
       </div>
 
+      <!-- With a form service connected, the form; until then, a note and the
+           Instagram link, rather than a form that can't send. -->
+      {SITE.contactEndpoint ? (
       <form
         class="contact-form"
-        action={SITE.contactEndpoint || `mailto:${SITE.email}`}
+        action={SITE.contactEndpoint}
         method="post"
-        enctype={SITE.contactEndpoint ? undefined : 'text/plain'}
         data-endpoint={SITE.contactEndpoint}
-        data-email={SITE.email}
         data-text={formText}
         novalidate
       >
+        {/* Who the message goes to, for topics that have a note (set by script). */}
+        <p class="topic-note" data-topic-note hidden></p>
         <div class="field">
           <label for="cf-name">{contact.labels.name}</label>
           <input id="cf-name" name="name" type="text" autocomplete="name" required aria-describedby="cf-name-error" />
@@ -76,7 +82,7 @@ const formText = JSON.stringify({ errors: contact.errors, status: contact.status
           <textarea id="cf-message" name="message" rows="6" required aria-describedby="cf-message-error"></textarea>
           <p class="error" id="cf-message-error" data-error-for="cf-message"></p>
         </div>
-        <!-- Spam trap: people never see or fill this field. -->
+        {/* Spam trap: people never see or fill this field. */}
         <div class="trap" aria-hidden="true">
           <label for="cf-website">Website</label>
           <input id="cf-website" name="_gotcha" type="text" tabindex="-1" autocomplete="off" />
@@ -86,11 +92,15 @@ const formText = JSON.stringify({ errors: contact.errors, status: contact.status
           <p class="status" role="status" aria-live="polite"></p>
         </div>
       </form>
+      ) : (
+        <div class="contact-form contact-missing">
+          <p>{contact.formMissing}</p>
+          <a class="send" href={SITE.instagram.href} rel="noopener">{SITE.instagram.handle}</a>
+        </div>
+      )}
     </section>
 
-    <footer class="site-foot">
-      <span>© {new Date().getFullYear()} {SITE.copyright}</span>
-    </footer>
+    <SiteFooter />
   </main>
 </Base>
 
@@ -100,11 +110,11 @@ const formText = JSON.stringify({ errors: contact.errors, status: contact.status
     const status = form.querySelector<HTMLElement>('.status')!;
     const button = form.querySelector<HTMLButtonElement>('.send')!;
     const endpoint = form.dataset.endpoint ?? '';
-    const email = form.dataset.email ?? '';
 
     const text = JSON.parse(form.dataset.text ?? '{}') as {
       errors: Record<'name' | 'email' | 'emailInvalid' | 'message', string>;
-      status: Record<'sending' | 'sent' | 'failed' | 'openedEmailApp', string>;
+      status: Record<'sending' | 'sent' | 'failed', string>;
+      topicNotes: Record<string, { note?: string; hint?: string }>;
     };
     const messages: Record<string, string> = {
       'cf-name': text.errors.name,
@@ -125,6 +135,19 @@ const formText = JSON.stringify({ errors: contact.errors, status: contact.status
     const select = form.querySelector<HTMLSelectElement>('#cf-topic');
     if (topic && select && [...select.options].some((o) => o.value === topic)) select.value = topic;
 
+    // Some topics say who the message goes to (Railee, for the editing
+    // services) and suggest what to write, as the message box's placeholder.
+    const note = form.querySelector<HTMLElement>('[data-topic-note]')!;
+    const message = form.querySelector<HTMLTextAreaElement>('#cf-message')!;
+    const showTopic = () => {
+      const t = text.topicNotes?.[select?.value ?? ''] ?? {};
+      note.textContent = t.note ?? '';
+      note.hidden = !t.note;
+      message.placeholder = t.hint ?? '';
+    };
+    select?.addEventListener('change', showTopic);
+    showTopic();
+
     const fields = [...form.querySelectorAll<HTMLInputElement | HTMLTextAreaElement>('[required]')];
     fields.forEach((f) => f.addEventListener('blur', () => f.value && check(f)));
     fields.forEach((f) => f.addEventListener('input', () => f.getAttribute('aria-invalid') === 'true' && check(f)));
@@ -139,15 +162,6 @@ const formText = JSON.stringify({ errors: contact.errors, status: contact.status
       const data = new FormData(form);
       if (data.get('_gotcha')) return; // a bot filled the trap
 
-      if (!endpoint) {
-        // No form service configured: hand the message to the visitor's email app.
-        const subject = `${data.get('topic')}, from ${data.get('name')}`;
-        const body = `${data.get('message')}\n\n${data.get('name')}\n${data.get('email')}`;
-        window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-        status.textContent = text.status.openedEmailApp;
-        return;
-      }
-
       button.disabled = true;
       status.textContent = text.status.sending;
       try {
@@ -156,7 +170,7 @@ const formText = JSON.stringify({ errors: contact.errors, status: contact.status
         form.reset();
         status.textContent = text.status.sent;
       } catch {
-        status.textContent = text.status.failed.replace('{email}', email);
+        status.textContent = text.status.failed;
       } finally {
         button.disabled = false;
       }
@@ -283,6 +297,12 @@ const formText = JSON.stringify({ errors: contact.errors, status: contact.status
   .contact h2 { margin: 0 0 1rem; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.05; }
   .contact-text p:not(.kicker) { color: var(--ink-soft); font-size: 1.05rem; max-width: 26rem; }
   .contact-email { font-family: var(--sans); font-size: 0.95rem !important; }
+  /* A sprig fills the quiet column beside the form on wide screens. */
+  /* Under the details, in the quiet column beside the form; wide screens only. */
+  :global(.contact-floral) { display: none; }
+  @media (min-width: 860px) {
+    :global(.contact-floral) { display: block; width: 8.5rem; margin: 3.5rem 0 0 0.25rem; }
+  }
 
   .contact-form {
     display: grid;
@@ -356,12 +376,30 @@ const formText = JSON.stringify({ errors: contact.errors, status: contact.status
   .send:disabled { opacity: 0.6; cursor: progress; }
   .status { margin: 0; font-family: var(--sans); font-size: 0.88rem; color: var(--ink-soft); }
 
-  .site-foot {
-    padding: 1.5rem 0 2rem;
-    border-top: 1px solid var(--rule);
-    font-family: var(--sans);
-    font-size: 0.78rem;
-    color: var(--ink-faint);
-    text-align: center;
+  /* "This goes straight to Railee": the gilt rule of the kickers, then the note. */
+  .topic-note {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    margin: 0;
+    font-size: 1.02rem;
+    font-style: italic;
+    color: var(--ink);
   }
+  .topic-note::before {
+    content: '';
+    flex: none;
+    width: 1.5rem;
+    height: 1px;
+    translate: 0 -0.3em;
+    background: var(--foil);
+  }
+  .topic-note[hidden] { display: none; }
+  textarea::placeholder { color: var(--ink-faint); font-style: italic; }
+
+  /* No form service yet: the panel holds a note and the Instagram link. */
+  .contact-missing { justify-items: start; align-content: start; }
+  .contact-missing p { margin: 0; font-size: 1.05rem; color: var(--ink-soft); max-width: 28rem; }
+  .send { display: inline-flex; align-items: center; text-decoration: none; }
+
 </style>

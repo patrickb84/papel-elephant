@@ -1,0 +1,35 @@
+---
+// A botanical line drawing from the press's florals (assets/FLORALS & ELEMENTS),
+// drawn as a CSS mask so it takes the page's own ink: faint gilt by default.
+// Purely decorative. Size it with `width` (or CSS on `class`); the height
+// follows the drawing's shape. Regenerate the images with scripts/brand-assets.ts.
+const SHAPES = {
+  sprig: 383 / 700,
+  branch: 514 / 700,
+  stem: 403 / 700,
+  leaves: 246 / 700,
+  vine: 163 / 700,
+  pen: 700 / 570,
+  'vine-rule': 700 / 163,
+  'sprig-rule': 700 / 246,
+  'stem-rule': 700 / 177,
+  seedling: 472 / 700,
+} as const;
+
+interface Props {
+  name: keyof typeof SHAPES;
+  class?: string;
+  width?: string;
+  /** Mirror left to right. */
+  flip?: boolean;
+}
+const { name, class: cls, width, flip } = Astro.props;
+const style = [
+  `--floral: url('/brand/florals/${name}.png')`,
+  `aspect-ratio: ${SHAPES[name]}`,
+  width ? `width: ${width}` : '',
+  flip ? 'transform: scaleX(-1)' : '',
+].filter(Boolean).join('; ');
+---
+
+<span class:list={['floral', cls]} style={style} aria-hidden="true"></span>
