@@ -3,8 +3,8 @@
 // so both always say the same thing.
 import type { FirstLine } from './first-lines';
 
-/** A run of credit text: plain words, a work's title, or a link. */
-export type Part = string | { cite: string } | { href: string; text: string };
+/** A run of credit text: plain words, a work's title, a date, or a link. */
+export type Part = string | { cite: string } | { year: string } | { href: string; text: string };
 
 export interface CreditLabels {
   selfPortrait: string;
@@ -18,7 +18,9 @@ type Entry = Pick<FirstLine, 'author' | 'readUrl' | 'artwork' | 'portrait'>;
 export const paintingCredit = ({ artwork: a }: Entry): Part[] => [
   `${a.artist}, `,
   { cite: a.title },
-  `, ${a.date}, `,
+  ', ',
+  { year: a.date },
+  ', ',
   { href: a.sourceUrl, text: a.museum },
 ];
 
@@ -40,3 +42,9 @@ export const portraitCredit = (x: Entry, l: CreditLabels): Part[] => {
 
 /** "Project Gutenberg", linked to this book. */
 export const textCredit = (x: Entry, l: CreditLabels): Part[] => [{ href: x.readUrl, text: l.textSource }];
+
+/** The painting's year(s) for the plate number under it: "1866", "1858–59", "1898–1902". */
+export function paintedYears({ artwork: { yearStart: a, yearEnd: b } }: Pick<FirstLine, 'artwork'>): string {
+  if (a === b) return String(a);
+  return `${a}–${Math.floor(a / 100) === Math.floor(b / 100) ? String(b).slice(-2) : b}`;
+}

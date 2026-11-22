@@ -94,6 +94,8 @@ export interface ArtCandidate {
   title: string;
   artist: string;
   artistNationality?: string;
+  /** where the museum says the work was made (AIC place_of_origin) */
+  placeOfOrigin?: string;
   date: string;
   yearStart: number;
   yearEnd: number;
@@ -105,6 +107,8 @@ export interface ArtCandidate {
   creditLine?: string;
   /** width / height, when known before download */
   aspect?: number;
+  /** painting type detected from museum metadata and title (landscape, still life, ...) */
+  kind?: string;
   score?: number;
   reasons?: string[];
 }

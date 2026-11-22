@@ -14,7 +14,11 @@ export interface SiteImage {
 export interface Artwork extends SiteImage {
   title: string;
   artist: string;
+  /** The museum's date as written ("c. 1870–75", "January 18, 1911"). */
   date: string;
+  /** The same date as years, for display and the same-year comparison. */
+  yearStart: number;
+  yearEnd: number;
   museum: string;
   /** The object's page at the museum. */
   sourceUrl: string;

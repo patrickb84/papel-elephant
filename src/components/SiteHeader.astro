@@ -2,6 +2,7 @@
 import { NAV, SITE } from '../lib/site';
 
 const path = Astro.url.pathname.replace(/\/?$/, '/');
+const current = (href: string) => (path === href ? 'page' : undefined);
 ---
 
 <header class="site-header">
@@ -10,14 +11,66 @@ const path = Astro.url.pathname.replace(/\/?$/, '/');
     <span class="brand-rule" aria-hidden="true"></span>
     <span class="brand-word" aria-hidden="true"><span>Paper</span><span>Elephant</span><span>Publishing</span></span>
   </a>
-  <nav aria-label="Main">
+
+  <!-- Wide screens (and phones without JavaScript): the links in the bar. -->
+  <nav class="nav-bar" aria-label="Main">
     <ul>
       {NAV.map((item) => (
-        <li><a href={item.href} aria-current={path === item.href ? 'page' : undefined}>{item.label}</a></li>
+        <li><a href={item.href} aria-current={current(item.href)}>{item.label}</a></li>
       ))}
     </ul>
   </nav>
+
+  <!-- Narrow screens: a Menu button that opens the links in a drawer. -->
+  <button class="menu-button" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="menu-drawer">
+    <svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true">
+      <path d="M2 5.5h16M2 10h16M2 14.5h16" />
+    </svg>
+    <span>Menu</span>
+  </button>
+
+  <dialog class="drawer" id="menu-drawer" aria-label="Menu">
+    <div class="drawer-inner">
+      <div class="drawer-top">
+        <span class="drawer-mark" aria-hidden="true"></span>
+        <button class="drawer-close" type="button">
+          <svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true">
+            <path d="M4.5 4.5l11 11M15.5 4.5l-11 11" />
+          </svg>
+          <span>Close</span>
+        </button>
+      </div>
+      <nav aria-label="Menu">
+        <ul>
+          {NAV.map((item) => (
+            <li><a href={item.href} aria-current={current(item.href)}>{item.label}</a></li>
+          ))}
+        </ul>
+      </nav>
+    </div>
+  </dialog>
 </header>
+
+<script>
+  const button = document.querySelector<HTMLButtonElement>('.menu-button');
+  const drawer = document.querySelector<HTMLDialogElement>('#menu-drawer');
+  if (button && drawer) {
+    const close = () => drawer.open && drawer.close();
+    button.addEventListener('click', () => {
+      drawer.showModal();
+      button.setAttribute('aria-expanded', 'true');
+    });
+    drawer.addEventListener('close', () => {
+      button.setAttribute('aria-expanded', 'false');
+      button.focus();
+    });
+    drawer.querySelector('.drawer-close')?.addEventListener('click', close);
+    // A click on the dimmed page outside the drawer lands on the dialog itself.
+    drawer.addEventListener('click', (event) => event.target === drawer && close());
+    // Widening the window past the breakpoint puts the links back in the bar.
+    matchMedia('(min-width: 720px)').addEventListener('change', (event) => event.matches && close());
+  }
+</script>
 
 <style>
   .site-header {
@@ -62,14 +115,18 @@ const path = Astro.url.pathname.replace(/\/?$/, '/');
     letter-spacing: 0.005em;
   }
 
-  nav ul {
-    display: flex;
-    gap: clamp(1rem, 3vw, 2rem);
+  ul {
     margin: 0;
     padding: 0;
     list-style: none;
   }
-  nav a {
+
+  /* Links in the bar -------------------------------------------------------- */
+  .nav-bar ul {
+    display: flex;
+    gap: clamp(1rem, 3vw, 2rem);
+  }
+  .nav-bar a {
     position: relative;
     display: inline-block;
     padding: 0.5rem 0;
@@ -80,8 +137,8 @@ const path = Astro.url.pathname.replace(/\/?$/, '/');
     text-decoration: none;
     transition: color 160ms ease;
   }
-  nav a:hover, nav a[aria-current='page'] { color: var(--ink); }
-  nav a::after {
+  .nav-bar a:hover, .nav-bar a[aria-current='page'] { color: var(--ink); }
+  .nav-bar a::after {
     content: '';
     position: absolute;
     left: 0;
@@ -93,17 +150,111 @@ const path = Astro.url.pathname.replace(/\/?$/, '/');
     transform-origin: left;
     transition: transform 220ms ease;
   }
-  nav a:hover::after, nav a[aria-current='page']::after { transform: scaleX(1); }
-  /* Phones: tighten the lock-up and links so three links fit beside it. */
-  @media (max-width: 480px) {
-    .brand { gap: 0.6rem; }
-    .brand-mark { width: 2.2rem; height: 2.6rem; }
-    .brand-rule { height: 2.5rem; }
-    .brand-word { font-size: 0.94rem; }
-    nav ul { gap: 0.9rem; }
-    nav a { font-size: 0.86rem; }
+  .nav-bar a:hover::after, .nav-bar a[aria-current='page']::after { transform: scaleX(1); }
+
+  /* The Menu button and the drawer, on narrow screens with JavaScript ------- */
+  .menu-button, .drawer-close {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-height: 44px;
+    padding: 0 0.95rem;
+    font: 500 0.92rem/1 var(--sans);
+    color: var(--ink);
+    background: transparent;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    cursor: pointer;
+    transition: border-color 160ms ease;
   }
+  .menu-button:hover, .drawer-close:hover { border-color: var(--gold); }
+  .menu-button svg, .drawer-close svg {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+  }
+  .menu-button { display: none; }
+
+  @media (max-width: 719.98px) {
+    :global(html.js) .nav-bar { display: none; }
+    :global(html.js) .menu-button { display: inline-flex; }
+    /* Without JavaScript the links stay in the bar, under the brand if they must. */
+    :global(html:not(.js)) .site-header { flex-wrap: wrap; height: auto; padding-block: 0.75rem; }
+  }
+
+  .drawer {
+    position: fixed;
+    inset: 0 0 0 auto;
+    width: min(22rem, 86vw);
+    height: 100dvh;
+    max-width: none;
+    max-height: none;
+    margin: 0;
+    padding: 0;
+    color: var(--ink);
+    background: var(--paper);
+    border: 0;
+    border-left: 1px solid var(--rule);
+    transform: translateX(100%);
+    transition: transform 320ms cubic-bezier(0.2, 0.7, 0.2, 1), overlay 320ms allow-discrete, display 320ms allow-discrete;
+  }
+  .drawer[open] { transform: none; }
+  @starting-style {
+    .drawer[open] { transform: translateX(100%); }
+  }
+  .drawer::backdrop {
+    background: rgb(23 21 17 / 0);
+    transition: background-color 320ms ease, overlay 320ms allow-discrete, display 320ms allow-discrete;
+  }
+  .drawer[open]::backdrop { background: rgb(23 21 17 / 0.45); }
+  @starting-style {
+    .drawer[open]::backdrop { background: rgb(23 21 17 / 0); }
+  }
+  :global(html:has(.drawer[open])) { overflow: hidden; }
+
+  .drawer-inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1.25rem var(--gutter) 2rem;
+  }
+  .drawer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  .drawer-mark {
+    width: 2.2rem;
+    height: 2.6rem;
+    background: var(--foil-mark);
+    -webkit-mask: url('/brand/elephant-mask.png') center / contain no-repeat;
+    mask: url('/brand/elephant-mask.png') center / contain no-repeat;
+  }
+  .drawer li { border-top: 1px solid var(--rule); }
+  .drawer li:last-child { border-bottom: 1px solid var(--rule); }
+  .drawer nav a {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1.05rem 0;
+    font-family: var(--sans);
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--ink-soft);
+    text-decoration: none;
+  }
+  .drawer nav a:hover, .drawer nav a[aria-current='page'] { color: var(--ink); }
+  /* The current page carries the gilt rule used before kickers. */
+  .drawer nav a[aria-current='page']::before {
+    content: '';
+    width: 1.5rem;
+    height: 1px;
+    background: var(--foil);
+  }
+
   @media (prefers-reduced-motion: reduce) {
-    .brand-mark, nav a::after { transition: none; }
+    .brand-mark, .nav-bar a::after, .drawer, .drawer::backdrop, .menu-button, .drawer-close { transition: none; }
   }
 </style>

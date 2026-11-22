@@ -1002,10 +1002,9 @@
   "art": {
     "11": {
       "status": "approved",
-      "ref": "aic:44018",
+      "ref": "aic:81572",
       "by": "Claude (AI visual review)",
-      "date": "2026-11-22",
-      "note": "same-year pick from the candidate sheet"
+      "date": "2026-11-22"
     },
     "16": {
       "status": "approved",
@@ -1029,10 +1028,9 @@
     },
     "76": {
       "status": "approved",
-      "ref": "aic:20199",
+      "ref": "met:11011",
       "by": "Claude (AI visual review)",
-      "date": "2026-11-22",
-      "note": "same-year pick from the candidate sheet"
+      "date": "2026-11-22"
     },
     "84": {
       "status": "approved",
@@ -1101,10 +1099,9 @@
     },
     "768": {
       "status": "approved",
-      "ref": "aic:111646",
+      "ref": "met:441379",
       "by": "Claude (AI visual review)",
-      "date": "2026-11-22",
-      "note": "same-year pick from the candidate sheet"
+      "date": "2026-11-22"
     },
     "1260": {
       "status": "approved",
@@ -1122,10 +1119,9 @@
     },
     "1399": {
       "status": "approved",
-      "ref": "met:438010",
+      "ref": "met:436090",
       "by": "Claude (AI visual review)",
-      "date": "2026-11-22",
-      "note": "chosen from the candidate sheet"
+      "date": "2026-11-22"
     },
     "1400": {
       "status": "approved",
@@ -1136,10 +1132,9 @@
     },
     "1661": {
       "status": "approved",
-      "ref": "aic:61128",
+      "ref": "aic:84088",
       "by": "Claude (AI visual review)",
-      "date": "2026-11-22",
-      "note": "same-year pick from the candidate sheet"
+      "date": "2026-11-22"
     },
     "2554": {
       "status": "approved",
@@ -1156,10 +1151,9 @@
     },
     "2701": {
       "status": "approved",
-      "ref": "aic:129639",
+      "ref": "met:10858",
       "by": "Claude (AI visual review)",
-      "date": "2026-11-22",
-      "note": "same-year pick from the candidate sheet"
+      "date": "2026-11-22"
     },
     "4078": {
       "status": "approved",
@@ -1183,7 +1177,7 @@
     },
     "27805": {
       "status": "approved",
-      "ref": "aic:234960",
+      "ref": "aic:65912",
       "by": "Claude (AI visual review)",
       "date": "2026-11-22"
     },

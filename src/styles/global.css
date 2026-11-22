@@ -12,6 +12,8 @@
   --rule: #d8cfbf;
   --gold: #a07c2c;
   --gold-soft: #c9a75a;
+  /* Gilt for small text, such as the year numerals: deep enough to read (5.5:1). */
+  --gold-text: #7d5a1c;
 
   --serif: 'Newsreader Variable', 'Iowan Old Style', Georgia, serif;
   --sans: 'Instrument Sans Variable', system-ui, sans-serif;
@@ -37,6 +39,7 @@
     --rule: #3a352c;
     --gold: #d0ae63;
     --gold-soft: #9c7f3e;
+    --gold-text: var(--gold);
     --foil-mark: var(--foil);
     color-scheme: dark;
   }

@@ -1,0 +1,75 @@
+# One file per book, listed on /books/ newest first (by `published`).
+# The file name is the book's anchor: /books/#the-gingerbread-house
+#
+# Published material only: the back cover and the Amazon and Goodreads
+# listings, from the author site's handoff (November 2026). The author's site
+# is where the full book page lives. Wrap a title in _underscores_ to set it
+# in italics.
+
+title: The Gingerbread House
+subtitle: A Sweet Holiday Romance
+author: R.M. Whitaker
+# Shown under the byline.
+authorNote: The pen name of Railee Bradshaw.
+published: 2025-11-01
+
+cover:
+  src: /books/the-gingerbread-house
+  width: 850
+  height: 1360
+  # The cover's main colour, shown while the image loads.
+  colour: '#4888a8'
+  alt: >-
+    Cover of The Gingerbread House, showing a couple in winter coats above a
+    snow-covered Victorian mansion among snowy pine trees
+
+# The first line of the back cover.
+hook: A frozen writer, two men from her past, and one crumbling mansion that could change everything.
+
+# The rest of the back cover, one entry per paragraph.
+blurb:
+  - >-
+    When AJ Banner left Roanoke, Oregon, she traded small-town comfort for the
+    bustle of New York City and the dream of becoming a writer. Now, reeling
+    from a recent breakup and frozen by the worst writer's block of her life,
+    AJ returns home for the holidays hoping her family can boost her
+    self-esteem in time to start her dream career at Verité magazine.
+  - >-
+    Enter Benson Miller, the childhood crush who shattered her confidence
+    twelve years ago, and Skylar Townsend, the friend who was there to pick up
+    the pieces. In a blizzard of awkward reunions, heroic snowstorm rescues,
+    and the tug of old feelings, AJ flounders to overcome her insecurities
+    before New Year's Eve.
+  - >-
+    When she discovers that a beloved local landmark faces demolition, AJ sees
+    her chance to prove herself as a journalist—but saving it means working
+    closely with Skylar, making her feelings as vulnerable as her career. With
+    her dreams and her heart on the line, AJ must choose what to hold on to
+    from her past, and what to finally let go.
+  - >-
+    Set in the Pacific Northwest in 2016, _The Gingerbread House_ by debut
+    author R.M. Whitaker is a heartwarming, slow-burn, sweet holiday romance
+    about second chances, the power of community, and finding the courage to
+    fight for what's worth keeping.
+
+# Listing facts. Split a value into parts with " · ".
+details:
+  - label: Published
+    value: November 1, 2025
+  - label: Genre
+    value: Holiday romance · sweet romance
+  - label: Setting
+    value: Roanoke, Oregon · Christmas 2016
+  - label: Paperback
+    value: 376 pages · 5 × 8 in · ISBN 979-8218817411
+  - label: Kindle edition
+    value: 378 pages · in Kindle Unlimited
+
+# The first link is the main button.
+links:
+  - label: Paperback on Amazon
+    href: https://www.amazon.com/dp/B0FWZ16TJD
+  - label: Kindle edition on Amazon
+    href: https://www.amazon.com/dp/B0FX2LYVBC
+  - label: More on the author's website
+    href: https://raileebradshaw.com/books/the-gingerbread-house/

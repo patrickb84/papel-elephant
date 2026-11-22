@@ -29,7 +29,7 @@ export interface SiteContent {
     pageTitle: string;
     description: string;
     intro: { kicker: string; heading: string[]; lede: string; paragraphs: string[] };
-    testimonial: { quote: string; name: string; role: string; work: string; source: string };
+    testimonial: { quote: string; name: string; role: string; work: string; workHref?: string; source: string };
     services: {
       heading: string;
       askLabel: string;
@@ -37,6 +37,7 @@ export interface SiteContent {
     };
     cta: { kicker: string; heading: string; text: string; button: string; topic: string };
   };
+  books: { pageTitle: string; description: string; heading: string; lede: string };
   about: {
     pageTitle: string;
     description: string;
@@ -70,3 +71,9 @@ export const NAV = CONTENT.site.nav;
 /** Replace {name} placeholders in a string. */
 export const fill = (text: string, values: Record<string, string | number>) =>
   text.replace(/\{(\w+)\}/g, (m, key: string) => (key in values ? String(values[key]) : m));
+
+const escapeHtml = (s: string) =>
+  s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+
+/** Escape text for HTML and set _Title_ in italics as <cite>Title</cite>. */
+export const withCites = (text: string) => escapeHtml(text).replace(/_([^_]+)_/g, '<cite>$1</cite>');

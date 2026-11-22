@@ -149,6 +149,8 @@ async function main() {
         title: chosen!.title,
         artist: chosen!.artist,
         date: chosen!.date,
+        yearStart: Math.min(chosen!.yearStart, chosen!.yearEnd),
+        yearEnd: Math.max(chosen!.yearStart, chosen!.yearEnd),
         museum: MUSEUM[chosen!.museum],
         sourceUrl: chosen!.sourceUrl,
         creditLine: chosen!.creditLine,

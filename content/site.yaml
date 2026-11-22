@@ -17,6 +17,8 @@ site:
   nav:
     - label: First lines
       href: /
+    - label: Books
+      href: /books/
     - label: Editing
       href: /editing/
     - label: About
@@ -59,8 +61,8 @@ editing:
         Railee is an editor and ghostwriter with a degree in English/Writing
         and Communications from Eastern Oregon University. She has edited
         books for other authors, ghostwritten a spiritual memoir, and written
-        and published her own novel. She is especially drawn to projects that
-        involve research.
+        and published her own novel, _The Gingerbread House_. She is especially
+        drawn to projects that involve research.
       - Every project is different. If you are not sure whether yours is a fit, ask.
   # From AmyJae Springer's Amazon review of The Gingerbread House (Kindle),
   # December 11, 2025. The review discloses the editing relationship; keep the
@@ -70,6 +72,7 @@ editing:
     name: AmyJae Springer
     role: author and editing client, reviewing
     work: The Gingerbread House
+    workHref: /books/#the-gingerbread-house
     source: on Amazon
   services:
     heading: Services
@@ -99,6 +102,13 @@ editing:
     # Which contact-form topic the button chooses.
     topic: General enquiry
 
+# The Books page. Each book's details are in content/books/<name>.yaml.
+books:
+  pageTitle: Books · Paper Elephant Publishing
+  description: Books published by Paper Elephant Publishing.
+  heading: Books
+  lede: The books we publish, newest first.
+
 about:
   pageTitle: About · Paper Elephant Publishing
   description: Paper Elephant Publishing is an independent literary press.
@@ -121,11 +131,18 @@ about:
       text: >-
         Our catalog currently includes one title, with
         further projects in development.
+      link:
+        label: See our books
+        href: /books/
 
     - title: Submissions
       text: >-
-        We are not currently accepting manuscript submissions
-        or publishing proposals.
+        We are accepting manuscript submissions. We're a small press,
+        so we take on only a few books at a time, and replies can
+        take a while.
+      link:
+        label: Send a submission
+        href: /about/?topic=Submissions#contact
 
     - title: First Lines
       text: >-
@@ -139,12 +156,13 @@ about:
     kicker: Contact
     heading: Get in touch
     text: >-
-      For editing and ghostwriting, general inquiries, rights and
-      permissions, or press-related matters, please use the form below.
+      For submissions, editing and ghostwriting, general inquiries, rights
+      and permissions, or press-related matters, please use the form below.
     emailPrefix: Or email
     # The editing page links here with ?topic=<one of these> to pre-select it.
     topics:
       - General enquiry
+      - Submissions
       - Editing
       - Ghostwriting
       - Research / story support

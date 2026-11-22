@@ -9,5 +9,5 @@ const { parts } = Astro.props;
 ---
 
 {parts.map((p) =>
-  typeof p === 'string' ? p : 'cite' in p ? <cite>{p.cite}</cite> : <a href={p.href} rel="noopener">{p.text}</a>,
+  typeof p === 'string' ? p : 'cite' in p ? <cite>{p.cite}</cite> : 'year' in p ? <span class="fl-year">{p.year}</span> : <a href={p.href} rel="noopener">{p.text}</a>,
 )}

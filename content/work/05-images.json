@@ -3,12 +3,12 @@
     "gutenbergId": 11,
     "flags": [],
     "artwork": {
-      "key": "aic-44018",
-      "src": "/first-lines/art/aic-44018-1800.webp",
-      "srcSmall": "/first-lines/art/aic-44018-900.webp",
+      "key": "aic-81572",
+      "src": "/first-lines/art/aic-81572-1800.webp",
+      "srcSmall": "/first-lines/art/aic-81572-900.webp",
       "width": 1686,
-      "height": 1028,
-      "color": "#4e432e"
+      "height": 1116,
+      "color": "#8a8169"
     },
     "portrait": {
       "key": "lewiscarrollselfphoto",
@@ -23,12 +23,12 @@
     "gutenbergId": 1399,
     "flags": [],
     "artwork": {
-      "key": "met-438010",
-      "src": "/first-lines/art/met-438010-1800.webp",
-      "srcSmall": "/first-lines/art/met-438010-900.webp",
-      "width": 1484,
+      "key": "met-436090",
+      "src": "/first-lines/art/met-436090-1800.webp",
+      "srcSmall": "/first-lines/art/met-436090-900.webp",
+      "width": 1365,
       "height": 1800,
-      "color": "#82735f"
+      "color": "#3e3b21"
     },
     "portrait": {
       "key": "l-n-tolstoy-prokudin-gorsky",
@@ -125,12 +125,12 @@
     "gutenbergId": 2701,
     "flags": [],
     "artwork": {
-      "key": "aic-129639",
-      "src": "/first-lines/art/aic-129639-1800.webp",
-      "srcSmall": "/first-lines/art/aic-129639-900.webp",
-      "width": 1401,
-      "height": 1800,
-      "color": "#342a20"
+      "key": "met-10858",
+      "src": "/first-lines/art/met-10858-1800.webp",
+      "srcSmall": "/first-lines/art/met-10858-900.webp",
+      "width": 1800,
+      "height": 1288,
+      "color": "#7f928b"
     },
     "portrait": {
       "key": "herman-melville-by-joseph-o-eaton",
@@ -327,12 +327,12 @@
     "gutenbergId": 76,
     "flags": [],
     "artwork": {
-      "key": "aic-20199",
-      "src": "/first-lines/art/aic-20199-1800.webp",
-      "srcSmall": "/first-lines/art/aic-20199-900.webp",
-      "width": 1686,
-      "height": 1052,
-      "color": "#8e8982"
+      "key": "met-11011",
+      "src": "/first-lines/art/met-11011-1800.webp",
+      "srcSmall": "/first-lines/art/met-11011-900.webp",
+      "width": 1800,
+      "height": 1326,
+      "color": "#675d3c"
     },
     "portrait": {
       "key": "marktwain-loc",
@@ -483,12 +483,12 @@
     "gutenbergId": 1661,
     "flags": [],
     "artwork": {
-      "key": "aic-61128",
-      "src": "/first-lines/art/aic-61128-1800.webp",
-      "srcSmall": "/first-lines/art/aic-61128-900.webp",
+      "key": "aic-84088",
+      "src": "/first-lines/art/aic-84088-1800.webp",
+      "srcSmall": "/first-lines/art/aic-84088-900.webp",
       "width": 1686,
-      "height": 1473,
-      "color": "#49381d"
+      "height": 1146,
+      "color": "#4f5f68"
     },
     "portrait": {
       "key": "arthur-conan-doyle-by-walter-benington-1914",
@@ -522,15 +522,15 @@
   {
     "gutenbergId": 27805,
     "flags": [
-      "art-low-resolution-843x680"
+      "art-low-resolution-843x846"
     ],
     "artwork": {
-      "key": "aic-234960",
-      "src": "/first-lines/art/aic-234960-1800.webp",
-      "srcSmall": "/first-lines/art/aic-234960-900.webp",
+      "key": "aic-65912",
+      "src": "/first-lines/art/aic-65912-1800.webp",
+      "srcSmall": "/first-lines/art/aic-65912-900.webp",
       "width": 843,
-      "height": 680,
-      "color": "#5e614c"
+      "height": 846,
+      "color": "#6b5b54"
     },
     "portrait": {
       "key": "kennethgrahame",
@@ -578,16 +578,15 @@
   {
     "gutenbergId": 768,
     "flags": [
-      "art-low-resolution-843x1009",
       "portrait-download-failed"
     ],
     "artwork": {
-      "key": "aic-111646",
-      "src": "/first-lines/art/aic-111646-1800.webp",
-      "srcSmall": "/first-lines/art/aic-111646-900.webp",
-      "width": 843,
-      "height": 1009,
-      "color": "#5b4931"
+      "key": "met-441379",
+      "src": "/first-lines/art/met-441379-1800.webp",
+      "srcSmall": "/first-lines/art/met-441379-900.webp",
+      "width": 1800,
+      "height": 1300,
+      "color": "#353225"
     }
   }
 ]

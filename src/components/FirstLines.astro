@@ -6,7 +6,7 @@
 import type { FirstLine } from '../lib/first-lines';
 import { CONTENT } from '../lib/site';
 import CreditParts from './CreditParts.astro';
-import { paintingCredit, portraitCredit, textCredit } from '../lib/credits';
+import { paintedYears, paintingCredit, portraitCredit, textCredit } from '../lib/credits';
 
 interface Props {
   entries: FirstLine[];
@@ -38,18 +38,25 @@ const payload = JSON.stringify(entries.map(({ provenance: _p, ...rest }) => rest
 <section class="fl" data-state="pending" aria-labelledby="fl-kicker" aria-busy="true">
   <figure class="fl-art">
     <div class="fl-frame" data-f="frame" style={`--art-color: ${e.artwork.color}; --ar: ${e.artwork.width} / ${e.artwork.height}`}>
-      <img
-        data-f="art"
-        src={e.artwork.srcSmall}
-        srcset={`${e.artwork.srcSmall} 900w, ${e.artwork.src} 1800w`}
-        sizes={SIZES}
-        width={e.artwork.width}
-        height={e.artwork.height}
-        alt={`${e.artwork.title}, painted by ${e.artwork.artist}, ${e.artwork.date}`}
-        decoding="async"
-        fetchpriority="high"
-      />
-      <p class="fl-fallback" data-f="fallback">{t.imageMissing}</p>
+      <div class="fl-plate">
+        <div class="fl-canvas">
+          <img
+            data-f="art"
+            src={e.artwork.srcSmall}
+            srcset={`${e.artwork.srcSmall} 900w, ${e.artwork.src} 1800w`}
+            sizes={SIZES}
+            width={e.artwork.width}
+            height={e.artwork.height}
+            alt={`${e.artwork.title}, painted by ${e.artwork.artist}, ${e.artwork.date}`}
+            decoding="async"
+            fetchpriority="high"
+          />
+          <p class="fl-fallback" data-f="fallback">{t.imageMissing}</p>
+        </div>
+        <!-- A plate number: the year it was painted, answering the book's year.
+             Hidden from screen readers; the colophon gives the full date. -->
+        <p class="fl-plate-no fl-year" data-f="painted" aria-hidden="true">{paintedYears(e)}</p>
+      </div>
     </div>
   </figure>
 
@@ -69,7 +76,7 @@ const payload = JSON.stringify(entries.map(({ provenance: _p, ...rest }) => rest
       </div>
       <div class="fl-meta">
         <p class="fl-title"><cite data-f="title">{e.title}</cite></p>
-        <p class="fl-author"><span data-f="author">{e.author}</span>, <span data-f="year">{e.year}</span></p>
+        <p class="fl-author"><span data-f="author">{e.author}</span>, <span class="fl-year" data-f="year">{e.year}</span></p>
         <p class="fl-credits" data-f="credits" hidden={!credits(e)}>{credits(e)}</p>
       </div>
     </div>
@@ -107,8 +114,8 @@ const payload = JSON.stringify(entries.map(({ provenance: _p, ...rest }) => rest
 
 <script>
   import type { FirstLine } from '../lib/first-lines';
-  import { paintingCredit, portraitCredit, textCredit, type CreditLabels, type Part } from '../lib/credits';
-  type Entry = Omit<FirstLine, 'provenance'>;
+  import { paintedYears, paintingCredit, portraitCredit, textCredit, type CreditLabels, type Part } from '../lib/credits';
+    type Entry = Omit<FirstLine, 'provenance'>;
 
   const root = document.querySelector<HTMLElement>('.fl');
   const dataEl = document.getElementById('fl-data');
@@ -133,6 +140,7 @@ const payload = JSON.stringify(entries.map(({ provenance: _p, ...rest }) => rest
         ...parts.map((p) => {
           if (typeof p === 'string') return document.createTextNode(p);
           if ('cite' in p) return Object.assign(document.createElement('cite'), { textContent: p.cite });
+          if ('year' in p) return Object.assign(document.createElement('span'), { className: 'fl-year', textContent: p.year });
           return Object.assign(document.createElement('a'), { href: p.href, rel: 'noopener', textContent: p.text });
         }),
       );
@@ -190,6 +198,7 @@ const payload = JSON.stringify(entries.map(({ provenance: _p, ...rest }) => rest
       $('title').textContent = x.title;
       $('author').textContent = x.author;
       $('year').textContent = String(x.year);
+      $('painted').textContent = paintedYears(x);
       const c = credits(x);
       $('credits').textContent = c;
       $('credits').hidden = !c;
@@ -286,9 +295,18 @@ const payload = JSON.stringify(entries.map(({ provenance: _p, ...rest }) => rest
     justify-content: center;
     width: 100%;
   }
+  /* The plate takes the painting's displayed width. */
+  .fl-plate { width: min(100%, calc(var(--max-h) * (var(--ar, 4 / 3)))); }
+  .fl-canvas { position: relative; }
+  .fl-plate-no {
+    margin: 0.7rem 0 0;
+    text-align: right;
+    font-size: 1rem;
+    line-height: 1;
+  }
   .fl-frame img {
     display: block;
-    width: min(100%, calc(var(--max-h) * (var(--ar, 4 / 3))));
+    width: 100%;
     height: auto;
     aspect-ratio: var(--ar, 4 / 3);
     background: var(--art-color);
@@ -296,7 +314,7 @@ const payload = JSON.stringify(entries.map(({ provenance: _p, ...rest }) => rest
     transition: opacity var(--fade) ease;
   }
   @media (min-width: 960px) {
-    .fl-frame { --max-h: calc(100svh - var(--header-h) - 2 * var(--gutter) - 5rem); }
+    .fl-frame { --max-h: calc(100svh - var(--header-h) - 2 * var(--gutter) - 6.5rem); }
   }
   /* The average colour holds the space; the image fades in over it. */
   .fl-frame[data-loaded='false'] img { opacity: 0.001; }
@@ -373,7 +391,6 @@ const payload = JSON.stringify(entries.map(({ provenance: _p, ...rest }) => rest
     align-items: center;
     gap: 0.9rem;
     margin: 0 0 1.25rem;
-    color: var(--gold);
   }
   /* The press's elephant as the ornament. */
   .fl-orn-mark {
@@ -415,6 +432,16 @@ const payload = JSON.stringify(entries.map(({ provenance: _p, ...rest }) => rest
   .fl-title { font-size: 1.3rem; line-height: 1.25; }
   .fl-title cite { font-style: italic; }
   .fl-author { font-family: var(--sans); font-size: 0.92rem; color: var(--ink-soft); margin-top: 0.2rem !important; }
+  /* The book's year and the painting's (in the colophon) share one face:
+     gilt Playfair numerals, so the eye pairs them across the page. Global,
+     because the colophon's parts are rendered by CreditParts and by script. */
+  .fl :global(.fl-year) {
+    font-family: var(--display);
+    font-weight: 500;
+    font-variant-numeric: lining-nums;
+    letter-spacing: 0.01em;
+    color: var(--gold-text);
+  }
   .fl-credits { font-family: var(--sans); font-size: 0.8rem; color: var(--ink-faint); margin-top: 0.15rem !important; }
   .fl-credits[hidden] { display: none; }
 

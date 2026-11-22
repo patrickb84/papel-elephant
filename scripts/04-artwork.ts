@@ -6,7 +6,13 @@
 // genres and setting. Candidates are scored on:
 //   - date: how close the painting is to the publication year
 //   - theme: overlap between the book's themes and the painting's title/tags
-//   - region: the artist's nationality against the author's / the book's country
+//   - type: landscapes, seascapes, cityscapes, still lifes and abstract or tonal
+//     work get a strong bonus; portraits, figure groups, genre scenes and
+//     religious or mythological subjects a strong penalty. The type is read from
+//     the museum's own metadata (AIC subject/term/style titles, Met tags and
+//     objectName) as well as the title.
+//   - region: the artist's nationality or the work's place of origin against
+//     the author's / the book's country (a meaningful tiebreaker)
 //   - suitability: landscape-friendly aspect ratio, a painting rather than a
 //     study or sketch, no unrelated portrait or devotional subject
 //   - museum signal: Met "highlight" / AIC "boosted" works
@@ -74,6 +80,9 @@ export const THEMES: Theme[] = [
 /** Extra subjects searched when themed searches find too few same-year paintings. */
 const BROAD_QUERIES = ['landscape', 'river', 'garden', 'city', 'interior', 'coast', 'figures'];
 
+/** Preferred painting types, searched for every book whatever its themes. */
+const TYPE_QUERIES = ['landscape', 'seascape', 'still life', 'cityscape', 'abstraction'];
+
 const FALLBACK: Theme = { name: 'landscape', match: /./, queries: ['landscape'], tags: ['landscape', 'view'] };
 
 export function themesFor(c: Candidate, m: MetadataResult | undefined, extra: string[] = []): Theme[] {
@@ -136,7 +145,7 @@ async function metSearch(q: string, from: number, to: number, departmentId: numb
         yearEnd: o.objectEndDate,
         medium: o.medium,
         classification: o.classification,
-        keywords: (o.tags ?? []).map((t) => t.term.toLowerCase()),
+        keywords: [...(o.tags ?? []).map((t) => t.term.toLowerCase()), (o.objectName ?? '').toLowerCase()].filter(Boolean),
         imageUrl: o.primaryImage,
         sourceUrl: o.objectURL,
         creditLine: o.creditLine,
@@ -149,7 +158,7 @@ async function metSearch(q: string, from: number, to: number, departmentId: numb
 interface AicArtwork {
   id: number; title: string; artist_display: string; artist_title: string | null; date_display: string;
   date_start: number; date_end: number; image_id: string | null; is_public_domain: boolean; is_boosted: boolean;
-  medium_display: string; classification_titles: string[]; subject_titles: string[]; term_titles: string[];
+  medium_display: string; classification_titles: string[]; subject_titles: string[]; term_titles: string[]; style_titles?: string[];
   credit_line: string; place_of_origin: string; thumbnail: { width: number; height: number } | null;
 }
 
@@ -159,7 +168,7 @@ async function aicSearch(q: string, from: number, to: number): Promise<ArtCandid
     limit: 25,
     fields: ['id', 'title', 'artist_display', 'artist_title', 'date_display', 'date_start', 'date_end', 'image_id',
       'is_public_domain', 'is_boosted', 'medium_display', 'classification_titles', 'subject_titles', 'term_titles',
-      'credit_line', 'place_of_origin', 'thumbnail'],
+      'style_titles', 'credit_line', 'place_of_origin', 'thumbnail'],
     query: { bool: { filter: [
       { term: { is_public_domain: true } },
       { term: { artwork_type_id: 1 } },
@@ -186,7 +195,8 @@ async function aicSearch(q: string, from: number, to: number): Promise<ArtCandid
         yearEnd: a.date_end,
         medium: a.medium_display,
         classification: a.classification_titles.join(', '),
-        keywords: [...a.subject_titles, ...a.term_titles].map((t) => t.toLowerCase()),
+        keywords: [...(a.subject_titles ?? []), ...(a.term_titles ?? []), ...(a.style_titles ?? [])].map((t) => t.toLowerCase()),
+        placeOfOrigin: a.place_of_origin,
         imageUrl: `https://www.artic.edu/iiif/2/${a.image_id}/full/1686,/0/default.jpg`,
         sourceUrl: `https://www.artic.edu/artworks/${a.id}`,
         creditLine: a.credit_line,
@@ -203,7 +213,7 @@ export async function fetchArtwork(museum: 'met' | 'aic', id: string): Promise<A
     return {
       museum, id, title: o.title, artist: o.artistDisplayName || 'Unknown artist', artistNationality: o.artistNationality,
       date: o.objectDate, yearStart: o.objectBeginDate, yearEnd: o.objectEndDate, medium: o.medium,
-      classification: o.classification, keywords: (o.tags ?? []).map((t) => t.term.toLowerCase()),
+      classification: o.classification, keywords: [...(o.tags ?? []).map((t) => t.term.toLowerCase()), (o.objectName ?? '').toLowerCase()].filter(Boolean),
       imageUrl: o.primaryImage, sourceUrl: o.objectURL, creditLine: o.creditLine,
     };
   }
@@ -212,7 +222,8 @@ export async function fetchArtwork(museum: 'met' | 'aic', id: string): Promise<A
   return {
     museum, id, title: a.title, artist: a.artist_title ?? a.artist_display.split('\n')[0], date: a.date_display,
     yearStart: a.date_start, yearEnd: a.date_end, medium: a.medium_display, classification: a.classification_titles.join(', '),
-    keywords: [...a.subject_titles, ...a.term_titles].map((t) => t.toLowerCase()),
+    keywords: [...(a.subject_titles ?? []), ...(a.term_titles ?? []), ...(a.style_titles ?? [])].map((t) => t.toLowerCase()),
+    placeOfOrigin: a.place_of_origin,
     imageUrl: `https://www.artic.edu/iiif/2/${a.image_id}/full/1686,/0/default.jpg`,
     sourceUrl: `https://www.artic.edu/artworks/${a.id}`, creditLine: a.credit_line,
     aspect: a.thumbnail ? a.thumbnail.width / a.thumbnail.height : undefined,
@@ -223,12 +234,68 @@ export async function fetchArtwork(museum: 'met' | 'aic', id: string): Promise<A
 // Scoring
 
 const PORTRAIT = /\b(portrait|self-portrait|bust of|head of|study of a head|mrs\.|mr\.|madame|monsieur|lady [A-Z]|captain [A-Z])/i;
-const DEVOTIONAL = /\b(madonna|virgin|saint|st\.|christ|crucifixion|annunciation|holy family|nativity|deposition|pieta|altarpiece)\b/i;
 const ROUGH = /\b(study|sketch|esquisse|copy after|fragment)\b/i;
 const GENERIC_TAGS = new Set(['woman', 'women', 'girl', 'lady', 'landscape', 'landscapes', 'view', 'city', 'street', 'streets', 'town', 'night', 'interior', 'interiors', 'work', 'evening', 'boy', 'child', 'children', 'mother', 'trees']);
 
 /** Grim subjects that clash with most books' mood (fine for gothic or war novels). */
 const GRIM = /\b(death|dead|dying|hanged|hanging|execution|corpse|martyrdom|massacre|murder|wounded|attacked|slaughter|mourning|suicide|drowned|plague|skull|crucifixion)\b/i;
+
+// Painting type. Read from the museum's own metadata first (AIC subject, term
+// and style titles; Met tags and objectName), then from the title.
+const TYPE_LAND_META = /\b(landscapes?|seascapes?|marine (?:art|paintings?)|coastal scenes?|cityscapes?|townscapes?|river scenes?|waterscapes?|harbou?rs?)\b/;
+const TYPE_LAND_WEAK = /\b(rivers?|lakes?|mountains?|cliffs?|ocean|sea|beach(?:es)?|canals?|bridges?|skies|sky|clouds|forests?|fields|hills|ships?|boats?|moonlight|sunsets?|nocturnes?|trees|streets?|towns?|cities|city|architecture|ruins?|waves|coast)\b/;
+const TYPE_LAND_TITLE = /\b(landscape|seascape|marine|coast|shore|river|lake|mountains?|harbou?r|view of|view from|views?|cliffs?|beach|sea|bay|sunsets?|sunrise|moonlight|moon|dawn|evening|snow|winter|autumn|spring|summer|storms?|clouds?|sky|fields?|meadows?|pond|brook|stream|woods?|forest|trees?|village|town|city|street|bridge|canal|ships?|boats?|barks?|fog|mist|valley|ford|road|garden|haystacks?|waterfall|falls|ruins?|nocturne|twilight|marsh|dunes|island|port|quay|rocks?|hills?|pass|ravine|clove|sound|channel|mill|farm|cottages?)\b/;
+const TYPE_STILL_META = /\b(still lifes?|flowers|floral|fruit|bouquet|vase|chrysanthemums|vegetables)\b/;
+const TYPE_STILL_TITLE = /\b(still life|flowers?|roses|peonies|chrysanthemums|bouquet|vase|fruits?|apples|pears|lilacs|irises|sunflowers|vegetables|bowl|jug|bottles?|poppies|hollyhocks|geraniums|tulips)\b/;
+const TYPE_ABSTRACT_META = /\b(abstract\w*|non-?objective|suprematis\w*|constructivis\w*|orphism|colou?r field|de stijl|tonalism|luminism)\b/;
+const TYPE_ABSTRACT_TITLE = /\b(abstract\w*|composition|improvisation|nocturne|symphony|harmony|arrangement|colou?r field|impression|untitled|tonal|painting with|painting no|study in)\b/;
+const TYPE_PORTRAIT_META = /\b(portraits?|self-portraits?)\b/;
+const TYPE_FIGURE_TITLE = /\b(woman|women|girls?|man|men|boys?|children|child|family|bathers?|peasants?|lady|ladies|mother|father|sisters?|brothers?|couple|dancers?|musicians?|actress|bride|maid\w*|shepherdess|farmer|fishermen|fisherman|sailors?|soldiers?|officers?|general|aide-de-camp|sleepers?|players|guests|figures?|nudes?|croquet|baby|infant|students?|gentleman|king|queen|prince\w*|duke|hunters?|workers|reapers|gleaners|harvesters|reading|toilette|bath)\b/;
+const TYPE_FIGURE_META = /\b(women|woman|men|children|families|family|peasants|figures|people|nudes|everyday life \(genre\)|genre|domestic scenes|girls?|boys?|bathers|dancers|musicians|workers)\b/;
+const TYPE_RELIGIOUS = /\b(religious|religion|mythological|mythology|christian\w*|bible|biblical|saints?|madonna|virgin|christ|crucifixion|annunciation|nativity|holy family|angels?|apostles?|allegor\w+|gods?|goddess|venus|apollo|diana|nymphs?|satyrs?|pieta|altarpiece|adoration|last supper|resurrection|flight into egypt|st\.)\b/;
+
+export interface PaintingType { kind: string; bonus: number; note?: string; figure: boolean }
+
+/** Classify a painting and return its score adjustment (positive for preferred kinds, negative for people and sacred subjects). */
+export function paintingType(a: ArtCandidate): PaintingType {
+  const title = fold(a.title);
+  const meta = fold(`${a.keywords.join(' | ')} | ${a.classification ?? ''}`);
+  // Preferred kinds, by strength of evidence.
+  let pref = 0, kind = 'other';
+  const set = (n: number, k: string) => { if (n > pref) { pref = n; kind = k; } };
+  if (TYPE_LAND_META.test(meta)) set(45, 'landscape');
+  if (TYPE_STILL_META.test(meta)) set(45, 'still life');
+  if (TYPE_ABSTRACT_META.test(meta)) set(45, 'abstract');
+  if (TYPE_STILL_TITLE.test(title)) set(40, 'still life');
+  if (TYPE_ABSTRACT_TITLE.test(title)) set(38, 'abstract');
+  if (TYPE_LAND_TITLE.test(title)) set(35, 'landscape');
+  if (TYPE_LAND_WEAK.test(meta)) set(22, 'landscape');
+  // People and sacred subjects.
+  const portrait = TYPE_PORTRAIT_META.test(meta) || PORTRAIT.test(a.title);
+  const figTitle = TYPE_FIGURE_TITLE.test(title);
+  const figMeta = TYPE_FIGURE_META.test(meta);
+  const strongPref = pref >= 35;
+  const religious = TYPE_RELIGIOUS.test(title) || TYPE_RELIGIOUS.test(meta);
+  let pen = 0, fk = '';
+  if (portrait) { pen = 40; fk = 'portrait'; }
+  else if (figTitle) { pen = 40; fk = 'figures'; }
+  else if (figMeta && !strongPref) { pen = 30; fk = 'figures'; }
+  else if (/\binteriors?\b/.test(`${title} ${meta}`) && !strongPref) { pen = 12; fk = 'interior'; }
+  if (religious) { pen = Math.max(pen, 45); fk = 'religious or mythological'; }
+  if (pen && pref) {
+    // Landscape with figures, or a figure picture with a setting: mostly judged on the people.
+    const net = pref * 0.4 - pen * 0.6;
+    return { kind: `${fk} (with ${kind})`, bonus: net, note: `${fk} subject with ${kind} setting`, figure: true };
+  }
+  if (pen) return { kind: fk, bonus: -pen, note: `${fk} subject (penalised)`, figure: true };
+  if (pref) return { kind, bonus: pref, figure: false };
+  return { kind: 'other', bonus: 0, figure: false };
+}
+
+/** Countries that stand in for each other when the book's own nationality is thin: Russian novels lean to Russian or other European painters. */
+const KIN: Record<string, string[]> = {
+  russian: ['german', 'french', 'scandinavian', 'dutch', 'swiss', 'italian'],
+};
 
 function score(a: ArtCandidate, year: number, themes: Theme[], natPref: Set<string>): ArtCandidate {
   const reasons: string[] = [];
@@ -259,23 +326,32 @@ function score(a: ArtCandidate, year: number, themes: Theme[], natPref: Set<stri
     }
     themeScore += best * 12 * weight;
   });
-  s += Math.min(50, themeScore);
+  const type = paintingType(a);
+  // A figure painting's theme hits (woman, girl, family...) shouldn't outweigh its subject.
+  s += Math.min(type.figure ? 20 : 50, themeScore);
+  s += type.bonus;
+  if (type.bonus > 0) reasons.push(`type: ${type.kind}`);
+  else if (type.bonus < 0) reasons.push(type.note ?? `${type.kind} subject (penalised)`);
   if (hits.length) reasons.push(`themes ${hits.join(', ')}`);
   const grimOk = themes.some((t) => t.name === 'gothic' || t.name === 'war');
   if (GRIM.test(`${a.title} ${a.keywords.join(' ')}`) && !grimOk) { s -= 30; reasons.push('grim subject (penalised)'); }
 
+  // Region: the painter's nationality and the work's place of origin against
+  // the author's and the book's countries. Strong enough to separate paintings
+  // of similar type and theme.
   const n = nat(a.artistNationality ?? '');
-  if (n && natPref.has(n)) { s += 10; reasons.push(`${n} artist`); }
+  const po = nat(a.placeOfOrigin ?? '');
+  if (n && natPref.has(n)) { s += po && natPref.has(po) ? 26 : 22; reasons.push(`${n} artist`); }
+  else if (po && natPref.has(po)) { s += 14; reasons.push(`made in ${a.placeOfOrigin}`); }
+  else if ([...natPref].some((p) => (KIN[p] ?? []).some((k) => k === n || k === po))) { s += 9; reasons.push(`${n ?? po} artist (neighbouring tradition)`); }
 
   if (a.aspect) {
     if (a.aspect >= 1.1 && a.aspect <= 2.0) s += 10;
     else if (a.aspect >= 0.72) s += 4;
     else s -= 10;
   }
-  if (PORTRAIT.test(a.title) && !themes.some((t) => t.name === 'society')) { s -= 20; reasons.push('portrait subject (penalised)'); }
-  if (DEVOTIONAL.test(a.title) && !themes.some((t) => t.name === 'antiquity')) { s -= 15; reasons.push('devotional subject (penalised)'); }
   if (ROUGH.test(a.title)) { s -= 12; reasons.push('study or sketch (penalised)'); }
-  return { ...a, score: Math.round(s * 10) / 10, reasons };
+  return { ...a, kind: type.kind, score: Math.round(s * 10) / 10, reasons };
 }
 
 // ---------------------------------------------------------------------------
@@ -327,6 +403,18 @@ async function main() {
     };
     const fits = (a: ArtCandidate) => yearCheck(year, a.yearStart, a.yearEnd, rule).ok;
     let pool = (await search([...new Set(themes.flatMap((t) => t.queries))].slice(0, 5))).filter(fits);
+    // Type searches: landscapes, seascapes, still lifes, cityscapes and abstract
+    // work, so the pool isn't made only of whatever the themes happen to find.
+    // The Met gets the three that suit its search best (plus modern art after 1900).
+    const typeResults = await Promise.all([
+      ...TYPE_QUERIES.map((q) => aicSearch(q, from, to)),
+      ...['landscape', 'seascape', 'still life', ...(year >= 1900 ? ['abstract'] : [])].flatMap((q) => [
+        metSearch(q, from, to, 11),
+        ...(american ? [metSearch(q, from, to, 1)] : []),
+        ...(year >= 1900 ? [metSearch(q, from, to, 21)] : []),
+      ]),
+    ]);
+    pool = [...pool, ...typeResults.flat().filter(fits)];
     // So few paintings are dated to a single year that themed searches can come
     // up short; widen the subjects (never the years) until there's a choice.
     if (pool.length < 8) pool = [...pool, ...(await search(BROAD_QUERIES)).filter(fits)];
