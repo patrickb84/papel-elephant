@@ -29,8 +29,14 @@ firstLines:
   readButton: Read the book
   shuffleButton: Another book
   imageMissing: The painting could not be loaded.
-  # {count} is replaced by the number of books in the collection.
-  credits: "{count} openings. Texts from Project Gutenberg; paintings from the open-access collections of The Metropolitan Museum of Art and the Art Institute of Chicago; portraits from Wikimedia Commons."
+  # The credits row under the page, for the book on screen.
+  credits:
+    painting: Painting
+    portrait: Portrait
+    text: Text
+    selfPortrait: self-portrait
+    textSource: Project Gutenberg
+    portraitSource: Wikimedia Commons
 
 about:
   pageTitle: About · Paper Elephant Publishing

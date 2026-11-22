@@ -57,10 +57,10 @@ typography:
     fontSize: "0.8rem"
     fontWeight: 500
     letterSpacing: "0.02em"
-  caption:
-    fontFamily: "'Instrument Sans Variable', system-ui, sans-serif"
-    fontSize: "0.72rem"
-    lineHeight: 1.45
+  colophon:
+    fontFamily: "'Newsreader Variable', 'Iowan Old Style', Georgia, serif"
+    fontSize: "0.92rem"
+    lineHeight: 1.4
   wordmark:
     fontFamily: "'Playfair Display Variable', 'Playfair Display', Georgia, serif"
     fontSize: "1.04rem"
@@ -155,7 +155,7 @@ A warm, low-chroma paper-and-ink palette with a single antique gold accent and i
 - **Laid Paper Deep** (`laid-paper-deep`): one step down for inset surfaces (the contact form panel, the failed-image panel, the portrait placeholder).
 - **Press Ink** (`press-ink`): headings, the first line, primary text, filled buttons and button outlines.
 - **Ink Soft** (`ink-soft`): secondary reading text (About paragraphs, notes, author line), resting nav links.
-- **Ink Faint** (`ink-faint`): captions, credits, the footer. Small text only; held at 4.8:1 on Laid Paper so it passes AA.
+- **Ink Faint** (`ink-faint`): the small-capital labels in the colophon. Small text only; held at 4.8:1 on Laid Paper so it passes AA.
 - **Hairline** (`hairline`): every rule and border: header bottom, section dividers, the fleuron's rules, input borders.
 - **Night** values (`night-*`): the dark-mode counterpart of each neutral, applied under `prefers-color-scheme: dark`.
 
@@ -184,11 +184,11 @@ A warm, low-chroma paper-and-ink palette with a single antique gold accent and i
 - **Body** (Newsreader, 1.02–1.08rem, 1.5): reading text, held to about 34rem.
 - **Book title** (Newsreader italic in `<cite>`, 1.3rem): titles of works are always italic.
 - **Label** (Instrument Sans 500, 0.8–0.95rem): kickers, nav, buttons, form labels.
-- **Caption** (Instrument Sans, 0.72–0.8rem, Ink Faint): painting captions, credits, footer.
+- **Colophon** (Newsreader, 0.92rem, 1.4, Ink Soft; labels in all-small-caps with 0.06em tracking, Ink Faint): the credits row. Credits are set in the reading face, like the credits page of a book.
 - **Wordmark** (Playfair 460, 1.04rem, 0.96 leading): the three-line "Paper / Elephant / Publishing" lock-up, live text.
 
 ### Named Rules
-**The Three Voices Rule.** Playfair speaks for the press (display, headings, wordmark, drop caps, numerals). Newsreader carries everything meant to be read. Instrument Sans is for small UI only (labels, buttons, captions, credits) and never sets a heading or a paragraph.
+**The Three Voices Rule.** Playfair speaks for the press (display, headings, wordmark, drop caps, numerals). Newsreader carries everything meant to be read. Instrument Sans is for small UI only (labels, buttons, the author line) and never sets a heading, a paragraph or a credit.
 
 **The Chapter Opening Rule.** An opening passage starts with a Playfair drop cap in gilt: sunk three lines (`initial-letter: 3`), or raised two lines for a one-line opening, with a floated fallback where `initial-letter` is unsupported. The first few words follow in small capitals (`font-variant-caps: small-caps`, 0.045em tracking).
 
@@ -196,7 +196,7 @@ A warm, low-chroma paper-and-ink palette with a single antique gold accent and i
 
 Content sits inside a fluid gutter (`spacing.gutter`, clamp 1–3.5rem) under a fixed-height header (`spacing.header`, 5.5rem) with a hairline beneath.
 
-- **First Lines** fills the viewport below the header (`100svh` minus the header). From 960px it is a two-column grid, painting about 1.3fr and text about 1fr (minimum 20rem), vertically centred, with a full-width credits footer above a hairline. Below 960px it stacks: painting, then text. The painting is capped at 58svh on small screens and at the full available height on large ones. The text column is held to 36rem.
+- **First Lines** fills the viewport below the header (`100svh` minus the header). From 960px it is a two-column grid, painting about 1.3fr and text about 1fr (minimum 20rem), vertically centred, with the full-width colophon below a hairline. Below 960px it stacks: painting, then text. The painting is capped at 58svh on small screens and at the full available height on large ones. The text column is held to 36rem.
 - **About** is a centred 72rem column. The intro is a 1.15fr / 1fr split (text, nested mark) from 860px; the notes are three equal columns between hairlines from 760px; the contact section is 1fr / 1.25fr (text, form panel) from 860px.
 - Vertical rhythm comes from fluid section padding (clamp 2.5–7vw) and hairline dividers, not from cards or background bands.
 - Kickers are always a short horizontal rule (2.5rem) followed by a sans label in gilt.
@@ -248,7 +248,10 @@ A 2.5rem rule (currentColor on First Lines, Gold Foil on About) and an Instrumen
 The opening sentence in the First Line style, with the Chapter Opening drop cap and small-capital lead. Below it, the **fleuron**: the foil elephant (1.05 × 1.25rem) between two flexible hairlines. Then the book block: a 64px circular author portrait, the title in italic Newsreader, the author and year in Instrument Sans Ink Soft, and the buttons.
 
 ### Painting Frame
-The painting at its natural proportions with the Laid Print shadow, over its own average colour while it loads. It fades in over 380ms. If it fails, a Laid Paper Deep panel with a sans message replaces it. A centred Instrument Sans caption sits below with the title in italic `<cite>`, the artist, the date, the museum and a link to the museum's page.
+The painting at its natural proportions with the Laid Print shadow, over its own average colour while it loads. It fades in over 380ms. If it fails, a Laid Paper Deep panel with a sans message replaces it. It has no caption: the painting stands alone, like a frontispiece, and its credit is in the colophon.
+
+### Colophon
+Every credit for the book on screen, gathered in one row under a hairline at the foot of the page: **Painting** (artist, *title*, date, museum linked to the object page), **Portrait** (artist, or "self-portrait"; the licence only when CC BY/BY-SA requires it; Wikimedia Commons linked) and **Text** (Project Gutenberg, linked to the book). Labels are small capitals in Ink Faint, values in Ink Soft, left-aligned. One line on desktop; a two-column label/value list on phones. Links are underlined in Hairline and warm to Gilt Leaf on hover. No "public domain" boilerplate and no separators like middle dots.
 
 ### Section Numerals
 Notes are numbered i., ii., iii. in italic Playfair 1.4rem Gilt Leaf, above a Title.
@@ -258,7 +261,7 @@ Notes are numbered i., ii., iii. in italic Playfair 1.4rem Gilt Leaf, above a Ti
 ### Do:
 - **Do** use Laid Paper as the page ground and Press Ink for text, and provide the Night counterparts for dark mode on every new surface.
 - **Do** keep gold to gilding: marks, drop caps, kickers, numerals, rules, link underlines and focus (The Gilding Rule).
-- **Do** set titles of works in italic `<cite>`, and credit every painting and portrait in a caption.
+- **Do** set titles of works in italic `<cite>`, and credit the painting, portrait and text in the colophon, never in scattered captions.
 - **Do** open any featured passage with the Chapter Opening treatment (gilt Playfair drop cap and small-capital lead).
 - **Do** use the elephant mark (foil, via the mask) as the system's only ornament and fleuron.
 - **Do** keep crossfades near 380ms and small UI transitions near 160–220ms, and disable all motion under `prefers-reduced-motion`.

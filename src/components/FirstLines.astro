@@ -4,7 +4,9 @@
 // (so the page works without JavaScript); the script below then shows a
 // random entry and drives the shuffle button. All data and images are local.
 import type { FirstLine } from '../lib/first-lines';
-import { CONTENT, fill } from '../lib/site';
+import { CONTENT } from '../lib/site';
+import CreditParts from './CreditParts.astro';
+import { paintingCredit, portraitCredit, textCredit } from '../lib/credits';
 
 interface Props {
   entries: FirstLine[];
@@ -26,8 +28,7 @@ const credits = (x: FirstLine) =>
   [x.coAuthors.length ? `with ${x.coAuthors.join(' and ')}` : '', x.translators.length ? `Translated by ${x.translators.join(' and ')}` : '']
     .filter(Boolean)
     .join(' · ');
-const portraitCredit = (x: FirstLine) =>
-  x.portrait ? `Portrait of ${x.author}${x.portrait.artist ? ` by ${x.portrait.artist}` : ''} · ${x.portrait.license}` : '';
+const labels = t.credits;
 const SIZES = '(min-width: 960px) 56vw, 100vw';
 
 // The client needs everything except provenance (that lives in content/REPORT.md).
@@ -50,10 +51,6 @@ const payload = JSON.stringify(entries.map(({ provenance: _p, ...rest }) => rest
       />
       <p class="fl-fallback" data-f="fallback">{t.imageMissing}</p>
     </div>
-    <figcaption class="fl-caption fl-swap">
-      <a data-f="art-link" href={e.artwork.sourceUrl} rel="noopener"><cite data-f="art-title">{e.artwork.title}</cite></a><span data-f="art-by">, {e.artwork.artist}, {e.artwork.date}.</span>{" "}
-      <span data-f="art-museum">{e.artwork.museum}</span>, public domain.
-    </figcaption>
   </figure>
 
   <div class="fl-text">
@@ -83,16 +80,26 @@ const payload = JSON.stringify(entries.map(({ provenance: _p, ...rest }) => rest
         {t.readButton}<span class="visually-hidden"> (opens Project Gutenberg in a new tab)</span>
       </a>
     </div>
-
-    <p class="fl-portrait-credit fl-swap" data-f="portrait-credit" hidden={!e.portrait}>
-      <a data-f="portrait-link" href={e.portrait?.sourceUrl ?? '#'} rel="noopener">{portraitCredit(e)}</a>
-    </p>
   </div>
 
   <p class="visually-hidden" aria-live="polite" data-f="announce"></p>
 
-  <footer class="fl-footer">
-    <span>{fill(t.credits, { count: entries.length })}</span>
+  <!-- Every credit for the book on screen, in one place, like a book's colophon. -->
+  <footer class="fl-colophon fl-swap">
+    <dl data-labels={JSON.stringify(labels)}>
+      <div>
+        <dt>{labels.painting}</dt>
+        <dd data-f="credit-painting"><CreditParts parts={paintingCredit(e)} /></dd>
+      </div>
+      <div data-f="credit-portrait-row" hidden={!e.portrait}>
+        <dt>{labels.portrait}</dt>
+        <dd data-f="credit-portrait"><CreditParts parts={portraitCredit(e, labels)} /></dd>
+      </div>
+      <div>
+        <dt>{labels.text}</dt>
+        <dd data-f="credit-text"><CreditParts parts={textCredit(e, labels)} /></dd>
+      </div>
+    </dl>
   </footer>
 </section>
 
@@ -100,6 +107,7 @@ const payload = JSON.stringify(entries.map(({ provenance: _p, ...rest }) => rest
 
 <script>
   import type { FirstLine } from '../lib/first-lines';
+  import { paintingCredit, portraitCredit, textCredit, type CreditLabels, type Part } from '../lib/credits';
   type Entry = Omit<FirstLine, 'provenance'>;
 
   const root = document.querySelector<HTMLElement>('.fl');
@@ -117,6 +125,18 @@ const payload = JSON.stringify(entries.map(({ provenance: _p, ...rest }) => rest
       [x.coAuthors.length ? `with ${x.coAuthors.join(' and ')}` : '', x.translators.length ? `Translated by ${x.translators.join(' and ')}` : '']
         .filter(Boolean)
         .join(' · ');
+
+    const labels: CreditLabels = JSON.parse(root.querySelector<HTMLElement>('.fl-colophon dl')?.dataset.labels ?? '{}');
+    /** Write a credit into its <dd>: plain text, <cite> titles and links. */
+    function setParts(el: HTMLElement, parts: Part[]) {
+      el.replaceChildren(
+        ...parts.map((p) => {
+          if (typeof p === 'string') return document.createTextNode(p);
+          if ('cite' in p) return Object.assign(document.createElement('cite'), { textContent: p.cite });
+          return Object.assign(document.createElement('a'), { href: p.href, rel: 'noopener', textContent: p.text });
+        }),
+      );
+    }
 
     let current = -1;
     let busy = false;
@@ -155,10 +175,10 @@ const payload = JSON.stringify(entries.map(({ provenance: _p, ...rest }) => rest
       art.src = x.artwork.srcSmall;
       if (art.complete && art.naturalWidth) frame.dataset.loaded = 'true';
 
-      $<HTMLAnchorElement>('art-link').href = x.artwork.sourceUrl;
-      $('art-title').textContent = x.artwork.title;
-      $('art-by').textContent = `, ${x.artwork.artist}, ${x.artwork.date}.`;
-      $('art-museum').textContent = x.artwork.museum;
+      setParts($('credit-painting'), paintingCredit(x));
+      setParts($('credit-portrait'), portraitCredit(x, labels));
+      setParts($('credit-text'), textCredit(x, labels));
+      $('credit-portrait-row').hidden = !x.portrait;
 
       $('line-wrap').dataset.size = sizeOf(x.line);
       $('line-wrap').setAttribute('cite', x.readUrl);
@@ -175,18 +195,12 @@ const payload = JSON.stringify(entries.map(({ provenance: _p, ...rest }) => rest
       $<HTMLAnchorElement>('read').href = x.readUrl;
 
       const pw = $('portrait-wrap');
-      const pc = $('portrait-credit');
       if (x.portrait) {
         pw.hidden = false;
         pw.style.setProperty('--art-color', x.portrait.color);
         $<HTMLImageElement>('portrait').src = x.portrait.src;
-        const link = $<HTMLAnchorElement>('portrait-link');
-        link.href = x.portrait.sourceUrl;
-        link.textContent = `Portrait of ${x.author}${x.portrait.artist ? ` by ${x.portrait.artist}` : ''} · ${x.portrait.license}`;
-        pc.hidden = false;
       } else {
         pw.hidden = true;
-        pc.hidden = true;
       }
     }
 
@@ -297,15 +311,6 @@ const payload = JSON.stringify(entries.map(({ provenance: _p, ...rest }) => rest
   }
   .fl-frame[data-failed='true'] .fl-fallback { display: grid; }
 
-  .fl-caption {
-    font-family: var(--sans);
-    font-size: 0.8rem;
-    line-height: 1.45;
-    color: var(--ink-faint);
-    text-align: center;
-    max-width: 44rem;
-  }
-  .fl-caption cite { font-style: italic; }
 
   /* Text ------------------------------------------------------------------ */
   .fl-text {
@@ -434,22 +439,39 @@ const payload = JSON.stringify(entries.map(({ provenance: _p, ...rest }) => rest
   .fl-btn-primary:hover { background: transparent; color: var(--ink); }
   .fl[aria-busy='true'] [data-f='shuffle'] { cursor: progress; }
 
-  .fl-portrait-credit {
-    margin: 1.5rem 0 0;
-    font-family: var(--sans);
-    font-size: 0.72rem;
-    color: var(--ink-faint);
-  }
-  .fl-portrait-credit[hidden] { display: none; }
-
-  .fl-footer {
+  /* Colophon: every credit for the book on screen, set like the credits page
+     of a book. Small-capital labels, the reading face, nothing centred. */
+  .fl-colophon {
     grid-column: 1 / -1;
-    font-family: var(--sans);
-    font-size: 0.72rem;
-    color: var(--ink-faint);
-    text-align: center;
     padding-top: 1rem;
     border-top: 1px solid var(--rule);
+  }
+  .fl-colophon dl {
+    display: grid;
+    grid-template-columns: max-content minmax(0, 1fr);
+    gap: 0.35rem 1rem;
+    margin: 0;
+    font-size: 0.92rem;
+    line-height: 1.4;
+  }
+  .fl-colophon dl > div { display: contents; }
+  .fl-colophon dl > div[hidden] { display: none; }
+  .fl-colophon dt {
+    font-variant-caps: all-small-caps;
+    letter-spacing: 0.06em;
+    color: var(--ink-faint);
+  }
+  .fl-colophon dd { margin: 0; color: var(--ink-soft); }
+  .fl-colophon cite { font-style: italic; }
+  .fl-colophon a {
+    color: inherit;
+    text-decoration-color: var(--rule);
+    transition: text-decoration-color 160ms ease;
+  }
+  .fl-colophon a:hover { text-decoration-color: var(--gold); }
+  @media (min-width: 960px) {
+    .fl-colophon dl { display: flex; flex-wrap: wrap; gap: 0.35rem 2.75rem; }
+    .fl-colophon dl > div { display: flex; gap: 0.7em; align-items: baseline; }
   }
 
   /* Transitions -------------------------------------------------------------

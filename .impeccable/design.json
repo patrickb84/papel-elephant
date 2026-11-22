@@ -35,7 +35,7 @@
       "lede":       { "displayName": "Lede",       "purpose": "Opening paragraph under a display heading." },
       "body":       { "displayName": "Body",       "purpose": "Reading text, around 34rem measure." },
       "label":      { "displayName": "Label",      "purpose": "Kickers, nav, buttons, form labels." },
-      "caption":    { "displayName": "Caption",    "purpose": "Painting captions, credits, footer." },
+      "colophon":   { "displayName": "Colophon",   "purpose": "The credits row: painting, portrait and text, in the reading face with small-capital labels." },
       "wordmark":   { "displayName": "Wordmark",   "purpose": "Three-line live-text lock-up beside the elephant." }
     },
     "shadows": [
@@ -132,14 +132,14 @@
     "rules": [
       { "name": "The Gilding Rule", "body": "Gold is gilt, not paint. It appears on marks, drop caps, kickers, numerals, rules, link underlines and focus, and nowhere else. Never on large fills, backgrounds, button fills or body text; a gilt border on hover is the most a control gets.", "section": "colors" },
       { "name": "The Borrowed Colour Rule", "body": "The only strong colour on a page comes from the painting or portrait. While an image loads, its frame is filled with the painting's own average colour (--art-color), never a UI grey.", "section": "colors" },
-      { "name": "The Three Voices Rule", "body": "Playfair speaks for the press (display, headings, wordmark, drop caps, numerals). Newsreader carries everything meant to be read. Instrument Sans is for small UI only (labels, buttons, captions, credits) and never sets a heading or a paragraph.", "section": "typography" },
+      { "name": "The Three Voices Rule", "body": "Playfair speaks for the press (display, headings, wordmark, drop caps, numerals). Newsreader carries everything meant to be read. Instrument Sans is for small UI only (labels, buttons, the author line) and never sets a heading, a paragraph or a credit.", "section": "typography" },
       { "name": "The Chapter Opening Rule", "body": "An opening passage starts with a Playfair drop cap in gilt: sunk three lines (initial-letter: 3), or raised two lines for a one-line opening, with a floated fallback where initial-letter is unsupported. The first few words follow in small capitals (font-variant-caps: small-caps, 0.045em tracking).", "section": "typography" },
       { "name": "The Laid Print Rule", "body": "Only artwork lifts off the page. UI elements (buttons, panels, inputs, nav) never cast shadows.", "section": "elevation" }
     ],
     "dos": [
       "Do use Laid Paper as the page ground and Press Ink for text, and provide the Night counterparts for dark mode on every new surface.",
       "Do keep gold to gilding: marks, drop caps, kickers, numerals, rules, link underlines and focus (The Gilding Rule).",
-      "Do set titles of works in italic <cite>, and credit every painting and portrait in a caption.",
+      "Do set titles of works in italic <cite>, and credit the painting, portrait and text in the colophon, never in scattered captions.",
       "Do open any featured passage with the Chapter Opening treatment (gilt Playfair drop cap and small-capital lead).",
       "Do use the elephant mark (foil, via the mask) as the system's only ornament and fleuron.",
       "Do keep crossfades near 380ms and small UI transitions near 160–220ms, and disable all motion under prefers-reduced-motion.",

@@ -16,7 +16,14 @@ export interface SiteContent {
     readButton: string;
     shuffleButton: string;
     imageMissing: string;
-    credits: string;
+    credits: {
+      painting: string;
+      portrait: string;
+      text: string;
+      selfPortrait: string;
+      textSource: string;
+      portraitSource: string;
+    };
   };
   about: {
     pageTitle: string;

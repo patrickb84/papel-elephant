@@ -1,0 +1,13 @@
+---
+// Renders one credit (see src/lib/credits.ts): plain text, <cite> titles and links.
+import type { Part } from '../lib/credits';
+
+interface Props {
+  parts: Part[];
+}
+const { parts } = Astro.props;
+---
+
+{parts.map((p) =>
+  typeof p === 'string' ? p : 'cite' in p ? <cite>{p.cite}</cite> : <a href={p.href} rel="noopener">{p.text}</a>,
+)}
