@@ -11,6 +11,7 @@ export interface SiteContent {
   site: {
     name: string;
     url: string;
+    email: string;
     nav: Link[];
     copyright: string;
     contactLink: Link;
@@ -54,12 +55,12 @@ export interface SiteContent {
       heading: string;
       text: string;
       instagramPrefix: string;
-      formMissing: string;
+      emailPrefix: string;
       topicNotes: Record<string, { note?: string; hint?: string }>;
       topics: string[];
       labels: { name: string; email: string; topic: string; message: string; send: string };
       errors: { name: string; email: string; emailInvalid: string; message: string };
-      status: { sending: string; sent: string; failed: string };
+      status: { sending: string; sent: string; failed: string; openedEmailApp: string };
     };
   };
 }
@@ -70,8 +71,7 @@ export const SITE = {
   ...CONTENT.site,
   // Where the contact form posts. Any form service that accepts a normal form
   // POST works (Formspree, Basin, Netlify Forms...). Set PUBLIC_CONTACT_ENDPOINT
-  // in .env; without it the About page shows contact.formMissing and the
-  // Instagram link in place of the form.
+  // in .env; without it the form opens the visitor's email app instead.
   contactEndpoint: (import.meta.env.PUBLIC_CONTACT_ENDPOINT as string | undefined) ?? '',
 };
 

@@ -11,6 +11,8 @@
 site:
   name: Paper Elephant Publishing
   url: https://paperelephantpublishing.com
+  # PLACEHOLDER: the press's real contact address.
+  email: hello@paperelephantpublishing.com
   # Top bar links, in order.
   nav:
     - label: First lines
@@ -169,9 +171,7 @@ about:
       For submissions, editing and ghostwriting, general inquiries, rights
       and permissions, or press-related matters, please use the form below.
     instagramPrefix: Follow us on Instagram
-    # Shown in place of the form until a form service is connected
-    # (PUBLIC_CONTACT_ENDPOINT, see README). Followed by the Instagram link.
-    formMissing: The contact form isn't open yet. Until it is, send us a message on Instagram.
+    emailPrefix: Or email
     # For these topics the form says who the message goes to and suggests
     # what to write. The Editing page's links choose the topic for the visitor.
     topicNotes:
@@ -214,4 +214,6 @@ about:
     status:
       sending: Sending…
       sent: Your message has been sent.
-      failed: Sorry, that didn't send. Please try again, or message us on Instagram.
+      # {email} is replaced by the address above.
+      failed: Sorry, that didn't send. Please try again, or email {email}.
+      openedEmailApp: Your email app should open with the message ready to send.

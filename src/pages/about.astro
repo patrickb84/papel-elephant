@@ -43,23 +43,25 @@ const formText = JSON.stringify({ errors: contact.errors, status: contact.status
         <h2 id="contact-title">{contact.heading}</h2>
         <p>{contact.text}</p>
         <p class="contact-email">
+          {contact.emailPrefix} <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
+        </p>
+        <p class="contact-email">
           {contact.instagramPrefix} <a href={SITE.instagram.href} rel="noopener">{SITE.instagram.handle}</a>
         </p>
         <Floral name="sprig" class="contact-floral" />
       </div>
 
-      <!-- With a form service connected, the form; until then, a note and the
-           Instagram link, rather than a form that can't send. -->
-      {SITE.contactEndpoint ? (
       <form
         class="contact-form"
-        action={SITE.contactEndpoint}
+        action={SITE.contactEndpoint || `mailto:${SITE.email}`}
         method="post"
+        enctype={SITE.contactEndpoint ? undefined : 'text/plain'}
         data-endpoint={SITE.contactEndpoint}
+        data-email={SITE.email}
         data-text={formText}
         novalidate
       >
-        {/* Who the message goes to, for topics that have a note (set by script). */}
+        <!-- Who the message goes to, for topics that have a note (set by script). -->
         <p class="topic-note" data-topic-note hidden></p>
         <div class="field">
           <label for="cf-name">{contact.labels.name}</label>
@@ -82,7 +84,7 @@ const formText = JSON.stringify({ errors: contact.errors, status: contact.status
           <textarea id="cf-message" name="message" rows="6" required aria-describedby="cf-message-error"></textarea>
           <p class="error" id="cf-message-error" data-error-for="cf-message"></p>
         </div>
-        {/* Spam trap: people never see or fill this field. */}
+        <!-- Spam trap: people never see or fill this field. -->
         <div class="trap" aria-hidden="true">
           <label for="cf-website">Website</label>
           <input id="cf-website" name="_gotcha" type="text" tabindex="-1" autocomplete="off" />
@@ -92,12 +94,6 @@ const formText = JSON.stringify({ errors: contact.errors, status: contact.status
           <p class="status" role="status" aria-live="polite"></p>
         </div>
       </form>
-      ) : (
-        <div class="contact-form contact-missing">
-          <p>{contact.formMissing}</p>
-          <a class="send" href={SITE.instagram.href} rel="noopener">{SITE.instagram.handle}</a>
-        </div>
-      )}
     </section>
 
     <SiteFooter />
@@ -110,10 +106,11 @@ const formText = JSON.stringify({ errors: contact.errors, status: contact.status
     const status = form.querySelector<HTMLElement>('.status')!;
     const button = form.querySelector<HTMLButtonElement>('.send')!;
     const endpoint = form.dataset.endpoint ?? '';
+    const email = form.dataset.email ?? '';
 
     const text = JSON.parse(form.dataset.text ?? '{}') as {
       errors: Record<'name' | 'email' | 'emailInvalid' | 'message', string>;
-      status: Record<'sending' | 'sent' | 'failed', string>;
+      status: Record<'sending' | 'sent' | 'failed' | 'openedEmailApp', string>;
       topicNotes: Record<string, { note?: string; hint?: string }>;
     };
     const messages: Record<string, string> = {
@@ -162,6 +159,15 @@ const formText = JSON.stringify({ errors: contact.errors, status: contact.status
       const data = new FormData(form);
       if (data.get('_gotcha')) return; // a bot filled the trap
 
+      if (!endpoint) {
+        // No form service configured: hand the message to the visitor's email app.
+        const subject = `${data.get('topic')}, from ${data.get('name')}`;
+        const body = `${data.get('message')}\n\n${data.get('name')}\n${data.get('email')}`;
+        window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        status.textContent = text.status.openedEmailApp;
+        return;
+      }
+
       button.disabled = true;
       status.textContent = text.status.sending;
       try {
@@ -170,7 +176,7 @@ const formText = JSON.stringify({ errors: contact.errors, status: contact.status
         form.reset();
         status.textContent = text.status.sent;
       } catch {
-        status.textContent = text.status.failed;
+        status.textContent = text.status.failed.replace('{email}', email);
       } finally {
         button.disabled = false;
       }
@@ -396,10 +402,5 @@ const formText = JSON.stringify({ errors: contact.errors, status: contact.status
   }
   .topic-note[hidden] { display: none; }
   textarea::placeholder { color: var(--ink-faint); font-style: italic; }
-
-  /* No form service yet: the panel holds a note and the Instagram link. */
-  .contact-missing { justify-items: start; align-content: start; }
-  .contact-missing p { margin: 0; font-size: 1.05rem; color: var(--ink-soft); max-width: 28rem; }
-  .send { display: inline-flex; align-items: center; text-decoration: none; }
 
 </style>
