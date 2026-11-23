@@ -96,7 +96,7 @@ Everything hand-made lives in `content/overrides.json`:
 - Below 720px the top-bar links collapse into a Menu button that opens a drawer (`src/components/SiteHeader.astro`, a modal `<dialog>`, so Escape, focus and the backdrop work natively). Without JavaScript the links stay in the bar.
 - The header wordmark is live text in Playfair Display, laid out like the logo lock-up (elephant, thin rule, three lines).
 - Each opening line is set like the start of a printed chapter: a gold Playfair drop cap (sunk three lines, or raised for short one-line openings), the first words in small capitals, and the elephant as an ornament on the rule below.
-- **Open decisions:** entries marked `TODO` in `content/site.yaml` still need sign-off (the Editing services).
+- **Later:** ideas and follow-ups are listed in `TODO.md`.
 - **Contact form:** messages are emailed to `site.email` (`hello@paperelephantpublishing.com`) by [FormSubmit](https://formsubmit.co), a free service that needs no account. The very first message sends a confirmation email to that address; click its link once and every message after arrives in the inbox. To use another service instead (Formspree, say), set `PUBLIC_CONTACT_ENDPOINT` to its endpoint and rebuild. Topics listed under `about.contact.topicNotes` show who the message goes to and suggest what to write; the Editing page's links pick those topics. The form validates fields with inline messages and includes a hidden spam-trap field.
 
 ## Hosting

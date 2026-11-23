@@ -37,10 +37,8 @@ The press doesn't open with a catalogue. It opens with a curated reading experie
 - The page works without JavaScript. The build renders one entry as plain HTML.
 - Nothing is invented to fill gaps. A first line, year, painting or portrait that doesn't pass the pipeline's checks isn't published.
 - Submissions are open. The About page says so plainly and frames the press as small (few books at a time, slow replies), without terms that aren't set yet. Contact topics: General inquiry, Submissions, Editing, Ghostwriting, Research / story support, Books and publications, Rights and permissions, Press and events.
-- **Open:** three of the four services on `/editing/` (Developmental editing, Ghostwriting, Research / story support) are unconfirmed descriptions carried over from raileebradshaw.com and marked `TODO` in `content/site.yaml`. They need Railee's sign-off before launch.
 - `/books/` lists the press's books newest first. _The Gingerbread House_ by R.M. Whitaker (Railee's pen name) shows its cover, back-cover copy, listing facts and links to Amazon and its page on raileebradshaw.com. Reader quotes, ratings and prices stay on the author's site.
 - Navigation: First lines, Books, Editing, About. Below 720px the links collapse into a Menu button that opens a drawer (a modal `<dialog>`); without JavaScript they stay in the bar.
-- **Open:** the Editing services await Railee's sign-off (marked `TODO` in `content/site.yaml`).
 - **Open:** the terms for submissions (genres, what to send, response times).
 
 ## Brand Commitments

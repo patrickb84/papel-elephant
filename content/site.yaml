@@ -6,7 +6,7 @@
 # onto indented lines below it. Rebuild (or keep `npm run dev` running) to
 # see changes.
 #
-# Anything marked TODO still needs a decision before it's final.
+# Ideas for later live in TODO.md at the project root.
 
 site:
   name: Paper Elephant Publishing
@@ -100,17 +100,14 @@ editing:
     # Each service links to the contact form with its topic chosen; `ask` is
     # that link's text, so it should say what the visitor is asking about.
     items:
-      # TODO: Railee hasn't signed off on this service yet.
       - name: Developmental editing
         text: Clear, honest notes on story, structure, character and pacing, and a plan for your next draft.
         ask: Ask about editing
         topic: Editing
-      # TODO: Railee hasn't signed off on this service yet.
       - name: Ghostwriting
         text: Your story in your voice, written with you from the first conversation to the finished manuscript.
         ask: Ask about ghostwriting
         topic: Ghostwriting
-      # TODO: Railee hasn't signed off on this service yet.
       - name: Research / story support
         text: Facts checked, history dug up and plot problems untangled, for the parts of a book that need digging.
         ask: Ask about research
