@@ -1,57 +1,481 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-21T18:30:00Z",
+  "generatedAt": "2026-11-23T08:12:14.270Z",
   "title": "Design System: Paper Elephant Publishing",
   "extensions": {
     "colorMeta": {
-      "laid-paper":       { "role": "neutral",  "displayName": "Laid Paper",       "canonical": "oklch(95.6% 0.014 84)",  "tonalRamp": ["#0e0b05", "#2a261f", "#49453c", "#6a665d", "#8d8980", "#b2ada4", "#d5d0c7", "#f3eee4"] },
-      "laid-paper-deep":  { "role": "neutral",  "displayName": "Laid Paper Deep",  "canonical": "oklch(91.8% 0.022 83)",  "tonalRamp": ["#0f0a03", "#2c261a", "#4b4438", "#6c6558", "#90887b", "#b5ad9f", "#d8d0c1", "#f5eee0"] },
-      "press-ink":        { "role": "neutral",  "displayName": "Press Ink",        "canonical": "oklch(21.9% 0.007 78)",  "tonalRamp": ["#0c0b09", "#282623", "#474541", "#686662", "#8b8985", "#b0ada9", "#d3d0cc", "#f0eeea"] },
-      "ink-soft":         { "role": "neutral",  "displayName": "Ink Soft",         "canonical": "oklch(43.8% 0.014 71)",  "tonalRamp": ["#0d0b08", "#2a2621", "#49443e", "#6b655e", "#8f8880", "#b3ada6", "#d5d0cb", "#f2eee9"] },
-      "ink-faint":        { "role": "neutral",  "displayName": "Ink Faint",        "canonical": "oklch(52.5% 0.017 74)",  "tonalRamp": ["#0d0b07", "#2a2620", "#4a443c", "#6c655b", "#90887e", "#b3ada5", "#d5d0c9", "#f2eee8"] },
-      "hairline":         { "role": "neutral",  "displayName": "Hairline",         "canonical": "oklch(85.7% 0.024 82)",  "tonalRamp": ["#0f0a04", "#2c2519", "#4b4437", "#6d6557", "#908879", "#b6ad9d", "#d9d0c0", "#f5eee1"] },
-      "gilt-leaf":        { "role": "primary",  "displayName": "Gilt Leaf",        "canonical": "oklch(60.6% 0.106 83)",  "tonalRamp": ["#150800", "#362200", "#5b4000", "#836000", "#a68339", "#c7aa70", "#e5cea1", "#ffecc9"] },
-      "gilt-leaf-soft":   { "role": "primary",  "displayName": "Gilt Leaf Soft",   "canonical": "oklch(74.3% 0.104 85)",  "tonalRamp": ["#160700", "#392100", "#5d3f00", "#806101", "#a58436", "#cba95e", "#e9ce94", "#ffecbf"] },
-      "rust-error":       { "role": "error",    "displayName": "Rust Error",       "canonical": "oklch(53.2% 0.145 33)",  "tonalRamp": ["#200000", "#490e04", "#762716", "#a7402b", "#cc6852", "#e99481", "#ffbdad", "#ffe0d2"] },
-      "night-paper":      { "role": "neutral",  "displayName": "Night Paper (dark ground)" },
-      "night-paper-deep": { "role": "neutral",  "displayName": "Night Paper Deep (dark inset)" },
-      "night-ink":        { "role": "neutral",  "displayName": "Night Ink (dark text)" },
-      "night-ink-soft":   { "role": "neutral",  "displayName": "Night Ink Soft" },
-      "night-ink-faint":  { "role": "neutral",  "displayName": "Night Ink Faint" },
-      "night-hairline":   { "role": "neutral",  "displayName": "Night Hairline" },
-      "night-gilt":       { "role": "primary",  "displayName": "Night Gilt" },
-      "night-gilt-soft":  { "role": "primary",  "displayName": "Night Gilt Soft" },
-      "night-rust-error": { "role": "error",    "displayName": "Night Rust Error" }
+      "laid-paper": {
+        "role": "neutral",
+        "displayName": "Laid Paper",
+        "canonical": "oklch(95.6% 0.014 84)",
+        "tonalRamp": [
+          "#0e0b05",
+          "#2a261f",
+          "#49453c",
+          "#6a665d",
+          "#8d8980",
+          "#b2ada4",
+          "#d5d0c7",
+          "#f3eee4"
+        ]
+      },
+      "laid-paper-deep": {
+        "role": "neutral",
+        "displayName": "Laid Paper Deep",
+        "canonical": "oklch(91.8% 0.022 83)",
+        "tonalRamp": [
+          "#0f0a03",
+          "#2c261a",
+          "#4b4438",
+          "#6c6558",
+          "#90887b",
+          "#b5ad9f",
+          "#d8d0c1",
+          "#f5eee0"
+        ]
+      },
+      "press-ink": {
+        "role": "neutral",
+        "displayName": "Press Ink",
+        "canonical": "oklch(21.9% 0.007 78)",
+        "tonalRamp": [
+          "#0c0b09",
+          "#282623",
+          "#474541",
+          "#686662",
+          "#8b8985",
+          "#b0ada9",
+          "#d3d0cc",
+          "#f0eeea"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Ink Soft",
+        "canonical": "oklch(43.8% 0.014 71)",
+        "tonalRamp": [
+          "#0d0b08",
+          "#2a2621",
+          "#49443e",
+          "#6b655e",
+          "#8f8880",
+          "#b3ada6",
+          "#d5d0cb",
+          "#f2eee9"
+        ]
+      },
+      "ink-faint": {
+        "role": "neutral",
+        "displayName": "Ink Faint",
+        "canonical": "oklch(52.5% 0.017 74)",
+        "tonalRamp": [
+          "#0d0b07",
+          "#2a2620",
+          "#4a443c",
+          "#6c655b",
+          "#90887e",
+          "#b3ada5",
+          "#d5d0c9",
+          "#f2eee8"
+        ]
+      },
+      "hairline": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "oklch(85.7% 0.024 82)",
+        "tonalRamp": [
+          "#0f0a04",
+          "#2c2519",
+          "#4b4437",
+          "#6d6557",
+          "#908879",
+          "#b6ad9d",
+          "#d9d0c0",
+          "#f5eee1"
+        ]
+      },
+      "gilt-leaf": {
+        "role": "primary",
+        "displayName": "Gilt Leaf",
+        "canonical": "oklch(60.6% 0.106 83)",
+        "tonalRamp": [
+          "#150800",
+          "#362200",
+          "#5b4000",
+          "#836000",
+          "#a68339",
+          "#c7aa70",
+          "#e5cea1",
+          "#ffecc9"
+        ]
+      },
+      "gilt-leaf-soft": {
+        "role": "primary",
+        "displayName": "Gilt Leaf Soft",
+        "canonical": "oklch(74.3% 0.104 85)",
+        "tonalRamp": [
+          "#160700",
+          "#392100",
+          "#5d3f00",
+          "#806101",
+          "#a58436",
+          "#cba95e",
+          "#e9ce94",
+          "#ffecbf"
+        ]
+      },
+      "gilt-text": {
+        "role": "primary",
+        "displayName": "Gilt Text",
+        "canonical": "oklch(48.6% 0.088 76) (approx.)",
+        "tonalRamp": [
+          "#140800",
+          "#341f00",
+          "#573c05",
+          "#7d5a1c",
+          "#a1803f",
+          "#c4a56c",
+          "#e3ca9c",
+          "#fdecc8"
+        ]
+      },
+      "foil-deep": {
+        "role": "primary",
+        "displayName": "Foil Deep (foil stop 0%)"
+      },
+      "foil-warm": {
+        "role": "primary",
+        "displayName": "Foil Warm (foil stop 38%)"
+      },
+      "foil-pale": {
+        "role": "primary",
+        "displayName": "Foil Pale (foil highlight, 52%)"
+      },
+      "foil-honey": {
+        "role": "primary",
+        "displayName": "Foil Honey (foil stop 70%)"
+      },
+      "foil-umber": {
+        "role": "primary",
+        "displayName": "Foil Umber (foil stop 100%)"
+      },
+      "foil-mark-bright": {
+        "role": "primary",
+        "displayName": "Mark Foil Bright (stop 45%)"
+      },
+      "foil-mark-pale": {
+        "role": "primary",
+        "displayName": "Mark Foil Pale (stop 55%)"
+      },
+      "foil-mark-umber": {
+        "role": "primary",
+        "displayName": "Mark Foil Umber (stop 100%)"
+      },
+      "rust-error": {
+        "role": "error",
+        "displayName": "Rust Error",
+        "canonical": "oklch(53.2% 0.145 33)",
+        "tonalRamp": [
+          "#200000",
+          "#490e04",
+          "#762716",
+          "#a7402b",
+          "#cc6852",
+          "#e99481",
+          "#ffbdad",
+          "#ffe0d2"
+        ]
+      },
+      "night-paper": {
+        "role": "neutral",
+        "displayName": "Night Paper (dark ground)"
+      },
+      "night-paper-deep": {
+        "role": "neutral",
+        "displayName": "Night Paper Deep (dark inset)"
+      },
+      "night-ink": {
+        "role": "neutral",
+        "displayName": "Night Ink (dark text)"
+      },
+      "night-ink-soft": {
+        "role": "neutral",
+        "displayName": "Night Ink Soft"
+      },
+      "night-ink-faint": {
+        "role": "neutral",
+        "displayName": "Night Ink Faint"
+      },
+      "night-hairline": {
+        "role": "neutral",
+        "displayName": "Night Hairline"
+      },
+      "night-gilt": {
+        "role": "primary",
+        "displayName": "Night Gilt"
+      },
+      "night-gilt-soft": {
+        "role": "primary",
+        "displayName": "Night Gilt Soft"
+      },
+      "night-rust-error": {
+        "role": "error",
+        "displayName": "Night Rust Error"
+      }
     },
     "gradients": [
-      { "name": "foil", "cssVar": "--foil", "value": "linear-gradient(135deg, #a9792b 0%, #d9b768 38%, #f0d999 52%, #c49a4a 70%, #9c6f26 100%)", "purpose": "The brand's gold foil: elephant mark, kicker rules on About, nav underline." },
-      { "name": "foil-mark", "cssVar": "--foil-mark", "value": "linear-gradient(135deg, #7d5a1c 0%, #a57a2e 45%, #c29b4e 55%, #87621f 100%)", "purpose": "Deeper foil for the small header mark and fleuron on light paper; equals --foil in dark mode." }
+      {
+        "name": "foil",
+        "cssVar": "--foil",
+        "value": "linear-gradient(135deg, #a9792b 0%, #d9b768 38%, #f0d999 52%, #c49a4a 70%, #9c6f26 100%)",
+        "purpose": "The brand's gold foil: elephant mark, header rule, kicker rules, Books byline rule, topic-note dash, nav and menu underlines."
+      },
+      {
+        "name": "foil-mark",
+        "cssVar": "--foil-mark",
+        "value": "linear-gradient(135deg, #7d5a1c 0%, #a57a2e 45%, #c29b4e 55%, #87621f 100%)",
+        "purpose": "Deeper foil for the small elephant marks (header, fleuron, menu foot) on light paper; equals --foil in dark mode."
+      }
     ],
     "typographyMeta": {
-      "display":    { "displayName": "Display",    "purpose": "The one large heading on a page (About intro)." },
-      "headline":   { "displayName": "Headline",   "purpose": "Section headings such as 'Write to us'." },
-      "title":      { "displayName": "Title",      "purpose": "Short sub-section heads (About notes)." },
-      "first-line": { "displayName": "First Line", "purpose": "The opening sentence on First Lines; steps through short/medium/long/xlong sizes by length." },
-      "lede":       { "displayName": "Lede",       "purpose": "Opening paragraph under a display heading." },
-      "body":       { "displayName": "Body",       "purpose": "Reading text, around 34rem measure." },
-      "label":      { "displayName": "Label",      "purpose": "Kickers, nav, buttons, form labels." },
-      "colophon":   { "displayName": "Colophon",   "purpose": "The credits row: painting, portrait and text, in the reading face with small-capital labels." },
-      "wordmark":   { "displayName": "Wordmark",   "purpose": "Three-line live-text lock-up beside the elephant." }
+      "display": {
+        "displayName": "Display",
+        "purpose": "The one large heading on a page (About, Editing, Books intros)."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings ('Write to us', the Editing call to action) and book titles on Books."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Short sub-section heads (About notes)."
+      },
+      "numeral": {
+        "displayName": "Numeral",
+        "purpose": "Italic gilt roman numerals above About notes and Editing services."
+      },
+      "year-numeral": {
+        "displayName": "Year Numeral",
+        "purpose": "Gilt Playfair lining numerals for every year on First Lines; 1rem as the plate number, otherwise the size of the surrounding text."
+      },
+      "epigraph": {
+        "displayName": "Epigraph",
+        "purpose": "Italic Playfair client testimonial on Editing."
+      },
+      "menu-entry": {
+        "displayName": "Menu Entry",
+        "purpose": "Phone-menu links, set like a contents page."
+      },
+      "first-line-short": {
+        "displayName": "First Line (short)",
+        "purpose": "Openings under 90 characters; raised two-line drop cap."
+      },
+      "first-line": {
+        "displayName": "First Line (medium)",
+        "purpose": "Openings of 90-219 characters."
+      },
+      "first-line-long": {
+        "displayName": "First Line (long)",
+        "purpose": "Openings of 220-449 characters."
+      },
+      "first-line-xlong": {
+        "displayName": "First Line (extra long)",
+        "purpose": "Openings of 450 characters or more."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "Opening paragraph under a display heading; a book's hook."
+      },
+      "book-title": {
+        "displayName": "Book Title",
+        "purpose": "Italic <cite> title in the First Lines book block."
+      },
+      "blurb": {
+        "displayName": "Blurb",
+        "purpose": "Back-cover copy on Books, about 36rem measure."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Reading text, around 34rem measure."
+      },
+      "colophon": {
+        "displayName": "Colophon",
+        "purpose": "The credits row: painting, portrait and text, in the reading face with small-capital labels."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Kickers, nav, buttons, bylines, footer."
+      },
+      "field-label": {
+        "displayName": "Field Label",
+        "purpose": "Form labels above fields."
+      },
+      "wordmark": {
+        "displayName": "Wordmark",
+        "purpose": "Three-line live-text lock-up beside the elephant."
+      }
     },
     "shadows": [
-      { "name": "laid-print", "value": "0 1px 2px rgb(0 0 0 / 0.12), 0 18px 40px -18px rgb(0 0 0 / 0.45)", "purpose": "Paintings only; a print laid on the page." },
-      { "name": "focus-halo", "value": "0 0 0 3px color-mix(in srgb, var(--gold) 25%, transparent)", "purpose": "Focused inputs." }
+      {
+        "name": "laid-print",
+        "value": "0 1px 2px rgb(0 0 0 / 0.12), 0 18px 40px -18px rgb(0 0 0 / 0.45)",
+        "purpose": "Paintings and book covers only; a print laid on the page."
+      },
+      {
+        "name": "focus-halo",
+        "value": "0 0 0 3px color-mix(in srgb, var(--gold) 25%, transparent)",
+        "purpose": "Focused inputs."
+      },
+      {
+        "name": "menu-scrim",
+        "value": "rgb(23 21 17 / 0.45)",
+        "purpose": "Backdrop dimming the page behind the open phone menu. Not a shadow on the drawer."
+      }
     ],
+    "florals": {
+      "component": "src/components/Floral.astro (CSS mask over the global .floral rule); src/components/FloralRule.astro for sprigs laid on a rule",
+      "source": "assets/FLORALS & ELEMENTS, generated into public/brand/florals/ by scripts/brand-assets.ts",
+      "shapes": [
+        "sprig",
+        "branch",
+        "stem",
+        "leaves",
+        "vine",
+        "pen",
+        "vine-rule",
+        "sprig-rule",
+        "stem-rule",
+        "seedling"
+      ],
+      "ink": {
+        "default": "var(--floral-ink, var(--gold-soft))",
+        "opacity": "var(--floral-opacity, 0.75)",
+        "marginDrawings": "0.6 (Editing stem, Books branch)",
+        "pen": "0.85",
+        "floralRule": "var(--gold) at 0.85"
+      },
+      "placements": [
+        {
+          "page": "About",
+          "shape": "sprig",
+          "where": "beside the contact form, under the contact details",
+          "phones": false
+        },
+        {
+          "page": "Editing",
+          "shape": "stem (flipped)",
+          "where": "hung under the testimonial",
+          "phones": false
+        },
+        {
+          "page": "Editing",
+          "shape": "sprig-rule",
+          "where": "Floral Rule on the services top rule",
+          "phones": true
+        },
+        {
+          "page": "Editing",
+          "shape": "pen",
+          "where": "above the call to action",
+          "phones": true
+        },
+        {
+          "page": "Books",
+          "shape": "stem-rule",
+          "where": "Floral Rule on each entry's top rule",
+          "phones": true
+        },
+        {
+          "page": "Books",
+          "shape": "branch",
+          "where": "under each book's details",
+          "phones": false
+        },
+        {
+          "page": "404",
+          "shape": "stem",
+          "where": "above the headline",
+          "phones": true
+        },
+        {
+          "page": "All but First Lines",
+          "shape": "seedling",
+          "where": "Floral Rule on the footer rule",
+          "phones": true
+        }
+      ],
+      "exclusions": [
+        "About notes rule: no Floral Rule, it sits under the nested elephant mark.",
+        "Never behind text; white watermarks were tried and rejected."
+      ]
+    },
     "motion": [
-      { "name": "fade", "value": "380ms ease", "purpose": "Crossfade between First Lines entries and painting fade-in; 0ms under reduced motion." },
-      { "name": "ui", "value": "160ms ease", "purpose": "Colour and border transitions on buttons, links, inputs." },
-      { "name": "underline", "value": "220ms ease", "purpose": "Nav foil underline growing from the left." },
-      { "name": "settle", "value": "1.4s cubic-bezier(0.2, 0.7, 0.2, 1)", "purpose": "One-time entrance of the nested mark on About (rotate -6deg, scale 0.96 to rest)." }
+      {
+        "name": "fade",
+        "value": "380ms ease",
+        "purpose": "Crossfade between First Lines entries and painting fade-in; 0ms under reduced motion."
+      },
+      {
+        "name": "ui",
+        "value": "160ms ease",
+        "purpose": "Colour and border transitions on buttons, links, inputs."
+      },
+      {
+        "name": "underline",
+        "value": "220ms ease",
+        "purpose": "Nav foil underline growing from the left."
+      },
+      {
+        "name": "settle",
+        "value": "1.4s cubic-bezier(0.2, 0.7, 0.2, 1)",
+        "purpose": "One-time entrance of the nested mark on About (rotate -6deg, scale 0.96 to rest)."
+      },
+      {
+        "name": "drawer",
+        "value": "320ms cubic-bezier(0.2, 0.7, 0.2, 1)",
+        "purpose": "Phone menu slides in from the right while the scrim fades in."
+      },
+      {
+        "name": "menu-stagger",
+        "value": "opacity 420ms ease, transform 520ms cubic-bezier(0.2, 0.7, 0.2, 1), delay 80ms + 60ms per entry",
+        "purpose": "Menu entries settle in one after another."
+      },
+      {
+        "name": "menu-underline",
+        "value": "260ms cubic-bezier(0.2, 0.7, 0.2, 1)",
+        "purpose": "Foil underline growing under a menu entry."
+      },
+      {
+        "name": "mark-tilt",
+        "value": "300ms ease",
+        "purpose": "Header elephant tilts -4deg on hover."
+      }
     ],
     "breakpoints": [
-      { "name": "notes", "value": "760px" },
-      { "name": "about-split", "value": "860px" },
-      { "name": "first-lines-split", "value": "960px" }
+      {
+        "name": "services-2",
+        "value": "640px"
+      },
+      {
+        "name": "menu",
+        "value": "720px"
+      },
+      {
+        "name": "notes",
+        "value": "760px"
+      },
+      {
+        "name": "split",
+        "value": "860px"
+      },
+      {
+        "name": "first-lines-split",
+        "value": "960px"
+      },
+      {
+        "name": "services-4",
+        "value": "1020px"
+      }
     ]
   },
   "components": [
@@ -59,7 +483,7 @@
       "name": "Primary Button",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "Ink-filled pill for the action that keeps the visitor here (Another book, Send message).",
+      "description": "Ink-filled pill for the action that keeps the visitor here (Another book). Page calls to action use the same fill at 46px, padding 0.65rem 1.5rem.",
       "html": "<button class=\"ds-btn-primary\">Another book</button>",
       "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0.6rem 1.25rem; font: 500 0.95rem/1 var(--sans, system-ui, sans-serif); color: var(--paper, #f5f0e6); background: var(--ink, #1c1a17); border: 1px solid var(--ink, #1c1a17); border-radius: 999px; cursor: pointer; transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease; } .ds-btn-primary:hover { background: transparent; color: var(--ink, #1c1a17); border-color: var(--gold, #a07c2c); } .ds-btn-primary:focus-visible { outline: 2px solid var(--gold, #a07c2c); outline-offset: 3px; }"
     },
@@ -70,6 +494,14 @@
       "description": "Ink-outlined pill for actions that leave the site (Read the book).",
       "html": "<a class=\"ds-btn-secondary\" href=\"#\">Read the book</a>",
       "css": ".ds-btn-secondary { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0.6rem 1.25rem; font: 500 0.95rem/1 var(--sans, system-ui, sans-serif); color: var(--ink, #1c1a17); background: transparent; border: 1px solid var(--ink, #1c1a17); border-radius: 999px; text-decoration: none; cursor: pointer; transition: border-color 160ms ease; } .ds-btn-secondary:hover { border-color: var(--gold, #a07c2c); } .ds-btn-secondary:focus-visible { outline: 2px solid var(--gold, #a07c2c); outline-offset: 3px; }"
+    },
+    {
+      "name": "Quiet Button",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "Hairline-outlined pill: the phone Menu and Close buttons, and a book's further links.",
+      "html": "<button class=\"ds-btn-quiet\" type=\"button\"><svg viewBox=\"0 0 20 20\" width=\"20\" height=\"20\" aria-hidden=\"true\"><path d=\"M2 5.5h16M2 10h16M2 14.5h16\"/></svg><span>Menu</span></button>",
+      "css": ".ds-btn-quiet { display: inline-flex; align-items: center; gap: 0.5rem; min-height: 44px; padding: 0 0.95rem; font: 500 0.92rem/1 var(--sans, system-ui, sans-serif); color: var(--ink, #1c1a17); background: transparent; border: 1px solid var(--rule, #d8cfbf); border-radius: 999px; cursor: pointer; transition: border-color 160ms ease; } .ds-btn-quiet svg { fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; } .ds-btn-quiet:hover { border-color: var(--gold, #a07c2c); } .ds-btn-quiet:focus-visible { outline: 2px solid var(--gold, #a07c2c); outline-offset: 3px; }"
     },
     {
       "name": "Text Field",
@@ -88,10 +520,18 @@
       "css": ".ds-nav { display: flex; gap: 2rem; } .ds-nav a { position: relative; padding: 0.5rem 0; font: 500 0.92rem var(--sans, system-ui, sans-serif); color: var(--ink-soft, #57514a); text-decoration: none; transition: color 160ms ease; } .ds-nav a::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0.2rem; height: 1px; background: var(--foil, linear-gradient(135deg, #a9792b, #f0d999, #9c6f26)); transform: scaleX(0); transform-origin: left; transition: transform 220ms ease; } .ds-nav a:hover, .ds-nav a[aria-current='page'] { color: var(--ink, #1c1a17); } .ds-nav a:hover::after, .ds-nav a[aria-current='page']::after { transform: scaleX(1); } .ds-nav a:focus-visible { outline: 2px solid var(--gold, #a07c2c); outline-offset: 3px; }"
     },
     {
+      "name": "Contents Menu",
+      "kind": "nav",
+      "refersTo": "menu-entry",
+      "description": "Phone drawer links set like a contents page: gilt italic numerals, Playfair entries, hairline rows, a foil underline on the current page.",
+      "html": "<nav class=\"ds-toc\"><ul><li><a href=\"#\" aria-current=\"page\"><span class=\"ds-toc-n\">i.</span><span class=\"ds-toc-label\">First lines</span></a></li><li><a href=\"#\"><span class=\"ds-toc-n\">ii.</span><span class=\"ds-toc-label\">Books</span></a></li></ul></nav>",
+      "css": ".ds-toc ul { margin: 0; padding: 0; list-style: none; max-width: 22rem; } .ds-toc li { border-bottom: 1px solid var(--rule, #d8cfbf); } .ds-toc a { display: flex; align-items: baseline; gap: 0.9rem; padding: 0.85rem 0 0.95rem; font: 450 clamp(1.9rem, 9vw, 2.4rem)/1.05 var(--display, Georgia, serif); letter-spacing: -0.01em; color: var(--ink-soft, #57514a); text-decoration: none; transition: color 160ms ease; } .ds-toc-n { min-width: 2.2rem; font-style: italic; font-size: 0.55em; color: var(--gold, #a07c2c); } .ds-toc-label { background: var(--foil, linear-gradient(135deg, #a9792b, #f0d999, #9c6f26)) left bottom / 0 1px no-repeat; padding-bottom: 0.1em; transition: background-size 260ms cubic-bezier(0.2, 0.7, 0.2, 1); } .ds-toc a:hover, .ds-toc a[aria-current='page'] { color: var(--ink, #1c1a17); } .ds-toc a:hover .ds-toc-label, .ds-toc a[aria-current='page'] .ds-toc-label { background-size: 100% 1px; } .ds-toc a:focus-visible { outline: 2px solid var(--gold, #a07c2c); outline-offset: 3px; }"
+    },
+    {
       "name": "Kicker",
       "kind": "custom",
       "refersTo": "kicker",
-      "description": "Short rule plus gilt sans label introducing a section.",
+      "description": "Short foil rule plus gilt sans label introducing a section (About, Editing).",
       "html": "<p class=\"ds-kicker\">About the press</p>",
       "css": ".ds-kicker { display: flex; align-items: center; gap: 0.75rem; margin: 0; font: 500 0.8rem var(--sans, system-ui, sans-serif); letter-spacing: 0.02em; color: var(--gold, #a07c2c); } .ds-kicker::before { content: ''; width: 2.5rem; height: 1px; background: var(--foil, #a07c2c); }"
     },
@@ -106,7 +546,7 @@
     {
       "name": "Fleuron Rule",
       "kind": "custom",
-      "description": "The elephant mark in foil between two hairlines; the system's one ornament. The mask image path is site-relative, so it renders only on the site itself.",
+      "description": "The elephant mark in mark foil between two hairlines, under the first line. The mask image path is site-relative, so it renders only on the site itself.",
       "html": "<div class=\"ds-orn\" aria-hidden=\"true\"><span class=\"ds-orn-mark\"></span></div>",
       "css": ".ds-orn { display: flex; align-items: center; gap: 0.9rem; } .ds-orn::before, .ds-orn::after { content: ''; flex: 1; height: 1px; background: var(--rule, #d8cfbf); } .ds-orn-mark { width: 1.05rem; height: 1.25rem; background: var(--foil-mark, #a07c2c); -webkit-mask: url('/brand/elephant-mask.png') center / contain no-repeat; mask: url('/brand/elephant-mask.png') center / contain no-repeat; }"
     },
@@ -117,41 +557,98 @@
       "description": "The one inset surface: deep paper, hairline border, 6px corner, no shadow.",
       "html": "<div class=\"ds-panel\"><p class=\"ds-panel-text\">Write to us</p></div>",
       "css": ".ds-panel { padding: clamp(1.25rem, 3vw, 2.25rem); background: var(--paper-deep, #ebe3d4); border: 1px solid var(--rule, #d8cfbf); border-radius: 6px; } .ds-panel-text { margin: 0; font: 450 1.45rem var(--display, Georgia, serif); color: var(--ink, #1c1a17); }"
+    },
+    {
+      "name": "Floral Rule",
+      "kind": "custom",
+      "refersTo": "floral-rule",
+      "description": "A press botanical laid on a section hairline, the rule broken around it, in full gilt. The mask image path is site-relative, so it renders only on the site itself.",
+      "html": "<div class=\"ds-ruled\"><span class=\"ds-floral-rule\" aria-hidden=\"true\"><span class=\"ds-floral\"></span></span></div>",
+      "css": ".ds-ruled { position: relative; height: 3rem; border-top: 1px solid var(--rule, #d8cfbf); } .ds-floral-rule { position: absolute; top: 0; left: 50%; display: flex; padding: 0 0.9rem; background: var(--paper, #f5f0e6); translate: -50% -50%; } .ds-floral { display: block; width: 7.5rem; aspect-ratio: 700 / 246; background: var(--gold, #a07c2c); opacity: 0.85; -webkit-mask: url('/brand/florals/sprig-rule.png') center / contain no-repeat; mask: url('/brand/florals/sprig-rule.png') center / contain no-repeat; }"
+    },
+    {
+      "name": "Year Numerals",
+      "kind": "custom",
+      "refersTo": "year-numeral",
+      "description": "The book's year in the byline and the painting's plate number, set alike in gilt Playfair lining numerals.",
+      "html": "<p class=\"ds-byline\">Jane Austen, <span class=\"ds-year\">1813</span></p><p class=\"ds-plate-no ds-year\">1811</p>",
+      "css": ".ds-byline { margin: 0; font: 0.92rem var(--sans, system-ui, sans-serif); color: var(--ink-soft, #57514a); } .ds-year { font-family: var(--display, Georgia, serif); font-weight: 500; font-variant-numeric: lining-nums; letter-spacing: 0.01em; color: var(--gold-text, #7d5a1c); } .ds-plate-no { margin: 0.7rem 0 0; text-align: right; font-size: 1rem; line-height: 1; }"
     }
   ],
   "narrative": {
     "northStar": "The Chapter Opening",
-    "overview": "Every screen is set like the first page of a printed chapter. A warm paper ground, near-black ink, and a little gilt where a bookbinder would put it: on the mark, the initial, the rule under the heading. The home page is the purest expression. The opening line of a novel is typeset as a chapter opening, with a sunk gold drop cap, the first words in small capitals, and the press's elephant set as a fleuron on a hairline beneath. A period painting hangs beside it like a frontispiece.\n\nThe system is quiet and generous. Density is low, margins are wide, and nothing competes with the text or the painting. Character comes from typesetting detail (optical sizing, small caps, hanging punctuation, italic titles in <cite>) rather than colour or decoration. Motion is limited to slow crossfades and small settling gestures, and turns off under prefers-reduced-motion.\n\nThe site follows the reader's colour scheme. Light is laid paper and ink; dark is the same page by lamplight, with warm near-black paper and a brighter gilt. Both are first-class.",
+    "overview": "Every screen is set like the first page of a printed chapter. A warm paper ground, near-black ink, and a little gilt where a bookbinder would put it: on the mark, the initial, the rule under the heading. The home page is the purest expression. The opening line of a novel is typeset as a chapter opening, with a sunk gold drop cap, the first words in small capitals, and the press's elephant set as a fleuron on a hairline beneath. A period painting hangs beside it like a frontispiece.\n\nThe system is quiet and generous. Density is low, margins are wide, and nothing competes with the text or the painting. Character comes from typesetting detail (optical sizing, small caps, hanging punctuation, lining numerals, italic titles in <cite>) rather than colour or decoration. The press's botanical line drawings appear as a printer would use ornaments: a sprig laid on a section rule, a stem in an empty margin, always in clear paper. Motion is limited to slow crossfades and small settling gestures, and turns off under prefers-reduced-motion.\n\nThe site follows the reader's colour scheme. Light is laid paper and ink; dark is the same page by lamplight, with warm near-black paper and a brighter gilt. Both are first-class.",
     "keyCharacteristics": [
       "Warm paper and ink, with gold used sparingly as gilding.",
-      "Three type voices with strict jobs: Playfair (display and marks), Newsreader (reading), Instrument Sans (small UI).",
-      "Book typography as interface: drop caps, small capitals, fleurons, hairline rules, roman-numeral sequences.",
-      "Flat page; the painting is the only thing that lifts.",
-      "The elephant mark is the one recurring ornament."
+      "Three type voices with strict jobs: Playfair (display, marks and numerals), Newsreader (reading), Instrument Sans (small UI).",
+      "Book typography as interface: drop caps, small capitals, fleurons, hairline rules, roman-numeral sequences, gilt year numerals.",
+      "Flat page; the painting and the book cover are the only things that lift.",
+      "Two ornament families only: the elephant mark, and the press's botanical line drawings in gilt."
     ],
     "rules": [
-      { "name": "The Gilding Rule", "body": "Gold is gilt, not paint. It appears on marks, drop caps, kickers, numerals, rules, link underlines and focus, and nowhere else. Never on large fills, backgrounds, button fills or body text; a gilt border on hover is the most a control gets.", "section": "colors" },
-      { "name": "The Borrowed Colour Rule", "body": "The only strong colour on a page comes from the painting or portrait. While an image loads, its frame is filled with the painting's own average colour (--art-color), never a UI grey.", "section": "colors" },
-      { "name": "The Three Voices Rule", "body": "Playfair speaks for the press (display, headings, wordmark, drop caps, numerals). Newsreader carries everything meant to be read. Instrument Sans is for small UI only (labels, buttons, the author line) and never sets a heading, a paragraph or a credit.", "section": "typography" },
-      { "name": "The Chapter Opening Rule", "body": "An opening passage starts with a Playfair drop cap in gilt: sunk three lines (initial-letter: 3), or raised two lines for a one-line opening, with a floated fallback where initial-letter is unsupported. The first few words follow in small capitals (font-variant-caps: small-caps, 0.045em tracking).", "section": "typography" },
-      { "name": "The Laid Print Rule", "body": "Only artwork lifts off the page. UI elements (buttons, panels, inputs, nav) never cast shadows.", "section": "elevation" }
+      {
+        "name": "The Gilding Rule",
+        "body": "Gold is gilt, not paint. It appears on marks, drop caps, kickers, numerals, rules, ornaments, link underlines and focus, and nowhere else. Never on large fills, backgrounds, button fills or body text; a gilt border on hover is the most a control gets. Where gilt must be read as text (year numerals), it is Gilt Text, never the lighter Gilt Leaf.",
+        "section": "colors"
+      },
+      {
+        "name": "The Borrowed Colour Rule",
+        "body": "The only strong colour on a page comes from the painting, portrait or book cover. While an image loads, its frame is filled with the image's own average colour (--art-color, --cover-bg), never a UI grey.",
+        "section": "colors"
+      },
+      {
+        "name": "The Three Voices Rule",
+        "body": "Playfair speaks for the press (display, headings, wordmark, drop caps, numerals). Newsreader carries everything meant to be read. Instrument Sans is for small UI only (labels, buttons, the author line) and never sets a heading, a paragraph or a credit.",
+        "section": "typography"
+      },
+      {
+        "name": "The Chapter Opening Rule",
+        "body": "An opening passage starts with a Playfair drop cap in gilt: sunk three lines (initial-letter: 3), or raised two lines for a one-line opening, with a floated fallback where initial-letter is unsupported. The first few words follow in small capitals (font-variant-caps: small-caps). It opens the first line on First Lines and each book's blurb on Books.",
+        "section": "typography"
+      },
+      {
+        "name": "The Paired Years Rule",
+        "body": "The book's year and the painting's year are set alike (Year numeral, Gilt Text) so the eye pairs them across the page: in the byline, in the colophon, and as a small plate number under the painting's bottom-right corner. They stay at the size of the text around them; larger datelines and \"Painted / Published\" labels were tried and rejected as too prominent.",
+        "section": "typography"
+      },
+      {
+        "name": "The Laid Print Rule",
+        "body": "Only artwork lifts off the page. UI elements (buttons, panels, inputs, nav, the drawer) never cast shadows.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Clear Paper Rule",
+        "body": "Florals sit in clear space, never behind text. They fill a quiet margin or column the layout already leaves empty. White watermarks behind text were tried and rejected.",
+        "section": "components"
+      },
+      {
+        "name": "The Phone Sprig Rule",
+        "body": "On phones only the section-rule sprigs, the footer seedling and the Editing pen show; margin drawings hide below 860px.",
+        "section": "components"
+      }
     ],
     "dos": [
       "Do use Laid Paper as the page ground and Press Ink for text, and provide the Night counterparts for dark mode on every new surface.",
-      "Do keep gold to gilding: marks, drop caps, kickers, numerals, rules, link underlines and focus (The Gilding Rule).",
+      "Do keep gold to gilding: marks, drop caps, kickers, numerals, rules, ornaments, link underlines and focus (The Gilding Rule).",
+      "Do set years in gilt Playfair lining numerals in Gilt Text, at the size of the text around them (The Paired Years Rule).",
       "Do set titles of works in italic <cite>, and credit the painting, portrait and text in the colophon, never in scattered captions.",
       "Do open any featured passage with the Chapter Opening treatment (gilt Playfair drop cap and small-capital lead).",
-      "Do use the elephant mark (foil, via the mask) as the system's only ornament and fleuron.",
+      "Do use the elephant mark (foil, via the mask) as the press's mark and fleuron, and the press's own botanical drawings (via the Floral component) as its only other ornament.",
+      "Do place florals in clear paper: in an empty margin or column, or laid on a hairline with the rule broken around them (The Clear Paper Rule).",
       "Do keep crossfades near 380ms and small UI transitions near 160–220ms, and disable all motion under prefers-reduced-motion.",
       "Do keep touch targets at least 44px and the 2px Gilt Leaf focus outline visible."
     ],
     "donts": [
       "Don't put gold on large fills, button fills, backgrounds or body text.",
-      "Don't give UI elements shadows; only paintings lift (The Laid Print Rule).",
+      "Don't give UI elements shadows; only paintings and covers lift (The Laid Print Rule).",
       "Don't set headings or paragraphs in Instrument Sans, or UI labels in Playfair (The Three Voices Rule).",
-      "Don't crop, round or recolour paintings, or use a grey placeholder where the painting's average colour belongs.",
+      "Don't crop, round or recolour paintings or covers, or use a grey placeholder where the image's average colour belongs.",
       "Don't introduce new accent hues; Rust Error is the only exception, and only for errors.",
-      "Don't redraw or restyle the elephant logo or the nested mark; they are binding brand assets."
+      "Don't redraw or restyle the elephant logo or the nested mark; they are binding brand assets.",
+      "Don't put a floral behind text, or use one as a pale watermark (The Clear Paper Rule).",
+      "Don't show margin florals on phones; only section-rule sprigs, the footer seedling and the Editing pen (The Phone Sprig Rule).",
+      "Don't enlarge the years into datelines or label them \"Painted\" / \"Published\" (The Paired Years Rule).",
+      "Don't lay a floral rule directly under the nested elephant mark; one ornament per view is enough."
     ]
   }
 }
