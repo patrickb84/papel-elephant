@@ -17,6 +17,7 @@ export interface SiteContent {
     contactLink: Link;
     instagram: { label: string; handle: string; href: string };
   };
+  notFound: { pageTitle: string; heading: string; text: string; links: Link[] };
   firstLines: {
     pageTitle: string;
     description: string;
@@ -56,11 +57,12 @@ export interface SiteContent {
       text: string;
       instagramPrefix: string;
       emailPrefix: string;
+      emailSubject: string;
       topicNotes: Record<string, { note?: string; hint?: string }>;
       topics: string[];
       labels: { name: string; email: string; topic: string; message: string; send: string };
       errors: { name: string; email: string; emailInvalid: string; message: string };
-      status: { sending: string; sent: string; failed: string; openedEmailApp: string };
+      status: { sending: string; sent: string; failed: string };
     };
   };
 }
@@ -69,10 +71,12 @@ export const CONTENT = parse(raw) as SiteContent;
 
 export const SITE = {
   ...CONTENT.site,
-  // Where the contact form posts. Any form service that accepts a normal form
-  // POST works (Formspree, Basin, Netlify Forms...). Set PUBLIC_CONTACT_ENDPOINT
-  // in .env; without it the form opens the visitor's email app instead.
-  contactEndpoint: (import.meta.env.PUBLIC_CONTACT_ENDPOINT as string | undefined) ?? '',
+  // The contact form is emailed to the press's address by FormSubmit
+  // (formsubmit.co: no account; the first message asks the address to confirm).
+  // PUBLIC_CONTACT_ENDPOINT can point it at another JSON form service instead.
+  formEndpoint: (import.meta.env.PUBLIC_CONTACT_ENDPOINT as string | undefined) || `https://formsubmit.co/ajax/${CONTENT.site.email}`,
+  /** Where the browser posts the form when JavaScript is off. */
+  formAction: (import.meta.env.PUBLIC_CONTACT_ENDPOINT as string | undefined) || `https://formsubmit.co/${CONTENT.site.email}`,
 };
 
 export const NAV = CONTENT.site.nav;

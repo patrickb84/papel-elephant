@@ -51,16 +51,22 @@ const formText = JSON.stringify({ errors: contact.errors, status: contact.status
         <Floral name="sprig" class="contact-floral" />
       </div>
 
+      <!-- Sent by FormSubmit straight to the press's address (SITE.formAction).
+           With JavaScript the script posts it; without, the browser does and
+           FormSubmit returns the visitor here (_next). -->
       <form
         class="contact-form"
-        action={SITE.contactEndpoint || `mailto:${SITE.email}`}
+        name="contact"
+        action={SITE.formAction}
         method="post"
-        enctype={SITE.contactEndpoint ? undefined : 'text/plain'}
-        data-endpoint={SITE.contactEndpoint}
+        data-endpoint={SITE.formEndpoint}
         data-email={SITE.email}
         data-text={formText}
         novalidate
       >
+        <input type="hidden" name="_subject" value={contact.emailSubject} />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_next" value={new URL('/about/?sent=1#contact', SITE.url).href} />
         <!-- Who the message goes to, for topics that have a note (set by script). -->
         <p class="topic-note" data-topic-note hidden></p>
         <div class="field">
@@ -87,7 +93,7 @@ const formText = JSON.stringify({ errors: contact.errors, status: contact.status
         <!-- Spam trap: people never see or fill this field. -->
         <div class="trap" aria-hidden="true">
           <label for="cf-website">Website</label>
-          <input id="cf-website" name="_gotcha" type="text" tabindex="-1" autocomplete="off" />
+          <input id="cf-website" name="_honey" type="text" tabindex="-1" autocomplete="off" />
         </div>
         <div class="form-foot">
           <button class="send" type="submit">{contact.labels.send}</button>
@@ -110,7 +116,7 @@ const formText = JSON.stringify({ errors: contact.errors, status: contact.status
 
     const text = JSON.parse(form.dataset.text ?? '{}') as {
       errors: Record<'name' | 'email' | 'emailInvalid' | 'message', string>;
-      status: Record<'sending' | 'sent' | 'failed' | 'openedEmailApp', string>;
+      status: Record<'sending' | 'sent' | 'failed', string>;
       topicNotes: Record<string, { note?: string; hint?: string }>;
     };
     const messages: Record<string, string> = {
@@ -145,6 +151,9 @@ const formText = JSON.stringify({ errors: contact.errors, status: contact.status
     select?.addEventListener('change', showTopic);
     showTopic();
 
+    // Back from a post sent without JavaScript (Netlify returns to ?sent=1).
+    if (new URLSearchParams(window.location.search).has('sent')) status.textContent = text.status.sent;
+
     const fields = [...form.querySelectorAll<HTMLInputElement | HTMLTextAreaElement>('[required]')];
     fields.forEach((f) => f.addEventListener('blur', () => f.value && check(f)));
     fields.forEach((f) => f.addEventListener('input', () => f.getAttribute('aria-invalid') === 'true' && check(f)));
@@ -157,23 +166,20 @@ const formText = JSON.stringify({ errors: contact.errors, status: contact.status
         return;
       }
       const data = new FormData(form);
-      if (data.get('_gotcha')) return; // a bot filled the trap
-
-      if (!endpoint) {
-        // No form service configured: hand the message to the visitor's email app.
-        const subject = `${data.get('topic')}, from ${data.get('name')}`;
-        const body = `${data.get('message')}\n\n${data.get('name')}\n${data.get('email')}`;
-        window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-        status.textContent = text.status.openedEmailApp;
-        return;
-      }
+      if (data.get('_honey')) return; // a bot filled the trap
 
       button.disabled = true;
       status.textContent = text.status.sending;
       try {
-        const res = await fetch(endpoint, { method: 'POST', body: data, headers: { Accept: 'application/json' } });
+        // FormSubmit (and Formspree) take the fields as JSON and answer in JSON.
+        const res = await fetch(endpoint, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify(Object.fromEntries(data)),
+        });
         if (!res.ok) throw new Error(String(res.status));
         form.reset();
+        showTopic();
         status.textContent = text.status.sent;
       } catch {
         status.textContent = text.status.failed.replace('{email}', email);

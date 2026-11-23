@@ -96,8 +96,8 @@ Everything hand-made lives in `content/overrides.json`:
 - Below 720px the top-bar links collapse into a Menu button that opens a drawer (`src/components/SiteHeader.astro`, a modal `<dialog>`, so Escape, focus and the backdrop work natively). Without JavaScript the links stay in the bar.
 - The header wordmark is live text in Playfair Display, laid out like the logo lock-up (elephant, thin rule, three lines).
 - Each opening line is set like the start of a printed chapter: a gold Playfair drop cap (sunk three lines, or raised for short one-line openings), the first words in small capitals, and the elephant as an ornament on the rule below.
-- **Placeholder copy:** entries marked `PLACEHOLDER` in `content/site.yaml` (the About text and the address `hello@paperelephantpublishing.com`) are stand-ins to replace before launch.
-- **Contact form:** the site has no backend, so the form needs a form service such as Formspree or Basin. Put the service's endpoint in `.env` as `PUBLIC_CONTACT_ENDPOINT=...` and rebuild. Until then, submitting opens the visitor's email app with the message filled in. Topics listed under `about.contact.topicNotes` show who the message goes to and suggest what to write; the Editing page's links pick those topics. The form validates fields with inline messages and includes a hidden spam-trap field.
+- **Open decisions:** entries marked `TODO` in `content/site.yaml` still need sign-off (the Editing services).
+- **Contact form:** messages are emailed to `site.email` (`hello@paperelephantpublishing.com`) by [FormSubmit](https://formsubmit.co), a free service that needs no account. The very first message sends a confirmation email to that address; click its link once and every message after arrives in the inbox. To use another service instead (Formspree, say), set `PUBLIC_CONTACT_ENDPOINT` to its endpoint and rebuild. Topics listed under `about.contact.topicNotes` show who the message goes to and suggest what to write; the Editing page's links pick those topics. The form validates fields with inline messages and includes a hidden spam-trap field.
 
 ## Hosting
 
@@ -105,7 +105,8 @@ The site is hosted on [Netlify](https://www.netlify.com), set up from the GitHub
 
 - **Going live:** every push to `main` rebuilds and publishes the site. Other branches and pull requests get their own preview URLs.
 - **The content pipeline doesn't run on Netlify.** Its output (`src/data/first-lines.json` and the images in `public/`) is committed, so regenerate locally and push.
-- **Contact form:** to use a form service, set `PUBLIC_CONTACT_ENDPOINT` under *Site configuration → Environment variables* in Netlify, then redeploy.
+- **Contact form:** emailed to the press's address by FormSubmit (see Brand and pages); nothing to set up in Netlify.
+- **Also served:** `404.html` for unknown addresses (`src/pages/404.astro`), `robots.txt` and `sitemap.xml` (built from the top-bar links).
 
 ## Sources and licences
 

@@ -1,0 +1,64 @@
+---
+// Netlify serves this (as 404.html) for any address that doesn't exist.
+import Base from '../layouts/Base.astro';
+import Floral from '../components/Floral.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import { CONTENT } from '../lib/site';
+
+const t = CONTENT.notFound; // text from content/site.yaml
+---
+
+<Base title={t.pageTitle} description={t.text}>
+  <main id="main" class="nf">
+    <section class="nf-body">
+      <Floral name="stem" width="4.5rem" />
+      <h1>{t.heading}</h1>
+      <p>{t.text}</p>
+      <ul>
+        {t.links.map((link) => <li><a href={link.href}>{link.label}</a></li>)}
+      </ul>
+    </section>
+    <SiteFooter />
+  </main>
+</Base>
+
+<style>
+  .nf {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 0 var(--gutter);
+  }
+  .nf-body {
+    display: grid;
+    justify-items: center;
+    gap: 1.25rem;
+    padding: clamp(4rem, 12vw, 8rem) 0 clamp(3rem, 8vw, 5.5rem);
+    text-align: center;
+  }
+  h1 {
+    margin: 0.5rem 0 0;
+    font-family: var(--display);
+    font-weight: 450;
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+  }
+  p { margin: 0; max-width: 30rem; font-size: 1.1rem; color: var(--ink-soft); }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem 2rem;
+    margin: 0.75rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+  a {
+    display: inline-block;
+    padding: 0.5rem 0;
+    font-family: var(--sans);
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+</style>

@@ -6,12 +6,12 @@
 # onto indented lines below it. Rebuild (or keep `npm run dev` running) to
 # see changes.
 #
-# Anything marked PLACEHOLDER is stand-in copy to replace before launch.
+# Anything marked TODO still needs a decision before it's final.
 
 site:
   name: Paper Elephant Publishing
   url: https://paperelephantpublishing.com
-  # PLACEHOLDER: the press's real contact address.
+  # The press's contact address: shown on About and used when the form fails.
   email: hello@paperelephantpublishing.com
   # Top bar links, in order.
   nav:
@@ -33,6 +33,19 @@ site:
     label: Instagram
     handle: "@paper_elephant_publishing"
     href: https://www.instagram.com/paper_elephant_publishing/
+
+# The page shown for an address that doesn't exist.
+notFound:
+  pageTitle: Page not found · Paper Elephant Publishing
+  heading: This page is out of print.
+  text: The address may be mistyped, or the page has moved. Try one of these instead.
+  links:
+    - label: Read a first line
+      href: /
+    - label: See our books
+      href: /books/
+    - label: Get in touch
+      href: /about/#contact
 
 # The home page: an opening line beside a painting.
 firstLines:
@@ -172,6 +185,8 @@ about:
       and permissions, or press-related matters, please use the form below.
     instagramPrefix: Follow us on Instagram
     emailPrefix: Or email
+    # The subject line of the email each form message arrives as.
+    emailSubject: New message from the Paper Elephant website
     # For these topics the form says who the message goes to and suggests
     # what to write. The Editing page's links choose the topic for the visitor.
     topicNotes:
@@ -216,4 +231,3 @@ about:
       sent: Your message has been sent.
       # {email} is replaced by the address above.
       failed: Sorry, that didn't send. Please try again, or email {email}.
-      openedEmailApp: Your email app should open with the message ready to send.

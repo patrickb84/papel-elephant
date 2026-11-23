@@ -28,7 +28,7 @@ The press doesn't open with a catalogue. It opens with a curated reading experie
 
 - A static Astro site with no backend, database, CMS or runtime API. The collection is `src/data/first-lines.json` plus WebP images in `public/first-lines/`, produced by the content pipeline in `scripts/` and checked by hand through `content/reviews.json` and `content/overrides.json`.
 - All site copy lives in `content/site.yaml`.
-- The contact form posts to a third-party form service (`PUBLIC_CONTACT_ENDPOINT`) when one is set. Until then it opens the visitor's email app.
+- The contact form is emailed to hello@paperelephantpublishing.com by FormSubmit (or goes to another form service if `PUBLIC_CONTACT_ENDPOINT` is set).
 - Pages: `/` (First Lines), `/books/` (the press's books, from `content/books/`), `/editing/` (Railee's editing and ghostwriting services) and `/about/` (about the press plus the contact form). Links to `/about/?topic=<topic>#contact` pre-select a contact topic.
 
 ## Capabilities and Constraints
@@ -40,7 +40,7 @@ The press doesn't open with a catalogue. It opens with a curated reading experie
 - **Open:** three of the four services on `/editing/` (Developmental editing, Ghostwriting, Research / story support) are unconfirmed descriptions carried over from raileebradshaw.com and marked `TODO` in `content/site.yaml`. They need Railee's sign-off before launch.
 - `/books/` lists the press's books newest first. _The Gingerbread House_ by R.M. Whitaker (Railee's pen name) shows its cover, back-cover copy, listing facts and links to Amazon and its page on raileebradshaw.com. Reader quotes, ratings and prices stay on the author's site.
 - Navigation: First lines, Books, Editing, About. Below 720px the links collapse into a Menu button that opens a drawer (a modal `<dialog>`); without JavaScript they stay in the bar.
-- **Open:** the About copy and the contact address `hello@paperelephantpublishing.com` are placeholders (marked `PLACEHOLDER` in `content/site.yaml`).
+- **Open:** the Editing services await Railee's sign-off (marked `TODO` in `content/site.yaml`).
 - **Open:** the terms for submissions (genres, what to send, response times).
 
 ## Brand Commitments
